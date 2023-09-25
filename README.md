@@ -30,7 +30,7 @@ It targets:
 - Third party enterprise users
 
 ## 3.Scope and Features Of The Project:
-- Collecting and analyzing historical data related to Kubernetes’ software components, its dependencies, and how they have evolved over time. 
+- Collecting and analyzing historical data related to Kubernetes’ software components, their dependencies, and how they have evolved over time. 
 - Store dataset using a graphQL database
 - Design and develop an analytical framework to extract useful insights from the data
 
@@ -39,18 +39,17 @@ Our solution will start with creating/collecting a software bill of materials (S
 This is basically a list of components and dependencies that the software, in our case ,Kubernetes, rely on. 
 Then gather data on the history of these dependencies and components, and model the data. 
 Finally, we would like to build a system to extract useful insights from the data to pass on to our users, such data includes, a sufficient version of Kubernetes for our users that covers their needs, whether a certain version is more secure than a different version, etc. 
-Furthermore, because Kubernetes have a massive ecosystem with many third party, independent projects, not maintained by Kubernetes themselves, if time permits we will expand our data cllection to include these third party network and storage plugins.
+Furthermore, because Kubernetes have a massive ecosystem with many third party, independent projects, not maintained by Kubernetes itself, if time permits we will expand our data collection to include these third party network and storage plugins.
 
 ## 5.Acceptance criteria
 - A large dataset that's publicly accessible covering the software compositional evolution of Kubernetes. 
-- Build CLI to interact with our user. 
-- Have a method for users to visualize the data, and interact with our data
+- Build CLI for users to visualize the data, and interact with our data
 - Validate our end product with a kubernetes development community, see if our product resonates with them
 
 ## 6.Release Planning:
 First Sprint (groundwork)
 - Learning about Kubernetes ecosystem, survey, and review the ecosystem.
-- Pref start some architecture (how to collect data, how to store data, which database to use) not necessarily implementing.
+- Start some architecture (how to collect data, how to store data, which database to use) not necessarily implementing.
 
 Second sprint: (building foundations)
 - Set up database
