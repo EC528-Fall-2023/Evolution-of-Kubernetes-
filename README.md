@@ -38,14 +38,14 @@ It targets:
 Our solution will start with creating/collecting a software bill of materials (SBOM) of Kubernetes (1.18 version onwards support SBOM).
 This is basically a list of components and dependencies that the software, in our case ,Kubernetes, rely on. 
 Then gather data on the history of these dependencies and components, and model the data. 
-Finally, we would like to build a system to extract useful insights from the data to pass on to our users, such data includes, the optimal version of Kubernetes for our users, whether a certain version is more secure than a different version, etc. 
+Finally, we would like to build a system to extract useful insights from the data to pass on to our users, such data includes, a sufficient version of Kubernetes for our users that covers their needs, whether a certain version is more secure than a different version, etc. 
 Furthermore, because Kubernetes have a massive ecosystem with many third party, independent projects, not maintained by Kubernetes themselves, if time permits we will expand our data cllection to include these third party network and storage plugins.
 
 ## 5.Acceptance criteria
 - A large dataset that's publicly accessible covering the software compositional evolution of Kubernetes. 
 - Build CLI to interact with our user. 
 - Have a method for users to visualize the data, and interact with our data
-- Validate our end product with a user of kubernetes, see if our product resonates with them
+- Validate our end product with a kubernetes development community, see if our product resonates with them
 
 ## 6.Release Planning:
 First Sprint (groundwork)
