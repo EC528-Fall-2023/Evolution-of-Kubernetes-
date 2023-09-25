@@ -1,5 +1,17 @@
 # Understanding compositional evolution of Kubernetes
 
+## Collaborators
+
+| Role      | Name               | Email                      |
+| --------- | ------------------ | -------------------------- |
+| Mentor    | Shripad J Nadgowda | shripad.nadgowda@intel.com |
+| Developer | Jeffrey Chen       | jchen25@bu.edu             |
+| Developer | Jinqi Lu (Kevin)   | jinqilu@bu.edu             |
+| Developer | Johnson Yang       | johnsony@bu.edu            |
+| Developer | Saurabh Singh      | saurabh2@bu.edu            |
+| Developer | Usman Jalil        | ujalil@bu.edu              |
+
+
 ## 1.Vision and Goals Of The Project: ww
 Our main goal is to create a method for users of Kubernetes to have insight on the effects of new releases. 
 
