@@ -12,62 +12,62 @@
 | Developer | Usman Jalil        | ujalil@bu.edu              |
 
 
-## 1.Vision and Goals Of The Project: ww
-Our main goal is to create a method for users of Kubernetes to have insight on the effects of new releases. 
+## 1. Vision and Goals Of The Project: 
+Our primary objective is to develop a method that provides Kubernetes users with insights into the impacts of new releases. Key goals for this project include:
 
-Some goals of this project include:
-- Gather data about Kubernetes software components 
-- Measure chronological evolution of their dependencies
-- Build an analytic framework to bring useful insights from this data
-- Helping existing users for their onward journey from our insights
+- Collecting data about Kubernetes software components 
+- Analyzing the chronological evolution of their dependencies
+- Building an analytical framework to bring useful insights from this data
+- Assisting existing users for their onward journey from our insights
 
-## 2.Users/Personas Of The Project:
-Our project is a deep dive into the vulnerabilities and gaps in maintenance of kubernetes, therefore our core user base will be any developer who uses Kubernetes.
+## 2. Users/Personas Of The Project:
+This project focuses on identifying vulnerabilities and gaps in Kubernetes maintenance, making it relevant to a wide range of users, including:
 
-It targets:
 - Kubernetes development/maintainers teams
-- Kubernetes users
-- Third party enterprise users
+- Cloud providers
 
-## 3.Scope and Features Of The Project:
+## 3. Scope and Features Of The Project:
 - Collecting and analyzing historical data related to Kubernetes’ software components, their dependencies, and how they have evolved over time. 
-- Store dataset using a graphQL database
-- Design and develop an analytical framework to extract useful insights from the data
+- Storing the dataset into a Neo4j graph database
+- Designing and developing an analytical framework to extract useful insights from the data
 
-## 4.Solution Concept
-Our solution will start with creating/collecting a software bill of materials (SBOM) of Kubernetes (1.18 version onwards support SBOM).
-This is basically a list of components and dependencies that the software, in our case ,Kubernetes, rely on. 
-Then gather data on the history of these dependencies and components, and model the data. 
-Finally, we would like to build a system to extract useful insights from the data to pass on to our users, such data includes, a sufficient version of Kubernetes for our users that covers their needs, whether a certain version is more secure than a different version, etc. 
-Furthermore, because Kubernetes have a massive ecosystem with many third party, independent projects, not maintained by Kubernetes itself, if time permits we will expand our data collection to include these third party network and storage plugins.
+## 4. Solution Concept
+Our solution involves several stages:
 
-## 5.Acceptance criteria
+- Creation and collection of a software bill of materials (SBOM) for Kubernetes (supported from version 1.18 onwards). This includes listing the components and dependencies that Kubernetes relies on.
+- Gathering historical data on these dependencies and components, followed by data modeling.
+- Building a system to extract valuable insights:
+    - Analyzing historical data and bring insights about dependencies, vulnerabilities, release frequency, etc.
+    - Assessing the user's current software version and determining whether they should evaluate that version or consider upgrading to the next version.
+- Exploring the inclusion of third-party network and storage plugins if time allows, given Kubernetes' extensive ecosystem.
+
+## 5. Acceptance criteria
 - A large dataset that's publicly accessible covering the software compositional evolution of Kubernetes. 
-- Build CLI for users to visualize the data, and interact with our data
+- Development of a CLI tool for users to visualize the data, and interact with our data
 - Validate our end product with a kubernetes development community, see if our product resonates with them
 
-## 6.Release Planning:
-First Sprint (groundwork)
+## 6. Release Planning:
+### Sprint #1 (Sep 20 - Oct 3)
 - Learning about Kubernetes ecosystem, survey, and review the ecosystem.
 - Start some architecture (how to collect data, how to store data, which database to use) not necessarily implementing.
 
-Second sprint: (building foundations)
-- Set up database
-- Figure out how to store data
-- POC
-- Bootstrapping design
-- Building up system/architecture
-- Divison of work
-- What APIs to use?
+### Sprint #2 (Oct 4 - Oct 17)
+- Establish the database infrastructure.
+- Determine data storage mechanisms
+- Create a Proof of Concept (POC)
+- Begin designing the system's architecture
+- Divide tasks among team members
+- Identify necessary APIs
 
-Third sprint:  
-- Building system 
-- First MVP
-- Have data, queriable, 
+### Sprint #3 (Oct 18 - Oct 31)
+- Develop the system 
+- Deliver the first MVP
+- Ensure data is accessible and queryable
 
-Fourth Sprint
-- Fine tune 
-- Build CLI, analytics, What are we learning from data?
+### Sprint #4 (Nov 1 - Nov 14)
+- Fine-tune the system.
+- Develop a CLI tool and analytics features.
+- Analyze the insights gained from the data.
 
-Fifth Sprint
+### Sprint #5 (Nov 15 - Nov 28)
 - Getting feedback and putting it into our application
