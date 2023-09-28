@@ -33,7 +33,7 @@ This project focuses on identifying vulnerabilities and gaps in Kubernetes maint
 
 ## 4. Solution Concept
 
-![ArchDia](https://github.com/EC528-Fall-2023/Evolution-of-Kubernetes-/assets/76934261/2957ee0a-b79e-46e7-a885-23e3a87a5af1)
+![ArchDia](https://github.com/EC528-Fall-2023/Evolution-of-Kubernetes-/blob/architecture_diagram/documentation/arch_diagram.png?raw=true)
 
 1. Kubernetes SBOM
 - There exists an open-source program that generates a software bill of materials (SBOM) in SPDX form. Using this, we can create and collect the SBOM. This includes listing the components and dependencies that Kubernetes relies on.
