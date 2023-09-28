@@ -13,12 +13,19 @@
 
 
 ## 1. Vision and Goals Of The Project: 
-Our primary objective is to develop a method that provides Kubernetes users with insights into the impacts of new releases. Key goals for this project include:
+
+### Background
+Kubernetes is incredibly important in the modern cloud as it makes it easier for developers to manage their applications. It provides a framework to manage containerized
+applications and services, allowing for deployment and scheduling of containers while upholding scalability. Due to its nature, the software stack of kubernetes is vastly distributed 
+and diverse making it challenging to maintain and update as new releases of stack components become available. 
+
+### Goals
+Our primary objective is to develop a method that provides Kubernetes developers with insights into possible vulnerabilities, and other information on both old and new releases of stack components. Key goals for this project include:
 
 - Collecting data about Kubernetes software components 
 - Analyzing the chronological evolution of their dependencies
 - Building an analytical framework to bring useful insights from this data
-- Assisting existing users for their onward journey from our insights
+- Create a tool for users to view and interact with our analyzed data
 
 ## 2. Users/Personas Of The Project:
 This project focuses on identifying vulnerabilities and gaps in Kubernetes maintenance, making it relevant to a wide range of users, including:
