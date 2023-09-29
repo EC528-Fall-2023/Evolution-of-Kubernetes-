@@ -28,10 +28,14 @@ Our primary objective is to develop a method that provides Kubernetes developers
 - Create a tool for users to view and interact with our analyzed data
 
 ## 2. Users/Personas Of The Project:
-This project focuses on identifying vulnerabilities and gaps in Kubernetes maintenance, making it relevant to a wide range of users, including:
+This project focuses on identifying vulnerabilities and gaps in Kubernetes components, making it relevant to mostly those who plan on developing and maintain Kubernetes. Through knowing which version of each stack component is less vulnerable, developers and maintainers can use those versions to make Kubernetes more secure. By extension, cloud providers generally have APIs that connect to Kubernetes, so a safer Kubernetes would also benefit cloud providers. 
 
-- Kubernetes development/maintainers teams
-- Cloud providers
+Kubernetes development/maintainers teams
+- People who develop Kubernetes would want to see data on their stack components as it lets them know whether they want to upgrade the component to the newest version or the current version is more secure
+- People who maintain Kubernetes would like to see the history of these stack components, and they may find a vulnerability in an older version that they might want to patch up 
+
+Cloud providers
+- Such as Microsoft Azure, AWS, or Google Cloud
 
 ## 3. Scope and Features Of The Project:
 - Collecting and analyzing historical data related to Kubernetes’ software components, their dependencies, and how they have evolved over time. 
