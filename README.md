@@ -13,18 +13,29 @@
 
 
 ## 1. Vision and Goals Of The Project: 
-Our primary objective is to develop a method that provides Kubernetes users with insights into the impacts of new releases. Key goals for this project include:
+
+### Background
+Kubernetes is incredibly important in the modern cloud as it makes it easier for developers to manage their applications. It provides a framework to manage containerized
+applications and services, allowing for deployment and scheduling of containers while upholding scalability. Due to its nature, the software stack of kubernetes is vastly distributed 
+and diverse making it challenging to maintain and update as new releases of stack components become available. 
+
+### Goals
+Our primary objective is to develop a method that provides Kubernetes developers with insights into possible vulnerabilities, and other information on both old and new releases of stack components. Key goals for this project include:
 
 - Collecting data about Kubernetes software components 
 - Analyzing the chronological evolution of their dependencies
 - Building an analytical framework to bring useful insights from this data
-- Assisting existing users for their onward journey from our insights
+- Create a tool for users to view and interact with our analyzed data
 
 ## 2. Users/Personas Of The Project:
-This project focuses on identifying vulnerabilities and gaps in Kubernetes maintenance, making it relevant to a wide range of users, including:
+This project focuses on identifying vulnerabilities and gaps in Kubernetes components, making it relevant to mostly those who plan on developing and maintain Kubernetes. Through knowing which version of each stack component is less vulnerable, developers and maintainers can use those versions to make Kubernetes more secure. By extension, cloud providers generally have APIs that connect to Kubernetes, so a safer Kubernetes would also benefit cloud providers. 
 
-- Kubernetes development/maintainers teams
-- Cloud providers
+Kubernetes development/maintainers teams
+- People who develop Kubernetes would want to see data on their stack components as it lets them know whether they want to upgrade the component to the newest version or the current version is more secure
+- People who maintain Kubernetes would like to see the history of these stack components, and they may find a vulnerability in an older version that they might want to patch up 
+
+Cloud providers
+- Such as Microsoft Azure, AWS, or Google Cloud
 
 ## 3. Scope and Features Of The Project:
 - Collecting and analyzing historical data related to Kubernetes’ software components, their dependencies, and how they have evolved over time. 
@@ -33,7 +44,7 @@ This project focuses on identifying vulnerabilities and gaps in Kubernetes maint
 
 ## 4. Solution Concept
 
-![ArchDia](https://github.com/EC528-Fall-2023/Evolution-of-Kubernetes-/assets/76934261/2957ee0a-b79e-46e7-a885-23e3a87a5af1)
+![ArchDia](https://github.com/EC528-Fall-2023/Evolution-of-Kubernetes-/blob/architecture_diagram/documentation/arch_diagram.png?raw=true)
 
 1. Kubernetes SBOM
 - There exists an open-source program that generates a software bill of materials (SBOM) in SPDX form. Using this, we can create and collect the SBOM. This includes listing the components and dependencies that Kubernetes relies on.
