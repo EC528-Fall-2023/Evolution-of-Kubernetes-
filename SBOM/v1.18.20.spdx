@@ -1,0 +1,3737 @@
+SPDXVersion: SPDX-2.2
+DataLicense: CC0-1.0
+SPDXID: SPDXRef-DOCUMENT
+DocumentName: SBOM-SPDX-3fab25e0-58cb-453e-ab78-a1cdcee96143
+DocumentNamespace: https://k8s.io/sbom/release/v1.18.20
+Creator: Tool: k8s.io/release/pkg/spdx
+Created: 2021-16-06T13:52:43Z
+
+
+
+##### Files independent of packages
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-s390x/kubernetes/server/bin/kube-controller-manager
+SPDXID: SPDXRef-File-859de6f4685d552
+FileChecksum: SHA1: 2889bcf4932df6b599124fd19ef21f8b8cb07a57
+FileChecksum: SHA256: 859de6f4685d552fe1d31b5bd5cd3b042073e41f95e6d157f7438eeb49441f16
+FileChecksum: SHA512: fe57bf1a359c8dfab4c076ec5d924e8a35dd54fca1a7b8c19e75c98e5fb5644d7bacd0f945c5c24e5cede85ed9ed9ab53313d1d5303343e1951fbe680aca76f0
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/client/darwin-amd64/kubernetes/client/bin/kubectl
+SPDXID: SPDXRef-File-bc709378c27da45
+FileChecksum: SHA1: 49cb71fc3d7a4efd83dccad9ab6436ff6e0bed3b
+FileChecksum: SHA256: bc709378c27da458b31395787a74cd9ac58dce7dbe2a7ba92f8bc2221eeed0be
+FileChecksum: SHA512: 266b5b12a625356c02f326b553d4992faf93cc4d0fc839279dbedba0dacbe303ed2c44b6b93b5c477a1d85164edc6356ee6c45b56135602b6f7b34f2ef17a22f
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-arm64/kubernetes/server/bin/kube-scheduler.tar
+SPDXID: SPDXRef-File-2250530da1080c7
+FileChecksum: SHA1: e804bcdd4295c00ed0211b6104ea37c2b819fe91
+FileChecksum: SHA256: 2250530da1080c799d86fc01a64f0b7ec233b066863b2b393591f88beca5a8b8
+FileChecksum: SHA512: a87e7767c218e0825b82c88a89d36b200f5d6b607ec5704573a1440444f519a79c65e44be32461ff20923282e5873d9981ff751d5e34707b78414572ce9fa5d0
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-arm64/kubernetes/server/bin/kubeadm
+SPDXID: SPDXRef-File-4e93f175fddd18a
+FileChecksum: SHA1: ebe10f4508aee8a8df5d46d7bc9637be5a44d315
+FileChecksum: SHA256: 4e93f175fddd18affd85f1670ec06b9e18836704d5559f5243aadf5a3660d048
+FileChecksum: SHA512: 9857710f1a7996bff0c169b9447e688114ea6c504ef4cf923353d6a2cd932dcac55b47114e9ef2617db587cab1ec7cbeb0be6ddc17d68576b0e5045f1520c881
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-ppc64le/kubernetes/server/bin/kube-proxy
+SPDXID: SPDXRef-File-adf022a2f4f8916
+FileChecksum: SHA1: 9535832bfcf5d2f1e52638ffc07c950ecd91b589
+FileChecksum: SHA256: adf022a2f4f891611b3ecdb3119628a7c202281f3b4ebfe12776b395562d7497
+FileChecksum: SHA512: 6032b4dd6aaae804997d99a1dd0fbfbba4f5bfe9b4a86cc11e6aed3049a8bb2c94f5a1e3e9b166dc274f9c25bf788dde2763f58871754123cb305757224ef816
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-ppc64le/kubernetes/server/bin/kube-scheduler.tar
+SPDXID: SPDXRef-File-cfbc45dcb4d4026
+FileChecksum: SHA1: 040693c73290dde7490ac35fa201842bc3795912
+FileChecksum: SHA256: cfbc45dcb4d4026349272220bbd10ca93f490fd16feef2e829c20a91839be295
+FileChecksum: SHA512: ffee6f3bc3f91eaa8759635a029e75bfa770f7f77abc52398ee91c552840905aed8987d7a27e74966306203eb90bbffaac7635803376e95cc2170b6a8529f15b
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-amd64/kubernetes/server/bin/kube-controller-manager
+SPDXID: SPDXRef-File-84375efba93d670
+FileChecksum: SHA1: 0911e84fd1ae763bf7e4297c17578042eb063b9f
+FileChecksum: SHA256: 84375efba93d6708faaed7b7763a7c4446cf56ec1fb0dfe6f4ba574faa908c53
+FileChecksum: SHA512: 3e75ff9dae3cc1bd644ce2d4d6ff13438a00f94d9a4f8228d7738fb2d2f404db4fb4e4e1ec916386ec76b725f96ac2385ccef92383abcacb29a81d5e8f1809a5
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-amd64/kubernetes/server/bin/kube-controller-manager.tar
+SPDXID: SPDXRef-File-b832c90ecf9f27d
+FileChecksum: SHA1: eefba612c06add578bcb771a0703576129a339e6
+FileChecksum: SHA256: b832c90ecf9f27d79f0400e87670b29c09c6bdef6aada858c06ddb430ab99724
+FileChecksum: SHA512: fa9ec71e49d8ebd31937c992f8bab51db8dba52f50e9caee28faf177e3ad1a2f941591ffe8c7c176443d4a31c7acfcec31fad4e6fe480498fdc723cd6175e81b
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-arm/kubernetes/server/bin/kube-proxy
+SPDXID: SPDXRef-File-acf4483ca1564cd
+FileChecksum: SHA1: f121a4283fc3aec7e2148e392d407ab5240d32cb
+FileChecksum: SHA256: acf4483ca1564cd4b60d47d9fbd1060f25b248fb906f44a4b8078ab609c0ddfb
+FileChecksum: SHA512: 85f0fbe6d9d0e2a0b85536c23d999203d9a02170c880fa80a011393bbd68c3d0a6665733a654bb28755105e54a5d04e1e5c368bb6f0c82ff47bedf06b5ec8541
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-arm/kubernetes/server/bin/kubectl
+SPDXID: SPDXRef-File-952692df5533e88
+FileChecksum: SHA1: 447013c009238d3cb3451bbfdb4d7497eb4157d4
+FileChecksum: SHA256: 952692df5533e88f1aa8cff254c1bb9f50f45c425fbd5c75f8049218fb93d009
+FileChecksum: SHA512: 71775f9f423a1aac0052aab892b7d6d2de0e925924cdcc5580e7a08c38ae670bf7d71b0b906e890abaeac776de676d38d804fd566c7c11f84c066af9d7c82eb1
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-s390x/kubernetes/server/bin/kube-controller-manager.tar
+SPDXID: SPDXRef-File-caea1d86b6185f2
+FileChecksum: SHA1: 63bad157b881e5446094de121dff417705430c99
+FileChecksum: SHA256: caea1d86b6185f2c6d9ac0b0fc3820eb82ae60606be2b60ebff1c7e29bb23d9a
+FileChecksum: SHA512: 5d321f02521aafbaa9627b84335bbd17dc4e0b6ed16b2b48853aba6f0185b544574049f2e34244975864d28d0652d249c4643b435f3f8eb2953fad0e6bae092e
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-arm64/kubernetes/server/bin/mounter
+SPDXID: SPDXRef-File-98961e6da770c75
+FileChecksum: SHA1: 59dde57a5411601eea5b1f2f0f140a11c82b34ac
+FileChecksum: SHA256: 98961e6da770c751d1739ad8cf2ff754828636257a37ce6fdfcea35c42e73682
+FileChecksum: SHA512: e57208fcda77f67b39adb444b008df12fbf11c081e3caa75eca25ad04638608afb6299a95855a6eff00164733135fc24f73cb5383e936f4949397c0f03876cff
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-ppc64le/kubernetes/server/bin/kubeadm
+SPDXID: SPDXRef-File-67e9fad1dc2f26b
+FileChecksum: SHA1: f3f64f1b0db07f6b26b3b77891230d6ad9e4b22e
+FileChecksum: SHA256: 67e9fad1dc2f26bd62f80f4dd39c3e625bc5164f9fce5e441ff4de1da3481d46
+FileChecksum: SHA512: d725a78d0c2b68078e439f9ecfc30fcbef9919f28840a231760b391e89675983b825c9563f3107a9d24e497ad5d19cb737b8c8c848198e033ee6a057f41e26ca
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-s390x/kubernetes/server/bin/kube-scheduler.docker_tag
+SPDXID: SPDXRef-File-2cc9c637f7ecc97
+FileChecksum: SHA1: 67b9130a1b9a7a909c5220eabc43d727119bfa56
+FileChecksum: SHA256: 2cc9c637f7ecc974f1af327c4df92f939a65e1f219c407b57f6fb39b83e40218
+FileChecksum: SHA512: 59e9fbc5f998708f521960826cd1da35f072f347664b0106eba60a9795f0d015eb6ed4c1f87b5ae4c8ef2b3c615ddee96971d3e1e511319b15ac79cc01c31913
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-amd64/kubernetes/server/bin/kube-scheduler.tar
+SPDXID: SPDXRef-File-db795ff65280c08
+FileChecksum: SHA1: d17903ffcf79c0f9dc593249e72be6f547b3c6c0
+FileChecksum: SHA256: db795ff65280c08e569f0457ff623c74f215af0d5bf018879a9bdd6681e181cf
+FileChecksum: SHA512: d3ba4d267239b616495de88fbaff4807a4d45889329ee966261d242a519b9806a4a0cabe82ecc470c18e62a1d9ffed2253769853fe4835eff4cb02ae80c87dfc
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-amd64/kubernetes/server/bin/kubeadm
+SPDXID: SPDXRef-File-78ba557a8d939ef
+FileChecksum: SHA1: 25773efb01b4a8ab3d39cfc8bbf5046449817d9c
+FileChecksum: SHA256: 78ba557a8d939efee56ce2d992222fbb8879f4e44ee2ae3b95a8bc58863d862b
+FileChecksum: SHA512: 9a8ae33b112d41fc2156a69a5633a029504042b5c818f9e6b68d6604be02a0f14b8fcfc8a9a5d6d05117db9d7be53faf9589a7c3660b03d567557e8dbb731f22
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-arm/kubernetes/server/bin/kube-controller-manager
+SPDXID: SPDXRef-File-2ba00eb1fab6e9d
+FileChecksum: SHA1: 9ddf6a7e0fd06b1e17781bf1439dcb8f03ceb146
+FileChecksum: SHA256: 2ba00eb1fab6e9d2481b1b5b6161e37bfca6485c3a33ddb85629a955a5352ebb
+FileChecksum: SHA512: e8c2599a3c571280d1883173c8a34f807bfceba8bab1fdb5f9ce313674f4ec6fb150ea2dd7f8235872d6da078ed775d5f5b4a15d8cafcb7a866ce9b009e5f008
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-arm64/kubernetes/server/bin/kubelet
+SPDXID: SPDXRef-File-0f6a60a23421b9a
+FileChecksum: SHA1: cc4887efae6a7dc6b594b7ca709b0fe4a131903b
+FileChecksum: SHA256: 0f6a60a23421b9aeee40dfca5bec3b40c7242ac869fbdc38c1d2783288288ef8
+FileChecksum: SHA512: 1d28f70bd176ee7c6f1742925eb7358b25739fe72f56be5631160d7d13199af0ba0115f4b6f3e3a02640832a0427357d30bf17954e0485166d9f75e124eef1c2
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-arm64/kubernetes/server/bin/apiextensions-apiserver
+SPDXID: SPDXRef-File-ce9994c3969df91
+FileChecksum: SHA1: a7a402e97f6a249b038a989d5e54e29e7e78f2e8
+FileChecksum: SHA256: ce9994c3969df91176f8e3577d829dc066d9a2a72c04b53ec6f14c5b3c60118b
+FileChecksum: SHA512: 54af71b31d89dd47183fd08fd3096c4b06b292e5b0b21fa8ae80f97f3afa016a5215877263e29c33af67de2438734d226afea34f01094e1b0dd983b87685d050
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-ppc64le/kubernetes/server/bin/kube-controller-manager.tar
+SPDXID: SPDXRef-File-c39f7a22eb71560
+FileChecksum: SHA1: 1cc6ded722a8cf4472fc3431e0130f277f295a99
+FileChecksum: SHA256: c39f7a22eb71560983f086896ce86aa6045ab7cd9302920cb7da44c4c298ef0c
+FileChecksum: SHA512: d4eb57d8b447303e69034f596293c56fbe2d66f54452661e1e6effac85b7bdd41577ae884fd05abb165c62081eb839df0013c14054ab881a99daca4f01162548
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-ppc64le/kubernetes/server/bin/kubelet
+SPDXID: SPDXRef-File-fc9c666bd081b95
+FileChecksum: SHA1: 535ba1006f5288994624a14f0f19155c564719c4
+FileChecksum: SHA256: fc9c666bd081b95cc262cfeac9e1ac0d0a16d0e335500925f64d3cf43bfc8157
+FileChecksum: SHA512: 5a473e5a4ae2af97273a78668c233a41336bed8cb0d265feea4f62e64ffe4db73fa4b9d337c79b1e6b3003fdf6d3d7a8bd8e962d42ffca77dc47c21281f0db10
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-s390x/kubernetes/server/bin/kubectl
+SPDXID: SPDXRef-File-51b3373d3ff6ca2
+FileChecksum: SHA1: 56fc90f49da97c74b53b75e322ce4c521cc2daeb
+FileChecksum: SHA256: 51b3373d3ff6ca2aa197ef0122c8a6ef12cd96fad6dd4d4fca1428ea89d0b972
+FileChecksum: SHA512: 207d230efea2e75e6b496b87bdad81c6ffc648fc053531c7adb0ef034494c715f2e978e298ea72394276e1cd0e2e8cb9a7bc71025a12a1f5ccc1609839f69765
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/node/windows-amd64/kubernetes/node/bin/kube-proxy.exe
+SPDXID: SPDXRef-File-c801ac9a1744b77
+FileChecksum: SHA1: 6af5b6a903919f9ebf5f060c82efeec2c76dfb11
+FileChecksum: SHA256: c801ac9a1744b7797abf8ac8739f932f56dc005e94ed50cc82f0bcebb7d090d3
+FileChecksum: SHA512: 04db1fde013abb27ad77980ae726a18d9a502ce366c0c1e7eee4ce94f8a8a42737589152056b7663dda065e56389e0af4de5e4020eaa4ab8378440f17f47ee29
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/client/darwin-386/kubernetes/client/bin/kubectl
+SPDXID: SPDXRef-File-ac6f3393d959fa1
+FileChecksum: SHA1: 56534890b9b20b85b85e713e3cc14adb1968c04f
+FileChecksum: SHA256: ac6f3393d959fa1bf53b5f6052fce24f4015ca2163c676e8f8260d4881f9ae14
+FileChecksum: SHA512: f8575ca3df46ebad1f6885ffcf79238a24c6d02da51905d4d60a6b8131a1ae0891a53b83cca99d9dba74d73e7892e3b1b385a6fae23e98e3203c5fe0eadf20b6
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-amd64/kubernetes/server/bin/mounter
+SPDXID: SPDXRef-File-55959b355e2ee29
+FileChecksum: SHA1: cc1f9d40868c6c2d5302608d0fa4e679b54e6643
+FileChecksum: SHA256: 55959b355e2ee29d94ca01f27a05a9b5dfd70747ecb4bd96a8f24ff7d11ab341
+FileChecksum: SHA512: 787ed50e53f3a8038d7f4cd6b3c549750617e55d151f69bdec3309464ab12381c8c1269290c77f832f364488be5e6ac2b984738a2104dbc8a097b78e6f763158
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-ppc64le/kubernetes/server/bin/kubectl
+SPDXID: SPDXRef-File-9de999c691a4670
+FileChecksum: SHA1: 30a2db323a5d6549580cc43a457b97cff52b4ec9
+FileChecksum: SHA256: 9de999c691a4670503f0db7241f497669efdf041c658f70a6b72e3f118751a28
+FileChecksum: SHA512: c288b5408f9e0c8f7160eaa6f159b34008ed19651defaf38766ad6d56014f14553e59961c417f5a29a8c31589099c6bcad1162e309bac005df23b473524fb9c4
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-s390x/kubernetes/server/bin/kubeadm
+SPDXID: SPDXRef-File-f87c28067e04da7
+FileChecksum: SHA1: c12e38f2e837d15bd5fa2fe46aad688d75eb4cdb
+FileChecksum: SHA256: f87c28067e04da7d0dd50ec694e94f6a3278ef27cb885537a076d5b071c6656c
+FileChecksum: SHA512: e02092e28f91b66f183b6caf03d3e20a18422d74b1ee061ec214b74e63b4cd2e22e76ea7d6fb5ae7118256d8454dfa799bc23635ceab1b19d7170fb59955f513
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/node/windows-amd64/kubernetes/node/bin/kubeadm.exe
+SPDXID: SPDXRef-File-a126654ea08053e
+FileChecksum: SHA1: 4e60afc3187a192508c345961750de87a60e71a1
+FileChecksum: SHA256: a126654ea08053eff176cd39e4dd7b935a848f5a8cac29c0b42a1af348cf223d
+FileChecksum: SHA512: 8df1affcd6cbf3d66f620fa4dc0d92f2f9eb2a7cae041dbe0fd9ed1290f88875a09026032340f24927b3af73072c1437aabe8c6ae0ce84246ff158c4f081908d
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-amd64/kubernetes/server/bin/kubectl
+SPDXID: SPDXRef-File-66a9bb8e9843050
+FileChecksum: SHA1: 2af7c94c3d8dd79bd7d117e95541abcc929bef6b
+FileChecksum: SHA256: 66a9bb8e9843050340844ca6e72e67632b75b9ebb651559c49db22f35450ed2f
+FileChecksum: SHA512: 516bf13a0c262f06c6d0440d78dec26a380c66653a7142f6dc4316bacf46e0321ba724997aa2bd5f9b2dd593f82dbd1a9abbb368dbdcb4e8d4c35dca5bd5fe3d
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-arm/kubernetes/server/bin/kube-apiserver.tar
+SPDXID: SPDXRef-File-a706689fa001a8b
+FileChecksum: SHA1: fd7641a043253f11b5090c00670869d897b680c0
+FileChecksum: SHA256: a706689fa001a8bdaa424b2cee02b030e9a4b15113fc4a7912229850bc2ca74b
+FileChecksum: SHA512: 2e26e7146731c18734d026c40eea4a26dd16dbac0e92cce9751878d27445729ebedd7034470b56962ae602f848b9efe3c214f838a6e6cbab2dd9e1e5a244bb24
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-arm/kubernetes/server/bin/kubeadm
+SPDXID: SPDXRef-File-28bc2e69a6a4e97
+FileChecksum: SHA1: 1ec78d6280fc2612d08b7d2b52e5d74427b9a0e9
+FileChecksum: SHA256: 28bc2e69a6a4e97fbf98742a963cda8ffa86e90087e266e1c0d3e86440598eeb
+FileChecksum: SHA512: 22f6ff8663fda9c690c5f04d4d4dfe447f09c3840ca8e078629dd57bde526e2af1770a5806995d374d386dd20fd3758bec22a3032822b3c3fface27e41bc7ef7
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-ppc64le/kubernetes/server/bin/kube-apiserver
+SPDXID: SPDXRef-File-2684c8dfd222f96
+FileChecksum: SHA1: 68c347ea6426bb614b120903cf591580c4710278
+FileChecksum: SHA256: 2684c8dfd222f9662c7d5d7407aa0ed1e01f864fec3bafc8426a72a81384fa77
+FileChecksum: SHA512: f0193ba2190e12b5eb23cc7a978ed942b04f9904f91a4f031c9caf3a3efe1ed4436b4e0e01cbdfa1d0df926ac09b847ee5233eb43cc52a897409baa569f7a932
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-s390x/kubernetes/server/bin/kubelet
+SPDXID: SPDXRef-File-f15b6fd059fa3dd
+FileChecksum: SHA1: b22b1d4cc4b691f829fb29386e1e5d79a519448f
+FileChecksum: SHA256: f15b6fd059fa3ddc00d30cd1371d8048fd3f78103c4b4cb730992d997123d48e
+FileChecksum: SHA512: 578e0bbd90bc3c8fe9ad10ac9b9b6e7676ecce085f423e61f5f2de415c2f3a6989438a500a2118ea0f198e7e4c46bf616cf663f1a225aeb95701f31c82f2aa18
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-amd64/kubernetes/server/bin/kube-apiserver.tar
+SPDXID: SPDXRef-File-4eebeb0de5fbc58
+FileChecksum: SHA1: 89a9d538d69f92eb90a8bf47de38b23f5a6e5edf
+FileChecksum: SHA256: 4eebeb0de5fbc58fe58e945f5fbccfcbb37a6604b3a156c0eaee68f1a4e18bb6
+FileChecksum: SHA512: 01388c0410e8e16af265e2782a164d20ce10ac6526be2be67d183d60a7e5264454b0593fbdaacdb83c9acdd0d837fac7faf2672510758cd03cb1cd7e4acd00ff
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-arm/kubernetes/server/bin/kube-apiserver
+SPDXID: SPDXRef-File-f1d1a4883b6b83c
+FileChecksum: SHA1: b7db259c664d04b5f6b816bb0d5511fb1ef589b9
+FileChecksum: SHA256: f1d1a4883b6b83c691c4bb8f8e5d8c7aa6a4c82219b89c5c45a26a95c633842e
+FileChecksum: SHA512: 537e591b68ca395e422e9cfbe559a52a4e5696988f1c7ee240d3d6dd6d472d27808616bdca3f5500ee4942b854f8c9837c4051a0070dcca6d5def2eed7e18a85
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/node/windows-amd64/kubernetes/node/bin/kubelet.exe
+SPDXID: SPDXRef-File-7888854019cf2ec
+FileChecksum: SHA1: f9ec92940dacec865f37c937d34511c7d074bb8e
+FileChecksum: SHA256: 7888854019cf2ecb4f194d6e15fc616550876fc8dc6e13bf3ab7ea2f8015dac1
+FileChecksum: SHA512: ad6eb7d2f75927049e42bc7f0ef7e1d84dcd3d61f0753aa22a95142b26d1a984153b7748bb79d6530ab5dd2d76aee910cb6a9a87a50fd769b0d982a32d8b64bb
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-arm/kubernetes/server/bin/kube-controller-manager.tar
+SPDXID: SPDXRef-File-046af2416fda784
+FileChecksum: SHA1: b36f50e0188230985f7e6ee4e32522b32e38fe07
+FileChecksum: SHA256: 046af2416fda78400e9691e66b3f541e9a582baf37c0c23977a9485ba16788a9
+FileChecksum: SHA512: 23feef39ffdaf74ce256070413d08d2b3ae126eee0ff632a1240c0ebdfbbd69096f5db92d46fdb3dac78658f1e203a6bfcc51d17d48c4cac194e6944b58cfe89
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-arm64/kubernetes/server/bin/kube-proxy.tar
+SPDXID: SPDXRef-File-4d3d238a3d5e991
+FileChecksum: SHA1: 3ebfae791378b1f57ed03303c8fefefcc26ee597
+FileChecksum: SHA256: 4d3d238a3d5e99182d4d51fbb7165829474eaba8c0aee578c23a99051e10c148
+FileChecksum: SHA512: 204a1c9857e94c28d170037fcc2901ba51af43e356a0c2462e851846798162e5425d6bd451c5c3c0f17ebe965208c4d53b7209bee3d983b217a97467602c815c
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-s390x/kubernetes/server/bin/kube-proxy
+SPDXID: SPDXRef-File-1abb29ede52145c
+FileChecksum: SHA1: a539e2aa66f07bba34105e8734b53529d5b369e4
+FileChecksum: SHA256: 1abb29ede52145cd2b49a1086f6bf08d5524d8f639fc5449085510435673d0e2
+FileChecksum: SHA512: c82d978af930aea7c413e73ec483c7986e6913a8715c9d12a95c4d2863a8a5b68c9aecf69e2f0f49045488b92f65174e8b60d2e285c6dcbaa1abb8ce855e6762
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-s390x/kubernetes/server/bin/kube-scheduler.tar
+SPDXID: SPDXRef-File-c3ef6ab724a6ab2
+FileChecksum: SHA1: 7b775ca3314659fbe140017a50b5c45dd5e42af8
+FileChecksum: SHA256: c3ef6ab724a6ab287aea9424dce6a51459781952c6fb68ece6e6566315ad138b
+FileChecksum: SHA512: ef1f43bab08c6d95a83df14d9d4827aac7bf729488ab0920e63f3ed0c1b6fa61d0ad827be3e6d0ee8e1f66acbcc4f9e54c47f4ac18c324f9b09959357a9fd1ac
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-amd64/kubernetes/server/bin/kube-proxy
+SPDXID: SPDXRef-File-b4afe17fd7c91c4
+FileChecksum: SHA1: 79bf829a80b5188518c8c396df7b87db4a4b6155
+FileChecksum: SHA256: b4afe17fd7c91c4cc10bc24e5f78856f7570baaa8848d1de23416d8a9c071d59
+FileChecksum: SHA512: d2a52066412b59193c03555421f145e7d0708cfbc36b67d3e5fa1b3cf0b3dab14eda8e381270e030466e7d2c073e24c2e9b05fbdb40931db66c7895281fb3169
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-arm64/kubernetes/server/bin/kube-apiserver
+SPDXID: SPDXRef-File-1acf7b60e638e30
+FileChecksum: SHA1: c8ba109b3ed824cb6406df46d8690fbc44c5a214
+FileChecksum: SHA256: 1acf7b60e638e305c06d2f77d3f863cec503066b7647442dabb1c0ec816df4bb
+FileChecksum: SHA512: 63fecd4ec1e903a0043c55352dcbadaf09d9862ec6d6a78a87477b21967c95c96f4a4e91bfe31e784688bd0f35d1e4f8498b2a0036c5335d8f952e61262a64b6
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-arm64/kubernetes/server/bin/kube-controller-manager.tar
+SPDXID: SPDXRef-File-03bc8c09c889d2a
+FileChecksum: SHA1: e5fe7e044c758dc62090351d34cf6f51697c85a1
+FileChecksum: SHA256: 03bc8c09c889d2a0ed0b52a4e1b511c20f5ca0a3dedfe40edc04b748a192f551
+FileChecksum: SHA512: 4d1cfbd6b3fb1cf1ad02a21da6d16e498388bffcb1811ec42f787065119c5261d8ea9d2de362be6ef7bf086bce5b18e6a3a4312599a8df7810c3e4bdaa80be54
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-s390x/kubernetes/server/bin/kube-apiserver
+SPDXID: SPDXRef-File-1350128c444e187
+FileChecksum: SHA1: d1b01697db240e15c707d60acfc8fec154821436
+FileChecksum: SHA256: 1350128c444e187b85ab92f07b63d341b8a39f199c463f521f604f13c1f5a7d1
+FileChecksum: SHA512: 65013b389ec23577267ed28079a18a470f66eeefdf2c8118225f1856a5059d02ea60645051bc1e4d3e5f2c05187848f542e9893429ffaedf9586cdc2d1f69531
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-s390x/kubernetes/server/bin/kube-apiserver.tar
+SPDXID: SPDXRef-File-d2f488caaa2a16a
+FileChecksum: SHA1: dd8cf79cd3643a1305f5c9fbf88091da6e21575c
+FileChecksum: SHA256: d2f488caaa2a16a2685cba00ba3af4704463f82ca79d5de28e2c0e26fcf4273c
+FileChecksum: SHA512: 8e29b68467705fb49a8ef88f60341cebe6e75aaeba52838ccca437787ffddc8132441dae3d71496f675a115eb1f53b32377f9a1d5adc0f48e3d31fa65c918f8e
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-s390x/kubernetes/server/bin/kube-proxy.tar
+SPDXID: SPDXRef-File-9fbcc32dc0775e9
+FileChecksum: SHA1: b2db481c5b29f1b8b4485551d98c323a700ba93d
+FileChecksum: SHA256: 9fbcc32dc0775e98ac69dc0e9b26886f3bb84b529d54d2e7b6c360b238c3752b
+FileChecksum: SHA512: 70c76438c7eb9a7e714f3b6d38e31cb2e033af12242db5fc4078a3d2ad9a574ad35b31df8b99ea7725595f8b4a278c634929da61e8b2c7af71e9c56e4d17c91b
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-arm/kubernetes/server/bin/kube-proxy.tar
+SPDXID: SPDXRef-File-9ef547bcf99c2d7
+FileChecksum: SHA1: 9a49e90f9227c03f95184d7b90ee983b7380b60f
+FileChecksum: SHA256: 9ef547bcf99c2d756b76140a38f82b180d373d6eefa6523074f47a811347a144
+FileChecksum: SHA512: 1042c400b5f668d379fe44e660f96a9ed7a230385f758bdb1413acf284d8446d314a07c9c73d0db2866e44b19391a431d4c212e2fba8bb4c1f87b0cca7ea0b7d
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-arm/kubernetes/server/bin/kube-scheduler.tar
+SPDXID: SPDXRef-File-13d304dee07c565
+FileChecksum: SHA1: 45e7d0d8759b551f145d32a88f8c1b6636416abd
+FileChecksum: SHA256: 13d304dee07c565272ef32e623cd2a117fc6c1048ecb13b039cb58173cd8a4e9
+FileChecksum: SHA512: b3e63f7236e3462de3791875813f65cf816efc3e042722c738e1c9d49847cb9999b0c98c140390f18225627a71504cd16bb71e68619a3902e1c338c179058c5e
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-arm64/kubernetes/server/bin/kube-apiserver.tar
+SPDXID: SPDXRef-File-7443647586249ac
+FileChecksum: SHA1: d7cdd994c7c9aff0d4a590fcc15b7771a81adec7
+FileChecksum: SHA256: 7443647586249acf6b635f9df67e3e7c0d7561b674fe76a11e1fa6c01809ab45
+FileChecksum: SHA512: 5e411d3eeced56ea0843cc75080c5c84e79bd25b1896533050dd97c471b70db7ce84b6462a22fcc10d0a62a8619e23327da6d1ed09107701adfe0bfe14251a00
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-arm64/kubernetes/server/bin/kube-proxy
+SPDXID: SPDXRef-File-31424a65f9d5b32
+FileChecksum: SHA1: 4885c9ce5aa0cab76b200fb228ee7d85b46d0cec
+FileChecksum: SHA256: 31424a65f9d5b32fbef4a0e5c1e793a27b49159dc8585dfb3250b69eb9b75646
+FileChecksum: SHA512: a33ca17be00389800c7625d130baaa16978d2de7014719f54b363344a48e534cdca1d4899bb700a1bb0e1f4a0858b3d2ec5e9794b14306dba3df31500aaaa820
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-ppc64le/kubernetes/server/bin/mounter
+SPDXID: SPDXRef-File-bc5f6a5c4e273f0
+FileChecksum: SHA1: 9024e082bf0b562b4f198843a1988fb97fc1c018
+FileChecksum: SHA256: bc5f6a5c4e273f048d9c91daf5a08a256d237c5e3f279688c1b63d3b023f6a18
+FileChecksum: SHA512: d9bc2ad8bdd7268573d22b0935c2fcc58e1d551e2d3b1253af5cf826a62dc5570188d1dd5cca010226da77fb72abd2a8941489ef72647d6f8985cd7584a760be
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-amd64/kubernetes/server/bin/kube-proxy.tar
+SPDXID: SPDXRef-File-efca650264fdb4a
+FileChecksum: SHA1: ec69e10664c9d7269b0895ae67ddc79b3e046782
+FileChecksum: SHA256: efca650264fdb4ac4ce8a4d30a3d61b840daf739875f897960d5eb273ad38fa6
+FileChecksum: SHA512: a92d361f800eb6c3e6f0aedd27c399aefd187b3f07461959ce0909b76bf641a77de8f7bed3f44edebcc853e84f83270c3d9008f9818aafb6943b325922622035
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-arm/kubernetes/server/bin/kube-scheduler
+SPDXID: SPDXRef-File-c05de4d0dafffc1
+FileChecksum: SHA1: 86ddb0c7286d4013cbec11c3a9eb60f7fc9ec05d
+FileChecksum: SHA256: c05de4d0dafffc1e6a311befc595e6594f14b2ca6a50a11c98680772131650c0
+FileChecksum: SHA512: 2aeadcd5c8d1f3118354faf9858bf046b30eb2033ba4206b7c173281d2e7258f1827f177557342c353502c3d85830381031068e6bb5130fbd9dd370c800e49d9
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-arm/kubernetes/server/bin/kubelet
+SPDXID: SPDXRef-File-061217c6cad8fa7
+FileChecksum: SHA1: 9ce12b9208149d07c9c2791d1ae4e2d8b262a213
+FileChecksum: SHA256: 061217c6cad8fa76912d7c0a34bcf939d72653f8f1e96b37dc43432f4dd0fedb
+FileChecksum: SHA512: e6ec893510ffd338ec42c82880fb884bdfd7d74fa8861926eb18d308f71dea0c193c3c96e89c96e9cc7fa0e34510be09acff26476725b7d22b1404bb561d719c
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-amd64/kubernetes/server/bin/apiextensions-apiserver
+SPDXID: SPDXRef-File-6fe2150bc6025dc
+FileChecksum: SHA1: d2b7c24449b294cb04a33c17d32f7871bc24ff29
+FileChecksum: SHA256: 6fe2150bc6025dc02a2473884186f3dc341948832224e523c93e487df307e9e9
+FileChecksum: SHA512: 43c390e6aa086ab68cb2928d8830c4ba5353396fd1eea91d678e9dd90ec6e768d47d4d867e433980d6e06527cc113ba3c6125fd9a2f89b53684252c9a03fe178
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-amd64/kubernetes/server/bin/kube-apiserver
+SPDXID: SPDXRef-File-136e1ed2dadb788
+FileChecksum: SHA1: 495e6e3ec34323f4d180ca6622e01957028e088c
+FileChecksum: SHA256: 136e1ed2dadb788eb34c599f5608a764c968a2e5580ab909f8227402c55d6f6a
+FileChecksum: SHA512: efe5c808d293473e36ab093133b399c4209c0fba324d2a0b0c04f2e65af92a4cdad59407fa0ff5c9d0bf4c35c3391fd793870c6a7eace027dddd70a20ec75bf9
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-ppc64le/kubernetes/server/bin/kube-apiserver.tar
+SPDXID: SPDXRef-File-27f8841004362f6
+FileChecksum: SHA1: 5e7bd1dee896e44bcf9de1efd01b367ff32c01dc
+FileChecksum: SHA256: 27f8841004362f6c54bfb7eed0ecf9c2e4564bf2368bfb531674a02cd02cb783
+FileChecksum: SHA512: 7c8ef8bdd7922f3c7ae72e2b9804190124a49a340fc1401cf61dcf30011a8459e896348fce08f3128cff1ae668a8375662b8b7f1c929ef91ec3c0d5e3a82f5fb
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-ppc64le/kubernetes/server/bin/kube-scheduler
+SPDXID: SPDXRef-File-5f229fc00b720ef
+FileChecksum: SHA1: 1153e7a12842664bd3f7b4c8a4dd7896364e28c3
+FileChecksum: SHA256: 5f229fc00b720ef9af75082c68d76773265b6d7d6c7102fca8f11d7a2720ed70
+FileChecksum: SHA512: 86fe7159cbd3ff7674fd46bbd6d0d9d0586227ec230e19d7f0590e0002d1ed892cfbf3f4f804171ff7b624151a67385ff7d251092447f86509d8018902ce582f
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/client/linux-386/kubernetes/client/bin/kubectl
+SPDXID: SPDXRef-File-aeda69896636a31
+FileChecksum: SHA1: 37de10402935ed79ca46ecb58e09f52b4c65210e
+FileChecksum: SHA256: aeda69896636a31df0f8dfe9b83ae3e41fcbbba239297632ecaec6d446f48851
+FileChecksum: SHA512: ab3d37d5338e4c02c8f00dfbb5d5184893688b652a0b9360cf370e58d6b3bd713a81f5b0b3c9c0e51cec43b31a2488165548aa4f5f2a50274f38c23e1b0a6621
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-amd64/kubernetes/server/bin/kubelet
+SPDXID: SPDXRef-File-ea31b058e2435a4
+FileChecksum: SHA1: f9ae92225fd4ffb87dad6081fe657ca4b356c7f5
+FileChecksum: SHA256: ea31b058e2435a4079080156bfc475363bdf77e257937f31766e58abccb681eb
+FileChecksum: SHA512: f874c78d9879bb7ed7873a39f6e04c49470d9c6f4ff72ef798e932e90527bb2eed96256f6d164f5ab0af5c3d53f9e088e9524856d086dde0b896606fdf5e4a76
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-arm/kubernetes/server/bin/mounter
+SPDXID: SPDXRef-File-fa39d1d3e00f6d7
+FileChecksum: SHA1: f1fe9e174340acd19d78e210859c354e57978cb3
+FileChecksum: SHA256: fa39d1d3e00f6d71b10f5a151884caa2eaf88d1f7bc175e55ea878892b852234
+FileChecksum: SHA512: 520c96962394ba411a4829eccf95ce859f6d48015d26bb749f6f944f428a49685c35dc380d1cc1bc9f7408f987710e3fec83abefd0c621c4103f6deff98f98ec
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-ppc64le/kubernetes/server/bin/apiextensions-apiserver
+SPDXID: SPDXRef-File-cdac4254b14f665
+FileChecksum: SHA1: 5dff26624438a008298ef4d925d8b87123cc62c1
+FileChecksum: SHA256: cdac4254b14f665b5b773b04d5876d86c5c0b7d19ee838930e0b195422ecd9e2
+FileChecksum: SHA512: 9189ae24a9325cce48adccaf8a1f0875a476e195c5ebfcb7273958922bd14bd8e6fc3f4b06fafbf1eb80de1b2db255353795c75baeb0e232359183dbe2195072
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-ppc64le/kubernetes/server/bin/kube-proxy.tar
+SPDXID: SPDXRef-File-0272d0139d9bd74
+FileChecksum: SHA1: c2ed1f9f8730b8bf0e60caa64a8cf099d0c3cc42
+FileChecksum: SHA256: 0272d0139d9bd74fa1fbbf431de951e0195150857fe4edb9ae5c918df0af5fa7
+FileChecksum: SHA512: 665b0ff805a98d151c49781c5d89d05c731aec4b80bbf392b71205dc473e10a5c813303f6509854ff793d6d1b7a2757ed66a4202d4337d60df62d2d51fb3105c
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-arm64/kubernetes/server/bin/kube-controller-manager
+SPDXID: SPDXRef-File-8448b6d2631994e
+FileChecksum: SHA1: 45ddcddb674fa8a5cda6587cf2f720f1e7c23c7f
+FileChecksum: SHA256: 8448b6d2631994ec953e0fa002cc8599988ec6f3c28e9e282bb3c54d731fef87
+FileChecksum: SHA512: 1d444ef70b5d684d4351c6f2e3f963d67c39353fd46942a648e67b4e4452dc170db8cf986017f4544b192f744676d862451b2f878a600cdc5514bcd40cd6a269
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-arm64/kubernetes/server/bin/kube-scheduler
+SPDXID: SPDXRef-File-206555a7e551cae
+FileChecksum: SHA1: ab7ec65f761e3a7b6063981931a7700295a3c0ee
+FileChecksum: SHA256: 206555a7e551cae4253f79ad0d690ecfa98666dd4c9cd51b2a8ce88867e884c8
+FileChecksum: SHA512: 324e29553c6c02cfee4857aec280e4136654e2a53f90f43cae2dc28dcf8a91173f1cb23dc8c82349fe99e1fe74263ce758c66fc4e2edf809ead58646ac7d00ed
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-ppc64le/kubernetes/server/bin/kube-controller-manager
+SPDXID: SPDXRef-File-d1a578115765261
+FileChecksum: SHA1: dec6f9c9dcb22d1193d6a7841477d50334f34360
+FileChecksum: SHA256: d1a578115765261333eabdf44d6ee5249ac710cbf064184f3907c9f2b97aef98
+FileChecksum: SHA512: 42e58b745edb14a20550ff686d57fb2f3b06acad98c350b102e247eabf97ecf70a2921b6be2e7001efac04d0e071ea4b2afed88ea643bf49362760a2fab9e66c
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/node/windows-amd64/kubernetes/node/bin/kubectl.exe
+SPDXID: SPDXRef-File-aa1b609c766db73
+FileChecksum: SHA1: bca1ee871e652d2a598cb43327d7ced4c33c769a
+FileChecksum: SHA256: aa1b609c766db735e5b57fea37d0e19d205050c603b6c8f20ec45188356bdc41
+FileChecksum: SHA512: 24e7c93fb07126415f0ecad631bc8e3fee5d131bd50f6d2847f024a7dadee170d05d01b1d5478da7396580d59821297f32f1de4ea3ef4f57a1773a68a4a0ce38
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-amd64/kubernetes/server/bin/kube-scheduler
+SPDXID: SPDXRef-File-288cd65deddeecd
+FileChecksum: SHA1: 499a33036b3e3dec4d3d38f0d3326836391495ae
+FileChecksum: SHA256: 288cd65deddeecd45ebeff57ad9d175f7850115da67ba7456371f19bc9a65907
+FileChecksum: SHA512: 0025d03e9889d24616c7a412f8d553dc836937ebc85059d97702261f953876d3673a5d1e705acd82e263a0a3bbeb3486313b918ee66fe9711c0b3cf23c0a8c81
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-arm/kubernetes/server/bin/apiextensions-apiserver
+SPDXID: SPDXRef-File-492ecc12882f0f5
+FileChecksum: SHA1: db56e7fda747e3b6fe8a8bbcad3f48e5b9568b85
+FileChecksum: SHA256: 492ecc12882f0f5f93fc467b5587bbe50144ce9aeeb4ed34474bb8eb0b088905
+FileChecksum: SHA512: b98ac6ecdba7a3da8cec8b157e830027f454516fae2b012a4a0ccb1fa626c15089a78cf6f5df71123eb221687c3e5229c7f3e30ce83533dfca7c6966f9823766
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-arm64/kubernetes/server/bin/kubectl
+SPDXID: SPDXRef-File-31e6bbc657b13ce
+FileChecksum: SHA1: b3bd14d0fdc7baf2cc76ecd936193b8b32b8cdcd
+FileChecksum: SHA256: 31e6bbc657b13ce1b932bf7589bca41a25b0612b4d897b1f363dc9c5a8080a22
+FileChecksum: SHA512: 364e59e17a5b65189c23958011c96b5e3d4ade7b3eec142ef6f5b1c5765c0c1282d637654fc545e2f78345a48faaa7e0c00d435ff50f2cf8f348fa75b7120659
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-s390x/kubernetes/server/bin/mounter
+SPDXID: SPDXRef-File-9154744688049d8
+FileChecksum: SHA1: 7113ff313cdf02f60179c5480c3d6f78b10ecb88
+FileChecksum: SHA256: 9154744688049d8a958cdcbf12e0315f75347f3fdc56f24e7470a3698d76c399
+FileChecksum: SHA512: 95344309aba1e7569241d3aff22a6d05db1c499358cb75f161208c6270e3ba91a3e6409a2389d2da145ad200cd384a9fa441b3532af9fa03f5226fef03c4fd43
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/client/windows-386/kubernetes/client/bin/kubectl.exe
+SPDXID: SPDXRef-File-9371d5ae10928a0
+FileChecksum: SHA1: 092d1140cd015c36104d0eebacb19dd41190e3fd
+FileChecksum: SHA256: 9371d5ae10928a06128e79fa70b1f0f87ec5e93fb6e831b8d92e89e90ca4bb85
+FileChecksum: SHA512: a635183ce10136187c071f3cf235aa568b8d8366bdc9272b93ceda27db06998a456e9f674cc172a55f8b40e4859aaeccb4f8c76e7ebc256349e6f11e1671431b
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-s390x/kubernetes/server/bin/apiextensions-apiserver
+SPDXID: SPDXRef-File-8fbbdb5c04294a0
+FileChecksum: SHA1: 1a091881533ea60a320a543722bfd83e4d2c15a4
+FileChecksum: SHA256: 8fbbdb5c04294a01a465a0d44cf79ac705ef4fe4030adb0b26d691e062716a16
+FileChecksum: SHA512: dd3865080f794ec60958055feabbebc81d0e92309be3848a737997ebc4458f70b34a84954ed80cdee96d01e9821d9a549c61fcedca4db1959aeb88b234cc4959
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+FileName: workspace/src/k8s.io/kubernetes/_output-v1.18.20/release-stage/server/linux-s390x/kubernetes/server/bin/kube-scheduler
+SPDXID: SPDXRef-File-cc0f953b1bcb1ac
+FileChecksum: SHA1: 9e2eb055e11b21bc3025667ca7623ef640618fb4
+FileChecksum: SHA256: cc0f953b1bcb1ac287a7bd69740b3c48c7598615f2a64d12e465fe5d51fa163d
+FileChecksum: SHA512: f052ab683da5a762148f3d945a1c9746826e0cba23628c72b96838da57cbe8b3947ee1c7965aaa21d5be4b8210cb25db9723e28d73d96e1fbf5d4da493ef51f8
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: NOASSERTION
+
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-859de6f4685d552
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-bc709378c27da45
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-2250530da1080c7
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-4e93f175fddd18a
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-adf022a2f4f8916
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-cfbc45dcb4d4026
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-84375efba93d670
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-b832c90ecf9f27d
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-acf4483ca1564cd
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-952692df5533e88
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-caea1d86b6185f2
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-98961e6da770c75
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-67e9fad1dc2f26b
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-2cc9c637f7ecc97
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-db795ff65280c08
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-78ba557a8d939ef
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-2ba00eb1fab6e9d
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-0f6a60a23421b9a
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-ce9994c3969df91
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-c39f7a22eb71560
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-fc9c666bd081b95
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-51b3373d3ff6ca2
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-c801ac9a1744b77
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-ac6f3393d959fa1
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-55959b355e2ee29
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-9de999c691a4670
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-f87c28067e04da7
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-a126654ea08053e
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-66a9bb8e9843050
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-a706689fa001a8b
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-28bc2e69a6a4e97
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-2684c8dfd222f96
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-f15b6fd059fa3dd
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-4eebeb0de5fbc58
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-f1d1a4883b6b83c
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-7888854019cf2ec
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-046af2416fda784
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-4d3d238a3d5e991
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-1abb29ede52145c
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-c3ef6ab724a6ab2
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-b4afe17fd7c91c4
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-1acf7b60e638e30
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-03bc8c09c889d2a
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-1350128c444e187
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-d2f488caaa2a16a
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-9fbcc32dc0775e9
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-9ef547bcf99c2d7
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-13d304dee07c565
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-7443647586249ac
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-31424a65f9d5b32
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-bc5f6a5c4e273f0
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-efca650264fdb4a
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-c05de4d0dafffc1
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-061217c6cad8fa7
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-6fe2150bc6025dc
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-136e1ed2dadb788
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-27f8841004362f6
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-5f229fc00b720ef
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-aeda69896636a31
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-ea31b058e2435a4
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-fa39d1d3e00f6d7
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-cdac4254b14f665
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-0272d0139d9bd74
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-8448b6d2631994e
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-206555a7e551cae
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-d1a578115765261
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-aa1b609c766db73
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-288cd65deddeecd
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-492ecc12882f0f5
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-31e6bbc657b13ce
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-9154744688049d8
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-9371d5ae10928a0
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-8fbbdb5c04294a0
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-File-cc0f953b1bcb1ac
+
+##### Package: k8s.gcr.io/kube-apiserver-s390x:v1.18.20
+
+PackageName: k8s.gcr.io/kube-apiserver-s390x:v1.18.20
+SPDXID: SPDXRef-Package-k8sgcriokube-apiserver-s390xv11820
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Package: 8f0a62261c2a4454686408f584f6622c845054b9
+
+PackageName: 8f0a62261c2a4454686408f584f6622c845054b9
+SPDXID: SPDXRef-Package-8f0a62261c2a4454686408f584f6622c845054b9
+PackageChecksum: SHA256: 32fa43279df0b9f2b55fe2d44b5685638ce77cc4bc62f33751933163dc13b1dc
+PackageChecksum: SHA512: fbaf86edf44bb3847f3c8c5be405d023dfcb5aa91992f75a35db86c951245e546717f3540ab4e0af7d7c8cab5f61a9d55f5104dfd869e8967b82fa78a9457029
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: aa9f46369369d566246c52fc2bb517334c6371f791a9bcfe28b82f047ed6bf8b/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-apiserver-s390xv11820 CONTAINS SPDXRef-Package-8f0a62261c2a4454686408f584f6622c845054b9
+
+##### Package: 3b768df3b55b7b521b9e15b346e71c0e461af876
+
+PackageName: 3b768df3b55b7b521b9e15b346e71c0e461af876
+SPDXID: SPDXRef-Package-3b768df3b55b7b521b9e15b346e71c0e461af876
+PackageChecksum: SHA256: 50ca6656657acd463b5cd2b8efe3fd9479afc2ef135ac5a9af7b1fc9af634377
+PackageChecksum: SHA512: a9aa54ca7736a406a90db9f0c665d0a1ed0a17c4449a0851b654c6f4c4871908985925d2d18e68d447b2a38d031c3be9483cd0a08686e21352b3858842cf1d68
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: db0409db4f93d7be4ae58f7f72c49b75f3d6293038a7b02274ca89d5edd6b762/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-apiserver-s390xv11820 CONTAINS SPDXRef-Package-3b768df3b55b7b521b9e15b346e71c0e461af876
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-k8sgcriokube-apiserver-s390xv11820
+
+##### Package: k8s.gcr.io/kube-scheduler-amd64:v1.18.20
+
+PackageName: k8s.gcr.io/kube-scheduler-amd64:v1.18.20
+SPDXID: SPDXRef-Package-k8sgcriokube-scheduler-amd64v11820
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Package: 12ffdaec68ab51cbb02747012e0f5a36f6d5ee16
+
+PackageName: 12ffdaec68ab51cbb02747012e0f5a36f6d5ee16
+SPDXID: SPDXRef-Package-12ffdaec68ab51cbb02747012e0f5a36f6d5ee16
+PackageChecksum: SHA256: 91e3a07063b3a34f845ca7990ab4bb6163df9f4ccd6d97cc49750caf3060696f
+PackageChecksum: SHA512: 03b1053b6ce86cbc90af1b1167bf23c4d01d7360500fd7662e862e8c1cbff56cc73cdec6420dfa484561882357ec14b5fd4aef9d896ea5088486773f2285fd04
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 2f2f0536945f6561d5858a15943835eeb88156e7871c52ad7f293732074680e9/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-scheduler-amd64v11820 CONTAINS SPDXRef-Package-12ffdaec68ab51cbb02747012e0f5a36f6d5ee16
+
+##### Package: edfeb7bfec29f0c8a65dfeec109d288662d48353
+
+PackageName: edfeb7bfec29f0c8a65dfeec109d288662d48353
+SPDXID: SPDXRef-Package-edfeb7bfec29f0c8a65dfeec109d288662d48353
+PackageChecksum: SHA256: 13a5ca3da3eb741cf31f65827fedfc353c646a53f8857b7660bdb2c26f4dc382
+PackageChecksum: SHA512: ad69bf8897016b18ba75b3ee37692a8969f51663a0f900767608f1c6f7de3b7a71f38a761101bab83fc2bb70b0e250f69eec70d5c8fc78c950752c350fb8baec
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 2945d3636d9834b91000d8537bc2a7db0e408700b93c93b1a551fde017a074d8/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-scheduler-amd64v11820 CONTAINS SPDXRef-Package-edfeb7bfec29f0c8a65dfeec109d288662d48353
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-k8sgcriokube-scheduler-amd64v11820
+
+##### Package: k8s.gcr.io/conformance-arm:v1.18.20
+
+PackageName: k8s.gcr.io/conformance-arm:v1.18.20
+SPDXID: SPDXRef-Package-k8sgcrioconformance-armv11820
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Package: e598f7e95c1896b5095939f51b97696799143d56
+
+PackageName: e598f7e95c1896b5095939f51b97696799143d56
+SPDXID: SPDXRef-Package-e598f7e95c1896b5095939f51b97696799143d56
+PackageChecksum: SHA256: 28366c296271fb007f2cb4e83b819932a006c98a4c49fd1f5b071a512b5654e4
+PackageChecksum: SHA512: 931b41945b741b8040d22d9663623bb6a79f7b7ec7c96c86825a0c88c85672fc221d81d17b682b4509793a81ee3131c56142815e5ac38525e87004fad59ab261
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 824bc5f6d3e15f3eaab627ac5c8d0f99bfc847d822fec354267f69ad7b8380e6/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-armv11820 CONTAINS SPDXRef-Package-e598f7e95c1896b5095939f51b97696799143d56
+
+##### Package: 47f9f0db53b3b621631072d6f19c93bee078aeae
+
+PackageName: 47f9f0db53b3b621631072d6f19c93bee078aeae
+SPDXID: SPDXRef-Package-47f9f0db53b3b621631072d6f19c93bee078aeae
+PackageChecksum: SHA256: beb6864dd8135586c307402102e88fbe99873fc188a65e831c315ee874d0a001
+PackageChecksum: SHA512: 32f66f7c28a407c39afeea28f20268adb6e6bba9183e87ddb70946ea0548eec351db2b19ae5d666e534ca9073441a619d1b6402826dfd84a937c922ea170fea8
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: f8786ef9c047347802743c964c9ffd14024fa65a19fe1a7bfebb3c087d731647/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-armv11820 CONTAINS SPDXRef-Package-47f9f0db53b3b621631072d6f19c93bee078aeae
+
+##### Package: 846b3a88dff086cd06630b1de203bba64ec8f1b7
+
+PackageName: 846b3a88dff086cd06630b1de203bba64ec8f1b7
+SPDXID: SPDXRef-Package-846b3a88dff086cd06630b1de203bba64ec8f1b7
+PackageChecksum: SHA256: 5f682eac6c77746da208b984e7ebbf526e3af4cc02960c10b152df198623c32d
+PackageChecksum: SHA512: 57e92b37d94b715ca8e89af420e014f2e052c9a7f7c3c40dc1a7664b742e72d7451345f4eaf686e16f104b07f76248199c2eaa43249c2d4f82355fc6efec25b8
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: ba5f9c6161cf116b27d3993970e06e32157150b35fd79986b2dc73f3578f1d88/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-armv11820 CONTAINS SPDXRef-Package-846b3a88dff086cd06630b1de203bba64ec8f1b7
+
+##### Package: f199656129588ec0349661a01d4bc5300bb57c2c
+
+PackageName: f199656129588ec0349661a01d4bc5300bb57c2c
+SPDXID: SPDXRef-Package-f199656129588ec0349661a01d4bc5300bb57c2c
+PackageChecksum: SHA256: 18f1500f705c26746e61c54eac86a1a07cc6c156de1f50038b848fdfe806dc7a
+PackageChecksum: SHA512: da61f7ec3f10f0ee3fa19ddf682c980f2603e1a4ed777238f6b7e995eb52a834a6cdec7110f1467480bca9e4ba984b0a5287dc7f7dea2bec11c9607eb1650bb9
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 940712602299bd4fa971eb976e8ad4b48ea9083c7df125a928f21c60b92a72d1/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-armv11820 CONTAINS SPDXRef-Package-f199656129588ec0349661a01d4bc5300bb57c2c
+
+##### Package: 72a26e17376123ef27f194f703baf5b4a468f35b
+
+PackageName: 72a26e17376123ef27f194f703baf5b4a468f35b
+SPDXID: SPDXRef-Package-72a26e17376123ef27f194f703baf5b4a468f35b
+PackageChecksum: SHA256: 87b017e397510d262a41a5db37a45a17c3ee6b0fbe28e59afd483b20ca851723
+PackageChecksum: SHA512: 07b0075dad190509e2d7b6ceb9945e77fa951a53f5fb6e90b291455cf5a9a01b167f283a77e3577fe3956fbd829ad2e0a5073b22c54ca4950307e264cd81cad8
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: d7aa6cbd50a793c791b264b00137c11990521a3de7ed5b1d533ac651bdd9f6e2/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-armv11820 CONTAINS SPDXRef-Package-72a26e17376123ef27f194f703baf5b4a468f35b
+
+##### Package: 37e24e8783d5e17c4c5c3f3a49e76f4b3f5f3b26
+
+PackageName: 37e24e8783d5e17c4c5c3f3a49e76f4b3f5f3b26
+SPDXID: SPDXRef-Package-37e24e8783d5e17c4c5c3f3a49e76f4b3f5f3b26
+PackageChecksum: SHA256: bc07522acb381f39d90b5ad542f020c9fb2139e4b54a1165d1ba16556bfc1b53
+PackageChecksum: SHA512: 27b240e7926b1765c15e74f8fa8410dec8fa8433c175bcec563dd40bfc2556b6ca9599ed75ce54be725e5d659fe4b3ce757052444a310a81e19ce5a0a7ff7f20
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 55ec438207e2eab6bf8dc282083432db9d1ee35e3b86cf92741be6aeca7176f2/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-armv11820 CONTAINS SPDXRef-Package-37e24e8783d5e17c4c5c3f3a49e76f4b3f5f3b26
+
+##### Package: da75b6c6b97a1df6170edbb0e436075b32d7ea66
+
+PackageName: da75b6c6b97a1df6170edbb0e436075b32d7ea66
+SPDXID: SPDXRef-Package-da75b6c6b97a1df6170edbb0e436075b32d7ea66
+PackageChecksum: SHA256: 9815fdde530bab5930264f2ec65f0361d7cdbc3a4bd3df76fed32b6fe5711497
+PackageChecksum: SHA512: 325d3e166b581e8ebe0e562536d0592693216925a43c0bc7486411bc985a6cae01e1c9346721ffa11760dc86aa11633db360190c7a3ed6948cbe6051cb0d0359
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 03df008d2cfae64594d48d986cd78b9032464ebb1d45187768cd15b8e7bda92b/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-armv11820 CONTAINS SPDXRef-Package-da75b6c6b97a1df6170edbb0e436075b32d7ea66
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-k8sgcrioconformance-armv11820
+
+##### Package: k8s.gcr.io/kube-apiserver-arm64:v1.18.20
+
+PackageName: k8s.gcr.io/kube-apiserver-arm64:v1.18.20
+SPDXID: SPDXRef-Package-k8sgcriokube-apiserver-arm64v11820
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Package: 8887049559ee362f7733259dfbaae19e979f5b7a
+
+PackageName: 8887049559ee362f7733259dfbaae19e979f5b7a
+SPDXID: SPDXRef-Package-8887049559ee362f7733259dfbaae19e979f5b7a
+PackageChecksum: SHA256: 2d921b4847c0b9e668b9c3208203987964707abbaddc1b10447c4014b38cfe4c
+PackageChecksum: SHA512: 6bcb26cbdac86f62423b470992076ab27e59d9049a95bbc73dc84eece771afcecdb40abed022b36814325a3c4b0480eabf7854446cd88b43b14113906c6912ef
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: c4ec2c298bd0dbf2aa1f78f0f8d64b4144dfa359e3792cc27487b18789134f10/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-apiserver-arm64v11820 CONTAINS SPDXRef-Package-8887049559ee362f7733259dfbaae19e979f5b7a
+
+##### Package: 3c18ee713017e53fcad0cc22c9de3241a6b7675d
+
+PackageName: 3c18ee713017e53fcad0cc22c9de3241a6b7675d
+SPDXID: SPDXRef-Package-3c18ee713017e53fcad0cc22c9de3241a6b7675d
+PackageChecksum: SHA256: e467ebc4ee1e9a1833efc37070df22223e06d5f5a1bc7ff40e140375f0ebbb95
+PackageChecksum: SHA512: 74d0dc2e21e4ae028c89036168ff524f6b1643664e2c292ca5d891f6f15693576e5faa413defae8fa69c575ae362e99a8c071fc2e26178da1b5e468317c44883
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 5287e5e601171e53b3418abf7ff3f86b76a2e13953674a15959fc087dd6e6f7e/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-apiserver-arm64v11820 CONTAINS SPDXRef-Package-3c18ee713017e53fcad0cc22c9de3241a6b7675d
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-k8sgcriokube-apiserver-arm64v11820
+
+##### Package: k8s.gcr.io/conformance-ppc64le:v1.18.20
+
+PackageName: k8s.gcr.io/conformance-ppc64le:v1.18.20
+SPDXID: SPDXRef-Package-k8sgcrioconformance-ppc64lev11820
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Package: f279694c74c2b20bff0bd43828483a1ff2bba9dc
+
+PackageName: f279694c74c2b20bff0bd43828483a1ff2bba9dc
+SPDXID: SPDXRef-Package-f279694c74c2b20bff0bd43828483a1ff2bba9dc
+PackageChecksum: SHA256: e6c7d5c33b82a2d4fc007faa735ec484bb4c3ee2ba24224e7bfd607419388988
+PackageChecksum: SHA512: 8210b69e3bc57ceab1da90836adbcab27010a32abb068c21d694d402a1c264f95cac41d60a0f2a5b7448b7eda76c7ffc71902a6fb09e4a24da7f455b0315b722
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 85e60e4f605befb0fd6685cc71cbf91a2027a5ceed16e99565998102d4c7fff7/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-ppc64lev11820 CONTAINS SPDXRef-Package-f279694c74c2b20bff0bd43828483a1ff2bba9dc
+
+##### Package: 5f89216d90300036d0db2ac10b577c0ed5f1e610
+
+PackageName: 5f89216d90300036d0db2ac10b577c0ed5f1e610
+SPDXID: SPDXRef-Package-5f89216d90300036d0db2ac10b577c0ed5f1e610
+PackageChecksum: SHA256: afb123c029599a6d49d76f7a53bb67e220a6f3c4d9c073f05a0223f16f45caad
+PackageChecksum: SHA512: 8b485c8ea5b892b44bc3afa916e650b7da9ff4537c345e32e9c874efa3f230aad1c1061328614b7138c3c685a70605f1d9b4b8c3b42ff9682ebc32a37cd5efb9
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 197ee94f361f439add53c46c1478c4e1f3f9c610f1723a9a7669f62322381514/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-ppc64lev11820 CONTAINS SPDXRef-Package-5f89216d90300036d0db2ac10b577c0ed5f1e610
+
+##### Package: c56ed23ee616187cfdd239dc4ee0ab338b482bfd
+
+PackageName: c56ed23ee616187cfdd239dc4ee0ab338b482bfd
+SPDXID: SPDXRef-Package-c56ed23ee616187cfdd239dc4ee0ab338b482bfd
+PackageChecksum: SHA256: a2bee3e65119082b1d42cfa1d4c7b455eb74264eb7819c44393841a7f27ac40f
+PackageChecksum: SHA512: 2de681e5bd07e1e8a94a1d5dd2d1588d625612d53b9df50d436f05884adbbd880bdb9d01e0fc53206e25b95c44055950c8be2c9c3415b0d61ff3c1cc13f21155
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 2eaf07df1dd785df9d8786ad7d9694ad40c9c92e5e196e7d5a5818cb736178f5/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-ppc64lev11820 CONTAINS SPDXRef-Package-c56ed23ee616187cfdd239dc4ee0ab338b482bfd
+
+##### Package: 99802bcd12366f6ee31e6e49137f65567e87eb30
+
+PackageName: 99802bcd12366f6ee31e6e49137f65567e87eb30
+SPDXID: SPDXRef-Package-99802bcd12366f6ee31e6e49137f65567e87eb30
+PackageChecksum: SHA256: 68c19f0eda8b699df6c62dd256ba795ae244d580a3d0423bbed119892a8fa467
+PackageChecksum: SHA512: de98632b3a16e866144c71704d290ce6588656c763cd692f911182e1d48eb85acfadd87cebb955b2678a90050aec1851c51044e0580ba2c680ebf84f7903724d
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: f0953b3699b0f750750c295899228e29ead12b0741f1c63d0da9caeedfb93a95/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-ppc64lev11820 CONTAINS SPDXRef-Package-99802bcd12366f6ee31e6e49137f65567e87eb30
+
+##### Package: f0fca47f399d3a127384a197c3ebbe45bb9f88e2
+
+PackageName: f0fca47f399d3a127384a197c3ebbe45bb9f88e2
+SPDXID: SPDXRef-Package-f0fca47f399d3a127384a197c3ebbe45bb9f88e2
+PackageChecksum: SHA256: 3e0efa0c47a8740d4665b4be39d38fd6d259e41058370a7cf81d6f31b4fa52cb
+PackageChecksum: SHA512: 55fed1ac723706d78878a542119f76ce158536daf269f4f4ffe6c72bed306bf3ef48d16381ccb47689bf4c0a28f3c9a5b9bd7a5f84377f1fcf4a95f49a9f336c
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: eb4ab430cd45807d06f936d6a9007eba899fcc885a004d018b4527027a4f8bef/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-ppc64lev11820 CONTAINS SPDXRef-Package-f0fca47f399d3a127384a197c3ebbe45bb9f88e2
+
+##### Package: 846b3a88dff086cd06630b1de203bba64ec8f1b7
+
+PackageName: 846b3a88dff086cd06630b1de203bba64ec8f1b7
+SPDXID: SPDXRef-Package-846b3a88dff086cd06630b1de203bba64ec8f1b7
+PackageChecksum: SHA256: 5f682eac6c77746da208b984e7ebbf526e3af4cc02960c10b152df198623c32d
+PackageChecksum: SHA512: 57e92b37d94b715ca8e89af420e014f2e052c9a7f7c3c40dc1a7664b742e72d7451345f4eaf686e16f104b07f76248199c2eaa43249c2d4f82355fc6efec25b8
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: ba5f9c6161cf116b27d3993970e06e32157150b35fd79986b2dc73f3578f1d88/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-ppc64lev11820 CONTAINS SPDXRef-Package-846b3a88dff086cd06630b1de203bba64ec8f1b7
+
+##### Package: 0220b7b94f97ca1317d87d493388bdcd132aae83
+
+PackageName: 0220b7b94f97ca1317d87d493388bdcd132aae83
+SPDXID: SPDXRef-Package-0220b7b94f97ca1317d87d493388bdcd132aae83
+PackageChecksum: SHA256: 70af3c2117613c06cda2cd5a9bc39131bec578e5fc8dc4ef74022260f602fe08
+PackageChecksum: SHA512: ccb1f7d1d65236120c484d940e1a1355937f4419f1e6063038397fee25cba28d53b54f2b73dad13d8ab06e333c6eb49a44653a57393856b9d2aa2f38515616c8
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: c72e874569d1c5097060a68a2783045ae8c54c6995cdaa869da0dcb1d06dc706/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-ppc64lev11820 CONTAINS SPDXRef-Package-0220b7b94f97ca1317d87d493388bdcd132aae83
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-k8sgcrioconformance-ppc64lev11820
+
+##### Package: k8s.gcr.io/kube-apiserver-ppc64le:v1.18.20
+
+PackageName: k8s.gcr.io/kube-apiserver-ppc64le:v1.18.20
+SPDXID: SPDXRef-Package-k8sgcriokube-apiserver-ppc64lev11820
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Package: fe8b98fb0cfe1322ad13ac92f542b75520c48908
+
+PackageName: fe8b98fb0cfe1322ad13ac92f542b75520c48908
+SPDXID: SPDXRef-Package-fe8b98fb0cfe1322ad13ac92f542b75520c48908
+PackageChecksum: SHA256: bb4e383440b2cfee491e4a589deaad0bafe4ce63b42255b7e69fc8421c05cceb
+PackageChecksum: SHA512: d2d96900440c3503f8e2c6cb376c9e4ac83ed8f54c51ab222d34f4d0732b7bd0191942623e0a5ab2979d4d6b648b061b5cce6ee31e2ccd71492faf8957b5a368
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: edadc03aae0cbbec38bc49d778469b9889f4fcac5248d86fadd6a346b39d4faf/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-apiserver-ppc64lev11820 CONTAINS SPDXRef-Package-fe8b98fb0cfe1322ad13ac92f542b75520c48908
+
+##### Package: a5c9f93570191e2ae832a133d061459b59eaa632
+
+PackageName: a5c9f93570191e2ae832a133d061459b59eaa632
+SPDXID: SPDXRef-Package-a5c9f93570191e2ae832a133d061459b59eaa632
+PackageChecksum: SHA256: ffbf2a1e12ab9f23cc48c69b7ff3b25d1b7f36b0e5792b18dffaffdafb3b2210
+PackageChecksum: SHA512: 558bb3deec94b43eecc2c60599972486591270e7e6ce94376c6b394d9ab1de1d2137ee4ec510f8375a6254107bcc1a13f068c9a0d66989c9e22a29d0bfed7552
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: a04ab357bbdc25d388a16974111384af9c9ad83b85f9f48f70d364bf1b2f04ee/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-apiserver-ppc64lev11820 CONTAINS SPDXRef-Package-a5c9f93570191e2ae832a133d061459b59eaa632
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-k8sgcriokube-apiserver-ppc64lev11820
+
+##### Package: k8s.gcr.io/kube-proxy-amd64:v1.18.20
+
+PackageName: k8s.gcr.io/kube-proxy-amd64:v1.18.20
+SPDXID: SPDXRef-Package-k8sgcriokube-proxy-amd64v11820
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Package: 12ffdaec68ab51cbb02747012e0f5a36f6d5ee16
+
+PackageName: 12ffdaec68ab51cbb02747012e0f5a36f6d5ee16
+SPDXID: SPDXRef-Package-12ffdaec68ab51cbb02747012e0f5a36f6d5ee16
+PackageChecksum: SHA256: 91e3a07063b3a34f845ca7990ab4bb6163df9f4ccd6d97cc49750caf3060696f
+PackageChecksum: SHA512: 03b1053b6ce86cbc90af1b1167bf23c4d01d7360500fd7662e862e8c1cbff56cc73cdec6420dfa484561882357ec14b5fd4aef9d896ea5088486773f2285fd04
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 2f2f0536945f6561d5858a15943835eeb88156e7871c52ad7f293732074680e9/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-amd64v11820 CONTAINS SPDXRef-Package-12ffdaec68ab51cbb02747012e0f5a36f6d5ee16
+
+##### Package: a55cdb43d8de8cc9c1f72b5a2cb9886b2768dfa2
+
+PackageName: a55cdb43d8de8cc9c1f72b5a2cb9886b2768dfa2
+SPDXID: SPDXRef-Package-a55cdb43d8de8cc9c1f72b5a2cb9886b2768dfa2
+PackageChecksum: SHA256: b4e54f331697e97c848a20452ca144b0cb0b6ea8c4910829ed90047f339e7614
+PackageChecksum: SHA512: c443b5da8999a83b8d55cf5be637422d6d19c8abc65b10fe7d83a7224dde6ed6c0160d584274d223abdc534797731d5bd679892d5b258a242e809b9657395f7c
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 555d570a079965ac2779c642bdac2d336d92b1957368cd3ea12d3f178786e478/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-amd64v11820 CONTAINS SPDXRef-Package-a55cdb43d8de8cc9c1f72b5a2cb9886b2768dfa2
+
+##### Package: 1e8846d2dc5ee6ccc5f5022675f93e4e00f9e9ac
+
+PackageName: 1e8846d2dc5ee6ccc5f5022675f93e4e00f9e9ac
+SPDXID: SPDXRef-Package-1e8846d2dc5ee6ccc5f5022675f93e4e00f9e9ac
+PackageChecksum: SHA256: b9b82a97c787f20e14e10a9d0d65803215efc614261050bc92b6a3bba25e2f14
+PackageChecksum: SHA512: f6122b5137d91ecdab39ed82b3cc4bcdd2bde01374c5d44b015870a4563a3cdbf46829ac5dba5fae6eab0c4c150a354373923f8449a38a96dcee7e686ac41afa
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 231bf02d560e7d5d93c27f8b8c3cc804f12d0d23bd50a0b38acc1a04dcbf0324/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-amd64v11820 CONTAINS SPDXRef-Package-1e8846d2dc5ee6ccc5f5022675f93e4e00f9e9ac
+
+##### Package: 22799a8058934b00121503251ee9bbf11fce8f0d
+
+PackageName: 22799a8058934b00121503251ee9bbf11fce8f0d
+SPDXID: SPDXRef-Package-22799a8058934b00121503251ee9bbf11fce8f0d
+PackageChecksum: SHA256: 1b55846906e8ff95a330103f76ee27a77f6c00da490a1a56e897e350664929e0
+PackageChecksum: SHA512: 7b315031ac95c4b3d01c93e3b613e8649f8331d5c921eafb831cec9df9312cb9bc0e576aa178d65ee20254ed772ea67acb97ec399c92b15c41be14be7bc440c0
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 6da138f239f35bbfd3a2de8b4306caa1ae17fe0cfdcdbf4e06dade96c482d4bb/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-amd64v11820 CONTAINS SPDXRef-Package-22799a8058934b00121503251ee9bbf11fce8f0d
+
+##### Package: c99208486533b8131443700e0104242ee9e5972c
+
+PackageName: c99208486533b8131443700e0104242ee9e5972c
+SPDXID: SPDXRef-Package-c99208486533b8131443700e0104242ee9e5972c
+PackageChecksum: SHA256: 061bfb5cb861bc9c1c10cda7611bc97ac21c0985ebe47d7139bbceadee383243
+PackageChecksum: SHA512: 46b2a720fdffe726da2ff87012aab478fe70531541ec8795d0c8873d708dec4179bdc69f25b41aed8a9388b4b1527693640f20ce4c8961e550d69db9a464877d
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 06bd5f1e07c55fb6c0ea56a748e4740dd4414b992ff09ff6fb61d70ffbf4faf7/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-amd64v11820 CONTAINS SPDXRef-Package-c99208486533b8131443700e0104242ee9e5972c
+
+##### Package: 48e85d8e3b5009206a21c7b74c074608c6541671
+
+PackageName: 48e85d8e3b5009206a21c7b74c074608c6541671
+SPDXID: SPDXRef-Package-48e85d8e3b5009206a21c7b74c074608c6541671
+PackageChecksum: SHA256: 78dd6c0504a75338b5de51026f1206981a61dab1905fcd40101ac01fa8afdd49
+PackageChecksum: SHA512: 18c8a75497a897350cd9b742fcbf77bf0c781c5e6a1db6d3860eb252c2a127f42411adc4c39adcfcb79c1b1dde4066eb628b220b1049d563922506b315756490
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: aefc6587203a1194414c5cca497536ada425fbd46541085e41c9888eaeb9da35/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-amd64v11820 CONTAINS SPDXRef-Package-48e85d8e3b5009206a21c7b74c074608c6541671
+
+##### Package: 30cd90891df81996282840c1064167b91ac3dda6
+
+PackageName: 30cd90891df81996282840c1064167b91ac3dda6
+SPDXID: SPDXRef-Package-30cd90891df81996282840c1064167b91ac3dda6
+PackageChecksum: SHA256: effd47fa446f97e93762b1f5c74a1b7801da6b916c235155739486cc022bc4c9
+PackageChecksum: SHA512: 511f3c561c5bdba99de89b8c3ec75823f34d1b04a3dc9f861acdf08d0b2c56c634de4ade6ee94171c74173e2aacb3c861bd2187399a9d044211818e7dedd9f4f
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: beb1a3f3c48afe1b35226ab4ad5d6739bf6994e1536672c0e1afd6dbd2109aa4/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-amd64v11820 CONTAINS SPDXRef-Package-30cd90891df81996282840c1064167b91ac3dda6
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-k8sgcriokube-proxy-amd64v11820
+
+##### Package: k8s.gcr.io/hyperkube-arm64:v1.18.20
+
+PackageName: k8s.gcr.io/hyperkube-arm64:v1.18.20
+SPDXID: SPDXRef-Package-k8sgcriohyperkube-arm64v11820
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Package: 8887049559ee362f7733259dfbaae19e979f5b7a
+
+PackageName: 8887049559ee362f7733259dfbaae19e979f5b7a
+SPDXID: SPDXRef-Package-8887049559ee362f7733259dfbaae19e979f5b7a
+PackageChecksum: SHA256: 2d921b4847c0b9e668b9c3208203987964707abbaddc1b10447c4014b38cfe4c
+PackageChecksum: SHA512: 6bcb26cbdac86f62423b470992076ab27e59d9049a95bbc73dc84eece771afcecdb40abed022b36814325a3c4b0480eabf7854446cd88b43b14113906c6912ef
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: c4ec2c298bd0dbf2aa1f78f0f8d64b4144dfa359e3792cc27487b18789134f10/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-arm64v11820 CONTAINS SPDXRef-Package-8887049559ee362f7733259dfbaae19e979f5b7a
+
+##### Package: 9509d14dff393c33d8580693c71313c9b84983a9
+
+PackageName: 9509d14dff393c33d8580693c71313c9b84983a9
+SPDXID: SPDXRef-Package-9509d14dff393c33d8580693c71313c9b84983a9
+PackageChecksum: SHA256: 75a689f79b504d5d241031ddc18aaa7bf84a44a0fe25caee00cf172710b7c9f3
+PackageChecksum: SHA512: d28b3364b1d96531e8cfe6ff3a96970d8c9db026d729b0a0380a316740c300859162c344f2281a4a1327846cb0f08a90b8eb0726a6abfecac324fa839be8d214
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 0bed817a943f93e53ce86f23dbf8ca99a1d358bcfff298c223d4e201d1d756da/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-arm64v11820 CONTAINS SPDXRef-Package-9509d14dff393c33d8580693c71313c9b84983a9
+
+##### Package: 8dca54214ec891bcedad1b90560cee897678de0d
+
+PackageName: 8dca54214ec891bcedad1b90560cee897678de0d
+SPDXID: SPDXRef-Package-8dca54214ec891bcedad1b90560cee897678de0d
+PackageChecksum: SHA256: b07be562de4c7d3a3d207662f3ca055610ddb52216653bc62b30344612c207d1
+PackageChecksum: SHA512: 97adebaa1309e0c54fe009194667b303abe506e2699e72f93ad4f5ba0d5d5ff29e025705324acd9c87de8a9d9244fd2234943bee06e1bc4ce3b27e3647eeaa86
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 3fba57926066523ae228b4c6903bdb8fe0d8c3e674ce17af898cb2aee0be5fbc/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-arm64v11820 CONTAINS SPDXRef-Package-8dca54214ec891bcedad1b90560cee897678de0d
+
+##### Package: 0fcbc95ea69ac8794d8c55a460ef801f26f28ae8
+
+PackageName: 0fcbc95ea69ac8794d8c55a460ef801f26f28ae8
+SPDXID: SPDXRef-Package-0fcbc95ea69ac8794d8c55a460ef801f26f28ae8
+PackageChecksum: SHA256: 6a08baa5b62673d1fd77fde218385fe7db540bf8dbe22d8d7d6931fcdc46f991
+PackageChecksum: SHA512: 441568662831fd9bebafa390fbd89132cdbf2844a6eddea9a48b6af51b3d362b89e7a1657b7ce1d8014266baf53666afbfbfeb12d348ad01ae6feb207677dd4b
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 9eb7f434c3c73feb672641ec17a160b50070febf883bfe710ac97ac9d3e3e1d1/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-arm64v11820 CONTAINS SPDXRef-Package-0fcbc95ea69ac8794d8c55a460ef801f26f28ae8
+
+##### Package: 88df2f3f70fe3ac25142bced04caf0ee3b1d4e92
+
+PackageName: 88df2f3f70fe3ac25142bced04caf0ee3b1d4e92
+SPDXID: SPDXRef-Package-88df2f3f70fe3ac25142bced04caf0ee3b1d4e92
+PackageChecksum: SHA256: 10f674b02ebcfa8ce7d4b1e1fef7829a95e8417768befa6269cfccf5f34018a6
+PackageChecksum: SHA512: 45a6fe812257f128d0ac0d3b050c211f7f88b627513f4d514b20d79842f82edf0271fdb35e9a9659e263c4510c60289ba892c9c4f4f1018141d629ca4f1327e2
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: b5a56ce2bba03c4108def294ebf4b2c75f9e572df556ee33850248423d1100c2/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-arm64v11820 CONTAINS SPDXRef-Package-88df2f3f70fe3ac25142bced04caf0ee3b1d4e92
+
+##### Package: a6a5877f920dd87afde2f2152e11b0faa3d9a2fd
+
+PackageName: a6a5877f920dd87afde2f2152e11b0faa3d9a2fd
+SPDXID: SPDXRef-Package-a6a5877f920dd87afde2f2152e11b0faa3d9a2fd
+PackageChecksum: SHA256: 9b2426d6eb91b7a75021dd2e4a1712342fed4afff3bfd7192aae798a9cc3b2ba
+PackageChecksum: SHA512: 9535a012d1d5155597486355ade41644d1b1421ee1fdff07dd99bc3509c3c7ae8bc766c614f8859fde39a964b313e631d65275fb2c91379e3054505a94eee076
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: deee1e7cd3dc9103c22e2fadf439a7930fa46e4d7f42ec20c93892a603351bcc/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-arm64v11820 CONTAINS SPDXRef-Package-a6a5877f920dd87afde2f2152e11b0faa3d9a2fd
+
+##### Package: 2ce239fa572ce0cd90fad29d25757fd5ecd997fe
+
+PackageName: 2ce239fa572ce0cd90fad29d25757fd5ecd997fe
+SPDXID: SPDXRef-Package-2ce239fa572ce0cd90fad29d25757fd5ecd997fe
+PackageChecksum: SHA256: 36c7196410627cffc0326a57ccee040f73c38269b43f2ee04d19985faac4bc26
+PackageChecksum: SHA512: 2e43d5ce4172abb303e9e7e7694744394acf0a0d328ddc17d8c506d7f18992976d6bb0d6f4b0f6dee1c4b9f6feadf6e56e8197339f17848351a6365a0fc05454
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: b689f67b31f7ae75263d21b802035b92be7545f56a1258152b73f44f2821139b/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-arm64v11820 CONTAINS SPDXRef-Package-2ce239fa572ce0cd90fad29d25757fd5ecd997fe
+
+##### Package: 372f34344ee8832be8b158489196ad33ff9a1010
+
+PackageName: 372f34344ee8832be8b158489196ad33ff9a1010
+SPDXID: SPDXRef-Package-372f34344ee8832be8b158489196ad33ff9a1010
+PackageChecksum: SHA256: 311e475448901a0d62219f7e04603e7a7a88c00d6d81c5211696013b802720fb
+PackageChecksum: SHA512: 16f6cfda01e85a1c902673801818ac410a47600a48f0d805ed20101388119dfeb00cdf07e507a396a6c5d999ccf7e452e7b1b2becadb64fd0b242e883e687a9d
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 683c1f39a82e53b65a2f9db1b73f118d51364520c3f404be27deadf312bb8292/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-arm64v11820 CONTAINS SPDXRef-Package-372f34344ee8832be8b158489196ad33ff9a1010
+
+##### Package: 40a55f9e8baf78a6a3976129c627a61545d5e70d
+
+PackageName: 40a55f9e8baf78a6a3976129c627a61545d5e70d
+SPDXID: SPDXRef-Package-40a55f9e8baf78a6a3976129c627a61545d5e70d
+PackageChecksum: SHA256: da201f5ac72e3d0220721540fd2fea69d708990376ec1228cbc005714bb75057
+PackageChecksum: SHA512: f8381d6dbb365f772ecb5ffc6c972933e4fcc42d60f192a68acf8b987feb3e8a1be69262d5f26aaca2406574c52d5c1276da681aefaa1458d1ad8b545a7020e8
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: e916f464e510050352795f2ae8da2d74d4ad973118f86d9bcced44618e8b5e55/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-arm64v11820 CONTAINS SPDXRef-Package-40a55f9e8baf78a6a3976129c627a61545d5e70d
+
+##### Package: 9ce38a033a3dfa23514ca19e1cd44eda60c36f00
+
+PackageName: 9ce38a033a3dfa23514ca19e1cd44eda60c36f00
+SPDXID: SPDXRef-Package-9ce38a033a3dfa23514ca19e1cd44eda60c36f00
+PackageChecksum: SHA256: 4f87ffbefb8a7e233fdb9f7c88e66fc0abaf2647cfddf5cb2c60e43020e7cc5c
+PackageChecksum: SHA512: 8457f2730db07e359a9330c49c57fb7281d2c788d972861aaa72a7728ccce8dcf87f3e1153f69a0cfec91ca593db46119873cde95ccc8146e7a7eb2b909bcbdb
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 4f37e48885b3fe9343c6db1b31ca83e47d61cf46fe7e994c44551a189ad5ad46/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-arm64v11820 CONTAINS SPDXRef-Package-9ce38a033a3dfa23514ca19e1cd44eda60c36f00
+
+##### Package: ee110a7fc8842cc445dcfb106b800ac8e429f36f
+
+PackageName: ee110a7fc8842cc445dcfb106b800ac8e429f36f
+SPDXID: SPDXRef-Package-ee110a7fc8842cc445dcfb106b800ac8e429f36f
+PackageChecksum: SHA256: 8eded6d47762b98a80a55777e4f8284cfa9e3fad4bab5577d273a91097a5e782
+PackageChecksum: SHA512: 2c27710b0b08ddfdd85681120bba6f0548204fc95e46c015115b4315d51ed40597c9a88f2adf324073ace16b7d3024ead9f300182dc966568fca2a1d5b8902ec
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 46a92aa7673d60108d6608f095d741668eea52debc8e97ed0f55a17de03576e6/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-arm64v11820 CONTAINS SPDXRef-Package-ee110a7fc8842cc445dcfb106b800ac8e429f36f
+
+##### Package: e8b0f4dae9cae3ebada5a12a72aeae4fc06a8bfb
+
+PackageName: e8b0f4dae9cae3ebada5a12a72aeae4fc06a8bfb
+SPDXID: SPDXRef-Package-e8b0f4dae9cae3ebada5a12a72aeae4fc06a8bfb
+PackageChecksum: SHA256: 0750857dd696317388a59ab029d0ce4715e5a888ee77be2b9991a74eb06726ed
+PackageChecksum: SHA512: 550aea8925a294d6374c7387daf125836b9cc2796592b4835fe921d3cdd6085a3ac4c1c0f9f9ae2ce357cb116c3784d0c01336b1df53b788cc6d39a7e37e4f4c
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: d647e3039943cec14f801896a1913abf5b621562ac21b0636661e6794093bf7b/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-arm64v11820 CONTAINS SPDXRef-Package-e8b0f4dae9cae3ebada5a12a72aeae4fc06a8bfb
+
+##### Package: 098b889414d67a7a31382635cef0700152297888
+
+PackageName: 098b889414d67a7a31382635cef0700152297888
+SPDXID: SPDXRef-Package-098b889414d67a7a31382635cef0700152297888
+PackageChecksum: SHA256: c935ee63e83cbbfb3bb0aff49d6b0232b13b3251ed00e9e65a50ba1a38fe7447
+PackageChecksum: SHA512: ba04e033aea7332073b6c10ec11f7b7aabd3a23f410fdc9636ef160209efd6cde024430453eecaf29af9cb2418960650920897a7506e6f757ad2b821c3a45222
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 70bbefd1bbc82cce954b08752a95967be4809f5babe33ed532aeb6ae42d6663f/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-arm64v11820 CONTAINS SPDXRef-Package-098b889414d67a7a31382635cef0700152297888
+
+##### Package: 72941e371a2ae687942e013409fcec6dd27ee934
+
+PackageName: 72941e371a2ae687942e013409fcec6dd27ee934
+SPDXID: SPDXRef-Package-72941e371a2ae687942e013409fcec6dd27ee934
+PackageChecksum: SHA256: 217aff3214d7fb22371070f44e764f77027c891ace428bfb3e100535f2a3ce20
+PackageChecksum: SHA512: 8b996cc0032b8b721a06cd82180c12d1009a32a766e758b1a013b2f927b0b8cda10e121443ea2e8bd9e2f3d3c12aaf647c9b76bc1a60e1a9eaecb6a2c211cbd4
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 29db75a4bb7bb192c40168e46d03d28f47f0ca598ba90cbe2b73fa7f3423b26a/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-arm64v11820 CONTAINS SPDXRef-Package-72941e371a2ae687942e013409fcec6dd27ee934
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-k8sgcriohyperkube-arm64v11820
+
+##### Package: k8s.gcr.io/kube-proxy-ppc64le:v1.18.20
+
+PackageName: k8s.gcr.io/kube-proxy-ppc64le:v1.18.20
+SPDXID: SPDXRef-Package-k8sgcriokube-proxy-ppc64lev11820
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Package: 396a330ba919ff60cce3cbab02426fc139d0863c
+
+PackageName: 396a330ba919ff60cce3cbab02426fc139d0863c
+SPDXID: SPDXRef-Package-396a330ba919ff60cce3cbab02426fc139d0863c
+PackageChecksum: SHA256: d2a227758e33fd000f0b2d11e9242d116e1727cabc7585a54eaed7d0168dd1ca
+PackageChecksum: SHA512: acaeb0ec22529806e915e9a7a0b0d03e7e092282feaaf201e30fc17ce35a0a5fb4b4f656607c49f4ae48c390d91404070e1c8a720bfeb36423bf4b5b85d05149
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: dd1f72be93e6b11b3ad78f30c9e429f8773c5f1a47526e9c21c40b632d018083/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-ppc64lev11820 CONTAINS SPDXRef-Package-396a330ba919ff60cce3cbab02426fc139d0863c
+
+##### Package: f3b84b610cb4baf765a777203fed32062a4b7461
+
+PackageName: f3b84b610cb4baf765a777203fed32062a4b7461
+SPDXID: SPDXRef-Package-f3b84b610cb4baf765a777203fed32062a4b7461
+PackageChecksum: SHA256: df1ed8376b866bce54977229cf60a454df4ac6cee5e208a6d9da85e2049d3cdb
+PackageChecksum: SHA512: dea619e245cd234aac6ff1265365196098a0d1d490c5420a926967985dfc8053ab3e6ccfce5b24e4d68f12dec0e6679a2238e2cff98531382fc456655615a174
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 5bfc938f07ad706a2cd63fcde577d2d81d7e839c1f904e45d8e167ce25881505/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-ppc64lev11820 CONTAINS SPDXRef-Package-f3b84b610cb4baf765a777203fed32062a4b7461
+
+##### Package: fe8b98fb0cfe1322ad13ac92f542b75520c48908
+
+PackageName: fe8b98fb0cfe1322ad13ac92f542b75520c48908
+SPDXID: SPDXRef-Package-fe8b98fb0cfe1322ad13ac92f542b75520c48908
+PackageChecksum: SHA256: bb4e383440b2cfee491e4a589deaad0bafe4ce63b42255b7e69fc8421c05cceb
+PackageChecksum: SHA512: d2d96900440c3503f8e2c6cb376c9e4ac83ed8f54c51ab222d34f4d0732b7bd0191942623e0a5ab2979d4d6b648b061b5cce6ee31e2ccd71492faf8957b5a368
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: edadc03aae0cbbec38bc49d778469b9889f4fcac5248d86fadd6a346b39d4faf/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-ppc64lev11820 CONTAINS SPDXRef-Package-fe8b98fb0cfe1322ad13ac92f542b75520c48908
+
+##### Package: daa693e8219a684a0f8b99a3b37726d6d47bd4b0
+
+PackageName: daa693e8219a684a0f8b99a3b37726d6d47bd4b0
+SPDXID: SPDXRef-Package-daa693e8219a684a0f8b99a3b37726d6d47bd4b0
+PackageChecksum: SHA256: 2e9867095d81c1f2172d210e3900923af61ecadd6150e96257be8a62da88e92f
+PackageChecksum: SHA512: 90618b689fdbf9328f7c34408a161fc250f896ca70f6ef79e5cfb23fef716f6cbfeb414665c7d76be15de46021e50124a6d46789fe0a9412bc1a4ebdab1135bf
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: f5d74e74ea46806de5da7d24657e71b551dce797862d334e8fd3139fe30af5a7/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-ppc64lev11820 CONTAINS SPDXRef-Package-daa693e8219a684a0f8b99a3b37726d6d47bd4b0
+
+##### Package: 261deb676d04b9884c00805b5a00d470d82216e0
+
+PackageName: 261deb676d04b9884c00805b5a00d470d82216e0
+SPDXID: SPDXRef-Package-261deb676d04b9884c00805b5a00d470d82216e0
+PackageChecksum: SHA256: b9e87e00c0a0bebfda4e97f2e5e9d6f5a79bf02128f9f863376a48e864bc4a26
+PackageChecksum: SHA512: d227d90ba74faaa849247b90d47d00fd2bb087619baae6647049da2fb35b63067098f97240e12d80023d0ff74665e204ab864639615cd2e776b5559ab0400a8d
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 72ef9c9a0ac89690f67a2b10e1ef54ced308484b3a2a85ccdafaf58e58e2fedc/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-ppc64lev11820 CONTAINS SPDXRef-Package-261deb676d04b9884c00805b5a00d470d82216e0
+
+##### Package: 9155ea90e4a0ce7826f70d011a80dce7af0bfd39
+
+PackageName: 9155ea90e4a0ce7826f70d011a80dce7af0bfd39
+SPDXID: SPDXRef-Package-9155ea90e4a0ce7826f70d011a80dce7af0bfd39
+PackageChecksum: SHA256: 11f65e5c512cfb850744a310684342e2becc2588d248994fc4d8b6616933b68f
+PackageChecksum: SHA512: 7ec719b71ba503580ec721393a0c2a1ae1f3d508afe77586b1c076bce8165b0ca9bbd78fcfcf6ed9afe9017a7d23aec87e4082e50e42220ff3220ad56bef8821
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: d962bc415bbbe2862173168aad606c65690b160eed0453ebc68658f7ac2d4919/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-ppc64lev11820 CONTAINS SPDXRef-Package-9155ea90e4a0ce7826f70d011a80dce7af0bfd39
+
+##### Package: 36c11506304ce6ca11fb6fa2556dd3f62725489a
+
+PackageName: 36c11506304ce6ca11fb6fa2556dd3f62725489a
+SPDXID: SPDXRef-Package-36c11506304ce6ca11fb6fa2556dd3f62725489a
+PackageChecksum: SHA256: 226f6d997e4540c988e0ebb963714944f58ed6fa30d94b03014433d82a2b3afc
+PackageChecksum: SHA512: aa9f917dccc05c9b3b746f0e4ae0b60afd2eff072f4d25e761717f93fc7d3ccd7654b08670a4b7db17bcf257428d72e81b893225b0a6fe39991e4db2198a938c
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: b338f99c38165c6732fc9058ea5de8e77e81fa2fd010f5a70b11cec32d1b3766/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-ppc64lev11820 CONTAINS SPDXRef-Package-36c11506304ce6ca11fb6fa2556dd3f62725489a
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-k8sgcriokube-proxy-ppc64lev11820
+
+##### Package: k8s.gcr.io/hyperkube-s390x:v1.18.20
+
+PackageName: k8s.gcr.io/hyperkube-s390x:v1.18.20
+SPDXID: SPDXRef-Package-k8sgcriohyperkube-s390xv11820
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Package: a6a1c3a27f9bf368c0a17cbe7d25e34d9bbfda7d
+
+PackageName: a6a1c3a27f9bf368c0a17cbe7d25e34d9bbfda7d
+SPDXID: SPDXRef-Package-a6a1c3a27f9bf368c0a17cbe7d25e34d9bbfda7d
+PackageChecksum: SHA256: 3d548689a27c1419d23dfd42018951fa489fa5f3474802dc4dcc176105156cb7
+PackageChecksum: SHA512: 765b2f2de2ddf2dec713151a847048999a6cf77f075391a1ca4ac81590f73e422713f9bda23f543076b3310d4dd41c722a50be828c2f4a7dd959225dce16d894
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 361ed291ad1714b68750dcde26afbab6572d900e32bfb49b9d4e1e93e57007f3/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-s390xv11820 CONTAINS SPDXRef-Package-a6a1c3a27f9bf368c0a17cbe7d25e34d9bbfda7d
+
+##### Package: 2c51fe268c4ee8ab0ee435e6b548f6a6289a6886
+
+PackageName: 2c51fe268c4ee8ab0ee435e6b548f6a6289a6886
+SPDXID: SPDXRef-Package-2c51fe268c4ee8ab0ee435e6b548f6a6289a6886
+PackageChecksum: SHA256: 610097598f716fa9199f5e1bf268d7b0de914e80d405d309272c1d2c3a226a54
+PackageChecksum: SHA512: 512db16ffa2d59b3f5ef4b4332b78993747d06d4f5d537cdfa886d125d01c65b61705d6bfdd3013beb0311a831737efbfc48c8ee3a7a38159ef1299acf4a1632
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 66d884f3da9ef03908010c634775dc11adb2ebf81c3c5f9c50ed60af798e2718/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-s390xv11820 CONTAINS SPDXRef-Package-2c51fe268c4ee8ab0ee435e6b548f6a6289a6886
+
+##### Package: 10a23ecdf250d8a8e716f4515ddbd272b49cae23
+
+PackageName: 10a23ecdf250d8a8e716f4515ddbd272b49cae23
+SPDXID: SPDXRef-Package-10a23ecdf250d8a8e716f4515ddbd272b49cae23
+PackageChecksum: SHA256: 39b8ec0906becbc80435493eb65be9aaa89e7f0895bd7bd65cb6497672dc3916
+PackageChecksum: SHA512: cdd1d4cb26d37b2cefed33c7f660f9e767a8aa70f66f82eee0287aaf5a8a26cfddacf031570af37cff312e70d51f381169693be35884c1a752c22ff7dcd54935
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 56c7981e557884ae257b89d727263d28da2480f490d551d8c12a7a3218a7af96/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-s390xv11820 CONTAINS SPDXRef-Package-10a23ecdf250d8a8e716f4515ddbd272b49cae23
+
+##### Package: 636a615a2e4541a569af24e2e52a088febc0b4ae
+
+PackageName: 636a615a2e4541a569af24e2e52a088febc0b4ae
+SPDXID: SPDXRef-Package-636a615a2e4541a569af24e2e52a088febc0b4ae
+PackageChecksum: SHA256: 76816a9964ac7b31a5f2702e355f16cc77c64e7e7b43aba29f0a980c91a81a6a
+PackageChecksum: SHA512: ed5fa9406182b31c0a2c71de2de7fb44dd8045c6d1ffc25b1b8280c9a29ad396e036a0c1d5136767421d467d4d202cf754a5a33d6160f82442c6140651d582d9
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 470321862f66c2e65ff496e7e4db12e970fbb4fa6bec4659860493d3bd451ceb/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-s390xv11820 CONTAINS SPDXRef-Package-636a615a2e4541a569af24e2e52a088febc0b4ae
+
+##### Package: daf338fd3827019ae9a7fff763fd830aa0b0b9e6
+
+PackageName: daf338fd3827019ae9a7fff763fd830aa0b0b9e6
+SPDXID: SPDXRef-Package-daf338fd3827019ae9a7fff763fd830aa0b0b9e6
+PackageChecksum: SHA256: fc7fb0b927e46c62dd835d56b73ff4eb0e821398720ba46956ae51f0edde1883
+PackageChecksum: SHA512: b245240090be14c8165c93a51a5e3ee80ed27f578e1309c52596b8b84bea60e0936efc9a44f4efea5f951ea379104696bbaf5b079dd000a6279fd59bfba9cc49
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: cbcb979360415c96af18fba89cdab833aa5fd0707b90ab69b38c6ac6ec9cb4ea/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-s390xv11820 CONTAINS SPDXRef-Package-daf338fd3827019ae9a7fff763fd830aa0b0b9e6
+
+##### Package: 6bb26d1792b174845febcf69d7a06eec992cda14
+
+PackageName: 6bb26d1792b174845febcf69d7a06eec992cda14
+SPDXID: SPDXRef-Package-6bb26d1792b174845febcf69d7a06eec992cda14
+PackageChecksum: SHA256: dcc4ec8e7d4bc03a544185bbe7e6b0cd36e2b8b9e8d01f90ab0700933bf9ecca
+PackageChecksum: SHA512: 2b15a5b9df3c6b815430bd607159a6731bc8e3433ec536d6f7b2072bb28d3d8e59126fa9753cc82c5fb29ae3c8f03a955dd480aabd3889ddce54405d908e932f
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 63571e2fcbe497b274c8a4358bdc7c7e37f58c28e68eb0bf2a42e31b69fb1684/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-s390xv11820 CONTAINS SPDXRef-Package-6bb26d1792b174845febcf69d7a06eec992cda14
+
+##### Package: fc40508d6c05e9bcaddec77e253a8138a95775d0
+
+PackageName: fc40508d6c05e9bcaddec77e253a8138a95775d0
+SPDXID: SPDXRef-Package-fc40508d6c05e9bcaddec77e253a8138a95775d0
+PackageChecksum: SHA256: f3bd21740c0a2b7345491a101bf4cccbc2b1d84c2922de1df134730d03d17cf7
+PackageChecksum: SHA512: 655ad3f92d1f97dd7469261b33a77731b618036929357260b38b28e1033e9812a949288150653bc75985196e3e9da296b7b979ea9bfb93df83c84edd51502444
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 5c1276ec59fd0b1416ac2d4cd602c67ddb90811e36c8fb311a98e4754f5eb4e7/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-s390xv11820 CONTAINS SPDXRef-Package-fc40508d6c05e9bcaddec77e253a8138a95775d0
+
+##### Package: 8c1a4ceea65518ad6322b6028164f9cf981e2031
+
+PackageName: 8c1a4ceea65518ad6322b6028164f9cf981e2031
+SPDXID: SPDXRef-Package-8c1a4ceea65518ad6322b6028164f9cf981e2031
+PackageChecksum: SHA256: 05dc90ba15f2d966f4efcec68c0bad315f392c1563af3c461dc8c9e0e8cc2b1b
+PackageChecksum: SHA512: 1a3565f20f71e8f598d4c5f40fda9e2bf77b9e2e6665e735fd185ddc7e831a46fc62c05fb9ef0b0793f7393999515eaafb5a5e8928640e2974573280bea39c4a
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: ae9e8bc6fc313ca5cbe3a78b5edc67135b070f9a9cfb4f85cfe091b7dd659ffa/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-s390xv11820 CONTAINS SPDXRef-Package-8c1a4ceea65518ad6322b6028164f9cf981e2031
+
+##### Package: 8f0a62261c2a4454686408f584f6622c845054b9
+
+PackageName: 8f0a62261c2a4454686408f584f6622c845054b9
+SPDXID: SPDXRef-Package-8f0a62261c2a4454686408f584f6622c845054b9
+PackageChecksum: SHA256: 32fa43279df0b9f2b55fe2d44b5685638ce77cc4bc62f33751933163dc13b1dc
+PackageChecksum: SHA512: fbaf86edf44bb3847f3c8c5be405d023dfcb5aa91992f75a35db86c951245e546717f3540ab4e0af7d7c8cab5f61a9d55f5104dfd869e8967b82fa78a9457029
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: aa9f46369369d566246c52fc2bb517334c6371f791a9bcfe28b82f047ed6bf8b/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-s390xv11820 CONTAINS SPDXRef-Package-8f0a62261c2a4454686408f584f6622c845054b9
+
+##### Package: 803d4c397712532e361d4d14df3df42608390000
+
+PackageName: 803d4c397712532e361d4d14df3df42608390000
+SPDXID: SPDXRef-Package-803d4c397712532e361d4d14df3df42608390000
+PackageChecksum: SHA256: f91409cdfe7a6f518692bd76b7ff8ede573bcc438f7458a1d87d06c0e91b4587
+PackageChecksum: SHA512: 4eeb6dc1840e654bd7d4e6bb3b186581d7fce1a2ab0e33f8820a2c21ecd9d533fe62707f03e06217df241b78b19fb3f56a416115429b845fb258e928a305641d
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 94422ee11d45e4fbdfdc96173898eea49d7c71b9cca9068fc780133ed4756c8d/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-s390xv11820 CONTAINS SPDXRef-Package-803d4c397712532e361d4d14df3df42608390000
+
+##### Package: e6d62dce56658e3d485237eb10480e83b18f4c35
+
+PackageName: e6d62dce56658e3d485237eb10480e83b18f4c35
+SPDXID: SPDXRef-Package-e6d62dce56658e3d485237eb10480e83b18f4c35
+PackageChecksum: SHA256: 012c415e43ba872f6df5398469596d28e7a03dac00a7e947d36fd7d815e31b8d
+PackageChecksum: SHA512: f96dfde1513d81fb60af4acdadc02feaace941caa703d3eff1767d9ab78e7e3b703ad1d017374ffc2f61ff0004d7d47921f29b8d27554d20fdba70bade6eca5b
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 06c8c78297111c55c583a94889f806f36b19532a889d8212eda297b3ff808d62/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-s390xv11820 CONTAINS SPDXRef-Package-e6d62dce56658e3d485237eb10480e83b18f4c35
+
+##### Package: 440ee209513c0f0c48b4fb72506ab50f2c382a02
+
+PackageName: 440ee209513c0f0c48b4fb72506ab50f2c382a02
+SPDXID: SPDXRef-Package-440ee209513c0f0c48b4fb72506ab50f2c382a02
+PackageChecksum: SHA256: 1742074351c3bb13d3a275558b53937cfe6942274f5b6139e4f4167bf378cad9
+PackageChecksum: SHA512: 5d472ef8fba7df4566480099190afc44e7d7846209f359b862e2a42d11ff39666da5a46cf1e09fef6db67311fe06915e12e9fbfb1e29aa44abbb14fe9a605684
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 70951c973885972c7abc7c3e65ffbde2dff9c4d435ccb730c8f48abc9ebb3672/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-s390xv11820 CONTAINS SPDXRef-Package-440ee209513c0f0c48b4fb72506ab50f2c382a02
+
+##### Package: 10fad502c144ed7e3444c79af58639d5ff5bb3d9
+
+PackageName: 10fad502c144ed7e3444c79af58639d5ff5bb3d9
+SPDXID: SPDXRef-Package-10fad502c144ed7e3444c79af58639d5ff5bb3d9
+PackageChecksum: SHA256: 8c652777b0a7adf2095d74a418e7d20a276ec07f8c8f9fc222626c283abe299d
+PackageChecksum: SHA512: ffee6d79603149f80962a75942c37228670d69f026a21df53a67ed1cb0fb3b1af8bf2166c9194d2f61170f3374f0f8e9d97aa7a36518ddc755ea5546eb0f2ee2
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 39ea64cc4651308b08b73a34ae6a615b394a0d7f21c9ab9fae46f967259097c0/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-s390xv11820 CONTAINS SPDXRef-Package-10fad502c144ed7e3444c79af58639d5ff5bb3d9
+
+##### Package: bfe657cd79457b9659a22e2e9b985e4c877510f0
+
+PackageName: bfe657cd79457b9659a22e2e9b985e4c877510f0
+SPDXID: SPDXRef-Package-bfe657cd79457b9659a22e2e9b985e4c877510f0
+PackageChecksum: SHA256: ee61e548ddd6f761e262bcc40c8495673d71f838c44c6a5f7c18e5006454d21c
+PackageChecksum: SHA512: d74d14429c8650ac7e6c3f2d93e8f9d1633a28032c0015efe5e15f03bf7b911cf303e210647e993272ccde2b3e0f5eaa35745336432b3aa2efbe471194861b41
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: c6b6dd33d13484e7dccde6c6d13e48f2b0959e3d360007df6431342dd7eeb99f/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-s390xv11820 CONTAINS SPDXRef-Package-bfe657cd79457b9659a22e2e9b985e4c877510f0
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-k8sgcriohyperkube-s390xv11820
+
+##### Package: k8s.gcr.io/kube-controller-manager-s390x:v1.18.20
+
+PackageName: k8s.gcr.io/kube-controller-manager-s390x:v1.18.20
+SPDXID: SPDXRef-Package-k8sgcriokube-controller-manager-s390xv11820
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Package: 8f0a62261c2a4454686408f584f6622c845054b9
+
+PackageName: 8f0a62261c2a4454686408f584f6622c845054b9
+SPDXID: SPDXRef-Package-8f0a62261c2a4454686408f584f6622c845054b9
+PackageChecksum: SHA256: 32fa43279df0b9f2b55fe2d44b5685638ce77cc4bc62f33751933163dc13b1dc
+PackageChecksum: SHA512: fbaf86edf44bb3847f3c8c5be405d023dfcb5aa91992f75a35db86c951245e546717f3540ab4e0af7d7c8cab5f61a9d55f5104dfd869e8967b82fa78a9457029
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: aa9f46369369d566246c52fc2bb517334c6371f791a9bcfe28b82f047ed6bf8b/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-controller-manager-s390xv11820 CONTAINS SPDXRef-Package-8f0a62261c2a4454686408f584f6622c845054b9
+
+##### Package: 11a2ae27f0788d11c5a2e7416ce61eb3f050d698
+
+PackageName: 11a2ae27f0788d11c5a2e7416ce61eb3f050d698
+SPDXID: SPDXRef-Package-11a2ae27f0788d11c5a2e7416ce61eb3f050d698
+PackageChecksum: SHA256: e5a06f139d71ea2165f7a2c38168a47cfc045d64b788ec7b9c403c1b50b5f8e0
+PackageChecksum: SHA512: 2174500a1a895a7f382c074a844f37e882f3cf34fbee8ea685789f71896273d25ac03ec6d1b9430ede595977861b59e962e67ae1c1ceef6fa5c83b706ac9480c
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: ce06012dcc3e5ff8e12179077931fd7939c1f3244e72a54d2e7b09b633ce2036/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-controller-manager-s390xv11820 CONTAINS SPDXRef-Package-11a2ae27f0788d11c5a2e7416ce61eb3f050d698
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-k8sgcriokube-controller-manager-s390xv11820
+
+##### Package: k8s.gcr.io/hyperkube-arm:v1.18.20
+
+PackageName: k8s.gcr.io/hyperkube-arm:v1.18.20
+SPDXID: SPDXRef-Package-k8sgcriohyperkube-armv11820
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Package: 9d4b1e2e4451b5f0fbbcde4b79b2bde9912d148a
+
+PackageName: 9d4b1e2e4451b5f0fbbcde4b79b2bde9912d148a
+SPDXID: SPDXRef-Package-9d4b1e2e4451b5f0fbbcde4b79b2bde9912d148a
+PackageChecksum: SHA256: fddffaf86c32de17bb300bd76c90ceff9f939a897e4814d73d2b68656b7217f8
+PackageChecksum: SHA512: 28b2a3e55d1e603372a3737266c6987aa6fa9230bbe76962a4deceb0631f3d6c12aa5d0168e0ff256ece524b77e12ed0f0d512e731286d2f87750732c0a83b89
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 6bf1848f45fef70f85a2c75123445e23d7b6369c7119aee9c50dae984b6902b6/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-armv11820 CONTAINS SPDXRef-Package-9d4b1e2e4451b5f0fbbcde4b79b2bde9912d148a
+
+##### Package: 1fb4473c39e72e17af2c9f4f73c0a931a1a3855d
+
+PackageName: 1fb4473c39e72e17af2c9f4f73c0a931a1a3855d
+SPDXID: SPDXRef-Package-1fb4473c39e72e17af2c9f4f73c0a931a1a3855d
+PackageChecksum: SHA256: 72210e3ab636b75edb6020a9f72cac40da21339abba39f4dacf5a3044b6f4741
+PackageChecksum: SHA512: 8749e7bb1b5537b9e01b977a775f136d00faf90150a554560be1df1e4bd9e9c2cd94abc0bc2ebce89befda69e38ee36e59cda61cebdb1a1a3f5168234d37a9d8
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 1d44648e274d29fe97b6d016f9b545e332cdd86bf83a2c83c0d0a290569bb33a/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-armv11820 CONTAINS SPDXRef-Package-1fb4473c39e72e17af2c9f4f73c0a931a1a3855d
+
+##### Package: 4a7aa64e885d55a29c524fb7090050f0ba26a4b4
+
+PackageName: 4a7aa64e885d55a29c524fb7090050f0ba26a4b4
+SPDXID: SPDXRef-Package-4a7aa64e885d55a29c524fb7090050f0ba26a4b4
+PackageChecksum: SHA256: 56484b46a24b6f40b7444bae4ecd9502bf8100feb13fe7dfbd5269f4ac5fc4a8
+PackageChecksum: SHA512: 902d7e23367c5b138bf9e334631947c56b8617d13d484fe84846d72b2c93b2dfb45f0dee6474bf0bed07bd75693d0a5b1ad5261730a499d59bf95387c2d8d7b8
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 51e59808d329a60c91967651b6a01f94139aec52aae03e09b9bf566cbab44e8e/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-armv11820 CONTAINS SPDXRef-Package-4a7aa64e885d55a29c524fb7090050f0ba26a4b4
+
+##### Package: ad0496d0ac0917196b90af14d4c81f480a0f545d
+
+PackageName: ad0496d0ac0917196b90af14d4c81f480a0f545d
+SPDXID: SPDXRef-Package-ad0496d0ac0917196b90af14d4c81f480a0f545d
+PackageChecksum: SHA256: 25d016f1befe2b2f71fb644cf815b35cbf2c3f427eef7a478dd6259911c25baa
+PackageChecksum: SHA512: d1157aa74546bb7cfd827be5b0b68614b2eafc1b34f8dc03b252d572b75b395e89f473b4531853a832833bd92a37a58491e0c0a7b10f3accec527653f52e24bf
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 795d8384c74a0901e45fd000f50be9c8739f328fca9cf10b841c235e9addb85a/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-armv11820 CONTAINS SPDXRef-Package-ad0496d0ac0917196b90af14d4c81f480a0f545d
+
+##### Package: aee513eb52c4e70c2b227765c3b3da559dd78d9b
+
+PackageName: aee513eb52c4e70c2b227765c3b3da559dd78d9b
+SPDXID: SPDXRef-Package-aee513eb52c4e70c2b227765c3b3da559dd78d9b
+PackageChecksum: SHA256: b0357fa3ccd7dc9c43d020597a0fef4ef952fd014bc0e9aec1211e3da7ee1a7e
+PackageChecksum: SHA512: 33e9d41482b41d2ae894ab497751d0af4b06767bff6d9393602f5f22f1267f091afb94570328825205068e81f92ea84d94f7e199fadb351ea275e047073ac4e3
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 807d94216cef2ba63074bd453a9df0c57fb4e10ca6cb4c9808e39238586661c8/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-armv11820 CONTAINS SPDXRef-Package-aee513eb52c4e70c2b227765c3b3da559dd78d9b
+
+##### Package: 25dd3d4a8799cecf40c20fa189fbe6969d172917
+
+PackageName: 25dd3d4a8799cecf40c20fa189fbe6969d172917
+SPDXID: SPDXRef-Package-25dd3d4a8799cecf40c20fa189fbe6969d172917
+PackageChecksum: SHA256: a175038444ba078eb10f09050476f40670e9bfd2a3cdcf86e0ade22e623def69
+PackageChecksum: SHA512: c25ae1248577eedff20fe1ba46bfc96f6e996785fc3d1cff3195afbc54a7a43e34afe066bc574409443896db4486d44ff494571554ce29e1bab7c84c257c5dc3
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: a5caa6946362209dbcc779fb611ec1fe93d8300c41fcffa74410b1f40ab1de96/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-armv11820 CONTAINS SPDXRef-Package-25dd3d4a8799cecf40c20fa189fbe6969d172917
+
+##### Package: 324ef9aea58bbf38a84698456787b80f7afa4bcf
+
+PackageName: 324ef9aea58bbf38a84698456787b80f7afa4bcf
+SPDXID: SPDXRef-Package-324ef9aea58bbf38a84698456787b80f7afa4bcf
+PackageChecksum: SHA256: ee59f6844caf6bf200f2410384d27063bf6cc919eb3186443718e9492de8c976
+PackageChecksum: SHA512: d1e60e0a6fc30fb483d7c37ef6cadd6f712a2151c0298d9c5328ad677db698af41273d6301d6422008b445acb4dbe13641047c976b570a7290e3d11b06c0b488
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: ec71b6d7c76dfeef71c39d0f444c11d8835f6f528f78e3997146be22818a4196/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-armv11820 CONTAINS SPDXRef-Package-324ef9aea58bbf38a84698456787b80f7afa4bcf
+
+##### Package: ee746a587ecbcd7caa04a5fcb958d9cadddaad9b
+
+PackageName: ee746a587ecbcd7caa04a5fcb958d9cadddaad9b
+SPDXID: SPDXRef-Package-ee746a587ecbcd7caa04a5fcb958d9cadddaad9b
+PackageChecksum: SHA256: 7f3a798996e55e0b790946433cd01f33830efd5dfa4b9dc8c242db3fe070d3c7
+PackageChecksum: SHA512: 06d9e35effa80e3e51a160a96c14230f891e46dfb23ce9bbfd8a3a32370f44f64567d9048b880fcc951f1c11920bd16c5987b3c977b2a046623ad3db4a42f268
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 0ea3a7f0ae0d16834d7323932e3378f4af9ab54416a944702d58f6a4db8be913/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-armv11820 CONTAINS SPDXRef-Package-ee746a587ecbcd7caa04a5fcb958d9cadddaad9b
+
+##### Package: b526d09f10054b6645322256bf4b111a281921e7
+
+PackageName: b526d09f10054b6645322256bf4b111a281921e7
+SPDXID: SPDXRef-Package-b526d09f10054b6645322256bf4b111a281921e7
+PackageChecksum: SHA256: cd4ca2ddfc4cf55e8d4b1c6c2873ad3a6df23e52cd86be7fc8c63ed45ffdc832
+PackageChecksum: SHA512: 6e8a1d447c5e4ebb127c52f51434f665e551fd8fefc0fe1ff11c06607bab8ccaab55b7672bb9a9a9be47a21d444304d033e35fc690d3f5806e9f63bcdd6ae1fb
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: dbab6f5f71b27786f3dc29a993463c3aeb7a25850538f994bd17eeabf193551d/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-armv11820 CONTAINS SPDXRef-Package-b526d09f10054b6645322256bf4b111a281921e7
+
+##### Package: b4af6a5fb0e4e38752b2d5159136065f6cb74506
+
+PackageName: b4af6a5fb0e4e38752b2d5159136065f6cb74506
+SPDXID: SPDXRef-Package-b4af6a5fb0e4e38752b2d5159136065f6cb74506
+PackageChecksum: SHA256: ff98ef961ba3835227b841239a702b6457d80b821de099e38299df6c4b86d89b
+PackageChecksum: SHA512: 9328fd497e974affaa036ff4eb9f55e99a290123cbb57e90124411c18464fa4a959605998a486d3401267401208fd5d1277f98031579462605cc12e9b2970b9c
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 8f5f865ff7266eb821447fdc909ca1409dce7e0b6dfe29f04d1ff4183ddd7adb/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-armv11820 CONTAINS SPDXRef-Package-b4af6a5fb0e4e38752b2d5159136065f6cb74506
+
+##### Package: 6b95cdf085db4b03808dca73764f3d131885dd7e
+
+PackageName: 6b95cdf085db4b03808dca73764f3d131885dd7e
+SPDXID: SPDXRef-Package-6b95cdf085db4b03808dca73764f3d131885dd7e
+PackageChecksum: SHA256: a96baf44a187759f69d331147e559d6b0d19290aa80db5f064708ab4efa93153
+PackageChecksum: SHA512: e58dfc7015f27c56e26aeb29db407c5a7965e0fb73084a181d110836eb85b2e00d81f664230c5a90b025fbe84c62c38783d07c7e9025a091df68c1d73dc81a63
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: a0e5c3f0e4d70e4fcbeb176a7e9f9436b9579b6ed299bb72e6d5d8a5548c4217/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-armv11820 CONTAINS SPDXRef-Package-6b95cdf085db4b03808dca73764f3d131885dd7e
+
+##### Package: ac6b2550de851c11926a159c93275a65e1689177
+
+PackageName: ac6b2550de851c11926a159c93275a65e1689177
+SPDXID: SPDXRef-Package-ac6b2550de851c11926a159c93275a65e1689177
+PackageChecksum: SHA256: 9bede876e369918b16ec34b95909f624031c739f3c0ae52c5640eb0b34ac5348
+PackageChecksum: SHA512: b12338fd5beb2eae3cd6496d7607591725365a17e713a305b09a6342045ee712c20155eb83c602cc1a8086d3a05f8714f8e48aced1aade1e59b149eafa1f7831
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 49a54aa6f8912950bf91c78754b4b5f70e67fed62795ab2a36b7ad9e85604dc7/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-armv11820 CONTAINS SPDXRef-Package-ac6b2550de851c11926a159c93275a65e1689177
+
+##### Package: 5b84616982ec8c520ec92fa03468b6d0025c113d
+
+PackageName: 5b84616982ec8c520ec92fa03468b6d0025c113d
+SPDXID: SPDXRef-Package-5b84616982ec8c520ec92fa03468b6d0025c113d
+PackageChecksum: SHA256: 6ba624c7294dc55e72f655150fda005d1cfbe24c40830fec618ef6d7715b763c
+PackageChecksum: SHA512: 63520a2444ab03fe69295729f0237fa069ac7691e78bfd25bbbafd3d32c31d4aaf98bb98864e43e5bd5a044608eee547d352aaeb151a02543ebf4b90e5651a10
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: a1787e7be66e8cc9922f5f7205afa0e6ebe6e37c3cc5609bd82e561fe68e5b05/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-armv11820 CONTAINS SPDXRef-Package-5b84616982ec8c520ec92fa03468b6d0025c113d
+
+##### Package: f3af8e7026dc1af07c3c49784a21f01c1a1d5aa4
+
+PackageName: f3af8e7026dc1af07c3c49784a21f01c1a1d5aa4
+SPDXID: SPDXRef-Package-f3af8e7026dc1af07c3c49784a21f01c1a1d5aa4
+PackageChecksum: SHA256: 499fe5f7c153220cb3fe2d322335ec0ec9ee0ebaa995506edc795ac0cf76f9dd
+PackageChecksum: SHA512: 06f79197c5adffb0215662a4e1e0372bfb906f54a361bfce90bb794391232eb1f084488761331c22d34748e6d8778cdbf680e631c04a21b965ea17b4cf90c845
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 15750ac70541b02171de180466f3552f764fabdd2042c1e35ff9bd5ae4715308/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-armv11820 CONTAINS SPDXRef-Package-f3af8e7026dc1af07c3c49784a21f01c1a1d5aa4
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-k8sgcriohyperkube-armv11820
+
+##### Package: k8s.gcr.io/kube-controller-manager-arm64:v1.18.20
+
+PackageName: k8s.gcr.io/kube-controller-manager-arm64:v1.18.20
+SPDXID: SPDXRef-Package-k8sgcriokube-controller-manager-arm64v11820
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Package: 8887049559ee362f7733259dfbaae19e979f5b7a
+
+PackageName: 8887049559ee362f7733259dfbaae19e979f5b7a
+SPDXID: SPDXRef-Package-8887049559ee362f7733259dfbaae19e979f5b7a
+PackageChecksum: SHA256: 2d921b4847c0b9e668b9c3208203987964707abbaddc1b10447c4014b38cfe4c
+PackageChecksum: SHA512: 6bcb26cbdac86f62423b470992076ab27e59d9049a95bbc73dc84eece771afcecdb40abed022b36814325a3c4b0480eabf7854446cd88b43b14113906c6912ef
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: c4ec2c298bd0dbf2aa1f78f0f8d64b4144dfa359e3792cc27487b18789134f10/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-controller-manager-arm64v11820 CONTAINS SPDXRef-Package-8887049559ee362f7733259dfbaae19e979f5b7a
+
+##### Package: 744194d162ad3c6bc74ee2df2eb73908386cef4f
+
+PackageName: 744194d162ad3c6bc74ee2df2eb73908386cef4f
+SPDXID: SPDXRef-Package-744194d162ad3c6bc74ee2df2eb73908386cef4f
+PackageChecksum: SHA256: 3e559116b49727c194ebd281c72b76e5f2bcdcc1b2c1acb44b3d87ca2b72f1e8
+PackageChecksum: SHA512: 11854f1c36137ada3e2f52f7457ef4c3e8ab71507b476f51f8ca904db1816bed1df3bc5fca786714b4dc6e5157a572f9d59a34fc948fcbdfdfd1f46d2b98f6a3
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: df3d333f5b32a13a8a75d37020d6a0bdf701753e4d14bb6250d2c7defb8b7f07/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-controller-manager-arm64v11820 CONTAINS SPDXRef-Package-744194d162ad3c6bc74ee2df2eb73908386cef4f
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-k8sgcriokube-controller-manager-arm64v11820
+
+##### Package: k8s.gcr.io/hyperkube-ppc64le:v1.18.20
+
+PackageName: k8s.gcr.io/hyperkube-ppc64le:v1.18.20
+SPDXID: SPDXRef-Package-k8sgcriohyperkube-ppc64lev11820
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Package: 80258d622407565d4c7590b62cf82e3ce0194a7f
+
+PackageName: 80258d622407565d4c7590b62cf82e3ce0194a7f
+SPDXID: SPDXRef-Package-80258d622407565d4c7590b62cf82e3ce0194a7f
+PackageChecksum: SHA256: 48c022faf0433c7efdc1aaa2512da5304f7946205a2e9cf0755ca0feb9a70530
+PackageChecksum: SHA512: 393d749e99cfc3680ad02ca908a393215fa3385220e458df213ddaf71bc9375e1b1cfda2095dfae1269f9211b2aecd16e1517f257cf78c91ee036d6a106e2db6
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 6b5fa0bc28362b4144328855c27e7c2742c456c913c024cfc025aea84a2c7727/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-ppc64lev11820 CONTAINS SPDXRef-Package-80258d622407565d4c7590b62cf82e3ce0194a7f
+
+##### Package: fe8b98fb0cfe1322ad13ac92f542b75520c48908
+
+PackageName: fe8b98fb0cfe1322ad13ac92f542b75520c48908
+SPDXID: SPDXRef-Package-fe8b98fb0cfe1322ad13ac92f542b75520c48908
+PackageChecksum: SHA256: bb4e383440b2cfee491e4a589deaad0bafe4ce63b42255b7e69fc8421c05cceb
+PackageChecksum: SHA512: d2d96900440c3503f8e2c6cb376c9e4ac83ed8f54c51ab222d34f4d0732b7bd0191942623e0a5ab2979d4d6b648b061b5cce6ee31e2ccd71492faf8957b5a368
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: edadc03aae0cbbec38bc49d778469b9889f4fcac5248d86fadd6a346b39d4faf/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-ppc64lev11820 CONTAINS SPDXRef-Package-fe8b98fb0cfe1322ad13ac92f542b75520c48908
+
+##### Package: 261deb676d04b9884c00805b5a00d470d82216e0
+
+PackageName: 261deb676d04b9884c00805b5a00d470d82216e0
+SPDXID: SPDXRef-Package-261deb676d04b9884c00805b5a00d470d82216e0
+PackageChecksum: SHA256: b9e87e00c0a0bebfda4e97f2e5e9d6f5a79bf02128f9f863376a48e864bc4a26
+PackageChecksum: SHA512: d227d90ba74faaa849247b90d47d00fd2bb087619baae6647049da2fb35b63067098f97240e12d80023d0ff74665e204ab864639615cd2e776b5559ab0400a8d
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 72ef9c9a0ac89690f67a2b10e1ef54ced308484b3a2a85ccdafaf58e58e2fedc/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-ppc64lev11820 CONTAINS SPDXRef-Package-261deb676d04b9884c00805b5a00d470d82216e0
+
+##### Package: 36c11506304ce6ca11fb6fa2556dd3f62725489a
+
+PackageName: 36c11506304ce6ca11fb6fa2556dd3f62725489a
+SPDXID: SPDXRef-Package-36c11506304ce6ca11fb6fa2556dd3f62725489a
+PackageChecksum: SHA256: 226f6d997e4540c988e0ebb963714944f58ed6fa30d94b03014433d82a2b3afc
+PackageChecksum: SHA512: aa9f917dccc05c9b3b746f0e4ae0b60afd2eff072f4d25e761717f93fc7d3ccd7654b08670a4b7db17bcf257428d72e81b893225b0a6fe39991e4db2198a938c
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: b338f99c38165c6732fc9058ea5de8e77e81fa2fd010f5a70b11cec32d1b3766/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-ppc64lev11820 CONTAINS SPDXRef-Package-36c11506304ce6ca11fb6fa2556dd3f62725489a
+
+##### Package: 06d67e0b96c4db7bcc851a9ce083ba7192104947
+
+PackageName: 06d67e0b96c4db7bcc851a9ce083ba7192104947
+SPDXID: SPDXRef-Package-06d67e0b96c4db7bcc851a9ce083ba7192104947
+PackageChecksum: SHA256: 375df76619e2b3c55e299ca4a3d56d7bf287125fbb21901653e937556ac4be45
+PackageChecksum: SHA512: 8fa67134a2729d9a368bf9b3b10f6dd72f8af8eee54f81986a6de72327f1dfc945ea342830800105835fc88372d06cfe506e4b62e434d29d22027770afe0a2ac
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: edb2db28b192c09cafb83732cd5aa81b0f7a06fdaf1b2dbd5ae8b2aa1337cb20/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-ppc64lev11820 CONTAINS SPDXRef-Package-06d67e0b96c4db7bcc851a9ce083ba7192104947
+
+##### Package: daa693e8219a684a0f8b99a3b37726d6d47bd4b0
+
+PackageName: daa693e8219a684a0f8b99a3b37726d6d47bd4b0
+SPDXID: SPDXRef-Package-daa693e8219a684a0f8b99a3b37726d6d47bd4b0
+PackageChecksum: SHA256: 2e9867095d81c1f2172d210e3900923af61ecadd6150e96257be8a62da88e92f
+PackageChecksum: SHA512: 90618b689fdbf9328f7c34408a161fc250f896ca70f6ef79e5cfb23fef716f6cbfeb414665c7d76be15de46021e50124a6d46789fe0a9412bc1a4ebdab1135bf
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: f5d74e74ea46806de5da7d24657e71b551dce797862d334e8fd3139fe30af5a7/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-ppc64lev11820 CONTAINS SPDXRef-Package-daa693e8219a684a0f8b99a3b37726d6d47bd4b0
+
+##### Package: dfe2da678a973d5c7d518e424cc0205580a1e96d
+
+PackageName: dfe2da678a973d5c7d518e424cc0205580a1e96d
+SPDXID: SPDXRef-Package-dfe2da678a973d5c7d518e424cc0205580a1e96d
+PackageChecksum: SHA256: ffeb5403e9f45930aa39cbed6e55dfa6621a08c58962d77917a79310e30d53e1
+PackageChecksum: SHA512: 1ebfb695bfaf41a6d2f906b84aac6a1d43b6a83b081bf59e356835c5c0f5d53e2f3ad6cd8a8dea4bce8eef30c11b7eaad8ae0e7ac6decd45c05bfaab6a3cde44
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 34082f442b6ef0487380027a00d2a24b8704f2d0098298c4192e9b7124aa1f75/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-ppc64lev11820 CONTAINS SPDXRef-Package-dfe2da678a973d5c7d518e424cc0205580a1e96d
+
+##### Package: 6429110f75f95f952648023773d21393f66f82a4
+
+PackageName: 6429110f75f95f952648023773d21393f66f82a4
+SPDXID: SPDXRef-Package-6429110f75f95f952648023773d21393f66f82a4
+PackageChecksum: SHA256: d9742fa9245a20ce3774df8a6c1ac8924b115118bd10576ef5119e55c4fcbc67
+PackageChecksum: SHA512: a92a21781bc8df420de0a701324136295e3ffa219af355ddd465a456618070f8a64dcfbd4b8ec26f2126b9b8a6b3224c176bd1be2109a1a830e949809489d75d
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: b9312494a24cf1af49fbb600d51481301048359edc741514dac0542103b2b0e4/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-ppc64lev11820 CONTAINS SPDXRef-Package-6429110f75f95f952648023773d21393f66f82a4
+
+##### Package: 9155ea90e4a0ce7826f70d011a80dce7af0bfd39
+
+PackageName: 9155ea90e4a0ce7826f70d011a80dce7af0bfd39
+SPDXID: SPDXRef-Package-9155ea90e4a0ce7826f70d011a80dce7af0bfd39
+PackageChecksum: SHA256: 11f65e5c512cfb850744a310684342e2becc2588d248994fc4d8b6616933b68f
+PackageChecksum: SHA512: 7ec719b71ba503580ec721393a0c2a1ae1f3d508afe77586b1c076bce8165b0ca9bbd78fcfcf6ed9afe9017a7d23aec87e4082e50e42220ff3220ad56bef8821
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: d962bc415bbbe2862173168aad606c65690b160eed0453ebc68658f7ac2d4919/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-ppc64lev11820 CONTAINS SPDXRef-Package-9155ea90e4a0ce7826f70d011a80dce7af0bfd39
+
+##### Package: 0dd34ea9fd160a609548b78c8a68a46fd46e69d8
+
+PackageName: 0dd34ea9fd160a609548b78c8a68a46fd46e69d8
+SPDXID: SPDXRef-Package-0dd34ea9fd160a609548b78c8a68a46fd46e69d8
+PackageChecksum: SHA256: 1170621b2ed67022188a381c6b08544ad4c522cf52ac99067b80570a844c9062
+PackageChecksum: SHA512: 3661dc2ac938819599110fd586a65df456435d87dd7edf569a1c47d4768dce0afa99d31fd1ee0e48b00fa8d485a49f7b2741a736df40eb272366738c4fe8620f
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: d7aff6a5e3961bd6ca1722b150bfaf7cfa02923e28c3cebbe64a2efd2c3d06b6/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-ppc64lev11820 CONTAINS SPDXRef-Package-0dd34ea9fd160a609548b78c8a68a46fd46e69d8
+
+##### Package: 5fed0fcd29fb45586a6c9871ecb6aae1a68d65b0
+
+PackageName: 5fed0fcd29fb45586a6c9871ecb6aae1a68d65b0
+SPDXID: SPDXRef-Package-5fed0fcd29fb45586a6c9871ecb6aae1a68d65b0
+PackageChecksum: SHA256: db4a18dbe8198ff8d65e75aa87985bb71d1518ba152ac050a934ac0ce086d49b
+PackageChecksum: SHA512: f835c371fe5c98bf195f41e9f8454c6c7c137408664a043991d231047e35def4e93722c399936d8b15ff56f669ca6b740107aafe8dca1badb91cd43d147ab20b
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 202fbc0079aabff5c2719bde9892f4abdb841248ef09bcb2f14578d3070bb04d/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-ppc64lev11820 CONTAINS SPDXRef-Package-5fed0fcd29fb45586a6c9871ecb6aae1a68d65b0
+
+##### Package: f7f7a789f402cd084f394fc7b19aa38c1abce2f6
+
+PackageName: f7f7a789f402cd084f394fc7b19aa38c1abce2f6
+SPDXID: SPDXRef-Package-f7f7a789f402cd084f394fc7b19aa38c1abce2f6
+PackageChecksum: SHA256: be4d55e2d23354aa4d08422120e804522b373bedebd75ce072b5d7f390e05f96
+PackageChecksum: SHA512: 5e0a6d09d648614397f6ea278e7444515d9a2b3e72d6b2ba6d7869bab5042f5e8a41012ffded82ab1c9bbd646883cfff19f164246adfd4e26c79ff91e51313f2
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 05f3906a1d5d483f9aaf35bd04aa3fee4f0bc775a8a4e6886f1180abcdf6b57b/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-ppc64lev11820 CONTAINS SPDXRef-Package-f7f7a789f402cd084f394fc7b19aa38c1abce2f6
+
+##### Package: 396a330ba919ff60cce3cbab02426fc139d0863c
+
+PackageName: 396a330ba919ff60cce3cbab02426fc139d0863c
+SPDXID: SPDXRef-Package-396a330ba919ff60cce3cbab02426fc139d0863c
+PackageChecksum: SHA256: d2a227758e33fd000f0b2d11e9242d116e1727cabc7585a54eaed7d0168dd1ca
+PackageChecksum: SHA512: acaeb0ec22529806e915e9a7a0b0d03e7e092282feaaf201e30fc17ce35a0a5fb4b4f656607c49f4ae48c390d91404070e1c8a720bfeb36423bf4b5b85d05149
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: dd1f72be93e6b11b3ad78f30c9e429f8773c5f1a47526e9c21c40b632d018083/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-ppc64lev11820 CONTAINS SPDXRef-Package-396a330ba919ff60cce3cbab02426fc139d0863c
+
+##### Package: 8293c46667e39cd960bd119f65a8356d7dc25680
+
+PackageName: 8293c46667e39cd960bd119f65a8356d7dc25680
+SPDXID: SPDXRef-Package-8293c46667e39cd960bd119f65a8356d7dc25680
+PackageChecksum: SHA256: 956518044a62323f17752980414733514444f4777483c0aef67460f3a0bd1e0f
+PackageChecksum: SHA512: df4cf4e066f003956ea20235e5c382f7a5b2694b0889af33395ad3f990b0d7334af3954d7fdac0ff7bc043fe68368fc58d095beac7831b981c53cca8cd35cd00
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 7e3dbd0c7cf877397b995d84eacb2ba55103c8cbadc34fc8a7bb709bcc03034d/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-ppc64lev11820 CONTAINS SPDXRef-Package-8293c46667e39cd960bd119f65a8356d7dc25680
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-k8sgcriohyperkube-ppc64lev11820
+
+##### Package: k8s.gcr.io/kube-controller-manager-ppc64le:v1.18.20
+
+PackageName: k8s.gcr.io/kube-controller-manager-ppc64le:v1.18.20
+SPDXID: SPDXRef-Package-k8sgcriokube-controller-manager-ppc64lev11820
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Package: fe8b98fb0cfe1322ad13ac92f542b75520c48908
+
+PackageName: fe8b98fb0cfe1322ad13ac92f542b75520c48908
+SPDXID: SPDXRef-Package-fe8b98fb0cfe1322ad13ac92f542b75520c48908
+PackageChecksum: SHA256: bb4e383440b2cfee491e4a589deaad0bafe4ce63b42255b7e69fc8421c05cceb
+PackageChecksum: SHA512: d2d96900440c3503f8e2c6cb376c9e4ac83ed8f54c51ab222d34f4d0732b7bd0191942623e0a5ab2979d4d6b648b061b5cce6ee31e2ccd71492faf8957b5a368
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: edadc03aae0cbbec38bc49d778469b9889f4fcac5248d86fadd6a346b39d4faf/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-controller-manager-ppc64lev11820 CONTAINS SPDXRef-Package-fe8b98fb0cfe1322ad13ac92f542b75520c48908
+
+##### Package: bc069683eba7209dfa6fde78c4c4d9a0eb685a8e
+
+PackageName: bc069683eba7209dfa6fde78c4c4d9a0eb685a8e
+SPDXID: SPDXRef-Package-bc069683eba7209dfa6fde78c4c4d9a0eb685a8e
+PackageChecksum: SHA256: d0d83c3224c6c367dbc77f62d1c40d90fe24e05e91525f2067100f57313b7c15
+PackageChecksum: SHA512: 3e95a21b4c4db29c94f3cb8a217bc2a31a06c8946b9fc036e5f2927a61a2d19aa3e6f3a4f0f90235a6060e6af7737f84ece375e37fdcc253cddecc4377ba5cba
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 1d7a7ebc0806485d8b0ab5094a0f3e78b82474a10e0fe47d5260a6a37a314095/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-controller-manager-ppc64lev11820 CONTAINS SPDXRef-Package-bc069683eba7209dfa6fde78c4c4d9a0eb685a8e
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-k8sgcriokube-controller-manager-ppc64lev11820
+
+##### Package: k8s.gcr.io/hyperkube-amd64:v1.18.20
+
+PackageName: k8s.gcr.io/hyperkube-amd64:v1.18.20
+SPDXID: SPDXRef-Package-k8sgcriohyperkube-amd64v11820
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Package: 2f3a78d01d076a5f86154ca8c526feb6fa169b60
+
+PackageName: 2f3a78d01d076a5f86154ca8c526feb6fa169b60
+SPDXID: SPDXRef-Package-2f3a78d01d076a5f86154ca8c526feb6fa169b60
+PackageChecksum: SHA256: fd6d60bda340262e3408f4ac725fea4f3d0e6f83fb539e12848b29c4a6de5ab6
+PackageChecksum: SHA512: 7ffc175a1fa87b5c2dbd542069b88a4f292d39dbe0e3b883e4106e9b96da1972dd8d66befca073f3eb0bdb3717b4ef3b5385d57abf680093b5e024f319a03bc7
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 9e1a1c8a037c1cf82ab9fc295c719825e4a381ea2957f456ae127cae8613a860/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-amd64v11820 CONTAINS SPDXRef-Package-2f3a78d01d076a5f86154ca8c526feb6fa169b60
+
+##### Package: 12ffdaec68ab51cbb02747012e0f5a36f6d5ee16
+
+PackageName: 12ffdaec68ab51cbb02747012e0f5a36f6d5ee16
+SPDXID: SPDXRef-Package-12ffdaec68ab51cbb02747012e0f5a36f6d5ee16
+PackageChecksum: SHA256: 91e3a07063b3a34f845ca7990ab4bb6163df9f4ccd6d97cc49750caf3060696f
+PackageChecksum: SHA512: 03b1053b6ce86cbc90af1b1167bf23c4d01d7360500fd7662e862e8c1cbff56cc73cdec6420dfa484561882357ec14b5fd4aef9d896ea5088486773f2285fd04
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 2f2f0536945f6561d5858a15943835eeb88156e7871c52ad7f293732074680e9/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-amd64v11820 CONTAINS SPDXRef-Package-12ffdaec68ab51cbb02747012e0f5a36f6d5ee16
+
+##### Package: ae56ca55715b04a8400cc4465f4cb10c349c1137
+
+PackageName: ae56ca55715b04a8400cc4465f4cb10c349c1137
+SPDXID: SPDXRef-Package-ae56ca55715b04a8400cc4465f4cb10c349c1137
+PackageChecksum: SHA256: ac44ab937160441c546e8333cc783fdc82b7b231547eb1d771b2ee8e9d053dee
+PackageChecksum: SHA512: d48c738b566520da79b6cd4696807765c99065c59347f36d3508022a8d5bd4cad65be6d6be9f40cd877b13116d8eb9ec238ea5eb2764c7b4a0494a71fc59a146
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 85375b4e88e3f9ebae597a5ac46e66b0d618196667342f72deb8202559f0dd3a/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-amd64v11820 CONTAINS SPDXRef-Package-ae56ca55715b04a8400cc4465f4cb10c349c1137
+
+##### Package: 816dbeb70dede3b73ce4a8dadd61425ddf0e5277
+
+PackageName: 816dbeb70dede3b73ce4a8dadd61425ddf0e5277
+SPDXID: SPDXRef-Package-816dbeb70dede3b73ce4a8dadd61425ddf0e5277
+PackageChecksum: SHA256: d513279cd08db3b504b95e6c2a73f9b1d3792e28dbe6999d448d0fd9703b29df
+PackageChecksum: SHA512: 81df49c5218f859a219d1a21ee2d4dc143a7eb644bb83eb65544d03dd8f5b816ef5895f76caaac0562deb1152018e332be30a7dba1fd7bfd77a73607b3707269
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 20ecc577a6005e87d4c13906abd8992840bd5049342e5a7c1d7ea209c2c092d2/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-amd64v11820 CONTAINS SPDXRef-Package-816dbeb70dede3b73ce4a8dadd61425ddf0e5277
+
+##### Package: 3fd0c64a13a554bb7d7bcc97a81680710c19d806
+
+PackageName: 3fd0c64a13a554bb7d7bcc97a81680710c19d806
+SPDXID: SPDXRef-Package-3fd0c64a13a554bb7d7bcc97a81680710c19d806
+PackageChecksum: SHA256: 6b5ef45b090b426d4c63c69c635f5e5d2f16956536ad75ff334deb00cc2a858d
+PackageChecksum: SHA512: 09bf33fdd3fc33fe4820c2b69434b88b1ea4abe34d8a7404f50ddb727f770912c0a966426766f3eddf5bb81bc1c983fda0c6f5010a0b4831a223f36ca7a62598
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: b997fcd385b1da9074cf9304769c42869367cb18ef648c0d3a231ab3b9fb5046/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-amd64v11820 CONTAINS SPDXRef-Package-3fd0c64a13a554bb7d7bcc97a81680710c19d806
+
+##### Package: d96f97ddc8863ab2531c061b046e01a5e524ba55
+
+PackageName: d96f97ddc8863ab2531c061b046e01a5e524ba55
+SPDXID: SPDXRef-Package-d96f97ddc8863ab2531c061b046e01a5e524ba55
+PackageChecksum: SHA256: aabb2ff81afe6fc308424119871bbc801671d01b7c81361cc04a167dd05b5b22
+PackageChecksum: SHA512: 5a4b71f444ced5f01c43176762db8307dfa7525b135c49fd70f09279d20965552c68d0a2fda7a65a3934528c18e573fcf8be7e3a00e5cbd761c7650c25d38598
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 20981ae53c71d4aa44c6fc7ce5d798a8ac317bf3af2abd221e7a2f80fcee0be3/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-amd64v11820 CONTAINS SPDXRef-Package-d96f97ddc8863ab2531c061b046e01a5e524ba55
+
+##### Package: b0591ff82906afcd3d693114bf6ffd30e5622d13
+
+PackageName: b0591ff82906afcd3d693114bf6ffd30e5622d13
+SPDXID: SPDXRef-Package-b0591ff82906afcd3d693114bf6ffd30e5622d13
+PackageChecksum: SHA256: 7c289dbe5fb80fdb2aac27cf7e321f2533d179a04c13009e3e0458aae1e37c36
+PackageChecksum: SHA512: 6fd635c66906913972cbcba9ed6e80eeed60d94d25e503d38b53fd6315d31bf40445d02a3758ba7f6fb63e65a6db40467dac6bd2c5b85b1cf2ec95c41a0a0b0b
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 383032517d0bb30c87460fb1f002f2f034562681fd4216034e6eba9feb99ea40/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-amd64v11820 CONTAINS SPDXRef-Package-b0591ff82906afcd3d693114bf6ffd30e5622d13
+
+##### Package: 1e8846d2dc5ee6ccc5f5022675f93e4e00f9e9ac
+
+PackageName: 1e8846d2dc5ee6ccc5f5022675f93e4e00f9e9ac
+SPDXID: SPDXRef-Package-1e8846d2dc5ee6ccc5f5022675f93e4e00f9e9ac
+PackageChecksum: SHA256: b9b82a97c787f20e14e10a9d0d65803215efc614261050bc92b6a3bba25e2f14
+PackageChecksum: SHA512: f6122b5137d91ecdab39ed82b3cc4bcdd2bde01374c5d44b015870a4563a3cdbf46829ac5dba5fae6eab0c4c150a354373923f8449a38a96dcee7e686ac41afa
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 231bf02d560e7d5d93c27f8b8c3cc804f12d0d23bd50a0b38acc1a04dcbf0324/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-amd64v11820 CONTAINS SPDXRef-Package-1e8846d2dc5ee6ccc5f5022675f93e4e00f9e9ac
+
+##### Package: 22799a8058934b00121503251ee9bbf11fce8f0d
+
+PackageName: 22799a8058934b00121503251ee9bbf11fce8f0d
+SPDXID: SPDXRef-Package-22799a8058934b00121503251ee9bbf11fce8f0d
+PackageChecksum: SHA256: 1b55846906e8ff95a330103f76ee27a77f6c00da490a1a56e897e350664929e0
+PackageChecksum: SHA512: 7b315031ac95c4b3d01c93e3b613e8649f8331d5c921eafb831cec9df9312cb9bc0e576aa178d65ee20254ed772ea67acb97ec399c92b15c41be14be7bc440c0
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 6da138f239f35bbfd3a2de8b4306caa1ae17fe0cfdcdbf4e06dade96c482d4bb/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-amd64v11820 CONTAINS SPDXRef-Package-22799a8058934b00121503251ee9bbf11fce8f0d
+
+##### Package: c99208486533b8131443700e0104242ee9e5972c
+
+PackageName: c99208486533b8131443700e0104242ee9e5972c
+SPDXID: SPDXRef-Package-c99208486533b8131443700e0104242ee9e5972c
+PackageChecksum: SHA256: 061bfb5cb861bc9c1c10cda7611bc97ac21c0985ebe47d7139bbceadee383243
+PackageChecksum: SHA512: 46b2a720fdffe726da2ff87012aab478fe70531541ec8795d0c8873d708dec4179bdc69f25b41aed8a9388b4b1527693640f20ce4c8961e550d69db9a464877d
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 06bd5f1e07c55fb6c0ea56a748e4740dd4414b992ff09ff6fb61d70ffbf4faf7/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-amd64v11820 CONTAINS SPDXRef-Package-c99208486533b8131443700e0104242ee9e5972c
+
+##### Package: a52e24e4403c412bd77f4e616954fe96f748574b
+
+PackageName: a52e24e4403c412bd77f4e616954fe96f748574b
+SPDXID: SPDXRef-Package-a52e24e4403c412bd77f4e616954fe96f748574b
+PackageChecksum: SHA256: 0157a4d8ce971560c205902995af26ea7b73141147610d4ee9e23417fbed3a88
+PackageChecksum: SHA512: 79eb22e5f48cc94d5a140f387e597b76f6b76ec92a79d5b7347a2768deb16afd0bdf97c6093766471f45864d0bab010adb6ad4a7576f58f8a19a7408ccfe7b4e
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 1546acee419b1e99b9f251b0a7f81a5300dd53d17874974f2cc279e8f9cc5984/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-amd64v11820 CONTAINS SPDXRef-Package-a52e24e4403c412bd77f4e616954fe96f748574b
+
+##### Package: 69b8064d4ce9419c740f8ff3c4eab8a11837949d
+
+PackageName: 69b8064d4ce9419c740f8ff3c4eab8a11837949d
+SPDXID: SPDXRef-Package-69b8064d4ce9419c740f8ff3c4eab8a11837949d
+PackageChecksum: SHA256: 44b0ed124e21dfd34fb72204d15a846c7253c255d5da07c58bfdce8d3bb5aa97
+PackageChecksum: SHA512: 232b0ee649c3c3d0554542dc526e4e1a089d9116f5a3cff2438e160925b59dc79cf80e88c9946fd6234ae0a77524f5a64a30b779fd275323652c0b7488c1280c
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 6aabcb467399a1cfb42b5f0f578d09daea9f3fbe35423b62114195fca80b7d8a/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-amd64v11820 CONTAINS SPDXRef-Package-69b8064d4ce9419c740f8ff3c4eab8a11837949d
+
+##### Package: a55cdb43d8de8cc9c1f72b5a2cb9886b2768dfa2
+
+PackageName: a55cdb43d8de8cc9c1f72b5a2cb9886b2768dfa2
+SPDXID: SPDXRef-Package-a55cdb43d8de8cc9c1f72b5a2cb9886b2768dfa2
+PackageChecksum: SHA256: b4e54f331697e97c848a20452ca144b0cb0b6ea8c4910829ed90047f339e7614
+PackageChecksum: SHA512: c443b5da8999a83b8d55cf5be637422d6d19c8abc65b10fe7d83a7224dde6ed6c0160d584274d223abdc534797731d5bd679892d5b258a242e809b9657395f7c
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 555d570a079965ac2779c642bdac2d336d92b1957368cd3ea12d3f178786e478/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-amd64v11820 CONTAINS SPDXRef-Package-a55cdb43d8de8cc9c1f72b5a2cb9886b2768dfa2
+
+##### Package: 48e85d8e3b5009206a21c7b74c074608c6541671
+
+PackageName: 48e85d8e3b5009206a21c7b74c074608c6541671
+SPDXID: SPDXRef-Package-48e85d8e3b5009206a21c7b74c074608c6541671
+PackageChecksum: SHA256: 78dd6c0504a75338b5de51026f1206981a61dab1905fcd40101ac01fa8afdd49
+PackageChecksum: SHA512: 18c8a75497a897350cd9b742fcbf77bf0c781c5e6a1db6d3860eb252c2a127f42411adc4c39adcfcb79c1b1dde4066eb628b220b1049d563922506b315756490
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: aefc6587203a1194414c5cca497536ada425fbd46541085e41c9888eaeb9da35/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriohyperkube-amd64v11820 CONTAINS SPDXRef-Package-48e85d8e3b5009206a21c7b74c074608c6541671
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-k8sgcriohyperkube-amd64v11820
+
+##### Package: k8s.gcr.io/conformance-arm64:v1.18.20
+
+PackageName: k8s.gcr.io/conformance-arm64:v1.18.20
+SPDXID: SPDXRef-Package-k8sgcrioconformance-arm64v11820
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Package: 6069c46ade95e511512dace6041e82d52b4f12bc
+
+PackageName: 6069c46ade95e511512dace6041e82d52b4f12bc
+SPDXID: SPDXRef-Package-6069c46ade95e511512dace6041e82d52b4f12bc
+PackageChecksum: SHA256: c148d6cadb603380e197bc083b84dbba8c2c50b6353be86aebb66345184f4289
+PackageChecksum: SHA512: 7c88da9f3e33b506b3b8872405f072fce41cfcb16fad7c7c27ec2ee2a7dc0968d0fe5636a5346a74d0d8694c423a6250f2c08040331643d309547c428d188ba2
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 0c6a8bbefcf448181c631624a77ab38e41ade230a0599e361f19975a19392bf3/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-arm64v11820 CONTAINS SPDXRef-Package-6069c46ade95e511512dace6041e82d52b4f12bc
+
+##### Package: 846b3a88dff086cd06630b1de203bba64ec8f1b7
+
+PackageName: 846b3a88dff086cd06630b1de203bba64ec8f1b7
+SPDXID: SPDXRef-Package-846b3a88dff086cd06630b1de203bba64ec8f1b7
+PackageChecksum: SHA256: 5f682eac6c77746da208b984e7ebbf526e3af4cc02960c10b152df198623c32d
+PackageChecksum: SHA512: 57e92b37d94b715ca8e89af420e014f2e052c9a7f7c3c40dc1a7664b742e72d7451345f4eaf686e16f104b07f76248199c2eaa43249c2d4f82355fc6efec25b8
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: ba5f9c6161cf116b27d3993970e06e32157150b35fd79986b2dc73f3578f1d88/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-arm64v11820 CONTAINS SPDXRef-Package-846b3a88dff086cd06630b1de203bba64ec8f1b7
+
+##### Package: 337a05e93c6dbbc4bc2d3bfa6fe83b04e3679b1c
+
+PackageName: 337a05e93c6dbbc4bc2d3bfa6fe83b04e3679b1c
+SPDXID: SPDXRef-Package-337a05e93c6dbbc4bc2d3bfa6fe83b04e3679b1c
+PackageChecksum: SHA256: 6c250e0d327114b3f16bfab755c519bcf9afa60cb52b35c2463c0833859df10a
+PackageChecksum: SHA512: a078396e2fac4af343cfa62509f7524cedf497cd1ad7c09b8b62064ddb73ddef65b30ddcf23bf29556240d78841e574ec43e55a249cdb6ce2cd17c6209f785bd
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 3e9d904c98febf652c9f18a3c9a044db8d97672486193f2d757967dd996739a0/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-arm64v11820 CONTAINS SPDXRef-Package-337a05e93c6dbbc4bc2d3bfa6fe83b04e3679b1c
+
+##### Package: ccf50859e6e638d37af952ce7849303d1102f90f
+
+PackageName: ccf50859e6e638d37af952ce7849303d1102f90f
+SPDXID: SPDXRef-Package-ccf50859e6e638d37af952ce7849303d1102f90f
+PackageChecksum: SHA256: 2cb52bc7233d013be357d2aab2d7da2180dd861ee858f5ea5a25bd2640c4e385
+PackageChecksum: SHA512: 61282cbdad031f2a1e65f0ad1d6a7b79b8bf34bfed6f3db3a35357514c5cbd9cb07b567d76d9014cd1fe053cceb497e8e3af79223a08f32fb17354f16fbccbef
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: ed51d251f64e61e5c861fe287502e51a95ca560706c617ae06022b12a4b85676/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-arm64v11820 CONTAINS SPDXRef-Package-ccf50859e6e638d37af952ce7849303d1102f90f
+
+##### Package: e3bf8d8411b49376770ea66e3f117049afaba8c4
+
+PackageName: e3bf8d8411b49376770ea66e3f117049afaba8c4
+SPDXID: SPDXRef-Package-e3bf8d8411b49376770ea66e3f117049afaba8c4
+PackageChecksum: SHA256: 92215c9edd793cb0ddda0d188f63a102786984d860307a468cbefcb79507ddb5
+PackageChecksum: SHA512: d8e4db4a82054d9ca4c4c2cf4b4b4ae1febfa80a618731a6d2f2f947f66bfe034d4cad22cff426a0c605c01ea731735048189e6e148f011b9c3be7e78d8f7d8a
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 554b85cabc34bf6bf2b2e2139786493b75fa57747f5b72c906cc3eef7ae9e389/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-arm64v11820 CONTAINS SPDXRef-Package-e3bf8d8411b49376770ea66e3f117049afaba8c4
+
+##### Package: 7bc253da8370bfc158334cf73c2bea452a1732e2
+
+PackageName: 7bc253da8370bfc158334cf73c2bea452a1732e2
+SPDXID: SPDXRef-Package-7bc253da8370bfc158334cf73c2bea452a1732e2
+PackageChecksum: SHA256: 89c682fc71643dd6680ba27025dc66eb50ae0d9e5113ebfa8aff4313db63c6b8
+PackageChecksum: SHA512: 7d201b1a38b4abd34c25de33cb27409fb6cd301abf837c70bc1ec304b6bfefc0a2c7e91458cd34b7c40cc664b612b9eaa4a4e70951dd3e95449e08c549e1849a
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 51c52d2ba733b6b88ee869618efca7ef0d0e4036bf2536b7aa0c7c5ca31d16fa/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-arm64v11820 CONTAINS SPDXRef-Package-7bc253da8370bfc158334cf73c2bea452a1732e2
+
+##### Package: 193a46ae779cd186e6ab4ba93061a50e4e9a61f7
+
+PackageName: 193a46ae779cd186e6ab4ba93061a50e4e9a61f7
+SPDXID: SPDXRef-Package-193a46ae779cd186e6ab4ba93061a50e4e9a61f7
+PackageChecksum: SHA256: 574013b52eb31b62e662015bfca4d5dca587be4d237b7de1e634269a49779606
+PackageChecksum: SHA512: 6f85cde804afd15d8823c3f0ba16a680e4eedd0fecf87634381a2d6e15c5b27f07d7b8716bbb90635cf784a30e78271f395fc1697b2bdaeabb95b2b77abbc39b
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 4c961479498b94c66f41242c55648155106bd66b8817fe0c507807842cfdde7a/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-arm64v11820 CONTAINS SPDXRef-Package-193a46ae779cd186e6ab4ba93061a50e4e9a61f7
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-k8sgcrioconformance-arm64v11820
+
+##### Package: k8s.gcr.io/kube-scheduler-arm64:v1.18.20
+
+PackageName: k8s.gcr.io/kube-scheduler-arm64:v1.18.20
+SPDXID: SPDXRef-Package-k8sgcriokube-scheduler-arm64v11820
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Package: 8887049559ee362f7733259dfbaae19e979f5b7a
+
+PackageName: 8887049559ee362f7733259dfbaae19e979f5b7a
+SPDXID: SPDXRef-Package-8887049559ee362f7733259dfbaae19e979f5b7a
+PackageChecksum: SHA256: 2d921b4847c0b9e668b9c3208203987964707abbaddc1b10447c4014b38cfe4c
+PackageChecksum: SHA512: 6bcb26cbdac86f62423b470992076ab27e59d9049a95bbc73dc84eece771afcecdb40abed022b36814325a3c4b0480eabf7854446cd88b43b14113906c6912ef
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: c4ec2c298bd0dbf2aa1f78f0f8d64b4144dfa359e3792cc27487b18789134f10/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-scheduler-arm64v11820 CONTAINS SPDXRef-Package-8887049559ee362f7733259dfbaae19e979f5b7a
+
+##### Package: 75210c7c3f5396cbd09ed43915ed7717424d5ef6
+
+PackageName: 75210c7c3f5396cbd09ed43915ed7717424d5ef6
+SPDXID: SPDXRef-Package-75210c7c3f5396cbd09ed43915ed7717424d5ef6
+PackageChecksum: SHA256: 46db8cb8773631c5ad913e270e3d545a1e232217f52209bd3a31632d5be9a30d
+PackageChecksum: SHA512: c9d6bcc43d631e0f59c5a4258197c817d6c8c3d5178669f080490c0b4d9a83d4a09a19e70897085d1f03c4f1ef93ced3c90c44adcbae8777465bad58737f7404
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: f341a1bc8972534f5814b7461d924021b192cd0b9d1c3f8a76f7704d495b5fa3/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-scheduler-arm64v11820 CONTAINS SPDXRef-Package-75210c7c3f5396cbd09ed43915ed7717424d5ef6
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-k8sgcriokube-scheduler-arm64v11820
+
+##### Package: k8s.gcr.io/kube-controller-manager-amd64:v1.18.20
+
+PackageName: k8s.gcr.io/kube-controller-manager-amd64:v1.18.20
+SPDXID: SPDXRef-Package-k8sgcriokube-controller-manager-amd64v11820
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Package: 12ffdaec68ab51cbb02747012e0f5a36f6d5ee16
+
+PackageName: 12ffdaec68ab51cbb02747012e0f5a36f6d5ee16
+SPDXID: SPDXRef-Package-12ffdaec68ab51cbb02747012e0f5a36f6d5ee16
+PackageChecksum: SHA256: 91e3a07063b3a34f845ca7990ab4bb6163df9f4ccd6d97cc49750caf3060696f
+PackageChecksum: SHA512: 03b1053b6ce86cbc90af1b1167bf23c4d01d7360500fd7662e862e8c1cbff56cc73cdec6420dfa484561882357ec14b5fd4aef9d896ea5088486773f2285fd04
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 2f2f0536945f6561d5858a15943835eeb88156e7871c52ad7f293732074680e9/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-controller-manager-amd64v11820 CONTAINS SPDXRef-Package-12ffdaec68ab51cbb02747012e0f5a36f6d5ee16
+
+##### Package: 84eaa39c060102c8890592c797de6688ac8fa3b8
+
+PackageName: 84eaa39c060102c8890592c797de6688ac8fa3b8
+SPDXID: SPDXRef-Package-84eaa39c060102c8890592c797de6688ac8fa3b8
+PackageChecksum: SHA256: daf235e166d91c6eab347ef26ed30cbe3a2f9b2ef216ee8d26d5b4f742ef4898
+PackageChecksum: SHA512: 07d919cd67ccf29f360ceb7b9bc14acccb428eebde1dacef7137f1f349ff97c90e493a78ba57a96e127add68f098397161478aa8572c83aeac7582ff57e4c315
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 92ffe50bcc0b7ce65de67fe03c90a96e374843a462967432d4d9aeac31ec2e68/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-controller-manager-amd64v11820 CONTAINS SPDXRef-Package-84eaa39c060102c8890592c797de6688ac8fa3b8
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-k8sgcriokube-controller-manager-amd64v11820
+
+##### Package: k8s.gcr.io/kube-scheduler-arm:v1.18.20
+
+PackageName: k8s.gcr.io/kube-scheduler-arm:v1.18.20
+SPDXID: SPDXRef-Package-k8sgcriokube-scheduler-armv11820
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Package: 4a7aa64e885d55a29c524fb7090050f0ba26a4b4
+
+PackageName: 4a7aa64e885d55a29c524fb7090050f0ba26a4b4
+SPDXID: SPDXRef-Package-4a7aa64e885d55a29c524fb7090050f0ba26a4b4
+PackageChecksum: SHA256: 56484b46a24b6f40b7444bae4ecd9502bf8100feb13fe7dfbd5269f4ac5fc4a8
+PackageChecksum: SHA512: 902d7e23367c5b138bf9e334631947c56b8617d13d484fe84846d72b2c93b2dfb45f0dee6474bf0bed07bd75693d0a5b1ad5261730a499d59bf95387c2d8d7b8
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 51e59808d329a60c91967651b6a01f94139aec52aae03e09b9bf566cbab44e8e/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-scheduler-armv11820 CONTAINS SPDXRef-Package-4a7aa64e885d55a29c524fb7090050f0ba26a4b4
+
+##### Package: f32ce89ebacb3b4a30e632c1331ab95ef4e69be7
+
+PackageName: f32ce89ebacb3b4a30e632c1331ab95ef4e69be7
+SPDXID: SPDXRef-Package-f32ce89ebacb3b4a30e632c1331ab95ef4e69be7
+PackageChecksum: SHA256: 73427a1c30146e2bf7b27b1a6ffa472aa63a4f2653a5b00d2ebdf4511cbbf3d2
+PackageChecksum: SHA512: f9e60845494c0745284007c4b963c2ebb944af1bafd024782545ead6bfa64239582106fe583810c069c737ad8235230607f9cc28d3061e401d21dd4067de3b1b
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 2258ff26c23fb61434ad24fafa2095baa953c39c7f41666204577fb70605fc9e/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-scheduler-armv11820 CONTAINS SPDXRef-Package-f32ce89ebacb3b4a30e632c1331ab95ef4e69be7
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-k8sgcriokube-scheduler-armv11820
+
+##### Package: k8s.gcr.io/kube-proxy-arm:v1.18.20
+
+PackageName: k8s.gcr.io/kube-proxy-arm:v1.18.20
+SPDXID: SPDXRef-Package-k8sgcriokube-proxy-armv11820
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Package: 4a7aa64e885d55a29c524fb7090050f0ba26a4b4
+
+PackageName: 4a7aa64e885d55a29c524fb7090050f0ba26a4b4
+SPDXID: SPDXRef-Package-4a7aa64e885d55a29c524fb7090050f0ba26a4b4
+PackageChecksum: SHA256: 56484b46a24b6f40b7444bae4ecd9502bf8100feb13fe7dfbd5269f4ac5fc4a8
+PackageChecksum: SHA512: 902d7e23367c5b138bf9e334631947c56b8617d13d484fe84846d72b2c93b2dfb45f0dee6474bf0bed07bd75693d0a5b1ad5261730a499d59bf95387c2d8d7b8
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 51e59808d329a60c91967651b6a01f94139aec52aae03e09b9bf566cbab44e8e/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-armv11820 CONTAINS SPDXRef-Package-4a7aa64e885d55a29c524fb7090050f0ba26a4b4
+
+##### Package: 324ef9aea58bbf38a84698456787b80f7afa4bcf
+
+PackageName: 324ef9aea58bbf38a84698456787b80f7afa4bcf
+SPDXID: SPDXRef-Package-324ef9aea58bbf38a84698456787b80f7afa4bcf
+PackageChecksum: SHA256: ee59f6844caf6bf200f2410384d27063bf6cc919eb3186443718e9492de8c976
+PackageChecksum: SHA512: d1e60e0a6fc30fb483d7c37ef6cadd6f712a2151c0298d9c5328ad677db698af41273d6301d6422008b445acb4dbe13641047c976b570a7290e3d11b06c0b488
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: ec71b6d7c76dfeef71c39d0f444c11d8835f6f528f78e3997146be22818a4196/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-armv11820 CONTAINS SPDXRef-Package-324ef9aea58bbf38a84698456787b80f7afa4bcf
+
+##### Package: ac6b2550de851c11926a159c93275a65e1689177
+
+PackageName: ac6b2550de851c11926a159c93275a65e1689177
+SPDXID: SPDXRef-Package-ac6b2550de851c11926a159c93275a65e1689177
+PackageChecksum: SHA256: 9bede876e369918b16ec34b95909f624031c739f3c0ae52c5640eb0b34ac5348
+PackageChecksum: SHA512: b12338fd5beb2eae3cd6496d7607591725365a17e713a305b09a6342045ee712c20155eb83c602cc1a8086d3a05f8714f8e48aced1aade1e59b149eafa1f7831
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 49a54aa6f8912950bf91c78754b4b5f70e67fed62795ab2a36b7ad9e85604dc7/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-armv11820 CONTAINS SPDXRef-Package-ac6b2550de851c11926a159c93275a65e1689177
+
+##### Package: 5b84616982ec8c520ec92fa03468b6d0025c113d
+
+PackageName: 5b84616982ec8c520ec92fa03468b6d0025c113d
+SPDXID: SPDXRef-Package-5b84616982ec8c520ec92fa03468b6d0025c113d
+PackageChecksum: SHA256: 6ba624c7294dc55e72f655150fda005d1cfbe24c40830fec618ef6d7715b763c
+PackageChecksum: SHA512: 63520a2444ab03fe69295729f0237fa069ac7691e78bfd25bbbafd3d32c31d4aaf98bb98864e43e5bd5a044608eee547d352aaeb151a02543ebf4b90e5651a10
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: a1787e7be66e8cc9922f5f7205afa0e6ebe6e37c3cc5609bd82e561fe68e5b05/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-armv11820 CONTAINS SPDXRef-Package-5b84616982ec8c520ec92fa03468b6d0025c113d
+
+##### Package: 9d4b1e2e4451b5f0fbbcde4b79b2bde9912d148a
+
+PackageName: 9d4b1e2e4451b5f0fbbcde4b79b2bde9912d148a
+SPDXID: SPDXRef-Package-9d4b1e2e4451b5f0fbbcde4b79b2bde9912d148a
+PackageChecksum: SHA256: fddffaf86c32de17bb300bd76c90ceff9f939a897e4814d73d2b68656b7217f8
+PackageChecksum: SHA512: 28b2a3e55d1e603372a3737266c6987aa6fa9230bbe76962a4deceb0631f3d6c12aa5d0168e0ff256ece524b77e12ed0f0d512e731286d2f87750732c0a83b89
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 6bf1848f45fef70f85a2c75123445e23d7b6369c7119aee9c50dae984b6902b6/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-armv11820 CONTAINS SPDXRef-Package-9d4b1e2e4451b5f0fbbcde4b79b2bde9912d148a
+
+##### Package: ad0496d0ac0917196b90af14d4c81f480a0f545d
+
+PackageName: ad0496d0ac0917196b90af14d4c81f480a0f545d
+SPDXID: SPDXRef-Package-ad0496d0ac0917196b90af14d4c81f480a0f545d
+PackageChecksum: SHA256: 25d016f1befe2b2f71fb644cf815b35cbf2c3f427eef7a478dd6259911c25baa
+PackageChecksum: SHA512: d1157aa74546bb7cfd827be5b0b68614b2eafc1b34f8dc03b252d572b75b395e89f473b4531853a832833bd92a37a58491e0c0a7b10f3accec527653f52e24bf
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 795d8384c74a0901e45fd000f50be9c8739f328fca9cf10b841c235e9addb85a/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-armv11820 CONTAINS SPDXRef-Package-ad0496d0ac0917196b90af14d4c81f480a0f545d
+
+##### Package: 075cb523dfa7a490fbebe5e6ef07dad303015d08
+
+PackageName: 075cb523dfa7a490fbebe5e6ef07dad303015d08
+SPDXID: SPDXRef-Package-075cb523dfa7a490fbebe5e6ef07dad303015d08
+PackageChecksum: SHA256: 2ca8d8e62a4bc079d6a93ab0a61fdc9254fa0d4f9c0bbc78256ceac6a8d22846
+PackageChecksum: SHA512: 9fab38c2fc66737f01eef36d1587b3ea8d6228f274a8ddeee46303c10f96dd2f5d5ff2e06b8b4183d05ef1df41e0f04acad41e73d7dda4428834aefb50a1e1ff
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 3ddd7c4e4ee808100c5dff75a2770d8f4a7efc7f1302cd15f445e3fefab08f28/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-armv11820 CONTAINS SPDXRef-Package-075cb523dfa7a490fbebe5e6ef07dad303015d08
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-k8sgcriokube-proxy-armv11820
+
+##### Package: k8s.gcr.io/kube-apiserver-amd64:v1.18.20
+
+PackageName: k8s.gcr.io/kube-apiserver-amd64:v1.18.20
+SPDXID: SPDXRef-Package-k8sgcriokube-apiserver-amd64v11820
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Package: 12ffdaec68ab51cbb02747012e0f5a36f6d5ee16
+
+PackageName: 12ffdaec68ab51cbb02747012e0f5a36f6d5ee16
+SPDXID: SPDXRef-Package-12ffdaec68ab51cbb02747012e0f5a36f6d5ee16
+PackageChecksum: SHA256: 91e3a07063b3a34f845ca7990ab4bb6163df9f4ccd6d97cc49750caf3060696f
+PackageChecksum: SHA512: 03b1053b6ce86cbc90af1b1167bf23c4d01d7360500fd7662e862e8c1cbff56cc73cdec6420dfa484561882357ec14b5fd4aef9d896ea5088486773f2285fd04
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 2f2f0536945f6561d5858a15943835eeb88156e7871c52ad7f293732074680e9/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-apiserver-amd64v11820 CONTAINS SPDXRef-Package-12ffdaec68ab51cbb02747012e0f5a36f6d5ee16
+
+##### Package: 5c2c383a38631986094f0f984e534ea6691bc085
+
+PackageName: 5c2c383a38631986094f0f984e534ea6691bc085
+SPDXID: SPDXRef-Package-5c2c383a38631986094f0f984e534ea6691bc085
+PackageChecksum: SHA256: 09ca1295091be44785861712aa9511ab3a1b2a5c95deb8184e2d0d867e7c0c17
+PackageChecksum: SHA512: ed32076cda8af63c8e29eb73426d82475237a3fdeac54e60d9c85d91895f539446e0e20e74c3551832b91380626005b0102132c49133221073649600e23d06fe
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: ddfbc9968b7241447b65e4b7ae48f8dde7dd8f1c0195a4a1c63754d2f3355bf6/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-apiserver-amd64v11820 CONTAINS SPDXRef-Package-5c2c383a38631986094f0f984e534ea6691bc085
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-k8sgcriokube-apiserver-amd64v11820
+
+##### Package: k8s.gcr.io/kube-controller-manager-arm:v1.18.20
+
+PackageName: k8s.gcr.io/kube-controller-manager-arm:v1.18.20
+SPDXID: SPDXRef-Package-k8sgcriokube-controller-manager-armv11820
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Package: 4a7aa64e885d55a29c524fb7090050f0ba26a4b4
+
+PackageName: 4a7aa64e885d55a29c524fb7090050f0ba26a4b4
+SPDXID: SPDXRef-Package-4a7aa64e885d55a29c524fb7090050f0ba26a4b4
+PackageChecksum: SHA256: 56484b46a24b6f40b7444bae4ecd9502bf8100feb13fe7dfbd5269f4ac5fc4a8
+PackageChecksum: SHA512: 902d7e23367c5b138bf9e334631947c56b8617d13d484fe84846d72b2c93b2dfb45f0dee6474bf0bed07bd75693d0a5b1ad5261730a499d59bf95387c2d8d7b8
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 51e59808d329a60c91967651b6a01f94139aec52aae03e09b9bf566cbab44e8e/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-controller-manager-armv11820 CONTAINS SPDXRef-Package-4a7aa64e885d55a29c524fb7090050f0ba26a4b4
+
+##### Package: e020c1055c9873ec3e0ba7692b4dc5c9e05c5a3b
+
+PackageName: e020c1055c9873ec3e0ba7692b4dc5c9e05c5a3b
+SPDXID: SPDXRef-Package-e020c1055c9873ec3e0ba7692b4dc5c9e05c5a3b
+PackageChecksum: SHA256: 51890798e8d3f431678c9f5c0dd5b9a79b68624b6e8df945a984449f419fa1e0
+PackageChecksum: SHA512: 541c4e94f0f2b733d07d86c317c42e470b4186dc4e792fb9102b176b31d4b70435c2f98cabe302c6ffeb866cd5b40c15ee65b2fc1e06ca262551fe0c118317fc
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 45be011c527ec4413754354239489c2d47358bb1ad53f2cb3acddaac6b34a0a0/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-controller-manager-armv11820 CONTAINS SPDXRef-Package-e020c1055c9873ec3e0ba7692b4dc5c9e05c5a3b
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-k8sgcriokube-controller-manager-armv11820
+
+##### Package: k8s.gcr.io/kube-proxy-arm64:v1.18.20
+
+PackageName: k8s.gcr.io/kube-proxy-arm64:v1.18.20
+SPDXID: SPDXRef-Package-k8sgcriokube-proxy-arm64v11820
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Package: 9812115f97fc9f81888d5f978070b424d057981a
+
+PackageName: 9812115f97fc9f81888d5f978070b424d057981a
+SPDXID: SPDXRef-Package-9812115f97fc9f81888d5f978070b424d057981a
+PackageChecksum: SHA256: dc1f77dc7ec4811c5147055f7361355275b0e0cd3296bdd34b370b717c50d367
+PackageChecksum: SHA512: cf44e9645891b45b8a31cad94df0f4d1e2eb7b519209575792c747dc6408178069231902e8b12adab4e5573faa17b2de416a4929f9a09ec642b95d26732644c2
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 5bca3c6c811723a3be16af25744893d03ec6a0e2bbf3dda997ece8503d0a8e51/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-arm64v11820 CONTAINS SPDXRef-Package-9812115f97fc9f81888d5f978070b424d057981a
+
+##### Package: 8887049559ee362f7733259dfbaae19e979f5b7a
+
+PackageName: 8887049559ee362f7733259dfbaae19e979f5b7a
+SPDXID: SPDXRef-Package-8887049559ee362f7733259dfbaae19e979f5b7a
+PackageChecksum: SHA256: 2d921b4847c0b9e668b9c3208203987964707abbaddc1b10447c4014b38cfe4c
+PackageChecksum: SHA512: 6bcb26cbdac86f62423b470992076ab27e59d9049a95bbc73dc84eece771afcecdb40abed022b36814325a3c4b0480eabf7854446cd88b43b14113906c6912ef
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: c4ec2c298bd0dbf2aa1f78f0f8d64b4144dfa359e3792cc27487b18789134f10/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-arm64v11820 CONTAINS SPDXRef-Package-8887049559ee362f7733259dfbaae19e979f5b7a
+
+##### Package: 72941e371a2ae687942e013409fcec6dd27ee934
+
+PackageName: 72941e371a2ae687942e013409fcec6dd27ee934
+SPDXID: SPDXRef-Package-72941e371a2ae687942e013409fcec6dd27ee934
+PackageChecksum: SHA256: 217aff3214d7fb22371070f44e764f77027c891ace428bfb3e100535f2a3ce20
+PackageChecksum: SHA512: 8b996cc0032b8b721a06cd82180c12d1009a32a766e758b1a013b2f927b0b8cda10e121443ea2e8bd9e2f3d3c12aaf647c9b76bc1a60e1a9eaecb6a2c211cbd4
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 29db75a4bb7bb192c40168e46d03d28f47f0ca598ba90cbe2b73fa7f3423b26a/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-arm64v11820 CONTAINS SPDXRef-Package-72941e371a2ae687942e013409fcec6dd27ee934
+
+##### Package: 0fcbc95ea69ac8794d8c55a460ef801f26f28ae8
+
+PackageName: 0fcbc95ea69ac8794d8c55a460ef801f26f28ae8
+SPDXID: SPDXRef-Package-0fcbc95ea69ac8794d8c55a460ef801f26f28ae8
+PackageChecksum: SHA256: 6a08baa5b62673d1fd77fde218385fe7db540bf8dbe22d8d7d6931fcdc46f991
+PackageChecksum: SHA512: 441568662831fd9bebafa390fbd89132cdbf2844a6eddea9a48b6af51b3d362b89e7a1657b7ce1d8014266baf53666afbfbfeb12d348ad01ae6feb207677dd4b
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 9eb7f434c3c73feb672641ec17a160b50070febf883bfe710ac97ac9d3e3e1d1/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-arm64v11820 CONTAINS SPDXRef-Package-0fcbc95ea69ac8794d8c55a460ef801f26f28ae8
+
+##### Package: 9509d14dff393c33d8580693c71313c9b84983a9
+
+PackageName: 9509d14dff393c33d8580693c71313c9b84983a9
+SPDXID: SPDXRef-Package-9509d14dff393c33d8580693c71313c9b84983a9
+PackageChecksum: SHA256: 75a689f79b504d5d241031ddc18aaa7bf84a44a0fe25caee00cf172710b7c9f3
+PackageChecksum: SHA512: d28b3364b1d96531e8cfe6ff3a96970d8c9db026d729b0a0380a316740c300859162c344f2281a4a1327846cb0f08a90b8eb0726a6abfecac324fa839be8d214
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 0bed817a943f93e53ce86f23dbf8ca99a1d358bcfff298c223d4e201d1d756da/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-arm64v11820 CONTAINS SPDXRef-Package-9509d14dff393c33d8580693c71313c9b84983a9
+
+##### Package: ee110a7fc8842cc445dcfb106b800ac8e429f36f
+
+PackageName: ee110a7fc8842cc445dcfb106b800ac8e429f36f
+SPDXID: SPDXRef-Package-ee110a7fc8842cc445dcfb106b800ac8e429f36f
+PackageChecksum: SHA256: 8eded6d47762b98a80a55777e4f8284cfa9e3fad4bab5577d273a91097a5e782
+PackageChecksum: SHA512: 2c27710b0b08ddfdd85681120bba6f0548204fc95e46c015115b4315d51ed40597c9a88f2adf324073ace16b7d3024ead9f300182dc966568fca2a1d5b8902ec
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 46a92aa7673d60108d6608f095d741668eea52debc8e97ed0f55a17de03576e6/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-arm64v11820 CONTAINS SPDXRef-Package-ee110a7fc8842cc445dcfb106b800ac8e429f36f
+
+##### Package: 8dca54214ec891bcedad1b90560cee897678de0d
+
+PackageName: 8dca54214ec891bcedad1b90560cee897678de0d
+SPDXID: SPDXRef-Package-8dca54214ec891bcedad1b90560cee897678de0d
+PackageChecksum: SHA256: b07be562de4c7d3a3d207662f3ca055610ddb52216653bc62b30344612c207d1
+PackageChecksum: SHA512: 97adebaa1309e0c54fe009194667b303abe506e2699e72f93ad4f5ba0d5d5ff29e025705324acd9c87de8a9d9244fd2234943bee06e1bc4ce3b27e3647eeaa86
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 3fba57926066523ae228b4c6903bdb8fe0d8c3e674ce17af898cb2aee0be5fbc/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-arm64v11820 CONTAINS SPDXRef-Package-8dca54214ec891bcedad1b90560cee897678de0d
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-k8sgcriokube-proxy-arm64v11820
+
+##### Package: k8s.gcr.io/kube-scheduler-ppc64le:v1.18.20
+
+PackageName: k8s.gcr.io/kube-scheduler-ppc64le:v1.18.20
+SPDXID: SPDXRef-Package-k8sgcriokube-scheduler-ppc64lev11820
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Package: fe8b98fb0cfe1322ad13ac92f542b75520c48908
+
+PackageName: fe8b98fb0cfe1322ad13ac92f542b75520c48908
+SPDXID: SPDXRef-Package-fe8b98fb0cfe1322ad13ac92f542b75520c48908
+PackageChecksum: SHA256: bb4e383440b2cfee491e4a589deaad0bafe4ce63b42255b7e69fc8421c05cceb
+PackageChecksum: SHA512: d2d96900440c3503f8e2c6cb376c9e4ac83ed8f54c51ab222d34f4d0732b7bd0191942623e0a5ab2979d4d6b648b061b5cce6ee31e2ccd71492faf8957b5a368
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: edadc03aae0cbbec38bc49d778469b9889f4fcac5248d86fadd6a346b39d4faf/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-scheduler-ppc64lev11820 CONTAINS SPDXRef-Package-fe8b98fb0cfe1322ad13ac92f542b75520c48908
+
+##### Package: c43295bab39643f9d962b9daf668ade688a97be7
+
+PackageName: c43295bab39643f9d962b9daf668ade688a97be7
+SPDXID: SPDXRef-Package-c43295bab39643f9d962b9daf668ade688a97be7
+PackageChecksum: SHA256: 6f50709c88d8294d7d9d6766e889d17c1d6e53aece84b9e88f80416eed3b71cc
+PackageChecksum: SHA512: c9f5227f8e8344f98418a08ca42017c6446577145f23868d4108c6ad721d357bdc02c252b832d9a63662615c0fec4fdc62f70e0ec335b13d64405fda6cb381fd
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 5003c43d52fdd716e104d3c9f9efe4515be680e43cdf4c7259afa8f6e7905421/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-scheduler-ppc64lev11820 CONTAINS SPDXRef-Package-c43295bab39643f9d962b9daf668ade688a97be7
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-k8sgcriokube-scheduler-ppc64lev11820
+
+##### Package: k8s.gcr.io/conformance-s390x:v1.18.20
+
+PackageName: k8s.gcr.io/conformance-s390x:v1.18.20
+SPDXID: SPDXRef-Package-k8sgcrioconformance-s390xv11820
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Package: 846b3a88dff086cd06630b1de203bba64ec8f1b7
+
+PackageName: 846b3a88dff086cd06630b1de203bba64ec8f1b7
+SPDXID: SPDXRef-Package-846b3a88dff086cd06630b1de203bba64ec8f1b7
+PackageChecksum: SHA256: 5f682eac6c77746da208b984e7ebbf526e3af4cc02960c10b152df198623c32d
+PackageChecksum: SHA512: 57e92b37d94b715ca8e89af420e014f2e052c9a7f7c3c40dc1a7664b742e72d7451345f4eaf686e16f104b07f76248199c2eaa43249c2d4f82355fc6efec25b8
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: ba5f9c6161cf116b27d3993970e06e32157150b35fd79986b2dc73f3578f1d88/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-s390xv11820 CONTAINS SPDXRef-Package-846b3a88dff086cd06630b1de203bba64ec8f1b7
+
+##### Package: 6803b3876ad44ad9f727a7527df791400320efd7
+
+PackageName: 6803b3876ad44ad9f727a7527df791400320efd7
+SPDXID: SPDXRef-Package-6803b3876ad44ad9f727a7527df791400320efd7
+PackageChecksum: SHA256: c79450a06bdf88411ffeed672830ddd5abb330367169a6fac4e258c0166e4492
+PackageChecksum: SHA512: 7518f5f945b6ca706d0b6dfddd6dc5d3e568c56eef6a048589af59f03a6aeba44fdec796b2a820fe622376e451be00bb002c8c204c0322e6e85df2232da0309d
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: fac717f04d49952a055ce04f893004fe60d8d6d1b6760d1b6d5cb66b2e89c539/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-s390xv11820 CONTAINS SPDXRef-Package-6803b3876ad44ad9f727a7527df791400320efd7
+
+##### Package: 4daf94d50a7e98dc5d951965db58ec06d65d44b0
+
+PackageName: 4daf94d50a7e98dc5d951965db58ec06d65d44b0
+SPDXID: SPDXRef-Package-4daf94d50a7e98dc5d951965db58ec06d65d44b0
+PackageChecksum: SHA256: cc139b81fe34c7ddb790e7aef0e238e27fc05e6649e3f46a23e454d426980be9
+PackageChecksum: SHA512: c8d8cde5cf1d1ab4708fd09a1e551f2ad751247d5ea91444a355759c8122e5d0c7ce66a89cdbc1d9e970eb4fc3ec8f5dcc37b7f62b95cc71f215ebbe7b9fb606
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 7d1940fbfd1057cbb2e1fc2ac5b95dc87f409faf691d4555a68a56e62dc799c7/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-s390xv11820 CONTAINS SPDXRef-Package-4daf94d50a7e98dc5d951965db58ec06d65d44b0
+
+##### Package: f34cb09106ecfeb39107983f5efaf4e71444f4a5
+
+PackageName: f34cb09106ecfeb39107983f5efaf4e71444f4a5
+SPDXID: SPDXRef-Package-f34cb09106ecfeb39107983f5efaf4e71444f4a5
+PackageChecksum: SHA256: b4676ef3090ccb6f261ebe4f559342d39f02974e76a6a0569fb700a9bf5ba01e
+PackageChecksum: SHA512: 96190c3dd56fd45a477a1b67f1eb00f47d03286bbc90619f9265939d6a234c14bd0cbbcabd56b54418682c1934e6bf20288e314c226643d9733087d4cc2610a3
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 2e12cdc273a8aac6e6582f261b85469b259b8a06635d8727ebd81ace272ef206/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-s390xv11820 CONTAINS SPDXRef-Package-f34cb09106ecfeb39107983f5efaf4e71444f4a5
+
+##### Package: d5cd50bf46fad35f61ebbc6d3abf9d2c65aad801
+
+PackageName: d5cd50bf46fad35f61ebbc6d3abf9d2c65aad801
+SPDXID: SPDXRef-Package-d5cd50bf46fad35f61ebbc6d3abf9d2c65aad801
+PackageChecksum: SHA256: f8b9a48881b95af8e47f1061b2a373d6370eeae3de32226e3d9c914fe4cb658a
+PackageChecksum: SHA512: 14269d443758fd7124786d2a1136308c17096e01960457753086aeb676137684d5c7ff9b3514f1a36aa808a253c0bfe4e8b1845d7591274b3cc33df4db85b4bf
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 588ff2eec24388c12ba2bb2e9f943345e52f1a47d98991a4bb60f4157445510a/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-s390xv11820 CONTAINS SPDXRef-Package-d5cd50bf46fad35f61ebbc6d3abf9d2c65aad801
+
+##### Package: 459b084208c69e97eccd9077366c7a6889339410
+
+PackageName: 459b084208c69e97eccd9077366c7a6889339410
+SPDXID: SPDXRef-Package-459b084208c69e97eccd9077366c7a6889339410
+PackageChecksum: SHA256: 6239d49d38734e7ff60a281641ba0cd26380e131cc6789ac7c07282c4679c5a2
+PackageChecksum: SHA512: c227bc57959286846ae9bc11702bbcac8aaff78adadc77c20c4e2425c0b974948888c1dbf3d3a0bb0ef3873726dd877588d60fd91a96e9adb594d6b1a407ef23
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 256504ac5b01e91fe8cda10d19f2d06914a3616705d69d852619fb7b94b89113/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-s390xv11820 CONTAINS SPDXRef-Package-459b084208c69e97eccd9077366c7a6889339410
+
+##### Package: 176ddc647717371f04520c6d01c0811d703a8dc4
+
+PackageName: 176ddc647717371f04520c6d01c0811d703a8dc4
+SPDXID: SPDXRef-Package-176ddc647717371f04520c6d01c0811d703a8dc4
+PackageChecksum: SHA256: 9f0a523d8e89f24b46a0a89ccf3fcf2cd66634f94c69c5c9dce3e082d532f9e9
+PackageChecksum: SHA512: 5e19c922e5320901f345a04ef4a6b3395d5c423e5ba8a692d446adcc1bd3d0e5233d4ffaad785cb162b50fad4cf54dc91276a92dd5b38d6bc9506104fee1d4ab
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 12ba2fdd166324f10621e96e6d8503f68b57e9136db71cac32a114dc1774f3ab/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-s390xv11820 CONTAINS SPDXRef-Package-176ddc647717371f04520c6d01c0811d703a8dc4
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-k8sgcrioconformance-s390xv11820
+
+##### Package: k8s.gcr.io/kube-proxy-s390x:v1.18.20
+
+PackageName: k8s.gcr.io/kube-proxy-s390x:v1.18.20
+SPDXID: SPDXRef-Package-k8sgcriokube-proxy-s390xv11820
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Package: e6d62dce56658e3d485237eb10480e83b18f4c35
+
+PackageName: e6d62dce56658e3d485237eb10480e83b18f4c35
+SPDXID: SPDXRef-Package-e6d62dce56658e3d485237eb10480e83b18f4c35
+PackageChecksum: SHA256: 012c415e43ba872f6df5398469596d28e7a03dac00a7e947d36fd7d815e31b8d
+PackageChecksum: SHA512: f96dfde1513d81fb60af4acdadc02feaace941caa703d3eff1767d9ab78e7e3b703ad1d017374ffc2f61ff0004d7d47921f29b8d27554d20fdba70bade6eca5b
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 06c8c78297111c55c583a94889f806f36b19532a889d8212eda297b3ff808d62/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-s390xv11820 CONTAINS SPDXRef-Package-e6d62dce56658e3d485237eb10480e83b18f4c35
+
+##### Package: cb8d46a9b8a2cb7a427d5894640e77f5ebdd3ccb
+
+PackageName: cb8d46a9b8a2cb7a427d5894640e77f5ebdd3ccb
+SPDXID: SPDXRef-Package-cb8d46a9b8a2cb7a427d5894640e77f5ebdd3ccb
+PackageChecksum: SHA256: 3d49c7c27c6e808a228691fdc0ccea025d9666215795e94a35882e0af46d2cbc
+PackageChecksum: SHA512: 6ccda86235fc39a344959047d8babe3d60803bb3861bb32b4e9dce73020e0479a6cdf04ad9e39c2cd5879cf5237e2b7c145385adc2523ce6ef8d29d0430b0ec8
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 53e939d39671f3e833f630a91a814756a354995adbe46ab305dcce56b715e33d/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-s390xv11820 CONTAINS SPDXRef-Package-cb8d46a9b8a2cb7a427d5894640e77f5ebdd3ccb
+
+##### Package: 8f0a62261c2a4454686408f584f6622c845054b9
+
+PackageName: 8f0a62261c2a4454686408f584f6622c845054b9
+SPDXID: SPDXRef-Package-8f0a62261c2a4454686408f584f6622c845054b9
+PackageChecksum: SHA256: 32fa43279df0b9f2b55fe2d44b5685638ce77cc4bc62f33751933163dc13b1dc
+PackageChecksum: SHA512: fbaf86edf44bb3847f3c8c5be405d023dfcb5aa91992f75a35db86c951245e546717f3540ab4e0af7d7c8cab5f61a9d55f5104dfd869e8967b82fa78a9457029
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: aa9f46369369d566246c52fc2bb517334c6371f791a9bcfe28b82f047ed6bf8b/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-s390xv11820 CONTAINS SPDXRef-Package-8f0a62261c2a4454686408f584f6622c845054b9
+
+##### Package: daf338fd3827019ae9a7fff763fd830aa0b0b9e6
+
+PackageName: daf338fd3827019ae9a7fff763fd830aa0b0b9e6
+SPDXID: SPDXRef-Package-daf338fd3827019ae9a7fff763fd830aa0b0b9e6
+PackageChecksum: SHA256: fc7fb0b927e46c62dd835d56b73ff4eb0e821398720ba46956ae51f0edde1883
+PackageChecksum: SHA512: b245240090be14c8165c93a51a5e3ee80ed27f578e1309c52596b8b84bea60e0936efc9a44f4efea5f951ea379104696bbaf5b079dd000a6279fd59bfba9cc49
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: cbcb979360415c96af18fba89cdab833aa5fd0707b90ab69b38c6ac6ec9cb4ea/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-s390xv11820 CONTAINS SPDXRef-Package-daf338fd3827019ae9a7fff763fd830aa0b0b9e6
+
+##### Package: 803d4c397712532e361d4d14df3df42608390000
+
+PackageName: 803d4c397712532e361d4d14df3df42608390000
+SPDXID: SPDXRef-Package-803d4c397712532e361d4d14df3df42608390000
+PackageChecksum: SHA256: f91409cdfe7a6f518692bd76b7ff8ede573bcc438f7458a1d87d06c0e91b4587
+PackageChecksum: SHA512: 4eeb6dc1840e654bd7d4e6bb3b186581d7fce1a2ab0e33f8820a2c21ecd9d533fe62707f03e06217df241b78b19fb3f56a416115429b845fb258e928a305641d
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 94422ee11d45e4fbdfdc96173898eea49d7c71b9cca9068fc780133ed4756c8d/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-s390xv11820 CONTAINS SPDXRef-Package-803d4c397712532e361d4d14df3df42608390000
+
+##### Package: 6bb26d1792b174845febcf69d7a06eec992cda14
+
+PackageName: 6bb26d1792b174845febcf69d7a06eec992cda14
+SPDXID: SPDXRef-Package-6bb26d1792b174845febcf69d7a06eec992cda14
+PackageChecksum: SHA256: dcc4ec8e7d4bc03a544185bbe7e6b0cd36e2b8b9e8d01f90ab0700933bf9ecca
+PackageChecksum: SHA512: 2b15a5b9df3c6b815430bd607159a6731bc8e3433ec536d6f7b2072bb28d3d8e59126fa9753cc82c5fb29ae3c8f03a955dd480aabd3889ddce54405d908e932f
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 63571e2fcbe497b274c8a4358bdc7c7e37f58c28e68eb0bf2a42e31b69fb1684/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-s390xv11820 CONTAINS SPDXRef-Package-6bb26d1792b174845febcf69d7a06eec992cda14
+
+##### Package: 440ee209513c0f0c48b4fb72506ab50f2c382a02
+
+PackageName: 440ee209513c0f0c48b4fb72506ab50f2c382a02
+SPDXID: SPDXRef-Package-440ee209513c0f0c48b4fb72506ab50f2c382a02
+PackageChecksum: SHA256: 1742074351c3bb13d3a275558b53937cfe6942274f5b6139e4f4167bf378cad9
+PackageChecksum: SHA512: 5d472ef8fba7df4566480099190afc44e7d7846209f359b862e2a42d11ff39666da5a46cf1e09fef6db67311fe06915e12e9fbfb1e29aa44abbb14fe9a605684
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 70951c973885972c7abc7c3e65ffbde2dff9c4d435ccb730c8f48abc9ebb3672/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-proxy-s390xv11820 CONTAINS SPDXRef-Package-440ee209513c0f0c48b4fb72506ab50f2c382a02
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-k8sgcriokube-proxy-s390xv11820
+
+##### Package: k8s.gcr.io/kube-scheduler-s390x:v1.18.20
+
+PackageName: k8s.gcr.io/kube-scheduler-s390x:v1.18.20
+SPDXID: SPDXRef-Package-k8sgcriokube-scheduler-s390xv11820
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Package: 8f0a62261c2a4454686408f584f6622c845054b9
+
+PackageName: 8f0a62261c2a4454686408f584f6622c845054b9
+SPDXID: SPDXRef-Package-8f0a62261c2a4454686408f584f6622c845054b9
+PackageChecksum: SHA256: 32fa43279df0b9f2b55fe2d44b5685638ce77cc4bc62f33751933163dc13b1dc
+PackageChecksum: SHA512: fbaf86edf44bb3847f3c8c5be405d023dfcb5aa91992f75a35db86c951245e546717f3540ab4e0af7d7c8cab5f61a9d55f5104dfd869e8967b82fa78a9457029
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: aa9f46369369d566246c52fc2bb517334c6371f791a9bcfe28b82f047ed6bf8b/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-scheduler-s390xv11820 CONTAINS SPDXRef-Package-8f0a62261c2a4454686408f584f6622c845054b9
+
+##### Package: 28fc03a17361a241b5f8f22bcec35df1b121b9b6
+
+PackageName: 28fc03a17361a241b5f8f22bcec35df1b121b9b6
+SPDXID: SPDXRef-Package-28fc03a17361a241b5f8f22bcec35df1b121b9b6
+PackageChecksum: SHA256: 988f3dee3041744cc8821897ef14749aa32cdaa3bc29a74c167f870344b84ccc
+PackageChecksum: SHA512: 98b9cf25607d367ee492bb573a62b1df17c26389f210bd221985a17886522e2f7eea5eb71ddcd732cf9d7ef4af244296606a4ec6bc860bdb5d1fd8afe5a31c7e
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 378e838b70e0d01d1623a6ba73122aeb23a806ae7819af68c2c2dcc801334655/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-scheduler-s390xv11820 CONTAINS SPDXRef-Package-28fc03a17361a241b5f8f22bcec35df1b121b9b6
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-k8sgcriokube-scheduler-s390xv11820
+
+##### Package: k8s.gcr.io/conformance-amd64:v1.18.20
+
+PackageName: k8s.gcr.io/conformance-amd64:v1.18.20
+SPDXID: SPDXRef-Package-k8sgcrioconformance-amd64v11820
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Package: 75bba5d83e62685d04d94de1ba777223f7660e34
+
+PackageName: 75bba5d83e62685d04d94de1ba777223f7660e34
+SPDXID: SPDXRef-Package-75bba5d83e62685d04d94de1ba777223f7660e34
+PackageChecksum: SHA256: f15f7cce013df2f1d8720c30b28742c7a6ad87243e2053b5b7277667e64481c3
+PackageChecksum: SHA512: c424817268ffc867c6e9fcbd0ab2039a7dc2b6655cebf51a2ddee78612068ea6930335dbb8d1f6f4fdeb2e18ccaf7c3b82d87e3edbacc9d05e60dd551bd37e8f
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: b427ffcbf2ad0a61fba1db4a071ce4fa85c032a6bb2892fdf8760c21f7c0fc6e/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-amd64v11820 CONTAINS SPDXRef-Package-75bba5d83e62685d04d94de1ba777223f7660e34
+
+##### Package: 5d70ed35a4cc100ac5d286e26d84d8efdd38d229
+
+PackageName: 5d70ed35a4cc100ac5d286e26d84d8efdd38d229
+SPDXID: SPDXRef-Package-5d70ed35a4cc100ac5d286e26d84d8efdd38d229
+PackageChecksum: SHA256: 3c5fd9b5622301c2faf8853b7947a01d023aa25dbfe9fc583a623dbe19eaea5b
+PackageChecksum: SHA512: f56089864b1c9d6e639c6cf3027e05ebe9352bb9725d393b945c53fda48bcb21d2182fbc2eae901283ca89dd919c6ddef04eb2d3e26a08e761e489e0cb4bbba9
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 3d215f50b4da7f47390684da4ecf1457d737ffc6af3cb23aaac94ae5163b93e4/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-amd64v11820 CONTAINS SPDXRef-Package-5d70ed35a4cc100ac5d286e26d84d8efdd38d229
+
+##### Package: 846b3a88dff086cd06630b1de203bba64ec8f1b7
+
+PackageName: 846b3a88dff086cd06630b1de203bba64ec8f1b7
+SPDXID: SPDXRef-Package-846b3a88dff086cd06630b1de203bba64ec8f1b7
+PackageChecksum: SHA256: 5f682eac6c77746da208b984e7ebbf526e3af4cc02960c10b152df198623c32d
+PackageChecksum: SHA512: 57e92b37d94b715ca8e89af420e014f2e052c9a7f7c3c40dc1a7664b742e72d7451345f4eaf686e16f104b07f76248199c2eaa43249c2d4f82355fc6efec25b8
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: ba5f9c6161cf116b27d3993970e06e32157150b35fd79986b2dc73f3578f1d88/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-amd64v11820 CONTAINS SPDXRef-Package-846b3a88dff086cd06630b1de203bba64ec8f1b7
+
+##### Package: 76d8593c0983bde1fbde9b993bfed9f9a5c8811b
+
+PackageName: 76d8593c0983bde1fbde9b993bfed9f9a5c8811b
+SPDXID: SPDXRef-Package-76d8593c0983bde1fbde9b993bfed9f9a5c8811b
+PackageChecksum: SHA256: 0efcda68ee58446b8946225387c02b2ab1e6590d7b6abe21e602c9b3ff28b405
+PackageChecksum: SHA512: b3c2a5c998e91312660850de5f24ccb564cdc0cd3ffeed4ccdcb3a7d3d63c606b091b78ed1c739d0f80c39c57f0ceb01efc438acd4924020933c610386f6e159
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 916072073a93133316a2aeee28eda1908ef25729850ee57aebc723a2271d5178/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-amd64v11820 CONTAINS SPDXRef-Package-76d8593c0983bde1fbde9b993bfed9f9a5c8811b
+
+##### Package: 9ecbd4e7a5878f0738cbb03ec2f5d98637c254f6
+
+PackageName: 9ecbd4e7a5878f0738cbb03ec2f5d98637c254f6
+SPDXID: SPDXRef-Package-9ecbd4e7a5878f0738cbb03ec2f5d98637c254f6
+PackageChecksum: SHA256: aa22002af4325ca4a1a0ba39d11b801d6816772c6f2e32e0e26a94904f33ca4c
+PackageChecksum: SHA512: 6981745196d7f46e7c621cd66590f86bd78e458cca9dfb9617b0bd7cb0f6af6319163ffce9193cd1194cc910a4afffde5aa7c32998df37f87e59b00f9d4b30f3
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: e12c0bfbfc9acc0eeb4d07fe4eb824de2d7e2fe85259e598f10aa159c6aaf2d8/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-amd64v11820 CONTAINS SPDXRef-Package-9ecbd4e7a5878f0738cbb03ec2f5d98637c254f6
+
+##### Package: 07e1740c9c7c7d9b796182244213bd7fd972564a
+
+PackageName: 07e1740c9c7c7d9b796182244213bd7fd972564a
+SPDXID: SPDXRef-Package-07e1740c9c7c7d9b796182244213bd7fd972564a
+PackageChecksum: SHA256: 719fbaa2992586e6cf61e28a5ad315bfd89ce5164858c34e2c159cae2e2556be
+PackageChecksum: SHA512: 39137cf7fdf2c3fa505b9225df86e5506369f1a1b3077a9239bdc8ca1774b9a4190fef78f83d8b68db663e0d72e2a23918f455ac816d2d46ff75eca24aad4a13
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 15c5ab64ce6eda20378799522d51f606b2e48995fcbfbca912918afb926feca3/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-amd64v11820 CONTAINS SPDXRef-Package-07e1740c9c7c7d9b796182244213bd7fd972564a
+
+##### Package: 601d6998305a6b0da7e19d4d002dfdca11f1fa1f
+
+PackageName: 601d6998305a6b0da7e19d4d002dfdca11f1fa1f
+SPDXID: SPDXRef-Package-601d6998305a6b0da7e19d4d002dfdca11f1fa1f
+PackageChecksum: SHA256: e08337b2229ace109b0048f6c25b5d47200e51a7453810caa480060d0f9926bb
+PackageChecksum: SHA512: b88001c5a6a92c23a004a02fc1c9d15104581cadef410bb296a1c152bc988b4c5b09a7d51a8ebb900e302b49ab7e3dae8a6e1abb027b38f5437d60ab1a5a4f4c
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 10de081c18ef0cf7d2f9a6f9ae47d4e5e4e11e3cdccfbd578a9c9612c3ad0472/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcrioconformance-amd64v11820 CONTAINS SPDXRef-Package-601d6998305a6b0da7e19d4d002dfdca11f1fa1f
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-k8sgcrioconformance-amd64v11820
+
+##### Package: k8s.gcr.io/kube-apiserver-arm:v1.18.20
+
+PackageName: k8s.gcr.io/kube-apiserver-arm:v1.18.20
+SPDXID: SPDXRef-Package-k8sgcriokube-apiserver-armv11820
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+##### Package: 4a7aa64e885d55a29c524fb7090050f0ba26a4b4
+
+PackageName: 4a7aa64e885d55a29c524fb7090050f0ba26a4b4
+SPDXID: SPDXRef-Package-4a7aa64e885d55a29c524fb7090050f0ba26a4b4
+PackageChecksum: SHA256: 56484b46a24b6f40b7444bae4ecd9502bf8100feb13fe7dfbd5269f4ac5fc4a8
+PackageChecksum: SHA512: 902d7e23367c5b138bf9e334631947c56b8617d13d484fe84846d72b2c93b2dfb45f0dee6474bf0bed07bd75693d0a5b1ad5261730a499d59bf95387c2d8d7b8
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 51e59808d329a60c91967651b6a01f94139aec52aae03e09b9bf566cbab44e8e/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-apiserver-armv11820 CONTAINS SPDXRef-Package-4a7aa64e885d55a29c524fb7090050f0ba26a4b4
+
+##### Package: a4f0f738a7e2889b7d58445414cf88a5f0684527
+
+PackageName: a4f0f738a7e2889b7d58445414cf88a5f0684527
+SPDXID: SPDXRef-Package-a4f0f738a7e2889b7d58445414cf88a5f0684527
+PackageChecksum: SHA256: f6158a2c950615e39239cc5e1fd2f85d538f7f1442c67857fc437ad9dd230644
+PackageChecksum: SHA512: 250ef17c8218ce1ea303c2fc14f3d8e27517c76b25c7a213e240231cad6f1ec2ab61a638936f47753b7084751bf6f728b47c12ed6c2eef196aabcc67f8c36bd2
+PackageDownloadLocation: NONE
+FilesAnalyzed: false
+PackageLicenseConcluded: NOASSERTION
+PackageFileName: 8e6ee1508588b3961779eb8695b3b5547ce72c1d35d1fba91ee7832524c66d99/layer.tar
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+
+Relationship: SPDXRef-Package-k8sgcriokube-apiserver-armv11820 CONTAINS SPDXRef-Package-a4f0f738a7e2889b7d58445414cf88a5f0684527
+
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-k8sgcriokube-apiserver-armv11820
+
