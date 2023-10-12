@@ -1,0 +1,15 @@
+evo1
+4C@16G
+100GB
+
+evo2
+4C@16G
+50G
+
+evo3
+2C@8G
+50GB
+
+evo4
+2core@8G
+50GB
