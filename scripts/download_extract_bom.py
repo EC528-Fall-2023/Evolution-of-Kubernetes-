@@ -80,22 +80,33 @@ def process_single(version, enable_storage = enable_storage):
     #download the file to temp dir
     down_cmd = [wget_exe, "-P", temp_dir_ver, full_url]
     #get the file
-    down_code = run_cmd(down_cmd)
-    if(down_code != 0):
-        #downloading failed, add to error list and stop executing
+    try:
+        down_code = run_cmd(down_cmd)
+        if(down_code != 0):
+            #downloading failed, add to error list and stop executing
+            add_to_log(log_location, version + " failed to download, skipping...", True, enable_log)
+            remove_file_or_dir_linux(temp_dir_ver[:-1])
+            return False
+    except:
         add_to_log(log_location, version + " failed to download, skipping...", True, enable_log)
         remove_file_or_dir_linux(temp_dir_ver[:-1])
         return False
 
     #unzip the tar ball
     unzip_cmd = [unzip_prefix, "-zxvf",  temp_dir_ver + filename, "--directory",temp_dir_ver]
-    unzip_code = run_cmd(unzip_cmd)
-    if(unzip_code != 0):
-        #decompression failed, add to error list and stop execution
+    try:
+
+        unzip_code = run_cmd(unzip_cmd)
+        if(unzip_code != 0):
+            #decompression failed, add to error list and stop execution
+            add_to_log(log_location, version + " failed to decompress, skipping...", True, enable_log)
+            remove_file_or_dir_linux(temp_dir_ver[:-1])
+            return False
+    except:
+        # decompression failed, add to error list and stop execution
         add_to_log(log_location, version + " failed to decompress, skipping...", True, enable_log)
         remove_file_or_dir_linux(temp_dir_ver[:-1])
         return False
-
     #call the bom tool on extracted directory
     #output path
     output_path = odir + version + result_suffix
@@ -104,16 +115,21 @@ def process_single(version, enable_storage = enable_storage):
     if(not use_spdx):
         bom_cmd.append("--format")
         bom_cmd.append("json")
-
-    bom_code = run_cmd(bom_cmd)
-    #bom_code = print(bom_cmd)
-    if(bom_code != 0):
-        #bom extraction failed, add to error list and stop execution
+    try:
+        bom_code = run_cmd(bom_cmd)
+        #bom_code = print(bom_cmd)
+        if(bom_code != 0):
+            #bom extraction failed, add to error list and stop execution
+            add_to_log(log_location, version + " failed to extract BOM, skipping...", True, enable_log)
+            remove_file_or_dir_linux(temp_dir_ver[:-1])
+            remove_file_or_dir_linux(output_path)
+            return False
+    except:
+        # bom extraction failed, add to error list and stop execution
         add_to_log(log_location, version + " failed to extract BOM, skipping...", True, enable_log)
         remove_file_or_dir_linux(temp_dir_ver[:-1])
         remove_file_or_dir_linux(output_path)
         return False
-
     #clean up
     #move downloaded file to storage if enabled
     if(enable_storage):
