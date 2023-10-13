@@ -50,7 +50,7 @@ Cloud providers
 - Designing and developing an analytical framework to extract useful insights from the data
 - Users can use a CLI to pull useful information such as a list of dependencies of the current version, how many vulnerabilities each dependency has, and the severity of vulnerability of the dependency if the dependency is found in NIST (National Institute of Standards and Technology) NVD (National Vulnerability Database)
 - Users can also be given a recommendation, they will be recommended a version with fewer vulnerabilities
-- Because the dependencies making up the Kubernetes SBOM may have their dependencies, and those dependencies may also have their dependencies and so on, for the scope of this project, we have chosen to go at least 2-3 levels deep.
+- Because the dependencies making up the Kubernetes SBOM may have their dependencies, and those dependencies may also have their dependencies and so on, for the scope of this project, we have chosen to go at least 2-3 levels deep maximum, 1 level minimum.
   
 ## 4. Solution Concept
 
@@ -96,7 +96,8 @@ Cloud providers
 - An analytical framework that can query each dependency and return the number of vulnerabilities and severity of vulnerability from the NIST NVD, and use GitHub API for other information such as the number of commits, and the percentage that is unreviewed
 - Development of a CLI tool for users to visualize the data, and interact with our data
 - Validate our end product with a Kubernetes development community, and see if our product resonates with them
-  
+
+Stretch Goals: Include up to 2-3 layers of dependencies in our Neo4j database, and run our analysis tools through those as well
 
 ## 6. Release Planning:
 
