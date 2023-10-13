@@ -44,8 +44,8 @@ Cloud providers
 
 ## 3. Scope and Features Of The Project:
 
-- Collect SBOMs of all versions of Kubernetes
-- Parse SBOMs for dependencies
+- A script to collect all SBOMs of all versions of Kubernetes
+- A parser to parse SBOMs for dependencies
 - Storing the dataset of dependencies into a Neo4j graph database
 - Designing and developing an analytical framework to extract useful insights from the data
 - Users can use a CLI to pull useful information such as a list of dependencies of the current version, how many vulnerabilities each dependency has, and the severity of vulnerability of the dependency if the dependency is found in NIST (National Institute of Standards and Technology) NVD (National Vulnerability Database)
@@ -90,12 +90,16 @@ Cloud providers
 - Exploring the inclusion of third-party network and storage plugins if time allows, given Kubernetes' extensive ecosystem.
 
 ## 5. Acceptance criteria
+
 - Have SBOM of every version of Kubernetes
-- A large dataset that's publicly accessible covering the software compositional evolution of Kubernetes
+- A large dataset that's publicly accessible covering the software compositional evolution of Kubernetes to one level of dependency at minimum
+- An analytical framework that can query each dependency and return the number of vulnerabilities and severity of vulnerability from the NIST NVD, and use GitHub API for other information such as the number of commits, and the percentage that is unreviewed
 - Development of a CLI tool for users to visualize the data, and interact with our data
 - Validate our end product with a Kubernetes development community, and see if our product resonates with them
+  
 
 ## 6. Release Planning:
+
 ### Sprint #1 (Sep 20 - Oct 3)
 - Learning about the Kubernetes ecosystem, survey, and review the ecosystem.
 - Start some architecture (how to collect data, how to store data, which database to use) not necessarily implementing.
