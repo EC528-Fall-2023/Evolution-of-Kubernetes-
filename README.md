@@ -91,13 +91,17 @@ Cloud providers
 
 ## 5. Acceptance criteria
 
+Minimum Viable Product:
+
 - Have SBOM of every version of Kubernetes
-- A large dataset that's publicly accessible covering the software compositional evolution of Kubernetes to one level of dependency at minimum
+- A large dataset that's publicly accessible covering the software compositional evolution of Kubernetes with one level of dependency (meaning just the dependencies of Kubernetes)
 - An analytical framework that can query each dependency and return the number of vulnerabilities and severity of vulnerability from the NIST NVD, and use GitHub API for other information such as the number of commits, and the percentage that is unreviewed
 - Development of a CLI tool for users to visualize the data, and interact with our data
 - Validate our end product with a Kubernetes development community, and see if our product resonates with them
 
-Stretch Goals: Include up to 2-3 layers of dependencies in our Neo4j database, and run our analysis tools through those as well
+Stretch Goals: 
+
+- Include up to 2-3 layers of dependencies in our Neo4j database, and run our analysis tools through those as well
 
 ## 6. Release Planning:
 
