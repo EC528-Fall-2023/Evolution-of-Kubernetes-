@@ -38,7 +38,7 @@ Kubernetes development/maintainers teams
 
 Cloud providers
 - Such as Microsoft Azure, AWS, or Google Cloud
-- Google Kubernetes Engine currently only supports up to 1.27.6, the newest version as of October 2023 is up to 1.29 (https://endoflife.date/google-kubernetes-engine) meanwhile Amazon has only started supporting version 1.28 in September of 2023.
+- Google Kubernetes Engine currently only supports up to 1.27.6, the newest version as of October 2023 is up to 1.29 (https://endoflife.date/google-kubernetes-engine) meanwhile Amazon has only started supporting version 1.28 in September of 2023 (https://aws.amazon.com/blogs/containers/amazon-eks-now-supports-kubernetes-version-1-28/).
 - Generally, cloud providers use older versions as they have been thoroughly tested for safety while newer versions have not
 - Our application can help these cloud providers ascertain whether the new version is an upgrade or not
 
