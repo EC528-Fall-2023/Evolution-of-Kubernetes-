@@ -13,13 +13,13 @@ tdir = "./temp/"
 #output directory, where all SBOMs were stored.
 odir = "./sboms/"
 #enable storage for k8s source.
-enable_storage = True
+enable_storage = False
 #k8s storage place
-stor_dir = "/home/kevin/script_test/storage/"
+stor_dir = "/home/sbom/source/"
 #Location of BOM tool executable.
 bom_exe = "/usr/local/bin/bom"
 #Location of wget executable.
-wget_exe = "/usr/bin/wget"
+wget_exe = "wget"
 #Enable log
 enable_log = True
 #log location
@@ -30,9 +30,9 @@ base_link = "https://github.com/kubernetes/kubernetes/archive/refs/tags/"
 #file suffix
 file_suffix = ".tar.gz"
 #unzip command prefix
-unzip_prefix = "/usr/bin/tar"
+unzip_prefix = "tar"
 #result suffix
-result_suffix = ".spdx"
+result_suffix = ".json"
 #error file
 err_path = "./error.log"
 #output in spdx, false for json
@@ -125,7 +125,7 @@ def process_single(version, enable_storage = enable_storage):
             remove_file_or_dir_linux(output_path)
             return False
     except:
-        # bom extraction failed, add to error list and stop execution
+         #bom extraction failed, add to error list and stop execution
         add_to_log(log_location, version + " failed to extract BOM, skipping...", True, enable_log)
         remove_file_or_dir_linux(temp_dir_ver[:-1])
         remove_file_or_dir_linux(output_path)
@@ -140,6 +140,8 @@ def process_single(version, enable_storage = enable_storage):
     #clear decoompressed directory
     remove_file_or_dir_linux(source_path)
 
+    #remove temp version directory
+    remove_file_or_dir_linux(temp_dir_ver[:-1])
     #process finished, signalthe upper level
     return True
 
@@ -150,8 +152,10 @@ def proc_wrap(versions):
     for i in versions:
         if(not process_single(i,enable_storage)):
             error_list.append(i)
+            remove_file_or_dir_linux("/tmp/spdx/")
         else:
             add_to_log(log_location, i + " processed successfully.", True, enable_log)
+            remove_file_or_dir_linux("/tmp/spdx/")
 #main function
 def main():
     #get command line arguments
