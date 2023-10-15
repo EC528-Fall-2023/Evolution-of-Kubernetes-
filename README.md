@@ -40,7 +40,7 @@ Cloud providers
 - Such as Microsoft Azure, AWS, or Google Cloud
 - Google Kubernetes Engine currently only supports up to 1.27.6, the newest version as of October 2023 is up to 1.29 (https://endoflife.date/google-kubernetes-engine) meanwhile Amazon has only started supporting version 1.28 in September of 2023 (https://aws.amazon.com/blogs/containers/amazon-eks-now-supports-kubernetes-version-1-28/).
 - Generally, cloud providers use older versions as they have been thoroughly tested for safety while newer versions have not
-- Our application can help these cloud providers ascertain whether the new version is an upgrade or not
+- Our application can help these cloud providers decide whether they want to support the newer versions as well or not
 
 ## 3. Scope and Features Of The Project:
 
@@ -50,7 +50,7 @@ Cloud providers
 - Designing and developing an analytical framework to extract useful insights from the data
 - Users can use a CLI to pull useful information such as a list of dependencies of the current version, how many vulnerabilities each dependency has, and the severity of vulnerability of the dependency if the dependency is found in NIST (National Institute of Standards and Technology) NVD (National Vulnerability Database)
 - Users can also be given a recommendation, they will be recommended a version with fewer vulnerabilities
-- Because the dependencies making up the Kubernetes SBOM may have their dependencies, and those dependencies may also have their dependencies and so on, for the scope of this project, we have chosen to go at least 2-3 levels deep maximum, 1 level minimum.
+- Because the dependencies making up the Kubernetes SBOM may have their dependencies, and those dependencies may also have their dependencies and so on, for the scope of this project, we have chosen to go 2-3 levels deep maximum, 1 level minimum.
   
 ## 4. Solution Concept
 
