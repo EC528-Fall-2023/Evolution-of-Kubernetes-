@@ -140,3 +140,32 @@ def writefile(filename, content, print_progress = True):
             res.write(str(i))
             res.write("\n")
     res.close()
+
+#get list of files in directory, return file name
+def get_file_list(wdir, white_list = []):
+    res = []
+    wdir = validir(wdir)
+    if(check_exist(wdir)):
+        flist = os.listdir(wdir)
+        for i in flist:
+            if(i not in white_list):
+                res.append(i)
+    else:
+        return None
+    return res
+
+#Check if exist
+def check_exist(inputdir):
+    return os.path.exists(inputdir)
+
+
+# Return the difference part between the new list than old list while reatain the sequence.
+def get_new_list_diff(old, new):
+    res = []
+    for i in new:
+        if (i not in old):
+            res.append(i)
+        else:
+            pass
+
+    return res
