@@ -170,9 +170,9 @@ def get_new_list_diff(old, new):
 
     return res
 
-#filter list of files and get rid of it's suffix after the FIRST dot.
-def get_pure_file_name_in_list(inputList):
+#filter list of files and get rid of it's suffix.
+def get_pure_file_name_in_list(inputList, suffix):
     res = []
     for i in inputList:
-        res.append(i.split(".")[0])
+        res.append(i[:-len(suffix)])
     return res
