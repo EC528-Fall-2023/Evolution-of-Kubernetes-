@@ -13,6 +13,7 @@
 
 ## Sprint Demo Videos
 1. https://drive.google.com/file/d/13ZRfemcwVMjYKPPgBF-aMuAYyIu4Uj0r/view?usp=drive_link
+2. https://drive.google.com/file/d/19RKdk28hIlycdg6E-IVRdQniK853RX3h/view?usp=drive_link
 
 ## 1. Vision and Goals Of The Project: 
 
