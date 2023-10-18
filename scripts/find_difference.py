@@ -9,15 +9,15 @@ from helper import *
 source_directory = "/home/sbom/output/"
 source_list = "/home/sbom/list_of_versions_updated"
 target_output = "/home/sbom/list_of_versions_1016"
-
+output_suffix = ".json"
 #format RLs
 source_directory = validir(source_directory)
 ##read from the source list
 desired_list = get_list_from_file(source_list)
 #get list from source dir
-actual_list = get_pure_file_name_in_list(get_file_list(source_directory))
+actual_list = get_pure_file_name_in_list(get_file_list(source_directory), output_suffix)
 #find the differences
-new_list = get_new_list_diff(actual_list, desired_list)
+new_list = get_new_list_diff(desired_list,actual_list)
 #output list to file
 writefile(target_output, new_list)
 #Make announcement
