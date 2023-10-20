@@ -1,2 +1,4 @@
 kubernetesVersion
 kubernetes-1.29.0-alpha.1
+kubernetes-1.28.2
+kubernetes-1.15.0-alpha.1
