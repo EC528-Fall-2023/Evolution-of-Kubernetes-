@@ -5169,4 +5169,3 @@ Relationship: SPDXRef-Package-registry.k8s.io-kube-controller-manager-s390x-v1.2
 Relationship: SPDXRef-Package-registry.k8s.io-kube-controller-manager-s390x-v1.29.0-alpha.1 GENERATED_FROM DocumentRef-kubernetes-v1.29.0-alpha.1:SPDXRef-Package-kubernetes
 
 Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-Package-registry.k8s.io-kube-controller-manager-s390x-v1.29.0-alpha.1
-
