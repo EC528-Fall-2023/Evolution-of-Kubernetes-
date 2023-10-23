@@ -16,6 +16,7 @@
 2. https://drive.google.com/file/d/19RKdk28hIlycdg6E-IVRdQniK853RX3h/view?usp=drive_link
 
 ## Slides 
+1. https://docs.google.com/presentation/d/1g55eJtPw-Nqs4UGdct1RVzj7Tn9rZ_vOGkU5aett7ns/edit
 2. https://docs.google.com/presentation/d/1zIL7WitdqtMgJpEo_-UIM9woRG7rn-oMftZ20LrrP9c/edit
 
 
