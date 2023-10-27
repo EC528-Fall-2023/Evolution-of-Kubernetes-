@@ -104,6 +104,7 @@ Minimum Viable Product:
 Stretch Goals: 
 
 - Include up to 2-3 layers of dependencies in our Neo4j database, and run our analysis tools through those as well
+- Implement a timeline UI (separate from graph database UI) to depict analysis results
 
 ## 6. Release Planning:
 
