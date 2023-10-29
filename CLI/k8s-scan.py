@@ -19,7 +19,7 @@ def isvalid(driver,version):
 def dependencies(driver,version,list):
     #run cypher query 
     records,summary,keys = driver.execute_query(
-        "MATCH (:KubeVersion{kubernetesVersion:$version})-[:Contains]->(p) return p.dependencyVersion,p.dependencyName",
+        "MATCH (:KubeVersion{kubernetesVersion:$version})-[:Contains]->(p) return p.dependencyName,p.dependencyVersion",
         {"version":version}, routing = RoutingControl.READ, database = "neo4j"
     )
     #print dependencies data
@@ -34,10 +34,56 @@ def dependencies(driver,version,list):
             print(df)
 
 def compare(driver,version_1,version_2,list):
+    #separate based on if both version + name is same, name is same different version, both are different
     records_1,summary,keys = driver.execute_query(
-        "MATCH (:KubeVersion{kubernetesVersion:$version})-[:Contains]->(p) return p.dependencyVersion,p.dependencyName",
+        "MATCH (:KubeVersion{kubernetesVersion:$version})-[:Contains]->(p) return p.dependencyName, p.dependencyVersion",
         {"version":version_1}, routing = RoutingControl.READ, database = "neo4j"
     )
+    records_2,summary,keys = driver.execute_query(
+        "MATCH (:KubeVersion{kubernetesVersion:$version})-[:Contains]->(p) return p.dependencyName, p.dependencyVersion",
+        {"version":version_2}, routing = RoutingControl.READ, database = "neo4j"
+    )
+
+    #convert records into a pandas dataframe
+    df_1 = pd.DataFrame(records_1,columns=['dependency name','dependency version'])
+    df_2 = pd.DataFrame(records_2,columns=['dependency name','dependency version'])
+    #create dataframe with exact same dependencies
+    df_same = pd.merge(df_1,df_2,how='inner',on=['dependency name','dependency version'])
+    
+    #delete all entries that are exactly the same dependencies
+    df_1 = pd.concat([df_1,df_same],ignore_index=True)
+    df_2 = pd.concat([df_2,df_same],ignore_index=True)
+    df_1.drop_duplicates(keep=False,ignore_index=True,inplace=True)
+    df_2.drop_duplicates(keep=False,ignore_index=True,inplace=True)
+
+    #create dataframe with updated dependencies 
+    df_updated = pd.merge(df_1,df_2,how='inner',on=['dependency name'])
+    df_updated.rename(columns={"dependency version_x":"dependency version_1","dependency version_y":"dependency version_2"},inplace=True)
+    
+    #delete all entries that are updated dependencies
+    df_1.rename(columns={"dependency version":"dependency version_1"},inplace=True)
+    df_2.rename(columns={"dependency version":"dependency version_2"},inplace=True)
+    df_1 = pd.concat([df_1,df_updated],join='inner',ignore_index=True)
+    df_2 = pd.concat([df_2,df_updated],join='inner',ignore_index=True)
+    df_1.drop_duplicates(keep=False,ignore_index=True,inplace=True)
+    df_2.drop_duplicates(keep=False,ignore_index=True,inplace=True)
+    
+    print("number of dependencies that has remained the same is:",len(df_same))
+    print("number of dependencies that has been updated is:", len(df_updated))
+    print("number of dependencies that has been removed is:", len(df_2))
+    print("number of dependencies that has been added is:", len(df_1))
+    if(list == 'some'):
+        print(df_same)
+        print(df_updated)
+        print(df_1)
+        print(df_2)
+    elif (list == 'all'):
+        with pd.option_context('display.max_rows',None):
+            print(df_same)
+            print(df_updated)
+            print(df_1)
+            print(df_2)
+
 
 def main():
     #login to neo4j
@@ -55,7 +101,7 @@ def main():
     parser.add_argument("-e","--evaluate",action="store_true",help="evaluate security posture of chosen version")
     parser.add_argument("-r","--recommend",action="store_true",help="choose next version with less or equal vulnerabilities")
     parser.add_argument("-a","--analyze",action="store_true",help="analyze all versions released up till selected version")
-    parser.add_argument("-l","--list",default='none', choices=['none','some','all'],required=False,help="[default = none] toggle whether to list all data or not")
+    parser.add_argument("-l","--list",default='some', choices=['none','some','all'],required=False,help="[default = some] toggle whether to list all data or not")
     args = parser.parse_args()
 
     #check if version is valid
