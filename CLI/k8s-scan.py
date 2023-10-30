@@ -1,6 +1,7 @@
 #run this using 'python .\Neo4jCLI.py'
-#pip install neo4j, pip install pandas
+#pip install neo4j, pip install pandas, pip install tabulate
 from neo4j import GraphDatabase, RoutingControl
+from tabulate import tabulate
 import pandas as pd
 import argparse
 
@@ -25,13 +26,10 @@ def dependencies(driver,version,list):
     #print dependencies data
     print("total dependencies in version",version,"is",len(records))
     #print list of dependencies if user requests it
-    if(list == 'some'):
+    if(list):
         df = pd.DataFrame(records,columns=['dependency name','dependency version'])
-        print(df)
-    elif (list == 'all'):
-        df = pd.DataFrame(records,columns=['dependency name','dependency version'])
-        with pd.option_context('display.max_rows',None):
-            print(df)
+        print(tabulate(df,headers='keys',tablefmt='psql'))
+    
 
 def compare(driver,version_1,version_2,list):
     #separate based on if both version + name is same, name is same different version, both are different
@@ -44,9 +42,26 @@ def compare(driver,version_1,version_2,list):
         {"version":version_2}, routing = RoutingControl.READ, database = "neo4j"
     )
 
-    #convert records into a pandas dataframe
-    df_1 = pd.DataFrame(records_1,columns=['dependency name','dependency version'])
-    df_2 = pd.DataFrame(records_2,columns=['dependency name','dependency version'])
+    #rewrite version for search
+    version_1 = "v" + version_1.replace("kubernetes-",'')
+    version_2 = "v" + version_2.replace("kubernetes-",'')
+    #find which of the two is more recent, will be used later
+    with open("versions_chrono.txt",'r') as chrono:
+        for line_num, line in enumerate(chrono):
+            line = line.strip()
+            if (line == version_1): index_1 = line_num
+            if (line == version_2): index_2 = line_num
+        if (index_1 < index_2):
+            df_1 = pd.DataFrame(records_1,columns=['dependency name','dependency version']) #df_1 is recent -> rewards_1 in this case
+            df_2 = pd.DataFrame(records_2,columns=['dependency name','dependency version'])
+            recent = version_1
+            older = version_2
+        else:
+            df_1 = pd.DataFrame(records_2,columns=['dependency name','dependency version']) #df_1 is recent -> rewards_2 in this case
+            df_2 = pd.DataFrame(records_1,columns=['dependency name','dependency version'])
+            recent = version_2
+            older = version_1
+    
     #create dataframe with exact same dependencies
     df_same = pd.merge(df_1,df_2,how='inner',on=['dependency name','dependency version'])
     
@@ -68,21 +83,28 @@ def compare(driver,version_1,version_2,list):
     df_1.drop_duplicates(keep=False,ignore_index=True,inplace=True)
     df_2.drop_duplicates(keep=False,ignore_index=True,inplace=True)
     
-    print("number of dependencies that has remained the same is:",len(df_same))
-    print("number of dependencies that has been updated is:", len(df_updated))
-    print("number of dependencies that has been removed is:", len(df_2))
-    print("number of dependencies that has been added is:", len(df_1))
-    if(list == 'some'):
-        print(df_same)
-        print(df_updated)
-        print(df_1)
-        print(df_2)
-    elif (list == 'all'):
-        with pd.option_context('display.max_rows',None):
-            print(df_same)
-            print(df_updated)
-            print(df_1)
-            print(df_2)
+    #rename for clarity
+    df_updated.rename(columns={"dependency version_1":"dependencies version from "+recent,"dependency version_2":"dependencies version from "+older},inplace=True)
+    df_1.rename(columns={"dependency version_1":"dependency version"},inplace=True)
+    df_2.rename(columns={"dependency version_2":"dependency version"},inplace=True)
+
+    ##displaying data
+    #prints the data
+    print("number of same dependencies:",len(df_same))
+    print("number of updated dependencies:", len(df_updated))
+    print("number of new dependencies", len(df_1)) #new version
+    print("number of outdated dependencies:", len(df_2)) #old version
+    
+    #prints the dataframe is requested to
+    if(list):
+        print("Same dependencies [Common dependencies and version]")
+        print(tabulate(df_same,headers='keys',tablefmt='psql'))
+        print("Updated dependencies [Common dependencies but with a different version]")
+        print(tabulate(df_updated,headers='keys',tablefmt='psql'))
+        print("New dependencies [All dependencies found in newer version: " + recent + " but not in older version]")
+        print(tabulate(df_1,headers='keys',tablefmt='psql'))
+        print("Outdated dependencies [All dependencies found in older version: " + older + " but not in newer version]")
+        print(tabulate(df_2,headers='keys',tablefmt='psql'))
 
 
 def main():
@@ -101,7 +123,7 @@ def main():
     parser.add_argument("-e","--evaluate",action="store_true",help="evaluate security posture of chosen version")
     parser.add_argument("-r","--recommend",action="store_true",help="choose next version with less or equal vulnerabilities")
     parser.add_argument("-a","--analyze",action="store_true",help="analyze all versions released up till selected version")
-    parser.add_argument("-l","--list",default='some', choices=['none','some','all'],required=False,help="[default = some] toggle whether to list all data or not")
+    parser.add_argument("-l","--list",action="store_true",help="[default = false] toggle whether to list all data or not")
     args = parser.parse_args()
 
     #check if version is valid
