@@ -15,6 +15,11 @@
 1. https://drive.google.com/file/d/13ZRfemcwVMjYKPPgBF-aMuAYyIu4Uj0r/view?usp=drive_link
 2. https://drive.google.com/file/d/19RKdk28hIlycdg6E-IVRdQniK853RX3h/view?usp=drive_link
 
+## Slides 
+1. https://docs.google.com/presentation/d/1g55eJtPw-Nqs4UGdct1RVzj7Tn9rZ_vOGkU5aett7ns/edit
+2. https://docs.google.com/presentation/d/1zIL7WitdqtMgJpEo_-UIM9woRG7rn-oMftZ20LrrP9c/edit
+
+
 ## 1. Vision and Goals Of The Project: 
 
 ### Background
@@ -99,6 +104,7 @@ Minimum Viable Product:
 Stretch Goals: 
 
 - Include up to 2-3 layers of dependencies in our Neo4j database, and run our analysis tools through those as well
+- Implement a timeline UI (separate from graph database UI) to depict analysis results
 
 ## 6. Release Planning:
 
