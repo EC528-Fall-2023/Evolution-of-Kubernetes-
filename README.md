@@ -54,8 +54,9 @@ Cloud providers
 - A parser to parse SBOMs for dependencies
 - Storing the dataset of dependencies into a Neo4j graph database
 - Designing and developing an analytical framework to extract useful insights from the data
-- Users can use a CLI to pull useful information such as a list of dependencies of the current version, how many vulnerabilities each dependency has, and the severity of vulnerability of the dependency if the dependency is found in NIST (National Institute of Standards and Technology) NVD (National Vulnerability Database) and the OSV (Open Source Vulnerabilities) database.
-- Users would also be given a recommended version of a specified component depending on the data gathered regarding that component.
+- Users can use a CLI to pull useful information such as a list of dependencies of the current version, how many vulnerabilities each dependency has, and the severity of vulnerability of the dependency if the dependency is found in NIST (National Institute of Standards and Technology) NVD (National Vulnerability Database) and the OSV (Open Source Vulnerabilities) database
+- Users would also be given a recommended version of a specified component depending on the data gathered regarding that component
+- The end result should include data as an analysis over time. This includes information such as how many dependencies have changed on average. Why are they changing (Vulnerabilities being patched or just an update?), and the scope of change in dependencies (For example when comparing 1.20 vs 1.19, is it a big release or only a few dependencies changes?)
   
 ## 4. Solution Concept
 
@@ -86,11 +87,12 @@ Cloud providers
 5. CLI
 - The user will interact with our data through the use of a CLI by specifying a version to analyze, and what they would like to analyze
 - Some basis for whether the next version is better than the current one includes security, and we can determine this through the use of CVSS (Common Vulnerability Scoring System), and only allowing low or no severity to pass through our recommendation
-- Users are able to navigate the data visually through the Neo4j UI
+- Users can navigate the data visually through the Neo4j UI
 - Results can also be shown as tables
 - Refer to the CLI folder for more specific instructions
 
 6. Extra
+- Map the analysis over time onto a timeline UI
 - Exploring the inclusion of third-party network and storage plugins if time allows, given Kubernetes' extensive ecosystem.
 
 ## 5. Acceptance criteria
