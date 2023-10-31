@@ -58,7 +58,7 @@ Cloud providers
   
 ## 4. Solution Concept
 
-![arch_diagram](https://github.com/EC528-Fall-2023/Evolution-of-Kubernetes-/assets/76934261/57b79a18-efa7-41d9-a48d-2bd58d12a4f3)
+![image](https://github.com/EC528-Fall-2023/Evolution-of-Kubernetes-/assets/34695547/6c1d214a-6d66-49a8-997c-e636e01b9274)
 
 1. Kubernetes SBOM
 - There exists an open-source program that generates a software bill of materials (SBOM) in SPDX or JSON format. Using this, we can create and collect the SBOMs of each Kubernetes version. Because the JSON format is more readable and easier to work with, we will be using that. 
@@ -80,8 +80,7 @@ Cloud providers
 4. Analytic Framework
 - Build a system to extract valuable insights
 - Analyzing historical data and bringing insights about dependencies, vulnerabilities, release frequency, etc.
-- Vulnerabilities can be analyzed using the NIST CVE API, this API can be used to retrieve the list of vulneKubernetes from known components.
-- Then we can use the GitHub API for data like release frequency, number of commits, etc.
+- Vulnerabilities can be analyzed using the NIST and OSV APIs, these APIs can be used to retrieve the list of vulneKubernetes from known components.
 
 5. CLI
 - The user will interact with our data through the use of a CLI by specifying a component (and version) to analyze. 
@@ -97,7 +96,7 @@ Minimum Viable Product:
 
 - Have SBOM of every version of Kubernetes
 - A large dataset that's publicly accessible covering the software compositional evolution of Kubernetes with one level of dependency (meaning just the dependencies of Kubernetes)
-- An analytical framework that can query each dependency and return the number of vulnerabilities and severity of vulnerability from the NIST NVD, and use GitHub API for other information such as the number of commits, and the percentage that is unreviewed
+- An analytical framework that can query each dependency and return the number of vulnerabilities and severity of vulnerability from the NIST and OSV databases
 - Development of a CLI tool for users to visualize the data, and interact with our data
 - Validate our end product with a Kubernetes development community, and see if our product resonates with them
 
