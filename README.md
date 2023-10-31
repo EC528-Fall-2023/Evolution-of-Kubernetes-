@@ -125,14 +125,19 @@ Stretch Goals:
 
 
 ### Sprint #3 (Oct 18 - Oct 31)
-- Develop the system 
-- Deliver the first MVP
-- Ensure data is accessible and queryable
+- Started to develop CLI Tool
+- Deployed script
+- Downloaded/extracted k8s sboms
+- Generated SBOMS from container images using SYFT
+- Generated vulerable pakcages from container images using GRYPE
 
 ### Sprint #4 (Nov 1 - Nov 14)
-- Fine-tune the system.
-- Develop a CLI tool and analytics features.
-- Analyze the insights gained from the data.
+- Finish GRYPE/SYFT script 
+- Import data into Neo4j
+- Merge the Neo4j DB that has images, binaries and tar folders with the Neo4j DB that has dependeices
+- Analyze the insights gained from the data
+- Add more queries to CLI
+  
 
 ### Sprint #5 (Nov 15 - Nov 28)
 - Getting feedback and putting it into our application
