@@ -56,7 +56,6 @@ Cloud providers
 - Designing and developing an analytical framework to extract useful insights from the data
 - Users can use a CLI to pull useful information such as a list of dependencies of the current version, how many vulnerabilities each dependency has, and the severity of vulnerability of the dependency if the dependency is found in NIST (National Institute of Standards and Technology) NVD (National Vulnerability Database) and the OSV (Open Source Vulnerabilities) database.
 - Users would also be given a recommended version of a specified component depending on the data gathered regarding that component.
-- Because the dependencies making up the Kubernetes SBOM may have their dependencies, and those dependencies may also have their dependencies and so on, for the scope of this project, we have chosen to go 2-3 levels deep maximum, 1 level minimum.
   
 ## 4. Solution Concept
 
@@ -85,9 +84,11 @@ Cloud providers
 - Vulnerabilities can be analyzed using the NIST and OSV APIs, these APIs can be used to retrieve the list of vulneKubernetes from known components.
 
 5. CLI
-- The user will interact with our data through the use of a CLI by specifying a component (and version) to analyze. 
-- Some basis for whether the next version is better than the current one includes security, and we can determine this through the use of CVSS (Common Vulnerability Scoring System), and only allowing low or no severity to pass through our recommendation. 
+- The user will interact with our data through the use of a CLI by specifying a version to analyze, and what they would like to analyze
+- Some basis for whether the next version is better than the current one includes security, and we can determine this through the use of CVSS (Common Vulnerability Scoring System), and only allowing low or no severity to pass through our recommendation
 - Users are able to navigate the data visually through the Neo4j UI
+- Results can also be shown as tables
+- Refer to the CLI folder for more specific instructions
 
 6. Extra
 - Exploring the inclusion of third-party network and storage plugins if time allows, given Kubernetes' extensive ecosystem.
@@ -103,9 +104,8 @@ Minimum Viable Product:
 - Validate our end product with a Kubernetes development community, and see if our product resonates with them
 
 Stretch Goals: 
-
-- Include up to 2-3 layers of dependencies in our Neo4j database, and run our analysis tools through those as well
 - Implement a timeline UI (separate from graph database UI) to depict analysis results
+- Also analyze the security posture of 5-6 tools within the Kubernetes Ecosystem (such as network plugins, container runtime tools(docker, runc), stack monitoring tools(Prometheus))
 
 ## 6. Release Planning:
 
@@ -115,7 +115,6 @@ Stretch Goals:
 - Begin designing the system's architecture 
 - Look into the NIST API and Neo4j
 - Extract all SBOMS
-
 
 
 ### Sprint #2 (Oct 4 - Oct 17)
@@ -132,6 +131,7 @@ Stretch Goals:
 - Generated SBOMS from container images using SYFT
 - Generated vulerable pakcages from container images using GRYPE
 
+
 ### Sprint #4 (Nov 1 - Nov 14)
 - Finish GRYPE/SYFT script 
 - Import data into Neo4j
@@ -141,6 +141,7 @@ Stretch Goals:
   
 
 ### Sprint #5 (Nov 15 - Nov 28)
+- Complete MVP
 - Getting feedback and putting it into our application
 
 
