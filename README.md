@@ -80,7 +80,7 @@ Cloud providers
 4. Analytic Framework
 - Build a system to extract valuable insights
 - Analyzing historical data and bringing insights about dependencies, vulnerabilities, release frequency, etc.
-- Vulnerabilities can be analyzed using the NIST and OSV APIs, these APIs can be used to retrieve the list of vulneKubernetes from known components.
+- Vulnerabilities can be analyzed using the NIST and OSV APIs, these APIs can be used to retrieve the list of vulnerabilities from known components.
 
 5. CLI
 - The user will interact with our data through the use of a CLI by specifying a component (and version) to analyze. 
@@ -102,7 +102,6 @@ Minimum Viable Product:
 
 Stretch Goals: 
 
-- Include up to 2-3 layers of dependencies in our Neo4j database, and run our analysis tools through those as well
 - Implement a timeline UI (separate from graph database UI) to depict analysis results
 
 ## 6. Release Planning:
