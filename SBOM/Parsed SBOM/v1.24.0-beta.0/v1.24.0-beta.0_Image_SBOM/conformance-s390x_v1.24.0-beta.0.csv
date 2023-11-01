@@ -1,0 +1,11 @@
+NAME                                                    VERSION           TYPE      
+base-files                                              11.1+deb11u3      deb        
+k8s.io/kubernetes/cmd/kubectl                           v1.24.0-beta      go-module  
+k8s.io/kubernetes/test/conformance/image/go-runner      v1.24.0-beta      go-module  
+k8s.io/kubernetes/vendor/github.com/onsi/ginkgo/ginkgo  v1.24.0-beta      go-module  
+libc6                                                   2.31-13+deb11u3   deb        
+libssl1.1                                               1.1.1n-0+deb11u1  deb        
+netbase                                                 6.3               deb        
+openssl                                                 1.1.1n-0+deb11u1  deb        
+stdlib                                                  go1.18            go-module  
+tzdata                                                  2021a-1+deb11u3   deb

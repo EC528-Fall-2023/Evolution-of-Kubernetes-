@@ -14,10 +14,12 @@
 ## Sprint Demo Videos
 1. https://drive.google.com/file/d/13ZRfemcwVMjYKPPgBF-aMuAYyIu4Uj0r/view?usp=drive_link
 2. https://drive.google.com/file/d/19RKdk28hIlycdg6E-IVRdQniK853RX3h/view?usp=drive_link
+3. https://drive.google.com/file/d/1OckXILuWEGGWwAhdlucARE14L7jsiLW2/view?usp=drive_link
 
 ## Slides 
 1. https://docs.google.com/presentation/d/1g55eJtPw-Nqs4UGdct1RVzj7Tn9rZ_vOGkU5aett7ns/edit
 2. https://docs.google.com/presentation/d/1zIL7WitdqtMgJpEo_-UIM9woRG7rn-oMftZ20LrrP9c/edit
+3. https://docs.google.com/presentation/d/1UTrj0KQ0ppcm8Q9sv9N-m2D3Me5nAtBGVq8rKRGSyEg/edit?usp=drive_link
 
 
 ## 1. Vision and Goals Of The Project: 
@@ -52,13 +54,13 @@ Cloud providers
 - A parser to parse SBOMs for dependencies
 - Storing the dataset of dependencies into a Neo4j graph database
 - Designing and developing an analytical framework to extract useful insights from the data
-- Users can use a CLI to pull useful information such as a list of dependencies of the current version, how many vulnerabilities each dependency has, and the severity of vulnerability of the dependency if the dependency is found in NIST (National Institute of Standards and Technology) NVD (National Vulnerability Database) and the OSV (Open Source Vulnerabilities) database.
-- Users would also be given a recommended version of a specified component depending on the data gathered regarding that component.
-- Because the dependencies making up the Kubernetes SBOM may have their dependencies, and those dependencies may also have their dependencies and so on, for the scope of this project, we have chosen to go 2-3 levels deep maximum, 1 level minimum.
+- Users can use a CLI to pull useful information such as a list of dependencies of the current version, how many vulnerabilities each dependency has, and the severity of vulnerability of the dependency if the dependency is found in NIST (National Institute of Standards and Technology) NVD (National Vulnerability Database) and the OSV (Open Source Vulnerabilities) database
+- Users would also be given a recommended version of a specified component depending on the data gathered regarding that component
+- The end result should include data as an analysis over time. This includes information such as how many dependencies have changed on average. Why are they changing (Vulnerabilities being patched or just an update?), and the scope of change in dependencies (For example when comparing 1.20 vs 1.19, is it a big release or only a few dependencies changes?)
   
 ## 4. Solution Concept
 
-![arch_diagram](https://github.com/EC528-Fall-2023/Evolution-of-Kubernetes-/assets/76934261/57b79a18-efa7-41d9-a48d-2bd58d12a4f3)
+![image](https://github.com/EC528-Fall-2023/Evolution-of-Kubernetes-/assets/34695547/6c1d214a-6d66-49a8-997c-e636e01b9274)
 
 1. Kubernetes SBOM
 - There exists an open-source program that generates a software bill of materials (SBOM) in SPDX or JSON format. Using this, we can create and collect the SBOMs of each Kubernetes version. Because the JSON format is more readable and easier to work with, we will be using that. 
@@ -80,15 +82,17 @@ Cloud providers
 4. Analytic Framework
 - Build a system to extract valuable insights
 - Analyzing historical data and bringing insights about dependencies, vulnerabilities, release frequency, etc.
-- Vulnerabilities can be analyzed using the NIST CVE API, this API can be used to retrieve the list of vulneKubernetes from known components.
-- Then we can use the GitHub API for data like release frequency, number of commits, etc.
+- Vulnerabilities can be analyzed using the NIST and OSV APIs, these APIs can be used to retrieve the list of vulneKubernetes from known components.
 
 5. CLI
-- The user will interact with our data through the use of a CLI by specifying a component (and version) to analyze. 
-- Some basis for whether the next version is better than the current one includes security, and we can determine this through the use of CVSS (Common Vulnerability Scoring System), and only allowing low or no severity to pass through our recommendation. 
-- Users are able to navigate the data visually through the Neo4j UI
+- The user will interact with our data through the use of a CLI by specifying a version to analyze, and what they would like to analyze
+- Some basis for whether the next version is better than the current one includes security, and we can determine this through the use of CVSS (Common Vulnerability Scoring System), and only allowing low or no severity to pass through our recommendation
+- Users can navigate the data visually through the Neo4j UI
+- Results can also be shown as tables
+- Refer to the CLI folder for more specific instructions
 
 6. Extra
+- Map the analysis over time onto a timeline UI
 - Exploring the inclusion of third-party network and storage plugins if time allows, given Kubernetes' extensive ecosystem.
 
 ## 5. Acceptance criteria
@@ -97,13 +101,13 @@ Minimum Viable Product:
 
 - Have SBOM of every version of Kubernetes
 - A large dataset that's publicly accessible covering the software compositional evolution of Kubernetes with one level of dependency (meaning just the dependencies of Kubernetes)
-- An analytical framework that can query each dependency and return the number of vulnerabilities and severity of vulnerability from the NIST NVD, and use GitHub API for other information such as the number of commits, and the percentage that is unreviewed
+- An analytical framework that can query each dependency and return the number of vulnerabilities and severity of vulnerability from the NIST and OSV databases
 - Development of a CLI tool for users to visualize the data, and interact with our data
 - Validate our end product with a Kubernetes development community, and see if our product resonates with them
 
 Stretch Goals: 
-
-- Include up to 2-3 layers of dependencies in our Neo4j database, and run our analysis tools through those as well
+- Implement a timeline UI (separate from graph database UI) to depict analysis results
+- Also analyze the security posture of 5-6 tools within the Kubernetes Ecosystem (such as network plugins, container runtime tools(docker, runc), stack monitoring tools(Prometheus))
 
 ## 6. Release Planning:
 
@@ -115,7 +119,6 @@ Stretch Goals:
 - Extract all SBOMS
 
 
-
 ### Sprint #2 (Oct 4 - Oct 17)
 - Establish the database infrastructure.
 - Determine data storage mechanisms
@@ -124,16 +127,23 @@ Stretch Goals:
 
 
 ### Sprint #3 (Oct 18 - Oct 31)
-- Develop the system 
-- Deliver the first MVP
-- Ensure data is accessible and queryable
+- Started to develop CLI Tool
+- Deployed script
+- Downloaded/extracted k8s sboms
+- Generated SBOMS from container images using SYFT
+- Generated vulerable pakcages from container images using GRYPE
+
 
 ### Sprint #4 (Nov 1 - Nov 14)
-- Fine-tune the system.
-- Develop a CLI tool and analytics features.
-- Analyze the insights gained from the data.
+- Finish GRYPE/SYFT script 
+- Import data into Neo4j
+- Merge the Neo4j DB that has images, binaries and tar folders with the Neo4j DB that has dependeices
+- Analyze the insights gained from the data
+- Add more queries to CLI
+  
 
 ### Sprint #5 (Nov 15 - Nov 28)
+- Complete MVP
 - Getting feedback and putting it into our application
 
 
