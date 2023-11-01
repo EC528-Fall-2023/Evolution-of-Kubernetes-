@@ -42,7 +42,7 @@ def compare(driver,version_1,version_2,list):
         {"version":version_2}, routing = RoutingControl.READ, database = "neo4j"
     )
 
-    #rewrite version for search
+    #rewrite version for search in versions_chrono.txt
     version_1 = "v" + version_1.replace("kubernetes-",'')
     version_2 = "v" + version_2.replace("kubernetes-",'')
     #find which of the two is more recent, will be used later
@@ -52,12 +52,12 @@ def compare(driver,version_1,version_2,list):
             if (line == version_1): index_1 = line_num
             if (line == version_2): index_2 = line_num
         if (index_1 < index_2):
-            df_1 = pd.DataFrame(records_1,columns=['dependency name','dependency version']) #df_1 is recent -> rewards_1 in this case
+            df_1 = pd.DataFrame(records_1,columns=['dependency name','dependency version']) #df_1 is recent -> records_1 in this case
             df_2 = pd.DataFrame(records_2,columns=['dependency name','dependency version'])
             recent = version_1
             older = version_2
         else:
-            df_1 = pd.DataFrame(records_2,columns=['dependency name','dependency version']) #df_1 is recent -> rewards_2 in this case
+            df_1 = pd.DataFrame(records_2,columns=['dependency name','dependency version']) #df_1 is recent -> records_2 in this case
             df_2 = pd.DataFrame(records_1,columns=['dependency name','dependency version'])
             recent = version_2
             older = version_1
@@ -95,7 +95,7 @@ def compare(driver,version_1,version_2,list):
     print("number of new dependencies", len(df_1)) #new version
     print("number of outdated dependencies:", len(df_2)) #old version
     
-    #prints the dataframe is requested to
+    #prints the dataframe if requested to
     if(list):
         print("Same dependencies [Common dependencies and version]")
         print(tabulate(df_same,headers='keys',tablefmt='psql'))
@@ -105,7 +105,6 @@ def compare(driver,version_1,version_2,list):
         print(tabulate(df_1,headers='keys',tablefmt='psql'))
         print("Outdated dependencies [All dependencies found in older version: " + older + " but not in newer version]")
         print(tabulate(df_2,headers='keys',tablefmt='psql'))
-
 
 def main():
     #login to neo4j
@@ -122,7 +121,7 @@ def main():
     parser.add_argument("-c","--compare",action="store_true",help="compare dependencies of two chosen versions")
     parser.add_argument("-e","--evaluate",action="store_true",help="evaluate security posture of chosen version")
     parser.add_argument("-r","--recommend",action="store_true",help="choose next version with less or equal vulnerabilities")
-    parser.add_argument("-a","--analyze",action="store_true",help="analyze all versions released up till selected version")
+    #parser.add_argument("-a","--analyze",action="store_true",help="analyze all versions released up till selected version")
     parser.add_argument("-l","--list",action="store_true",help="[default = false] toggle whether to list all data or not")
     args = parser.parse_args()
 
@@ -131,7 +130,7 @@ def main():
         parser.error('Invalid version entered, refer to list of valid entries or -h for help')
     
     #check if any function is called, if not return error
-    if not (args.dependencies or args.evaluate or args.recommend or args.analyze or args.compare):
+    if not (args.dependencies or args.evaluate or args.recommend or args.compare):
         parser.error('No action requested, add -h for help')
 
     #do function based on input
