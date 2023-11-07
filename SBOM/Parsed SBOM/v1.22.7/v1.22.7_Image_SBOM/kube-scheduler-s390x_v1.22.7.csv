@@ -1,6 +1,0 @@
-NAME                                   VERSION          TYPE      
-base-files                             10.3+deb10u11    deb        
-k8s.io/release/images/build/go-runner  (devel)          go-module  
-netbase                                5.6              deb        
-stdlib                                 go1.16.14        go-module  
-tzdata                                 2021a-0+deb10u3  deb

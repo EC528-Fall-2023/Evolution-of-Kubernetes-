@@ -1,7 +1,0 @@
-NAME                                           VERSION          TYPE      
-base-files                                     11.1+deb11u2     deb        
-k8s.io/kubernetes/cmd/kube-controller-manager  v1.24.0-alpha    go-module  
-k8s.io/release/images/build/go-runner          (devel)          go-module  
-netbase                                        6.3              deb        
-stdlib                                         go1.18rc1        go-module  
-tzdata                                         2021a-1+deb11u2  deb
