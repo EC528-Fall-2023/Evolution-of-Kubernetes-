@@ -1,222 +1,103 @@
-Generate a packaged-based Software Bill Of Materials (SBOM) from container images and filesystems
-
-Usage:
-  syft [command]
-
-Application Configuration:
-
-  # (env: SYFT_CONFIG)
-  config: ''
-  
-  # report output format (<format>=<file> to output to a file), formats=[syft-json github-json syft-table syft-text template cyclonedx-xml cyclonedx-json spdx-tag-value spdx-json] (env: SYFT_OUTPUT)
-  output: 
-    - 'syft-table'
-  
-  # file to write the default report output to (default is STDOUT) (env: SYFT_FILE)
-  file: ''
-  
-  # specify the path to a Go template file (env: SYFT_OUTPUT_TEMPLATE_PATH)
-  output-template-path: ''
-  
-  # (env: SYFT_CHECK_FOR_APP_UPDATE)
-  check-for-app-update: true
-  
-  # enable one or more package catalogers (env: SYFT_CATALOGERS)
-  catalogers: []
-  
-  package:
-    cataloger:
-      # (env: SYFT_PACKAGE_CATALOGER_ENABLED)
-      enabled: true
-      
-      # selection of layers to catalog, options=[squashed all-layers] (env: SYFT_PACKAGE_CATALOGER_SCOPE)
-      scope: 'Squashed'
-      
-    # (env: SYFT_PACKAGE_SEARCH_UNINDEXED_ARCHIVES)
-    search-unindexed-archives: false
-    
-    # (env: SYFT_PACKAGE_SEARCH_INDEXED_ARCHIVES)
-    search-indexed-archives: true
-    
-  golang:
-    # (env: SYFT_GOLANG_SEARCH_LOCAL_MOD_CACHE_LICENSES)
-    search-local-mod-cache-licenses: false
-    
-    # (env: SYFT_GOLANG_LOCAL_MOD_CACHE_DIR)
-    local-mod-cache-dir: ''
-    
-    # (env: SYFT_GOLANG_SEARCH_REMOTE_LICENSES)
-    search-remote-licenses: false
-    
-    # (env: SYFT_GOLANG_PROXY)
-    proxy: ''
-    
-    # (env: SYFT_GOLANG_NO_PROXY)
-    no-proxy: ''
-    
-  linux-kernel:
-    # (env: SYFT_LINUX_KERNEL_CATALOG_MODULES)
-    catalog-modules: true
-    
-  python:
-    # (env: SYFT_PYTHON_GUESS_UNPINNED_REQUIREMENTS)
-    guess-unpinned-requirements: false
-    
-  file-metadata:
-    cataloger:
-      # (env: SYFT_FILE_METADATA_CATALOGER_ENABLED)
-      enabled: false
-      
-      # (env: SYFT_FILE_METADATA_CATALOGER_SCOPE)
-      scope: 'Squashed'
-      
-    # (env: SYFT_FILE_METADATA_DIGESTS)
-    digests: 
-      - 'sha256'
-    
-  file-classification:
-    cataloger:
-      # (env: SYFT_FILE_CLASSIFICATION_CATALOGER_ENABLED)
-      enabled: false
-      
-      # (env: SYFT_FILE_CLASSIFICATION_CATALOGER_SCOPE)
-      scope: 'Squashed'
-      
-  file-contents:
-    cataloger:
-      # (env: SYFT_FILE_CONTENTS_CATALOGER_ENABLED)
-      enabled: false
-      
-      # (env: SYFT_FILE_CONTENTS_CATALOGER_SCOPE)
-      scope: 'Squashed'
-      
-    # (env: SYFT_FILE_CONTENTS_SKIP_FILES_ABOVE_SIZE)
-    skip-files-above-size: 1048576
-    
-    # (env: SYFT_FILE_CONTENTS_GLOBS)
-    globs: []
-    
-  secrets:
-    cataloger:
-      # (env: SYFT_SECRETS_CATALOGER_ENABLED)
-      enabled: false
-      
-      # (env: SYFT_SECRETS_CATALOGER_SCOPE)
-      scope: 'AllLayers'
-      
-    # (env: SYFT_SECRETS_ADDITIONAL_PATTERNS)
-    additional-patterns: map[]
-    
-    # (env: SYFT_SECRETS_EXCLUDE_PATTERN_NAMES)
-    exclude-pattern-names: []
-    
-    # (env: SYFT_SECRETS_REVEAL_VALUES)
-    reveal-values: false
-    
-    # (env: SYFT_SECRETS_SKIP_FILES_ABOVE_SIZE)
-    skip-files-above-size: 1048576
-    
-  registry:
-    # (env: SYFT_REGISTRY_INSECURE_SKIP_TLS_VERIFY)
-    insecure-skip-tls-verify: false
-    
-    # (env: SYFT_REGISTRY_INSECURE_USE_HTTP)
-    insecure-use-http: false
-    
-    auth: []
-    
-    # (env: SYFT_REGISTRY_CA_CERT)
-    ca-cert: ''
-    
-  # exclude paths from being scanned using a glob expression (env: SYFT_EXCLUDE)
-  exclude: []
-  
-  # an optional platform specifier for container image sources (e.g. 'linux/arm64', 'linux/arm64/v8', 'arm64', 'linux') (env: SYFT_PLATFORM)
-  platform: ''
-  
-  # (env: SYFT_NAME)
-  name: ''
-  
-  source:
-    # set the name of the target being analyzed (env: SYFT_SOURCE_NAME)
-    name: ''
-    
-    # set the version of the target being analyzed (env: SYFT_SOURCE_VERSION)
-    version: ''
-    
-    file:
-      # (env: SYFT_SOURCE_FILE_DIGESTS)
-      digests: 
-        - 'sha256'
-      
-  # (env: SYFT_PARALLELISM)
-  parallelism: 1
-  
-  # (env: SYFT_DEFAULT_IMAGE_PULL_SOURCE)
-  default-image-pull-source: ''
-  
-  # base directory for scanning, no links will be followed above this directory, and all paths will be reported relative to this directory (env: SYFT_BASE_PATH)
-  base-path: ''
-  
-  # (env: SYFT_EXCLUDE_BINARY_OVERLAP_BY_OWNERSHIP)
-  exclude-binary-overlap-by-ownership: true
-  
-  log:
-    # suppress all logging output (env: SYFT_LOG_QUIET)
-    quiet: false
-    
-    # increase verbosity (-v = info, -vv = debug) (env: SYFT_LOG_VERBOSITY)
-    verbosity: 0
-    
-    # explicitly set the logging level (available: [error warn info debug trace]) (env: SYFT_LOG_LEVEL)
-    level: warn
-    
-    # file path to write logs to (env: SYFT_LOG_FILE)
-    file: ''
-    
-  dev:
-    # capture resource profiling data (available: [cpu, mem]) (env: SYFT_DEV_PROFILE)
-    profile: none
-    
-  # (env: SYFT_KEY)
-  key: 
-  
-  # (env: SYFT_PASSWORD)
-  password: 
-
-Config Search Locations:
-  - .syft.yaml
-  - .syft/config.yaml
-  - /home/jeff/.syft.yaml
-  - /home/jeff/.config/syft/config.yaml
-  - /etc/xdg/syft/config.yaml
-
-Available Commands:
-  attest      Generate an SBOM as an attestation for the given [SOURCE] container image
-  completion  Generate the autocompletion script for the specified shell
-  convert     Convert between SBOM formats
-  help        Help about any command
-  login       Log in to a registry
-  packages    Generate a package SBOM
-  version     show version information
-
-Flags:
-      --base-path string         base directory for scanning, no links will be followed above this directory, and all paths will be reported relative to this directory
-      --catalogers stringArray   enable one or more package catalogers
-  -c, --config string            syft configuration file
-      --exclude stringArray      exclude paths from being scanned using a glob expression
-      --file string              file to write the default report output to (default is STDOUT) (DEPRECATED: use: output)
-  -h, --help                     help for syft
-      --name string              set the name of the target being analyzed (DEPRECATED: use: source-name)
-  -o, --output stringArray       report output format (<format>=<file> to output to a file), formats=[syft-json github-json syft-table syft-text template cyclonedx-xml cyclonedx-json spdx-tag-value spdx-json] (default [syft-table])
-      --platform string          an optional platform specifier for container image sources (e.g. 'linux/arm64', 'linux/arm64/v8', 'arm64', 'linux')
-  -q, --quiet                    suppress all logging output
-  -s, --scope string             selection of layers to catalog, options=[squashed all-layers] (default "Squashed")
-      --source-name string       set the name of the target being analyzed
-      --source-version string    set the version of the target being analyzed
-  -t, --template string          specify the path to a Go template file
-  -v, --verbose count            increase verbosity (-v = info, -vv = debug)
-      --version                  version for syft
-
-Use "syft [command] --help" for more information about a command.
-[31man image/directory argument is required[0m
+NAME                                   VERSION                       TYPE      
+adduser                                3.118                         deb        
+apt                                    2.2.4                         deb        
+base-files                             11.1+deb11u3                  deb        
+base-passwd                            3.5.51                        deb        
+bsdutils                               1:2.36.1-8+deb11u1            deb        
+conntrack                              1:1.4.6-2                     deb        
+coreutils                              8.32-4+b1                     deb        
+dash                                   0.5.11+git20200708+dd9ef66-5  deb        
+debconf                                1.5.77                        deb        
+debian-archive-keyring                 2021.1.1                      deb        
+debianutils                            4.11.2                        deb        
+diffutils                              1:3.7-5                       deb        
+dpkg                                   1.20.9                        deb        
+ebtables                               2.0.11-4+b1                   deb        
+findutils                              4.8.0-1                       deb        
+gcc-10-base                            10.2.1-6                      deb        
+gcc-9-base                             9.3.0-22                      deb        
+gnupg                                                                deb        
+gpgv                                   2.2.27-2+deb11u1              deb        
+grep                                   3.6-1                         deb        
+gzip                                   1.10-4                        deb        
+hostname                               3.23                          deb        
+init-system-helpers                    1.60                          deb        
+ipset                                  7.10-1                        deb        
+iptables                               1.8.7-1                       deb        
+k8s.io/kubernetes/cmd/kube-proxy       v1.24.11                      go-module  
+k8s.io/release/images/build/go-runner  (devel)                       go-module  
+kmod                                   28-1                          deb        
+libacl1                                2.2.53-10                     deb        
+libapt-pkg6.0                          2.2.4                         deb        
+libattr1                               1:2.4.48-6                    deb        
+libaudit-common                        1:3.0-2                       deb        
+libaudit1                              1:3.0-2                       deb        
+libbz2-1.0                             1.0.8-4                       deb        
+libc-bin                               2.31-13+deb11u3               deb        
+libc6                                  2.31-13+deb11u3               deb        
+libcap-ng0                             0.7.9-2.2+b1                  deb        
+libcap2                                                              deb        
+libcom-err2                            1.46.2-2                      deb        
+libcrypt1                              1:4.4.18-4                    deb        
+libdb5.3                               5.3.28+dfsg1-0.8              deb        
+libdebconfclient0                      0.260                         deb        
+libffi7                                3.3-6                         deb        
+libgcc-s1                              10.2.1-6                      deb        
+libgcrypt20                            1.8.7-6                       deb        
+libgmp10                               2:6.2.1+dfsg-1+deb11u1        deb        
+libgnutls30                            3.7.1-5                       deb        
+libgpg-error0                          1.38-2                        deb        
+libgssapi-krb5-2                       1.18.3-6+deb11u1              deb        
+libhogweed6                            3.7.3-1                       deb        
+libidn2-0                              2.3.0-5                       deb        
+libip4tc2                              1.8.7-1                       deb        
+libip6tc2                              1.8.7-1                       deb        
+libipset13                             7.10-1                        deb        
+libk5crypto3                           1.18.3-6+deb11u1              deb        
+libkeyutils1                           1.6.1-2                       deb        
+libkmod2                               28-1                          deb        
+libkrb5-3                              1.18.3-6+deb11u1              deb        
+libkrb5support0                        1.18.3-6+deb11u1              deb        
+liblz4-1                               1.9.3-2                       deb        
+liblzma5                               5.2.5-2                       deb        
+libmnl0                                1.0.4-3                       deb        
+libnetfilter-conntrack3                1.0.8-3                       deb        
+libnettle8                             3.7.3-1                       deb        
+libnfnetlink0                          1.0.1-3+b1                    deb        
+libnftnl11                             1.1.9-1                       deb        
+libnsl2                                1.3.0-2                       deb        
+libp11-kit0                            0.23.22-1                     deb        
+libpam-modules                         1.4.0-9+deb11u1               deb        
+libpam-modules-bin                     1.4.0-9+deb11u1               deb        
+libpam-runtime                         1.4.0-9+deb11u1               deb        
+libpam0g                               1.4.0-9+deb11u1               deb        
+libpcre2-8-0                           10.36-2                       deb        
+libpcre3                               2:8.39-13                     deb        
+libseccomp2                            2.5.1-1+deb11u1               deb        
+libselinux1                            3.1-3                         deb        
+libsemanage-common                     3.1-1                         deb        
+libsemanage1                           3.1-1+b2                      deb        
+libsepol1                              3.1-1                         deb        
+libssl1.1                              1.1.1n-0+deb11u1              deb        
+libstdc++6                             10.2.1-6                      deb        
+libsystemd0                            247.3-7                       deb        
+libtasn1-6                             4.16.0-2                      deb        
+libtirpc-common                        1.3.1-1                       deb        
+libtirpc3                              1.3.1-1                       deb        
+libudev1                               247.3-7                       deb        
+libunistring2                          0.9.10-4                      deb        
+libxtables12                           1.8.7-1                       deb        
+libxxhash0                             0.8.0-2                       deb        
+libzstd1                               1.4.8+dfsg-2.1                deb        
+login                                  1:4.8.1-1                     deb        
+lsb-base                               11.1.0                        deb        
+mawk                                   1.3.4.20200120-2              deb        
+netbase                                6.3                           deb        
+passwd                                 1:4.8.1-1                     deb        
+perl-base                              5.32.1-4+deb11u2              deb        
+sed                                    4.7-1                         deb        
+stdlib                                 go1.17.3                      go-module  
+stdlib                                 go1.19.6                      go-module  
+sysvinit-utils                         2.96-7+deb11u1                deb        
+tar                                    1.34+dfsg-1                   deb        
+zlib1g                                 1:1.2.11.dfsg-2               deb
