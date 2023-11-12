@@ -5,9 +5,9 @@ from tabulate import tabulate
 import pandas as pd
 import argparse
 
-def isvalid(driver,version):
+def isvalid_dep(driver_dep,version):
     valid_version = False
-    records,summary,keys = driver.execute_query(
+    records,summary,keys = driver_dep.execute_query(
         "MATCH (p:KubeVersion) return p.kubernetesVersion",
         routing = RoutingControl.READ, database = "neo4j"
     )
@@ -16,10 +16,20 @@ def isvalid(driver,version):
             valid_version = True
     return valid_version
 
+def isvalid_vul(driver_vul,version):
+    valid_version = False
+    records,summary,keys = driver_vul.execute_query(
+        "MATCH (p:KubeVersion) return p.VERSION",
+        routing = RoutingControl.READ, database = "neo4j"
+    )
+    for record in records:
+        if version == record['p.VERSION']:
+            valid_version = True
+    return valid_version
 
-def dependencies(driver,version,list):
+def dependencies(driver_dep,version,list):
     #run cypher query 
-    records,summary,keys = driver.execute_query(
+    records,summary,keys = driver_dep.execute_query(
         "MATCH (:KubeVersion{kubernetesVersion:$version})-[:Contains]->(p) return p.dependencyName,p.dependencyVersion",
         {"version":version}, routing = RoutingControl.READ, database = "neo4j"
     )
@@ -31,13 +41,13 @@ def dependencies(driver,version,list):
         print(tabulate(df,headers='keys',tablefmt='psql'))
     
 
-def compare(driver,version_1,version_2,list):
+def compare(driver_dep,version_1,version_2,list):
     #separate based on if both version + name is same, name is same different version, both are different
-    records_1,summary,keys = driver.execute_query(
+    records_1,summary,keys = driver_dep.execute_query(
         "MATCH (:KubeVersion{kubernetesVersion:$version})-[:Contains]->(p) return p.dependencyName, p.dependencyVersion",
         {"version":version_1}, routing = RoutingControl.READ, database = "neo4j"
     )
-    records_2,summary,keys = driver.execute_query(
+    records_2,summary,keys = driver_dep.execute_query(
         "MATCH (:KubeVersion{kubernetesVersion:$version})-[:Contains]->(p) return p.dependencyName, p.dependencyVersion",
         {"version":version_2}, routing = RoutingControl.READ, database = "neo4j"
     )
@@ -106,12 +116,33 @@ def compare(driver,version_1,version_2,list):
         print("Outdated dependencies [All dependencies found in older version: " + older + " but not in newer version]")
         print(tabulate(df_2,headers='keys',tablefmt='psql'))
 
+def evaluate(driver_vul, version, list):
+    #run cypher query
+    records, summary, keys = driver_vul.execute_query(
+        "MATCH (:KubeVersion{VERSION:$version})-[:contains]->(p) return p.NAME, p.INSTALLED, p.`FIXED-IN`, p.TYPE, p.VULNERABILITY, p.SEVERITY",
+        {"version":version},routing = RoutingControl.READ, database = "neo4j"
+    )
+    df = pd.DataFrame(records,columns=['NAME','INSTALLED','FIXED-IN','TYPE','VULNERABILITY','SEVERITY'])
+    series = df['SEVERITY'].value_counts().to_string()
+    print(series)
+    print("total vulnerabilities in version",version, "is",len(records), "with distribution as followed: ")
+    print(df['SEVERITY'].value_counts().to_string())
+    print("or in terms of percentages:")
+    print(df['SEVERITY'].value_counts(normalize=True).to_string())
+    if(list):
+        print(tabulate(df,headers='keys',tablefmt='psq1'))
+
 def main():
     #login to neo4j
-    uri = "neo4j+s://df706296.databases.neo4j.io"
-    username = "neo4j"
-    password = "6cJ80Ld1ImFnjbROGGGUeoHNootL7_zHv6aBpqdNHDA"
-    driver = GraphDatabase.driver(uri, auth=(username, password))
+    uri_dep = "neo4j+s://df706296.databases.neo4j.io"
+    username_dep = "neo4j"
+    password_dep = "6cJ80Ld1ImFnjbROGGGUeoHNootL7_zHv6aBpqdNHDA"
+    driver_dep = GraphDatabase.driver(uri_dep, auth=(username_dep, password_dep))
+
+    uri_vul = "neo4j+s://8f379252.databases.neo4j.io"
+    username_vul = "neo4j"
+    password_vul = "c3IuMZl-ui58QJTrIMraZGM81u7QxiL6ZivuWxBhM0s"
+    driver_vul = GraphDatabase.driver(uri_vul, auth=(username_vul, password_vul))
 
     #argument parser for CLI
     parser = argparse.ArgumentParser(description="Tool to analyze vulnerabilities in dependencies of Kubernetes")
@@ -124,10 +155,6 @@ def main():
     #parser.add_argument("-a","--analyze",action="store_true",help="analyze all versions released up till selected version")
     parser.add_argument("-l","--list",action="store_true",help="[default = false] toggle whether to list all data or not")
     args = parser.parse_args()
-
-    #check if version is valid
-    if not(isvalid(driver,args.version)):
-        parser.error('Invalid version entered, refer to list of valid entries or -h for help')
     
     #check if any function is called, if not return error
     if not (args.dependencies or args.evaluate or args.recommend or args.compare):
@@ -135,15 +162,25 @@ def main():
 
     #do function based on input
     if(args.dependencies):
-        dependencies(driver,args.version,args.list)
+        #check if version is valid first
+        if not(isvalid_dep(driver_dep,args.version)):
+            parser.error('Invalid version entered, refer to list of valid entries in valid_versions_dep or -h for help')
+        dependencies(driver_dep,args.version,args.list)
     if(args.compare):
+        #check if version is valid first
+        if not(isvalid_dep(driver_dep,args.version)):
+            parser.error('Invalid version entered, refer to list of valid entries in valid_versions_dep or -h for help')
         #checks if second argument is none or invalid, gives proper response to error
         if (args.version_ == None):
             parser.error('Second version entry is not defined, add -h for help')
-        elif not(isvalid(driver,args.version_)):
+        elif not(isvalid_dep(driver_dep,args.version_)):
             parser.error('Invalid second version entered, refer to list of valid entries of -h for help')
-        compare(driver,args.version,args.version_,args.list)
-    driver.close()
+        compare(driver_dep,args.version,args.version_,args.list)
+    if(args.evaluate):
+        if not(isvalid_vul(driver_vul,args.version)):
+            parser.error('Invalid version entered, refer to list of valid entries in valid_versions_vul or -h for help')
+        evaluate(driver_vul,args.version,args.list)
+    driver_dep.close()
     
 if __name__ == "__main__":
     main()
