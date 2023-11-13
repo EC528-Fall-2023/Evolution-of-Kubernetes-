@@ -10,18 +10,18 @@ Git Clone this repo to get started.
 git clone https://github.com/EC528-Fall-2023/Evolution-of-Kubernetes-.git
 ```
 
-Will need Pandas, Neo4j, and Tabulate if you do not already have those libraries installed.
+Install required dependencies
 
 ```bash
-pip install Neo4j
-pip install pandas
-pip install tabulate
+cd ./CLI
+pip install -r requirements.txt
 ```
 
 ## Usage
 
-Refer to valid_versions.txt for versions of Kubernetes that this software supports.
-Don't forget to change directories into the CLI folder.
+Refer to valid_versions_dep.txt or valid_versions_vul.txt for versions of Kubernetes that this software supports.
+valid_versions_dep.txt is for dependency functions (-d, -c)
+valid_versions_vul.txt is for vulnerability functions (-e,-r)
 
 ```bash
 usage: k8s-scan.py [-h] [-d] [-c] [-e] [-r] [-l] V [V_]
@@ -47,17 +47,23 @@ options:
 cd .\CLI
 
 # help
-python .\k8s-scan.py -h
+python -m k8s-scan.py -h
 
 # return number of dependencies from kubernetes version 1.26.8
-python .\k8s-scan.py -d kubernetes-1.26.8
+python -m k8s-scan.py -d kubernetes-1.26.8
 
 # list dependencies from kubernetes version 1.26.8
-python .\k8s-scan.py -d -l kubernetes-1.26.8
+python -m k8s-scan.py -d -l kubernetes-1.26.8
 
 # return number of same, updated, new, and outdated dependencies between kubernetes version 1.26.8 and 1.15.3
-python .\k8s-scan.py -c kubernetes-1.26.8 kubernetes-1.15.3
+python -m k8s-scan.py -c kubernetes-1.26.8 kubernetes-1.15.3
 
 # list the same, updated, new, and outdated dependencies between kubernetes version 1.26.8 and 1.15.3
-python .\k8s-scan.py -c -l kubernetes-1.26.8 kubernetes-1.15.3
+python -m k8s-scan.py -c -l kubernetes-1.26.8 kubernetes-1.15.3
+
+# return amount of vulnerabilities, and their spread found in kubernetes version 1.21.12
+python -m k8s-scan -e v1.21.12
+
+# list the vulnerabilities found in kubernetes version 1.21.12
+python -m k8s-scan -e v1.21.12 -l
 ```
