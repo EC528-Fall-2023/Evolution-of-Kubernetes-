@@ -116,7 +116,7 @@ def compare(driver_dep,version_1,version_2,list):
         print("Outdated dependencies [All dependencies found in older version: " + older + " but not in newer version]")
         print(tabulate(df_2,headers='keys',tablefmt='psql'))
 
-def evaluate(driver_vul, version, list):
+def evaluate(driver_vul, version, list, order):
     #run cypher query
     records, summary, keys = driver_vul.execute_query(
         "MATCH (:KubeVersion{VERSION:$version})-[:contains]->(p) return p.NAME, p.INSTALLED, p.`FIXED-IN`, p.TYPE, p.VULNERABILITY, p.SEVERITY",
@@ -124,11 +124,14 @@ def evaluate(driver_vul, version, list):
     )
     df = pd.DataFrame(records,columns=['NAME','INSTALLED','FIXED-IN','TYPE','VULNERABILITY','SEVERITY'])
     series = df['SEVERITY'].value_counts().to_string()
-    print(series)
     print("total vulnerabilities in version",version, "is",len(records), "with distribution as followed: ")
     print(df['SEVERITY'].value_counts().to_string())
     print("or in terms of percentages:")
     print(df['SEVERITY'].value_counts(normalize=True).to_string())
+    if(order == "ascend"):
+        print("ascend")
+    if(order == "descend"):
+        print("descend")
     if(list):
         print(tabulate(df,headers='keys',tablefmt='psq1'))
 
@@ -152,6 +155,7 @@ def main():
     parser.add_argument("-c","--compare",action="store_true",help="compare dependencies of two chosen versions")
     parser.add_argument("-e","--evaluate",action="store_true",help="evaluate security posture of chosen version")
     parser.add_argument("-r","--recommend",action="store_true",help="choose next version with less or equal vulnerabilities")
+    parser.add_argument("order",metavar="o",nargs='?',type=str, choices=['ascend','descend'], help="[default = descend] options are descending or ascending, used when displaying list of vulnerabilities")
     #parser.add_argument("-a","--analyze",action="store_true",help="analyze all versions released up till selected version")
     parser.add_argument("-l","--list",action="store_true",help="[default = false] toggle whether to list all data or not")
     args = parser.parse_args()
@@ -179,7 +183,7 @@ def main():
     if(args.evaluate):
         if not(isvalid_vul(driver_vul,args.version)):
             parser.error('Invalid version entered, refer to list of valid entries in valid_versions_vul or -h for help')
-        evaluate(driver_vul,args.version,args.list)
+        evaluate(driver_vul,args.version,args.list,args.order)
     driver_dep.close()
     
 if __name__ == "__main__":
