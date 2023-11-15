@@ -137,10 +137,9 @@ Stretch Goals:
 
 
 ### Sprint #4 (Nov 1 - Nov 14)
-- Finish GRYPE/SYFT script 
+- Finish collecting data with GRYPE/SYFT script
+- Create NIST script to collect entry dates and descriptions of vulnerabilities
 - Import data into Neo4j
-- Merge the Neo4j DB that has images, binaries and tar folders with the Neo4j DB that has dependeices
-- Analyze the insights gained from the data
 - Add more queries to CLI
   
 
