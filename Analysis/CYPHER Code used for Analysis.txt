@@ -1,0 +1,9 @@
+CYPHER CODE used for analysis and getting .csv files:
+
+1. Code to get number of distinct connection for each version:
+MATCH (node)-[:BELONGS_TO]->(folder:Folder)
+OPTIONAL MATCH (node)-[:BELONGS_TO]->(:PackageNode)
+WITH folder, COUNT(DISTINCT node) AS totalNodeCount, COUNT(DISTINCT CASE WHEN labels(node) = ['PackageNode'] THEN node END) AS packageNodeCount
+OPTIONAL MATCH (node)-[:BELONGS_TO]->(:SPDXNode)
+RETURN folder.name AS FolderNode, totalNodeCount, packageNodeCount, totalNodeCount - packageNodeCount AS SPDXNodeCount
+ORDER BY folder.name;
