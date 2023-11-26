@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 import { BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-// import { BarChart } from "recharts"
 
 function App() {
 
@@ -26,19 +25,17 @@ function App() {
     setChartData(
       selected.map((i) => testdata[i])
     )
-    // console.log(selected)
-    // console.log(selected.map((i) => testdata[i]))
     console.log(chartData)
   }, [selected])
 
-  const handleClick = async () => {
-    // try {
-    //   const response = await (await fetch(`https://jsonplaceholder.typicode.com/albums/${id}`)).json()
-    //   setData(data.concat(response))
-    // } catch (err) {
-    //   console.log(err.message)
-    // }
-  }
+  // const handleClick = async () => {
+  //   try {
+  //     const response = await (await fetch(`https://jsonplaceholder.typicode.com/albums/${id}`)).json()
+  //     setData(data.concat(response))
+  //   } catch (err) {
+  //     console.log(err.message)
+  //   }
+  // }
 
 
 
