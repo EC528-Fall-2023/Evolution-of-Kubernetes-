@@ -2,18 +2,18 @@ from neo4j import GraphDatabase, RoutingControl
 from tabulate import tabulate
 import pandas as pd
 
-def isvalid_dep(driver_dep,version):
+def isvalid_vul(driver_vul,version):
     valid_version = False
-    records,summary,keys = driver_dep.execute_query(
-        "MATCH (p:KubeVersion) return p.kubernetesVersion",
+    records,summary,keys = driver_vul.execute_query(
+        "MATCH (p:KubeVersion) return p.VERSION",
         routing = RoutingControl.READ, database = "neo4j"
     )
     for record in records:
-        if version == record['p.kubernetesVersion']:
+        if version == record['p.VERSION']:
             valid_version = True
     return valid_version
 
-def evaluate(driver_vul, version, list):
+def evaluate_vul(driver_vul, version, list):
     #run cypher query
     records, summary, keys = driver_vul.execute_query(
         "MATCH (:KubeVersion{VERSION:$version})-[:contains]->(p) return p.NAME, p.INSTALLED, p.`FIXED-IN`, p.TYPE, p.VULNERABILITY, p.SEVERITY",

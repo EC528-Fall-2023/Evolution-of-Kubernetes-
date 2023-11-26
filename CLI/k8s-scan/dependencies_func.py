@@ -1,19 +1,20 @@
 from neo4j import GraphDatabase, RoutingControl
 from tabulate import tabulate
 import pandas as pd
+import os
 
-def isvalid_vul(driver_vul,version):
+def isvalid_dep(driver_dep,version):
     valid_version = False
-    records,summary,keys = driver_vul.execute_query(
-        "MATCH (p:KubeVersion) return p.VERSION",
+    records,summary,keys = driver_dep.execute_query(
+        "MATCH (p:KubeVersion) return p.kubernetesVersion",
         routing = RoutingControl.READ, database = "neo4j"
     )
     for record in records:
-        if version == record['p.VERSION']:
+        if version == record['p.kubernetesVersion']:
             valid_version = True
     return valid_version
 
-def dependencies(driver_dep,version,list):
+def dependencies_dep(driver_dep,version,list):
     #run cypher query 
     records,summary,keys = driver_dep.execute_query(
         "MATCH (:KubeVersion{kubernetesVersion:$version})-[:Contains]->(p) return p.dependencyName,p.dependencyVersion",
@@ -27,7 +28,7 @@ def dependencies(driver_dep,version,list):
         print(tabulate(df,headers='keys',tablefmt='psql'))
     
 
-def compare(driver_dep,version_1,version_2,list):
+def compare_dep(driver_dep,version_1,version_2,list):
     #separate based on if both version + name is same, name is same different version, both are different
     records_1,summary,keys = driver_dep.execute_query(
         "MATCH (:KubeVersion{kubernetesVersion:$version})-[:Contains]->(p) return p.dependencyName, p.dependencyVersion",
@@ -42,7 +43,7 @@ def compare(driver_dep,version_1,version_2,list):
     version_1 = "v" + version_1.replace("kubernetes-",'')
     version_2 = "v" + version_2.replace("kubernetes-",'')
     #find which of the two is more recent, will be used later
-    with open("versions_chrono.txt",'r') as chrono:
+    with open('k8s-scan/versions_chrono.txt','r') as chrono:
         for line_num, line in enumerate(chrono):
             line = line.strip()
             if (line == version_1): index_1 = line_num

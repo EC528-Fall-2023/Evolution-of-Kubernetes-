@@ -1,57 +1,68 @@
-import argparse
+import click
 from .dependencies_func import *
 from .vulnerabilities_func import *
 
-
-def main():
-    #login to neo4j
+def init_dep():
+    #initialize neo4j
     uri_dep = "neo4j+s://df706296.databases.neo4j.io"
     username_dep = "neo4j"
     password_dep = "6cJ80Ld1ImFnjbROGGGUeoHNootL7_zHv6aBpqdNHDA"
     driver_dep = GraphDatabase.driver(uri_dep, auth=(username_dep, password_dep))
+    return driver_dep
 
+def init_vul():
     uri_vul = "neo4j+s://8f379252.databases.neo4j.io"
     username_vul = "neo4j"
     password_vul = "c3IuMZl-ui58QJTrIMraZGM81u7QxiL6ZivuWxBhM0s"
     driver_vul = GraphDatabase.driver(uri_vul, auth=(username_vul, password_vul))
+    return driver_vul
 
-    #argument parser for CLI
-    parser = argparse.ArgumentParser(description="Tool to analyze vulnerabilities in dependencies of Kubernetes")
-    parser.add_argument("version",metavar="V",type=str,help="version of Kubernetes you would like to scan")
-    parser.add_argument("version_",metavar="V_",nargs='?',type=str,help="second version of Kubernetes, required for comparisons else leave empty")
-    parser.add_argument("-d","--dependencies",action="store_true",help="list all dependencies of select version")
-    parser.add_argument("-c","--compare",action="store_true",help="compare dependencies of two chosen versions")
-    parser.add_argument("-e","--evaluate",action="store_true",help="evaluate security posture of chosen version")
-    parser.add_argument("-r","--recommend",action="store_true",help="choose next version with less or equal vulnerabilities")
-    #parser.add_argument("-a","--analyze",action="store_true",help="analyze all versions released up till selected version")
-    parser.add_argument("-l","--list",action="store_true",help="[default = false] toggle whether to list all data or not")
-    args = parser.parse_args()
-    
-    #check if any function is called, if not return error
-    if not (args.dependencies or args.evaluate or args.recommend or args.compare):
-        parser.error('No action requested, add -h for help')
+#initialize CLI
+@click.group()
+def cli():
+    """Your CLI Tool"""
 
-    #do function based on input
-    if(args.dependencies):
-        #check if version is valid first
-        if not(isvalid_dep(driver_dep,args.version)):
-            parser.error('Invalid version entered, refer to list of valid entries in valid_versions_dep or -h for help')
-        dependencies(driver_dep,args.version,args.list)
-    if(args.compare):
-        #check if version is valid first
-        if not(isvalid_dep(driver_dep,args.version)):
-            parser.error('Invalid version entered, refer to list of valid entries in valid_versions_dep or -h for help')
-        #checks if second argument is none or invalid, gives proper response to error
-        if (args.version_ == None):
-            parser.error('Second version entry is not defined, add -h for help')
-        elif not(isvalid_dep(driver_dep,args.version_)):
-            parser.error('Invalid second version entered, refer to list of valid entries of -h for help')
-        compare(driver_dep,args.version,args.version_,args.list)
-    if(args.evaluate):
-        if not(isvalid_vul(driver_vul,args.version)):
-            parser.error('Invalid version entered, refer to list of valid entries in valid_versions_vul or -h for help')
-        evaluate(driver_vul,args.version,args.list)
+#create command of dependencies
+@click.command()
+@click.argument('version', type=str)
+@click.option('--list/--no-list', default=False, help='[default = false] toggle list all data')
+def dependencies(version,list):
+    """list all dependencies of select version"""
+    driver_dep = init_dep()
+    if not(isvalid_dep(driver_dep,version)):
+            raise click.ClickException('Invalid version entered, refer to list of valid entries in valid_versions_dep or --help for help')
+    dependencies_dep(driver_dep,version,list)
     driver_dep.close()
-    
+
+#create command of comparing dependencies
+@click.command()
+@click.argument('version1', type=str)
+@click.argument('version2', type=str)
+@click.option('--list/--no-list', default=False, help='[default = false] toggle list all data')
+def compare(version1,version2,list):
+    """compare dependencies of two chosen versions"""
+    driver_dep = init_dep()
+    if not(isvalid_dep(driver_dep,version1)):
+            raise click.ClickException('Invalid version entered, refer to list of valid entries in valid_versions_dep or --help for help')
+    if not(isvalid_dep(driver_dep,version2)):
+            raise click.ClickException('Invalid version entered, refer to list of valid entries in valid_versions_dep or --help for help')
+    compare_dep(driver_dep,version1,version2,list)
+    driver_dep.close()
+
+@click.command()
+@click.argument('version', type=str)
+@click.option('--list/--no-list', default=False, help='[default = false] toggle list all data')
+def evaluate(version,list):
+    '''evaluate security posture of chosen version'''
+    driver_vul = init_vul()
+    if not(isvalid_vul(driver_vul,version)):
+        raise click.ClickException('Invalid version entered, refer to list of valid entries in valid_versions_vul or --help for help')
+    evaluate_vul(driver_vul,version,list)
+
+# Add commands to the CLI group
+cli.add_command(dependencies)
+cli.add_command(compare)
+cli.add_command(evaluate)
+
 if __name__ == "__main__":
-    main()
+    cli()
