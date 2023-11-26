@@ -3,25 +3,38 @@ import { BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
 
 function App() {
 
+  // JUST FOR TESTING
   const testdata = {
     'Version A': { name: 'Version A', before: 4000, after: 2400, },
-    'Version B': { name: 'Version A', before: 5432, after: 1324, },
-    'Version C': { name: 'Version A', before: 4000, after: 1432, },
-    'Version D': { name: 'Version A', before: 1432, after: 3333, },
-    'Version E': { name: 'Version A', before: 4321, after: 4431, },
-    'Version F': { name: 'Version A', before: 4000, after: 1223, },
-    'Version G': { name: 'Version A', before: 4000, after: 1223, }
+    'Version B': { name: 'Version B', before: 5432, after: 1324, },
+    'Version C': { name: 'Version C', before: 4000, after: 1432, },
+    'Version D': { name: 'Version D', before: 1432, after: 3333, },
+    'Version E': { name: 'Version E', before: 4321, after: 4431, },
+    'Version F': { name: 'Version F', before: 4000, after: 1223, },
+    'Version G': { name: 'Version G', before: 4000, after: 1223, },
+    'Version H': { name: 'Version H', before: 4000, after: 2400, },
+    'Version I': { name: 'Version I', before: 5432, after: 1324, },
+    'Version J': { name: 'Version J', before: 4000, after: 1432, },
+    'Version K': { name: 'Version K', before: 1432, after: 3333, },
+    'Version L': { name: 'Version L', before: 3232, after: 4431, },
+    'Version M': { name: 'Version M', before: 4000, after: 1223, },
+    'Version N': { name: 'Version N', before: 4000, after: 1223, }
   }
 
   const [versions, setVersions] = useState([])
   const [selected, setSelected] = useState([])
   const [chartData, setChartData] = useState([])
+
+  // NOTE:
+  // We're gonna need to either fetch a list of all versions or hard-code it
   useEffect(() => {
-    setVersions(['Version A', 'Version B', 'Version C', 'Version D', 'Version E', 'Version F', 'Version G'])
+    setVersions(['Version A', 'Version B', 'Version C', 'Version D', 'Version E', 'Version F', 'Version G', 'Version H', 'Version I', 'Version J', 'Version K', 'Version L', 'Version M', 'Version N'])
     console.log("fetched versions")
   }, [])
 
   useEffect(() => {
+    // NOTE:
+    // when we fetch from neo4j, make sure to handle this with async
     setChartData(
       selected.map((i) => testdata[i])
     )
@@ -36,8 +49,6 @@ function App() {
   //     console.log(err.message)
   //   }
   // }
-
-
 
   return (
     <div className="h-screen flex flex-row p-10">
