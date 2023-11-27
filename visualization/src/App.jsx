@@ -8,8 +8,7 @@ function App() {
   const [selected, setSelected] = useState([])
   const [chartData, setChartData] = useState([])
 
-  // NOTE:
-  // We're gonna need to either fetch a list of all versions or hard-code it
+  // NOTE: We're gonna need to either fetch a list of all versions or hard-code it
   useEffect(() => {
     // setVersions(['Version A', 'Version B', 'Version C', 'Version D', 'Version E', 'Version F', 'Version G', 'Version H', 'Version I', 'Version J', 'Version K', 'Version L', 'Version M', 'Version N'])
     setVersions(Object.keys(testdata))
@@ -17,8 +16,7 @@ function App() {
   }, [])
 
   useEffect(() => {
-    // NOTE:
-    // if we fetch from neo4j, make sure to handle this with async
+    // NOTE:  if we fetch from neo4j, make sure to handle this with async
     setChartData(
       selected.map(i => ({ name: i, ...testdata[i] }))
     )
