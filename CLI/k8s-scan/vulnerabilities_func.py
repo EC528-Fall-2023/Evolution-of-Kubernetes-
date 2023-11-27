@@ -32,12 +32,12 @@ def evaluate(driver_vul, version, list):
 def vulnerability(driver_vul,code,list):
     #run cypher query
     records, summary, keys = driver_vul.execute_query(
-        "MATCH (Vulnerability{VULNERABILITY:$CVE})<-[:Contains]-(p) return p.kubernetesVersion",
+        "MATCH (Vulnerability{VULNERABILITY:$CVE})<-[:Contains]-(p) return p.kubernetesVersion, p.Date",
         {"CVE":code},routing = RoutingControl.READ, database = "neo4j"
     )
 
     if(list):
-        df = pd.DataFrame(records,columns=['VERSION'])
+        df = pd.DataFrame(records,columns=['VERSION','DATE'])
         print(tabulate(df,headers='keys',tablefmt='psql'))
     else:
         print("total versions of Kubernetes this vulnerability was found in is", len(records))
