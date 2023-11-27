@@ -1,7 +1,0 @@
-NAME        VERSION           TYPE 
-base-files  11.1+deb11u5      deb   
-libc6       2.31-13+deb11u5   deb   
-libssl1.1   1.1.1n-0+deb11u3  deb   
-netbase     6.3               deb   
-openssl     1.1.1n-0+deb11u3  deb   
-tzdata      2021a-1+deb11u8   deb
