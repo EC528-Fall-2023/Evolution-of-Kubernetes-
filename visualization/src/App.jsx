@@ -3,27 +3,7 @@ import { BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend,
 import vulnerabilities from './data/vulnerabilities.json';
 
 function App() {
-
-  // JUST FOR TESTING
-  // const testdata = {
-  //   'Version A': { name: 'Version A', low: 2432, high: 2400, },
-  //   'Version B': { name: 'Version B', low: 5432, high: 1324, },
-  //   'Version C': { name: 'Version C', low: 4000, high: 1432, },
-  //   'Version D': { name: 'Version D', low: 1432, high: 3333, },
-  //   'Version E': { name: 'Version E', low: 4321, high: 4431, },
-  //   'Version F': { name: 'Version F', low: 4000, high: 1223, },
-  //   'Version G': { name: 'Version G', low: 1233, high: 1223, },
-  //   'Version H': { name: 'Version H', low: 4000, high: 2400, },
-  //   'Version I': { name: 'Version I', low: 5432, high: 1324, },
-  //   'Version J': { name: 'Version J', low: 4000, high: 1432, },
-  //   'Version K': { name: 'Version K', low: 1432, high: 3333, },
-  //   'Version L': { name: 'Version L', low: 3232, high: 4431, },
-  //   'Version M': { name: 'Version M', low: 4000, high: 1223, },
-  //   'Version N': { name: 'Version N', low: 4000, high: 1223, }
-  // }
-
   const testdata = vulnerabilities
-
   const [versions, setVersions] = useState([])
   const [selected, setSelected] = useState([])
   const [chartData, setChartData] = useState([])
@@ -38,27 +18,16 @@ function App() {
 
   useEffect(() => {
     // NOTE:
-    // when we fetch from neo4j, make sure to handle this with async
+    // if we fetch from neo4j, make sure to handle this with async
     setChartData(
       selected.map(i => ({ name: i, ...testdata[i] }))
     )
     console.log(chartData)
   }, [selected])
 
-  // const handleClick = async () => {
-  //   try {
-  //     const response = await (await fetch(`https://jsonplaceholder.typicode.com/albums/${id}`)).json()
-  //     setData(data.concat(response))
-  //   } catch (err) {
-  //     console.log(err.message)
-  //   }
-  // }
-
   return (
-    
     <div className="h-screen flex flex-row p-10">
       <div className="flex-grow overflow-x-auto">
-        
         <h1 className="absolute text-center font-semibold top-4 right-1/2">Kubernetes Vulnerabilities by Version</h1>
         <ResponsiveContainer >
           
@@ -104,4 +73,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
