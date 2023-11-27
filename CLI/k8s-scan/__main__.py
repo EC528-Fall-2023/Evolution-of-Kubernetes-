@@ -2,20 +2,24 @@ import click
 from .dependencies_func import *
 from .vulnerabilities_func import *
 
-def init_dep():
+def isvalid(driver_dep,version):
+    valid_version = False
+    records,summary,keys = driver_dep.execute_query(
+        "MATCH (p:KubeVersion) return p.kubernetesVersion",
+        routing = RoutingControl.READ, database = "neo4j"
+    )
+    for record in records:
+        if version == record['p.kubernetesVersion']:
+            valid_version = True
+    return valid_version
+
+def init():
     #initialize neo4j
-    uri_dep = "neo4j+s://df706296.databases.neo4j.io"
+    uri_dep = "neo4j+s://871cd47b.databases.neo4j.io"
     username_dep = "neo4j"
-    password_dep = "6cJ80Ld1ImFnjbROGGGUeoHNootL7_zHv6aBpqdNHDA"
+    password_dep = "AMEtby3GbTe-EfVY6XU04yoggqmTiRQsFcTzi7lvh6g"
     driver_dep = GraphDatabase.driver(uri_dep, auth=(username_dep, password_dep))
     return driver_dep
-
-def init_vul():
-    uri_vul = "neo4j+s://8f379252.databases.neo4j.io"
-    username_vul = "neo4j"
-    password_vul = "c3IuMZl-ui58QJTrIMraZGM81u7QxiL6ZivuWxBhM0s"
-    driver_vul = GraphDatabase.driver(uri_vul, auth=(username_vul, password_vul))
-    return driver_vul
 
 #initialize CLI
 @click.group()
@@ -28,8 +32,8 @@ def cli():
 @click.option('--list/--no-list', default=False, help='[default = false] toggle list all data')
 def dep(version,list):
     """list all dependencies of select version"""
-    driver_dep = init_dep()
-    if not(isvalid_dep(driver_dep,version)):
+    driver_dep = init()
+    if not(isvalid(driver_dep,version)):
             raise click.ClickException('Invalid version entered, refer to list of valid entries in valid_versions_dep or --help for help')
     dependencies(driver_dep,version,list)
     driver_dep.close()
@@ -41,10 +45,10 @@ def dep(version,list):
 @click.option('--list/--no-list', default=False, help='[default = false] toggle list all data')
 def comp(version1,version2,list):
     """compare dependencies of two chosen versions"""
-    driver_dep = init_dep()
-    if not(isvalid_dep(driver_dep,version1)):
+    driver_dep = init()
+    if not(isvalid(driver_dep,version1)):
             raise click.ClickException('Invalid version entered, refer to list of valid entries in valid_versions_dep or --help for help')
-    if not(isvalid_dep(driver_dep,version2)):
+    if not(isvalid(driver_dep,version2)):
             raise click.ClickException('Invalid version entered, refer to list of valid entries in valid_versions_dep or --help for help')
     compare(driver_dep,version1,version2,list)
     driver_dep.close()
@@ -54,8 +58,8 @@ def comp(version1,version2,list):
 @click.option('--list/--no-list', default=False, help='[default = false] toggle list all data')
 def eval(version,list):
     '''evaluate security posture of chosen version'''
-    driver_vul = init_vul()
-    if not(isvalid_vul(driver_vul,version)):
+    driver_vul = init()
+    if not(isvalid(driver_vul,version)):
         raise click.ClickException('Invalid version entered, refer to list of valid entries in valid_versions_vul or --help for help')
     evaluate(driver_vul,version,list)
     driver_vul.close()
@@ -65,7 +69,7 @@ def eval(version,list):
 @click.option('--list/--no-list', default=False, help='[default = false] toggle list all data')
 def vul(code,list):
     '''find all versions of Kubernetes with a given vulnerability using its CVE or GHSA code'''
-    driver_vul = init_vul()
+    driver_vul = init()
     vulnerability(driver_vul,code,list)
     driver_vul.close()
     

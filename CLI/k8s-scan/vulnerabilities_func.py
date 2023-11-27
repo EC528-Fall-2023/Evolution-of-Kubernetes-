@@ -2,21 +2,10 @@ from neo4j import GraphDatabase, RoutingControl
 from tabulate import tabulate
 import pandas as pd
 
-def isvalid_vul(driver_vul,version):
-    valid_version = False
-    records,summary,keys = driver_vul.execute_query(
-        "MATCH (p:KubeVersion) return p.VERSION",
-        routing = RoutingControl.READ, database = "neo4j"
-    )
-    for record in records:
-        if version == record['p.VERSION']:
-            valid_version = True
-    return valid_version
-
 def evaluate(driver_vul, version, list):
     #run cypher query
     records, summary, keys = driver_vul.execute_query(
-        "MATCH (:KubeVersion{VERSION:$version})-[:contains]->(p) return p.NAME, p.INSTALLED, p.`FIXED-IN`, p.TYPE, p.VULNERABILITY, p.SEVERITY",
+        "MATCH (:KubeVersion{kubernetesVersion:$version})-[:Contains]->(p) return p.NAME, p.INSTALLED, p.`FIXED-IN`, p.TYPE, p.VULNERABILITY, p.SEVERITY",
         {"version":version},routing = RoutingControl.READ, database = "neo4j"
     )
     df = pd.DataFrame(records,columns=['NAME','INSTALLED','FIXED-IN','TYPE','VULNERABILITY','SEVERITY'])
@@ -40,7 +29,7 @@ def evaluate(driver_vul, version, list):
 def vulnerability(driver_vul,code,list):
     #run cypher query
     records, summary, keys = driver_vul.execute_query(
-        "MATCH (Vulnerability{VULNERABILITY:$CVE})<-[:contains]-(p) return p.VERSION",
+        "MATCH (Vulnerability{VULNERABILITY:$CVE})<-[:Contains]-(p) return p.kubernetesVersion",
         {"CVE":code},routing = RoutingControl.READ, database = "neo4j"
     )
 
