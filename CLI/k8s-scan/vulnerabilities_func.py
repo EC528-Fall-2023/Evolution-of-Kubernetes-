@@ -20,11 +20,6 @@ def evaluate(driver_vul, version, list):
         {"version":version},routing = RoutingControl.READ, database = "neo4j"
     )
     df = pd.DataFrame(records,columns=['NAME','INSTALLED','FIXED-IN','TYPE','VULNERABILITY','SEVERITY'])
-    #print data such as total vulnerabilities, and their distribution
-    print("total vulnerabilities in version",version, "is",len(records), "with distribution as followed: ")
-    print(df['SEVERITY'].value_counts().to_string())
-    print("or in terms of percentages:")
-    print(df['SEVERITY'].value_counts(normalize=True).to_string())
     #print if list is true
     if(list):
         #create mapping to custom sort pandas dataframe
@@ -35,6 +30,12 @@ def evaluate(driver_vul, version, list):
         df.sort_values(by=['sorting'],inplace=True,ignore_index=True)
         df.drop('sorting',axis=1,inplace=True)
         print(tabulate(df,headers='keys',tablefmt='psql'))
+    else:
+        #print data such as total vulnerabilities, and their distribution
+        print("total vulnerabilities in version",version, "is",len(records), "with distribution as followed: ")
+        print(df['SEVERITY'].value_counts().to_string())
+        print("or in terms of percentages:")
+        print(df['SEVERITY'].value_counts(normalize=True).to_string())
 
 def vulnerability(driver_vul,code,list):
     #run cypher query
@@ -42,7 +43,9 @@ def vulnerability(driver_vul,code,list):
         "MATCH (Vulnerability{VULNERABILITY:$CVE})<-[:contains]-(p) return p.VERSION",
         {"CVE":code},routing = RoutingControl.READ, database = "neo4j"
     )
-    print("total versions of Kubernetes this vulnerability was found in is", len(records))
+
     if(list):
         df = pd.DataFrame(records,columns=['VERSION'])
         print(tabulate(df,headers='keys',tablefmt='psql'))
+    else:
+        print("total versions of Kubernetes this vulnerability was found in is", len(records))

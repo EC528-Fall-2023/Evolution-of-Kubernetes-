@@ -20,12 +20,14 @@ def dependencies(driver_dep,version,list):
         "MATCH (:KubeVersion{kubernetesVersion:$version})-[:Contains]->(p) return p.dependencyName,p.dependencyVersion",
         {"version":version}, routing = RoutingControl.READ, database = "neo4j"
     )
-    #print dependencies data
-    print("total dependencies in version",version,"is",len(records))
+
     #print list of dependencies if user requests it
     if(list):
         df = pd.DataFrame(records,columns=['dependency name','dependency version'])
         print(tabulate(df,headers='keys',tablefmt='psql'))
+    else:
+        #print dependencies data
+        print("total dependencies in version",version,"is",len(records))
     
 
 def compare(driver_dep,version_1,version_2,list):
@@ -84,13 +86,6 @@ def compare(driver_dep,version_1,version_2,list):
     df_updated.rename(columns={"dependency version_1":"dependencies version from "+recent,"dependency version_2":"dependencies version from "+older},inplace=True)
     df_1.rename(columns={"dependency version_1":"dependency version"},inplace=True)
     df_2.rename(columns={"dependency version_2":"dependency version"},inplace=True)
-
-    ##displaying data
-    #prints the data
-    print("number of same dependencies:",len(df_same))
-    print("number of updated dependencies:", len(df_updated))
-    print("number of new dependencies", len(df_1)) #new version
-    print("number of outdated dependencies:", len(df_2)) #old version
     
     #prints the dataframe if requested to
     if(list):
@@ -102,3 +97,10 @@ def compare(driver_dep,version_1,version_2,list):
         print(tabulate(df_1,headers='keys',tablefmt='psql'))
         print("Outdated dependencies [All dependencies found in older version: " + older + " but not in newer version]")
         print(tabulate(df_2,headers='keys',tablefmt='psql'))
+    else:
+        #displaying data
+        #prints the data
+        print("number of same dependencies:",len(df_same))
+        print("number of updated dependencies:", len(df_updated))
+        print("number of new dependencies", len(df_1)) #new version
+        print("number of outdated dependencies:", len(df_2)) #old version
