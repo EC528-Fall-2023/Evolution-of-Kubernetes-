@@ -13,7 +13,7 @@ def isvalid_vul(driver_vul,version):
             valid_version = True
     return valid_version
 
-def evaluate_vul(driver_vul, version, list):
+def evaluate(driver_vul, version, list):
     #run cypher query
     records, summary, keys = driver_vul.execute_query(
         "MATCH (:KubeVersion{VERSION:$version})-[:contains]->(p) return p.NAME, p.INSTALLED, p.`FIXED-IN`, p.TYPE, p.VULNERABILITY, p.SEVERITY",
@@ -34,4 +34,15 @@ def evaluate_vul(driver_vul, version, list):
         df['sorting'] = df['SEVERITY'].apply(lambda state: mapping[state])
         df.sort_values(by=['sorting'],inplace=True,ignore_index=True)
         df.drop('sorting',axis=1,inplace=True)
+        print(tabulate(df,headers='keys',tablefmt='psql'))
+
+def vulnerability(driver_vul,code,list):
+    #run cypher query
+    records, summary, keys = driver_vul.execute_query(
+        "MATCH (Vulnerability{VULNERABILITY:$CVE})<-[:contains]-(p) return p.VERSION",
+        {"CVE":code},routing = RoutingControl.READ, database = "neo4j"
+    )
+    print("total versions of Kubernetes this vulnerability was found in is", len(records))
+    if(list):
+        df = pd.DataFrame(records,columns=['VERSION'])
         print(tabulate(df,headers='keys',tablefmt='psql'))

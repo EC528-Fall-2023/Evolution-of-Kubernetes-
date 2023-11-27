@@ -20,18 +20,18 @@ def init_vul():
 #initialize CLI
 @click.group()
 def cli():
-    """Your CLI Tool"""
+    """A tool for evaluating security posture of your Kubernetes version, analyzing its dependencies, and recommending you a better version"""
 
 #create command of dependencies
 @click.command()
 @click.argument('version', type=str)
 @click.option('--list/--no-list', default=False, help='[default = false] toggle list all data')
-def dependencies(version,list):
+def dep(version,list):
     """list all dependencies of select version"""
     driver_dep = init_dep()
     if not(isvalid_dep(driver_dep,version)):
             raise click.ClickException('Invalid version entered, refer to list of valid entries in valid_versions_dep or --help for help')
-    dependencies_dep(driver_dep,version,list)
+    dependencies(driver_dep,version,list)
     driver_dep.close()
 
 #create command of comparing dependencies
@@ -39,30 +39,41 @@ def dependencies(version,list):
 @click.argument('version1', type=str)
 @click.argument('version2', type=str)
 @click.option('--list/--no-list', default=False, help='[default = false] toggle list all data')
-def compare(version1,version2,list):
+def comp(version1,version2,list):
     """compare dependencies of two chosen versions"""
     driver_dep = init_dep()
     if not(isvalid_dep(driver_dep,version1)):
             raise click.ClickException('Invalid version entered, refer to list of valid entries in valid_versions_dep or --help for help')
     if not(isvalid_dep(driver_dep,version2)):
             raise click.ClickException('Invalid version entered, refer to list of valid entries in valid_versions_dep or --help for help')
-    compare_dep(driver_dep,version1,version2,list)
+    compare(driver_dep,version1,version2,list)
     driver_dep.close()
 
 @click.command()
 @click.argument('version', type=str)
 @click.option('--list/--no-list', default=False, help='[default = false] toggle list all data')
-def evaluate(version,list):
+def eval(version,list):
     '''evaluate security posture of chosen version'''
     driver_vul = init_vul()
     if not(isvalid_vul(driver_vul,version)):
         raise click.ClickException('Invalid version entered, refer to list of valid entries in valid_versions_vul or --help for help')
-    evaluate_vul(driver_vul,version,list)
+    evaluate(driver_vul,version,list)
+    driver_vul.close()
 
+@click.command()
+@click.argument('code',type=str)
+@click.option('--list/--no-list', default=False, help='[default = false] toggle list all data')
+def vul(code,list):
+    '''find all versions of Kubernetes with a given vulnerability using its CVE or GHSA code'''
+    driver_vul = init_vul()
+    vulnerability(driver_vul,code,list)
+    driver_vul.close()
+    
 # Add commands to the CLI group
-cli.add_command(dependencies)
-cli.add_command(compare)
-cli.add_command(evaluate)
+cli.add_command(dep)
+cli.add_command(comp)
+cli.add_command(eval)
+cli.add_command(vul)
 
 if __name__ == "__main__":
     cli()

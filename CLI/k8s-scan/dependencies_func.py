@@ -14,7 +14,7 @@ def isvalid_dep(driver_dep,version):
             valid_version = True
     return valid_version
 
-def dependencies_dep(driver_dep,version,list):
+def dependencies(driver_dep,version,list):
     #run cypher query 
     records,summary,keys = driver_dep.execute_query(
         "MATCH (:KubeVersion{kubernetesVersion:$version})-[:Contains]->(p) return p.dependencyName,p.dependencyVersion",
@@ -28,7 +28,7 @@ def dependencies_dep(driver_dep,version,list):
         print(tabulate(df,headers='keys',tablefmt='psql'))
     
 
-def compare_dep(driver_dep,version_1,version_2,list):
+def compare(driver_dep,version_1,version_2,list):
     #separate based on if both version + name is same, name is same different version, both are different
     records_1,summary,keys = driver_dep.execute_query(
         "MATCH (:KubeVersion{kubernetesVersion:$version})-[:Contains]->(p) return p.dependencyName, p.dependencyVersion",
