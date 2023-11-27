@@ -19,6 +19,9 @@ def evaluate(driver_vul, version, list):
         df.sort_values(by=['sorting'],inplace=True,ignore_index=True)
         df.drop('sorting',axis=1,inplace=True)
         print(tabulate(df,headers='keys',tablefmt='psql'))
+    elif(len(records) == 0):
+        #if no vulnerabilities found, we likely do not have the data
+        print("data missing from our database")
     else:
         #print data such as total vulnerabilities, and their distribution
         print("total vulnerabilities in version",version, "is",len(records), "with distribution as followed: ")
