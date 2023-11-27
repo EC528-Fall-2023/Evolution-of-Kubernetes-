@@ -7,3 +7,24 @@ WITH folder, COUNT(DISTINCT node) AS totalNodeCount, COUNT(DISTINCT CASE WHEN la
 OPTIONAL MATCH (node)-[:BELONGS_TO]->(:SPDXNode)
 RETURN folder.name AS FolderNode, totalNodeCount, packageNodeCount, totalNodeCount - packageNodeCount AS SPDXNodeCount
 ORDER BY folder.name;
+
+For combined DB
+MATCH (node)-[:BELONGS_TO]->(folder:KubeVersion)
+OPTIONAL MATCH (node)-[:BELONGS_TO]->(:PackageNode)
+WITH folder, COUNT(DISTINCT node) AS totalNodeCount, COUNT(DISTINCT CASE WHEN labels(node) = ['PackageNode'] THEN node END) AS packageNodeCount
+OPTIONAL MATCH (node)-[:BELONGS_TO]->(:SPDXNode)
+RETURN folder.VERSION AS KubeVersion, totalNodeCount, packageNodeCount, totalNodeCount - packageNodeCount AS SPDXNodeCount
+ORDER BY folder.VERSION;
+
+2. To get Vulnerability Count
+MATCH (kube:KubeVersion)-[:contains]->(vuln:Vulnerabilities)
+WITH kube, vuln.SEVERITY AS severity, vuln
+RETURN kube.VERSION AS KubeVersion,
+       COUNT(DISTINCT vuln) AS TotalVulnerabilities,
+       COUNT(DISTINCT CASE WHEN severity = 'High' THEN vuln END) AS HighSeverityCount,
+       COUNT(DISTINCT CASE WHEN severity = 'Medium' THEN vuln END) AS MediumSeverityCount,
+       COUNT(DISTINCT CASE WHEN severity = 'Low' THEN vuln END) AS LowSeverityCount,
+       COUNT(DISTINCT CASE WHEN severity = 'Critical' THEN vuln END) AS CriticalSeverityCount,
+       COUNT(DISTINCT CASE WHEN severity = 'Negligible' THEN vuln END) AS NegligibleSeverityCount,
+       COUNT(DISTINCT CASE WHEN severity = 'Unknown' THEN vuln END) AS UnknownSeverityCount
+ORDER BY kube.VERSION;
