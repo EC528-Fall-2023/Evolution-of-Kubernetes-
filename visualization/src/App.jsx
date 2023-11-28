@@ -5,20 +5,37 @@ import vulnerabilities from './data/vulnerabilities.json';
 function App() {
   const testdata = vulnerabilities
   const [versions, setVersions] = useState([])
-  const [selected, setSelected] = useState([])
+  const [selected, setSelected] = useState(["v1.19.13", "v1.20.9", "v1.21.3", "v1.22.0", "v1.23.0", "v1.24.0", "v1.25.4", "v1.26.0", "v1.27.0", "v1.28.0"])
   const [chartData, setChartData] = useState([])
 
-  // NOTE:
-  // We're gonna need to either fetch a list of all versions or hard-code it
+  const compareSemVer = (a, b) => {
+ 
+    // Split strings into parts
+    const a1 = a.split('.');
+    const b1 = b.split('.');    // In case there's a 4th or 5th version
+    const len = Math.min(a1.length, b1.length);    // Compare each version number
+    for (let i = 0; i < len; i++) {
+        const a2 = +a1[ i ] || 0;
+        const b2 = +b1[ i ] || 0;
+        
+        if (a2 !== b2) {
+            return a2 > b2 ? 1 : -1;        
+        }    }
+    
+    // Reach here if the all checked versions so far are equal
+    //
+    return b1.length - a1.length
+  }
+  
+  // NOTE: We're gonna need to either fetch a list of all versions or hard-code it
   useEffect(() => {
     // setVersions(['Version A', 'Version B', 'Version C', 'Version D', 'Version E', 'Version F', 'Version G', 'Version H', 'Version I', 'Version J', 'Version K', 'Version L', 'Version M', 'Version N'])
-    setVersions(Object.keys(testdata))
+    setVersions((Object.keys(testdata)).sort(compareSemVer))
     console.log("fetched versions")
   }, [])
 
   useEffect(() => {
-    // NOTE:
-    // if we fetch from neo4j, make sure to handle this with async
+    // NOTE:  if we fetch from neo4j, make sure to handle this with async
     setChartData(
       selected.map(i => ({ name: i, ...testdata[i] }))
     )
