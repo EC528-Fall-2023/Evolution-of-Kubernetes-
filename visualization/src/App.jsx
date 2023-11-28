@@ -5,7 +5,7 @@ import vulnerabilities from './data/vulnerabilities.json';
 function App() {
   const testdata = vulnerabilities
   const [versions, setVersions] = useState([])
-  const [selected, setSelected] = useState([])
+  const [selected, setSelected] = useState(["v1.19.13", "v1.20.9", "v1.21.3", "v1.22.0", "v1.23.0", "v1.24.0", "v1.25.4", "v1.26.0", "v1.27.0", "v1.28.0"])
   const [chartData, setChartData] = useState([])
 
   const compareSemVer = (a, b) => {
