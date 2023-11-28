@@ -84,7 +84,7 @@ Cloud providers
 4. Analytic Framework
 - Build a system to extract valuable insights
 - Analyzing historical data and bringing insights about dependencies, vulnerabilities, release frequency, etc.
-- Vulnerabilities can be analyzed using the NIST and OSV APIs, these APIs can be used to retrieve the list of vulneKubernetes from known components.
+- Vulnerabilities can be analyzed using the NIST and OSV APIs, these APIs can be used to retrieve the list of vulnerabilities from known components.
 
 5. CLI
 - The user will interact with our data through the use of a CLI by specifying a version to analyze, and what they would like to analyze
@@ -139,12 +139,14 @@ Stretch Goals:
 ### Sprint #4 (Nov 1 - Nov 14)
 - Finish collecting data with GRYPE/SYFT script
 - Create NIST script to collect entry dates and descriptions of vulnerabilities
-- Import data into Neo4j
+- Import data into Neo4j and merge data
 - Add more queries to CLI
   
 
 ### Sprint #5 (Nov 15 - Nov 28)
-- Complete MVP
-- Getting feedback and putting it into our application
+- Create Interactive UI to present vulnerability data
+- Extract dates of kuberentes versions and vulnerability entries
+- Implement vulnerability searching and scoring for CLI
+- Implement reverse proxy on cloud VM to expose neo4j instance
 
 
