@@ -1,0 +1,4 @@
+NAME               INSTALLED  FIXED-IN  TYPE       VULNERABILITY   SEVERITY 
+golang.org/x/net   v0.13.0    0.17.0    go-module  CVE-2023-44487  High      
+golang.org/x/net   v0.13.0    0.17.0    go-module  CVE-2023-39325  High      
+k8s.io/kubernetes  v1.28.0    1.28.1    go-module  CVE-2023-3955   High

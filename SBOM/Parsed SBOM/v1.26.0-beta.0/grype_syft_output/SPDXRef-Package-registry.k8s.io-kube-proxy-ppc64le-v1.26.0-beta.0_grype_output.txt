@@ -1,0 +1,46 @@
+NAME                                                           INSTALLED                             FIXED-IN                             TYPE       VULNERABILITY        SEVERITY   
+github.com/cyphar/filepath-securejoin                          v0.2.3                                0.2.4                                go-module  GHSA-6xv5-86q9-7xr8  Medium      
+github.com/docker/distribution                                 v2.8.1+incompatible                   2.8.2-beta.1                         go-module  CVE-2023-2253        Medium      
+github.com/opencontainers/runc                                 v1.1.4                                1.1.5                                go-module  CVE-2023-28642       High        
+github.com/opencontainers/runc                                 v1.1.4                                1.1.5                                go-module  CVE-2023-27561       High        
+github.com/opencontainers/runc                                 v1.1.4                                1.1.5                                go-module  CVE-2023-25809       Medium      
+go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp  v0.35.0                               0.44.0                               go-module  CVE-2023-45142       High        
+golang.org/x/net                                               v0.1.1-0.20221027164007-c63010009c80  0.17.0                               go-module  CVE-2023-44487       High        
+golang.org/x/net                                               v0.1.1-0.20221027164007-c63010009c80  0.17.0                               go-module  CVE-2023-39325       High        
+golang.org/x/net                                               v0.1.1-0.20221027164007-c63010009c80  0.7.0                                go-module  CVE-2022-41723       High        
+golang.org/x/net                                               v0.1.1-0.20221027164007-c63010009c80  0.1.1-0.20221104162952-702349b0e862  go-module  CVE-2022-41721       High        
+golang.org/x/net                                               v0.1.1-0.20221027164007-c63010009c80  0.13.0                               go-module  CVE-2023-3978        Medium      
+google.golang.org/grpc                                         v1.49.0                               1.56.3                               go-module  GHSA-m425-mq94-257g  High        
+google.golang.org/grpc                                         v1.49.0                               1.56.3                               go-module  CVE-2023-44487       High        
+k8s.io/kubernetes                                              v1.26.0-beta                          1.26.8                               go-module  CVE-2023-3955        High        
+k8s.io/kubernetes                                              v1.26.0-beta                          1.26.6                               go-module  CVE-2023-2728        Medium      
+k8s.io/kubernetes                                              v1.26.0-beta                          1.26.6                               go-module  CVE-2023-2727        Medium      
+k8s.io/kubernetes                                              v1.26.0-beta                          1.26.5                               go-module  CVE-2023-2431        Medium      
+libssl1.1                                                      1.1.1n-0+deb11u3                      1.1.1n-0+deb11u5                     deb        CVE-2023-0464        High        
+libssl1.1                                                      1.1.1n-0+deb11u3                      1.1.1n-0+deb11u4                     deb        CVE-2023-0286        High        
+libssl1.1                                                      1.1.1n-0+deb11u3                      1.1.1n-0+deb11u4                     deb        CVE-2023-0215        High        
+libssl1.1                                                      1.1.1n-0+deb11u3                      1.1.1n-0+deb11u4                     deb        CVE-2022-4450        High        
+libssl1.1                                                      1.1.1n-0+deb11u3                      1.1.1v-0~deb11u1                     deb        CVE-2023-3817        Medium      
+libssl1.1                                                      1.1.1n-0+deb11u3                      1.1.1v-0~deb11u1                     deb        CVE-2023-3446        Medium      
+libssl1.1                                                      1.1.1n-0+deb11u3                      1.1.1n-0+deb11u5                     deb        CVE-2023-2650        Medium      
+libssl1.1                                                      1.1.1n-0+deb11u3                      1.1.1n-0+deb11u5                     deb        CVE-2023-0466        Medium      
+libssl1.1                                                      1.1.1n-0+deb11u3                      1.1.1n-0+deb11u5                     deb        CVE-2023-0465        Medium      
+libssl1.1                                                      1.1.1n-0+deb11u3                      1.1.1n-0+deb11u4                     deb        CVE-2022-4304        Medium      
+libssl1.1                                                      1.1.1n-0+deb11u3                      1.1.1n-0+deb11u4                     deb        CVE-2022-2097        Medium      
+libssl1.1                                                      1.1.1n-0+deb11u3                                                           deb        CVE-2010-0928        Negligible  
+libssl1.1                                                      1.1.1n-0+deb11u3                                                           deb        CVE-2007-6755        Negligible  
+libssl1.1                                                      1.1.1n-0+deb11u3                      (won't fix)                          deb        CVE-2023-5678        Unknown     
+openssl                                                        1.1.1n-0+deb11u3                      1.1.1n-0+deb11u5                     deb        CVE-2023-0464        High        
+openssl                                                        1.1.1n-0+deb11u3                      1.1.1n-0+deb11u4                     deb        CVE-2023-0286        High        
+openssl                                                        1.1.1n-0+deb11u3                      1.1.1n-0+deb11u4                     deb        CVE-2023-0215        High        
+openssl                                                        1.1.1n-0+deb11u3                      1.1.1n-0+deb11u4                     deb        CVE-2022-4450        High        
+openssl                                                        1.1.1n-0+deb11u3                      1.1.1v-0~deb11u1                     deb        CVE-2023-3817        Medium      
+openssl                                                        1.1.1n-0+deb11u3                      1.1.1v-0~deb11u1                     deb        CVE-2023-3446        Medium      
+openssl                                                        1.1.1n-0+deb11u3                      1.1.1n-0+deb11u5                     deb        CVE-2023-2650        Medium      
+openssl                                                        1.1.1n-0+deb11u3                      1.1.1n-0+deb11u5                     deb        CVE-2023-0466        Medium      
+openssl                                                        1.1.1n-0+deb11u3                      1.1.1n-0+deb11u5                     deb        CVE-2023-0465        Medium      
+openssl                                                        1.1.1n-0+deb11u3                      1.1.1n-0+deb11u4                     deb        CVE-2022-4304        Medium      
+openssl                                                        1.1.1n-0+deb11u3                      1.1.1n-0+deb11u4                     deb        CVE-2022-2097        Medium      
+openssl                                                        1.1.1n-0+deb11u3                                                           deb        CVE-2010-0928        Negligible  
+openssl                                                        1.1.1n-0+deb11u3                                                           deb        CVE-2007-6755        Negligible  
+openssl                                                        1.1.1n-0+deb11u3                      (won't fix)                          deb        CVE-2023-5678        Unknown
