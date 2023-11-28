@@ -144,7 +144,7 @@ Stretch Goals:
   
 
 ### Sprint #5 (Nov 15 - Nov 28)
-- Create Interactive UI to present vulnerability data
+- Create and deploy [Interactive UI](https://ec528-fall-2023.github.io/Evolution-of-Kubernetes-/) to present vulnerability data
 - Extract dates of kuberentes versions and vulnerability entries
 - Implement vulnerability searching and scoring for CLI
 - Implement reverse proxy on cloud VM to expose neo4j instance
