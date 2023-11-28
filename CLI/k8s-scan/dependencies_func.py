@@ -9,7 +9,10 @@ def dependencies(driver_dep,version,list):
         "MATCH (:KubeVersion{kubernetesVersion:$version})-[:Depends_On]->(p) return p.dependencyName,p.dependencyVersion",
         {"version":version}, routing = RoutingControl.READ, database = "neo4j"
     )
-
+    if(len(records) == 0):
+        #if no dependencies, we are likely missing the data
+        print("data missing from our database, try a different version")
+        return
     #print list of dependencies if user requests it
     if(list):
         df = pd.DataFrame(records,columns=['dependency name','dependency version'])

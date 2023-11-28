@@ -68,16 +68,26 @@ def eval(version,list):
 @click.argument('code',type=str)
 @click.option('--list/--no-list', default=False, help='[default = false] toggle list all data')
 def vul(code,list):
-    '''find all versions of Kubernetes with a given vulnerability using its CVE or GHSA code'''
+    '''find all versions of Kubernetes with a given vulnerability code'''
     driver_vul = init()
     vulnerability(driver_vul,code,list)
     driver_vul.close()
-    
+
+@click.command()
+@click.argument('version',type=str)
+@click.option('--list/--no-list', default=False, help='[default = false] toggle list all data')
+def rec(version,list):
+    '''recommend a less vulnerable version of Kubernetes based on input'''
+    driver_vul = init()
+    recommend(driver_vul,version,list)
+    driver_vul.close()
+
 # Add commands to the CLI group
 cli.add_command(dep)
 cli.add_command(comp)
 cli.add_command(eval)
 cli.add_command(vul)
+cli.add_command(rec)
 
 if __name__ == "__main__":
     cli()
