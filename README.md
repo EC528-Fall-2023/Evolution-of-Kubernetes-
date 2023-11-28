@@ -15,11 +15,15 @@
 1. https://drive.google.com/file/d/13ZRfemcwVMjYKPPgBF-aMuAYyIu4Uj0r/view?usp=drive_link
 2. https://drive.google.com/file/d/19RKdk28hIlycdg6E-IVRdQniK853RX3h/view?usp=drive_link
 3. https://drive.google.com/file/d/1OckXILuWEGGWwAhdlucARE14L7jsiLW2/view?usp=drive_link
+4. https://drive.google.com/file/d/1iot6vwi4wF8RssavVJ6McwnL0deej4fw/view?usp=sharing
+5. https://drive.google.com/file/d/19VJi6bQ8xvRXiXvO3ERp-DK-vOgiNeaG/view?usp=sharing
 
 ## Slides 
 1. https://docs.google.com/presentation/d/1g55eJtPw-Nqs4UGdct1RVzj7Tn9rZ_vOGkU5aett7ns/edit
 2. https://docs.google.com/presentation/d/1zIL7WitdqtMgJpEo_-UIM9woRG7rn-oMftZ20LrrP9c/edit
 3. https://docs.google.com/presentation/d/1UTrj0KQ0ppcm8Q9sv9N-m2D3Me5nAtBGVq8rKRGSyEg/edit?usp=drive_link
+4. https://docs.google.com/presentation/d/1AmgHdyM-yIxjLIGZsndIq9-3fskL1LESKNORodOOZZ8/edit?usp=sharing
+5. https://docs.google.com/presentation/d/1N0XLtZRzZZPRJ7e_dLIAeLBIfQEIo5b2en3o4dZNekw/edit?usp=sharing
 
 
 ## 1. Vision and Goals Of The Project: 
@@ -82,7 +86,7 @@ Cloud providers
 4. Analytic Framework
 - Build a system to extract valuable insights
 - Analyzing historical data and bringing insights about dependencies, vulnerabilities, release frequency, etc.
-- Vulnerabilities can be analyzed using the NIST and OSV APIs, these APIs can be used to retrieve the list of vulneKubernetes from known components.
+- Vulnerabilities can be analyzed using the NIST and OSV APIs, these APIs can be used to retrieve the list of vulnerabilities from known components.
 
 5. CLI
 - The user will interact with our data through the use of a CLI by specifying a version to analyze, and what they would like to analyze
@@ -135,15 +139,16 @@ Stretch Goals:
 
 
 ### Sprint #4 (Nov 1 - Nov 14)
-- Finish GRYPE/SYFT script 
-- Import data into Neo4j
-- Merge the Neo4j DB that has images, binaries and tar folders with the Neo4j DB that has dependeices
-- Analyze the insights gained from the data
+- Finish collecting data with GRYPE/SYFT script
+- Create NIST script to collect entry dates and descriptions of vulnerabilities
+- Import data into Neo4j and merge data
 - Add more queries to CLI
   
 
 ### Sprint #5 (Nov 15 - Nov 28)
-- Complete MVP
-- Getting feedback and putting it into our application
+- Create and deploy [Interactive UI](https://ec528-fall-2023.github.io/Evolution-of-Kubernetes-/) to present vulnerability data
+- Extract dates of kuberentes versions and vulnerability entries
+- Implement vulnerability searching and scoring for CLI
+- Implement reverse proxy on cloud VM to expose neo4j instance
 
 

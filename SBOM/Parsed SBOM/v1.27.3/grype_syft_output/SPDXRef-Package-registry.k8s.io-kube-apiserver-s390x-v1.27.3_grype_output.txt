@@ -1,0 +1,9 @@
+NAME                                                           INSTALLED            FIXED-IN      TYPE       VULNERABILITY        SEVERITY 
+github.com/docker/distribution                                 v2.8.1+incompatible  2.8.2-beta.1  go-module  CVE-2023-2253        Medium    
+go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp  v0.35.1              0.44.0        go-module  CVE-2023-45142       High      
+golang.org/x/net                                               v0.8.0               0.17.0        go-module  CVE-2023-44487       High      
+golang.org/x/net                                               v0.8.0               0.17.0        go-module  CVE-2023-39325       High      
+golang.org/x/net                                               v0.8.0               0.13.0        go-module  CVE-2023-3978        Medium    
+google.golang.org/grpc                                         v1.51.0              1.56.3        go-module  GHSA-m425-mq94-257g  High      
+google.golang.org/grpc                                         v1.51.0              1.56.3        go-module  CVE-2023-44487       High      
+k8s.io/kubernetes                                              v1.27.3              1.27.5        go-module  CVE-2023-3955        High

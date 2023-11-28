@@ -1,0 +1,1289 @@
+{
+  "v1.19.13": {
+    "TotalVulnerabilities": 142,
+    "High": 32,
+    "Medium": 27,
+    "Low": 18,
+    "Critical": 16,
+    "Negligible": 47,
+    "Unknown": 2
+  },
+  "v1.19.14": {
+    "TotalVulnerabilities": 141,
+    "High": 32,
+    "Medium": 26,
+    "Low": 18,
+    "Critical": 16,
+    "Negligible": 47,
+    "Unknown": 2
+  },
+  "v1.19.15": {
+    "TotalVulnerabilities": 141,
+    "High": 32,
+    "Medium": 26,
+    "Low": 18,
+    "Critical": 16,
+    "Negligible": 47,
+    "Unknown": 2
+  },
+  "v1.19.16": {
+    "TotalVulnerabilities": 141,
+    "High": 32,
+    "Medium": 26,
+    "Low": 18,
+    "Critical": 16,
+    "Negligible": 47,
+    "Unknown": 2
+  },
+  "v1.20.10": {
+    "TotalVulnerabilities": 141,
+    "High": 32,
+    "Medium": 26,
+    "Low": 18,
+    "Critical": 16,
+    "Negligible": 47,
+    "Unknown": 2
+  },
+  "v1.20.11": {
+    "TotalVulnerabilities": 141,
+    "High": 32,
+    "Medium": 26,
+    "Low": 18,
+    "Critical": 16,
+    "Negligible": 47,
+    "Unknown": 2
+  },
+  "v1.20.12": {
+    "TotalVulnerabilities": 141,
+    "High": 32,
+    "Medium": 26,
+    "Low": 18,
+    "Critical": 16,
+    "Negligible": 47,
+    "Unknown": 2
+  },
+  "v1.20.13": {
+    "TotalVulnerabilities": 138,
+    "High": 31,
+    "Medium": 25,
+    "Low": 18,
+    "Critical": 15,
+    "Negligible": 47,
+    "Unknown": 2
+  },
+  "v1.20.14": {
+    "TotalVulnerabilities": 137,
+    "High": 31,
+    "Medium": 24,
+    "Low": 18,
+    "Critical": 15,
+    "Negligible": 47,
+    "Unknown": 2
+  },
+  "v1.20.15": {
+    "TotalVulnerabilities": 137,
+    "High": 31,
+    "Medium": 24,
+    "Low": 18,
+    "Critical": 15,
+    "Negligible": 47,
+    "Unknown": 2
+  },
+  "v1.20.9": {
+    "TotalVulnerabilities": 142,
+    "High": 32,
+    "Medium": 27,
+    "Low": 18,
+    "Critical": 16,
+    "Negligible": 47,
+    "Unknown": 2
+  },
+  "v1.21.10": {
+    "TotalVulnerabilities": 124,
+    "High": 33,
+    "Medium": 23,
+    "Low": 12,
+    "Critical": 13,
+    "Negligible": 41,
+    "Unknown": 2
+  },
+  "v1.21.11": {
+    "TotalVulnerabilities": 124,
+    "High": 33,
+    "Medium": 23,
+    "Low": 12,
+    "Critical": 13,
+    "Negligible": 41,
+    "Unknown": 2
+  },
+  "v1.21.12": {
+    "TotalVulnerabilities": 123,
+    "High": 32,
+    "Medium": 23,
+    "Low": 12,
+    "Critical": 13,
+    "Negligible": 41,
+    "Unknown": 2
+  },
+  "v1.21.13": {
+    "TotalVulnerabilities": 123,
+    "High": 32,
+    "Medium": 23,
+    "Low": 12,
+    "Critical": 13,
+    "Negligible": 41,
+    "Unknown": 2
+  },
+  "v1.21.14": {
+    "TotalVulnerabilities": 123,
+    "High": 32,
+    "Medium": 23,
+    "Low": 12,
+    "Critical": 13,
+    "Negligible": 41,
+    "Unknown": 2
+  },
+  "v1.21.3": {
+    "TotalVulnerabilities": 119,
+    "High": 28,
+    "Medium": 24,
+    "Low": 12,
+    "Critical": 12,
+    "Negligible": 41,
+    "Unknown": 2
+  },
+  "v1.21.4": {
+    "TotalVulnerabilities": 119,
+    "High": 28,
+    "Medium": 24,
+    "Low": 12,
+    "Critical": 12,
+    "Negligible": 41,
+    "Unknown": 2
+  },
+  "v1.21.5": {
+    "TotalVulnerabilities": 130,
+    "High": 34,
+    "Medium": 27,
+    "Low": 12,
+    "Critical": 14,
+    "Negligible": 41,
+    "Unknown": 2
+  },
+  "v1.21.6": {
+    "TotalVulnerabilities": 129,
+    "High": 34,
+    "Medium": 26,
+    "Low": 12,
+    "Critical": 14,
+    "Negligible": 41,
+    "Unknown": 2
+  },
+  "v1.21.7": {
+    "TotalVulnerabilities": 126,
+    "High": 33,
+    "Medium": 25,
+    "Low": 12,
+    "Critical": 13,
+    "Negligible": 41,
+    "Unknown": 2
+  },
+  "v1.21.8": {
+    "TotalVulnerabilities": 126,
+    "High": 33,
+    "Medium": 25,
+    "Low": 12,
+    "Critical": 13,
+    "Negligible": 41,
+    "Unknown": 2
+  },
+  "v1.21.9": {
+    "TotalVulnerabilities": 126,
+    "High": 33,
+    "Medium": 25,
+    "Low": 12,
+    "Critical": 13,
+    "Negligible": 41,
+    "Unknown": 2
+  },
+  "v1.22.0": {
+    "TotalVulnerabilities": 113,
+    "High": 25,
+    "Medium": 23,
+    "Low": 12,
+    "Critical": 12,
+    "Negligible": 39,
+    "Unknown": 2
+  },
+  "v1.22.0-beta.1": {
+    "TotalVulnerabilities": 113,
+    "High": 25,
+    "Medium": 23,
+    "Low": 12,
+    "Critical": 12,
+    "Negligible": 39,
+    "Unknown": 2
+  },
+  "v1.22.0-beta.2": {
+    "TotalVulnerabilities": 113,
+    "High": 25,
+    "Medium": 23,
+    "Low": 12,
+    "Critical": 12,
+    "Negligible": 39,
+    "Unknown": 2
+  },
+  "v1.22.0-rc.0": {
+    "TotalVulnerabilities": 113,
+    "High": 25,
+    "Medium": 23,
+    "Low": 12,
+    "Critical": 12,
+    "Negligible": 39,
+    "Unknown": 2
+  },
+  "v1.22.1": {
+    "TotalVulnerabilities": 113,
+    "High": 25,
+    "Medium": 23,
+    "Low": 12,
+    "Critical": 12,
+    "Negligible": 39,
+    "Unknown": 2
+  },
+  "v1.22.10": {
+    "TotalVulnerabilities": 111,
+    "High": 25,
+    "Medium": 22,
+    "Low": 12,
+    "Critical": 11,
+    "Negligible": 39,
+    "Unknown": 2
+  },
+  "v1.22.11": {
+    "TotalVulnerabilities": 111,
+    "High": 25,
+    "Medium": 22,
+    "Low": 12,
+    "Critical": 11,
+    "Negligible": 39,
+    "Unknown": 2
+  },
+  "v1.22.12": {
+    "TotalVulnerabilities": 111,
+    "High": 25,
+    "Medium": 22,
+    "Low": 12,
+    "Critical": 11,
+    "Negligible": 39,
+    "Unknown": 2
+  },
+  "v1.22.13": {
+    "TotalVulnerabilities": 111,
+    "High": 25,
+    "Medium": 22,
+    "Low": 12,
+    "Critical": 11,
+    "Negligible": 39,
+    "Unknown": 2
+  },
+  "v1.22.14": {
+    "TotalVulnerabilities": 111,
+    "High": 25,
+    "Medium": 22,
+    "Low": 12,
+    "Critical": 11,
+    "Negligible": 39,
+    "Unknown": 2
+  },
+  "v1.22.15": {
+    "TotalVulnerabilities": 111,
+    "High": 25,
+    "Medium": 22,
+    "Low": 12,
+    "Critical": 11,
+    "Negligible": 39,
+    "Unknown": 2
+  },
+  "v1.22.16": {
+    "TotalVulnerabilities": 111,
+    "High": 25,
+    "Medium": 22,
+    "Low": 12,
+    "Critical": 11,
+    "Negligible": 39,
+    "Unknown": 2
+  },
+  "v1.22.17": {
+    "TotalVulnerabilities": 111,
+    "High": 25,
+    "Medium": 22,
+    "Low": 12,
+    "Critical": 11,
+    "Negligible": 39,
+    "Unknown": 2
+  },
+  "v1.22.2": {
+    "TotalVulnerabilities": 113,
+    "High": 25,
+    "Medium": 23,
+    "Low": 12,
+    "Critical": 12,
+    "Negligible": 39,
+    "Unknown": 2
+  },
+  "v1.22.3": {
+    "TotalVulnerabilities": 115,
+    "High": 27,
+    "Medium": 23,
+    "Low": 12,
+    "Critical": 12,
+    "Negligible": 39,
+    "Unknown": 2
+  },
+  "v1.22.4": {
+    "TotalVulnerabilities": 112,
+    "High": 26,
+    "Medium": 22,
+    "Low": 12,
+    "Critical": 11,
+    "Negligible": 39,
+    "Unknown": 2
+  },
+  "v1.22.5": {
+    "TotalVulnerabilities": 112,
+    "High": 26,
+    "Medium": 22,
+    "Low": 12,
+    "Critical": 11,
+    "Negligible": 39,
+    "Unknown": 2
+  },
+  "v1.22.6": {
+    "TotalVulnerabilities": 112,
+    "High": 26,
+    "Medium": 22,
+    "Low": 12,
+    "Critical": 11,
+    "Negligible": 39,
+    "Unknown": 2
+  },
+  "v1.22.7": {
+    "TotalVulnerabilities": 112,
+    "High": 26,
+    "Medium": 22,
+    "Low": 12,
+    "Critical": 11,
+    "Negligible": 39,
+    "Unknown": 2
+  },
+  "v1.22.8": {
+    "TotalVulnerabilities": 112,
+    "High": 26,
+    "Medium": 22,
+    "Low": 12,
+    "Critical": 11,
+    "Negligible": 39,
+    "Unknown": 2
+  },
+  "v1.22.9": {
+    "TotalVulnerabilities": 111,
+    "High": 25,
+    "Medium": 22,
+    "Low": 12,
+    "Critical": 11,
+    "Negligible": 39,
+    "Unknown": 2
+  },
+  "v1.23.0": {
+    "TotalVulnerabilities": 97,
+    "High": 21,
+    "Medium": 20,
+    "Low": 6,
+    "Critical": 13,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.23.0-alpha.1": {
+    "TotalVulnerabilities": 112,
+    "High": 25,
+    "Medium": 22,
+    "Low": 12,
+    "Critical": 12,
+    "Negligible": 39,
+    "Unknown": 2
+  },
+  "v1.23.0-alpha.2": {
+    "TotalVulnerabilities": 110,
+    "High": 24,
+    "Medium": 22,
+    "Low": 12,
+    "Critical": 11,
+    "Negligible": 39,
+    "Unknown": 2
+  },
+  "v1.23.0-alpha.3": {
+    "TotalVulnerabilities": 97,
+    "High": 21,
+    "Medium": 20,
+    "Low": 6,
+    "Critical": 13,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.23.0-alpha.4": {
+    "TotalVulnerabilities": 97,
+    "High": 21,
+    "Medium": 20,
+    "Low": 6,
+    "Critical": 13,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.23.0-beta.0": {
+    "TotalVulnerabilities": 97,
+    "High": 21,
+    "Medium": 20,
+    "Low": 6,
+    "Critical": 13,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.23.0-rc.0": {
+    "TotalVulnerabilities": 97,
+    "High": 21,
+    "Medium": 20,
+    "Low": 6,
+    "Critical": 13,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.23.0-rc.1": {
+    "TotalVulnerabilities": 97,
+    "High": 21,
+    "Medium": 20,
+    "Low": 6,
+    "Critical": 13,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.23.1": {
+    "TotalVulnerabilities": 97,
+    "High": 21,
+    "Medium": 20,
+    "Low": 6,
+    "Critical": 13,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.23.10": {
+    "TotalVulnerabilities": 97,
+    "High": 21,
+    "Medium": 20,
+    "Low": 6,
+    "Critical": 13,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.23.11": {
+    "TotalVulnerabilities": 97,
+    "High": 21,
+    "Medium": 20,
+    "Low": 6,
+    "Critical": 13,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.23.12": {
+    "TotalVulnerabilities": 97,
+    "High": 21,
+    "Medium": 20,
+    "Low": 6,
+    "Critical": 13,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.23.13": {
+    "TotalVulnerabilities": 97,
+    "High": 21,
+    "Medium": 20,
+    "Low": 6,
+    "Critical": 13,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.23.14": {
+    "TotalVulnerabilities": 97,
+    "High": 21,
+    "Medium": 20,
+    "Low": 6,
+    "Critical": 13,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.23.15": {
+    "TotalVulnerabilities": 97,
+    "High": 21,
+    "Medium": 20,
+    "Low": 6,
+    "Critical": 13,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.23.16": {
+    "TotalVulnerabilities": 97,
+    "High": 21,
+    "Medium": 20,
+    "Low": 6,
+    "Critical": 13,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.23.17": {
+    "TotalVulnerabilities": 97,
+    "High": 21,
+    "Medium": 20,
+    "Low": 6,
+    "Critical": 13,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.23.2": {
+    "TotalVulnerabilities": 97,
+    "High": 21,
+    "Medium": 20,
+    "Low": 6,
+    "Critical": 13,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.23.3": {
+    "TotalVulnerabilities": 97,
+    "High": 21,
+    "Medium": 20,
+    "Low": 6,
+    "Critical": 13,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.23.4": {
+    "TotalVulnerabilities": 97,
+    "High": 21,
+    "Medium": 20,
+    "Low": 6,
+    "Critical": 13,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.23.5": {
+    "TotalVulnerabilities": 97,
+    "High": 21,
+    "Medium": 20,
+    "Low": 6,
+    "Critical": 13,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.23.6": {
+    "TotalVulnerabilities": 97,
+    "High": 21,
+    "Medium": 20,
+    "Low": 6,
+    "Critical": 13,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.23.7": {
+    "TotalVulnerabilities": 97,
+    "High": 21,
+    "Medium": 20,
+    "Low": 6,
+    "Critical": 13,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.23.8": {
+    "TotalVulnerabilities": 97,
+    "High": 21,
+    "Medium": 20,
+    "Low": 6,
+    "Critical": 13,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.23.9": {
+    "TotalVulnerabilities": 97,
+    "High": 21,
+    "Medium": 20,
+    "Low": 6,
+    "Critical": 13,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.24.0": {
+    "TotalVulnerabilities": 84,
+    "High": 17,
+    "Medium": 15,
+    "Low": 6,
+    "Critical": 9,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.24.0-alpha.1": {
+    "TotalVulnerabilities": 97,
+    "High": 21,
+    "Medium": 20,
+    "Low": 6,
+    "Critical": 13,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.24.0-alpha.2": {
+    "TotalVulnerabilities": 97,
+    "High": 21,
+    "Medium": 20,
+    "Low": 6,
+    "Critical": 13,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.24.0-alpha.3": {
+    "TotalVulnerabilities": 97,
+    "High": 21,
+    "Medium": 20,
+    "Low": 6,
+    "Critical": 13,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.24.0-alpha.4": {
+    "TotalVulnerabilities": 97,
+    "High": 21,
+    "Medium": 20,
+    "Low": 6,
+    "Critical": 13,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.24.0-beta.0": {
+    "TotalVulnerabilities": 97,
+    "High": 21,
+    "Medium": 20,
+    "Low": 6,
+    "Critical": 13,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.24.0-rc.0": {
+    "TotalVulnerabilities": 84,
+    "High": 17,
+    "Medium": 15,
+    "Low": 6,
+    "Critical": 9,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.24.0-rc.1": {
+    "TotalVulnerabilities": 84,
+    "High": 17,
+    "Medium": 15,
+    "Low": 6,
+    "Critical": 9,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.24.1": {
+    "TotalVulnerabilities": 84,
+    "High": 17,
+    "Medium": 15,
+    "Low": 6,
+    "Critical": 9,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.24.10": {
+    "TotalVulnerabilities": 84,
+    "High": 17,
+    "Medium": 15,
+    "Low": 6,
+    "Critical": 9,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.24.11": {
+    "TotalVulnerabilities": 84,
+    "High": 17,
+    "Medium": 15,
+    "Low": 6,
+    "Critical": 9,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.24.12": {
+    "TotalVulnerabilities": 84,
+    "High": 17,
+    "Medium": 15,
+    "Low": 6,
+    "Critical": 9,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.24.13": {
+    "TotalVulnerabilities": 84,
+    "High": 17,
+    "Medium": 15,
+    "Low": 6,
+    "Critical": 9,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.24.14": {
+    "TotalVulnerabilities": 84,
+    "High": 17,
+    "Medium": 15,
+    "Low": 6,
+    "Critical": 9,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.24.15": {
+    "TotalVulnerabilities": 84,
+    "High": 17,
+    "Medium": 15,
+    "Low": 6,
+    "Critical": 9,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.24.16": {
+    "TotalVulnerabilities": 84,
+    "High": 17,
+    "Medium": 15,
+    "Low": 6,
+    "Critical": 9,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.24.17": {
+    "TotalVulnerabilities": 84,
+    "High": 17,
+    "Medium": 15,
+    "Low": 6,
+    "Critical": 9,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.24.2": {
+    "TotalVulnerabilities": 84,
+    "High": 17,
+    "Medium": 15,
+    "Low": 6,
+    "Critical": 9,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.24.3": {
+    "TotalVulnerabilities": 84,
+    "High": 17,
+    "Medium": 15,
+    "Low": 6,
+    "Critical": 9,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.24.4": {
+    "TotalVulnerabilities": 84,
+    "High": 17,
+    "Medium": 15,
+    "Low": 6,
+    "Critical": 9,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.24.5": {
+    "TotalVulnerabilities": 84,
+    "High": 17,
+    "Medium": 15,
+    "Low": 6,
+    "Critical": 9,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.24.6": {
+    "TotalVulnerabilities": 84,
+    "High": 17,
+    "Medium": 15,
+    "Low": 6,
+    "Critical": 9,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.24.7": {
+    "TotalVulnerabilities": 84,
+    "High": 17,
+    "Medium": 15,
+    "Low": 6,
+    "Critical": 9,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.24.8": {
+    "TotalVulnerabilities": 84,
+    "High": 17,
+    "Medium": 15,
+    "Low": 6,
+    "Critical": 9,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.24.9": {
+    "TotalVulnerabilities": 84,
+    "High": 17,
+    "Medium": 15,
+    "Low": 6,
+    "Critical": 9,
+    "Negligible": 35,
+    "Unknown": 2
+  },
+  "v1.25.10": {
+    "TotalVulnerabilities": 35,
+    "High": 9,
+    "Medium": 14,
+    "Low": 1,
+    "Critical": 0,
+    "Negligible": 10,
+    "Unknown": 1
+  },
+  "v1.25.11": {
+    "TotalVulnerabilities": 33,
+    "High": 9,
+    "Medium": 12,
+    "Low": 1,
+    "Critical": 0,
+    "Negligible": 10,
+    "Unknown": 1
+  },
+  "v1.25.12": {
+    "TotalVulnerabilities": 33,
+    "High": 9,
+    "Medium": 12,
+    "Low": 1,
+    "Critical": 0,
+    "Negligible": 10,
+    "Unknown": 1
+  },
+  "v1.25.13": {
+    "TotalVulnerabilities": 32,
+    "High": 8,
+    "Medium": 12,
+    "Low": 1,
+    "Critical": 0,
+    "Negligible": 10,
+    "Unknown": 1
+  },
+  "v1.25.14": {
+    "TotalVulnerabilities": 32,
+    "High": 8,
+    "Medium": 12,
+    "Low": 1,
+    "Critical": 0,
+    "Negligible": 10,
+    "Unknown": 1
+  },
+  "v1.25.4": {
+    "TotalVulnerabilities": 43,
+    "High": 15,
+    "Medium": 16,
+    "Low": 1,
+    "Critical": 0,
+    "Negligible": 10,
+    "Unknown": 1
+  },
+  "v1.25.5": {
+    "TotalVulnerabilities": 40,
+    "High": 12,
+    "Medium": 16,
+    "Low": 1,
+    "Critical": 0,
+    "Negligible": 10,
+    "Unknown": 1
+  },
+  "v1.25.6": {
+    "TotalVulnerabilities": 40,
+    "High": 12,
+    "Medium": 16,
+    "Low": 1,
+    "Critical": 0,
+    "Negligible": 10,
+    "Unknown": 1
+  },
+  "v1.25.7": {
+    "TotalVulnerabilities": 39,
+    "High": 11,
+    "Medium": 16,
+    "Low": 1,
+    "Critical": 0,
+    "Negligible": 10,
+    "Unknown": 1
+  },
+  "v1.25.8": {
+    "TotalVulnerabilities": 39,
+    "High": 11,
+    "Medium": 16,
+    "Low": 1,
+    "Critical": 0,
+    "Negligible": 10,
+    "Unknown": 1
+  },
+  "v1.25.9": {
+    "TotalVulnerabilities": 39,
+    "High": 11,
+    "Medium": 16,
+    "Low": 1,
+    "Critical": 0,
+    "Negligible": 10,
+    "Unknown": 1
+  },
+  "v1.26.0": {
+    "TotalVulnerabilities": 40,
+    "High": 12,
+    "Medium": 16,
+    "Low": 1,
+    "Critical": 0,
+    "Negligible": 10,
+    "Unknown": 1
+  },
+  "v1.26.0-alpha.3": {
+    "TotalVulnerabilities": 41,
+    "High": 13,
+    "Medium": 16,
+    "Low": 1,
+    "Critical": 0,
+    "Negligible": 10,
+    "Unknown": 1
+  },
+  "v1.26.0-beta.0": {
+    "TotalVulnerabilities": 40,
+    "High": 13,
+    "Medium": 16,
+    "Low": 0,
+    "Critical": 0,
+    "Negligible": 10,
+    "Unknown": 1
+  },
+  "v1.26.0-rc.0": {
+    "TotalVulnerabilities": 40,
+    "High": 13,
+    "Medium": 16,
+    "Low": 0,
+    "Critical": 0,
+    "Negligible": 10,
+    "Unknown": 1
+  },
+  "v1.26.0-rc.1": {
+    "TotalVulnerabilities": 40,
+    "High": 13,
+    "Medium": 16,
+    "Low": 0,
+    "Critical": 0,
+    "Negligible": 10,
+    "Unknown": 1
+  },
+  "v1.26.1": {
+    "TotalVulnerabilities": 39,
+    "High": 12,
+    "Medium": 16,
+    "Low": 0,
+    "Critical": 0,
+    "Negligible": 10,
+    "Unknown": 1
+  },
+  "v1.26.2": {
+    "TotalVulnerabilities": 38,
+    "High": 11,
+    "Medium": 16,
+    "Low": 0,
+    "Critical": 0,
+    "Negligible": 10,
+    "Unknown": 1
+  },
+  "v1.26.3": {
+    "TotalVulnerabilities": 38,
+    "High": 11,
+    "Medium": 16,
+    "Low": 0,
+    "Critical": 0,
+    "Negligible": 10,
+    "Unknown": 1
+  },
+  "v1.26.4": {
+    "TotalVulnerabilities": 38,
+    "High": 11,
+    "Medium": 16,
+    "Low": 0,
+    "Critical": 0,
+    "Negligible": 10,
+    "Unknown": 1
+  },
+  "v1.26.5": {
+    "TotalVulnerabilities": 34,
+    "High": 9,
+    "Medium": 14,
+    "Low": 0,
+    "Critical": 0,
+    "Negligible": 10,
+    "Unknown": 1
+  },
+  "v1.26.6": {
+    "TotalVulnerabilities": 32,
+    "High": 9,
+    "Medium": 12,
+    "Low": 0,
+    "Critical": 0,
+    "Negligible": 10,
+    "Unknown": 1
+  },
+  "v1.26.7": {
+    "TotalVulnerabilities": 32,
+    "High": 9,
+    "Medium": 12,
+    "Low": 0,
+    "Critical": 0,
+    "Negligible": 10,
+    "Unknown": 1
+  },
+  "v1.26.8": {
+    "TotalVulnerabilities": 31,
+    "High": 8,
+    "Medium": 12,
+    "Low": 0,
+    "Critical": 0,
+    "Negligible": 10,
+    "Unknown": 1
+  },
+  "v1.26.9": {
+    "TotalVulnerabilities": 31,
+    "High": 8,
+    "Medium": 12,
+    "Low": 0,
+    "Critical": 0,
+    "Negligible": 10,
+    "Unknown": 1
+  },
+  "v1.27.0": {
+    "TotalVulnerabilities": 41,
+    "High": 8,
+    "Medium": 14,
+    "Low": 1,
+    "Critical": 0,
+    "Negligible": 17,
+    "Unknown": 1
+  },
+  "v1.27.0-alpha.1": {
+    "TotalVulnerabilities": 39,
+    "High": 12,
+    "Medium": 16,
+    "Low": 0,
+    "Critical": 0,
+    "Negligible": 10,
+    "Unknown": 1
+  },
+  "v1.27.0-alpha.2": {
+    "TotalVulnerabilities": 39,
+    "High": 12,
+    "Medium": 16,
+    "Low": 0,
+    "Critical": 0,
+    "Negligible": 10,
+    "Unknown": 1
+  },
+  "v1.27.0-alpha.3": {
+    "TotalVulnerabilities": 41,
+    "High": 8,
+    "Medium": 14,
+    "Low": 1,
+    "Critical": 0,
+    "Negligible": 17,
+    "Unknown": 1
+  },
+  "v1.27.0-beta.0": {
+    "TotalVulnerabilities": 41,
+    "High": 8,
+    "Medium": 14,
+    "Low": 1,
+    "Critical": 0,
+    "Negligible": 17,
+    "Unknown": 1
+  },
+  "v1.27.0-rc.0": {
+    "TotalVulnerabilities": 41,
+    "High": 8,
+    "Medium": 14,
+    "Low": 1,
+    "Critical": 0,
+    "Negligible": 17,
+    "Unknown": 1
+  },
+  "v1.27.0-rc.1": {
+    "TotalVulnerabilities": 41,
+    "High": 8,
+    "Medium": 14,
+    "Low": 1,
+    "Critical": 0,
+    "Negligible": 17,
+    "Unknown": 1
+  },
+  "v1.27.1": {
+    "TotalVulnerabilities": 41,
+    "High": 8,
+    "Medium": 14,
+    "Low": 1,
+    "Critical": 0,
+    "Negligible": 17,
+    "Unknown": 1
+  },
+  "v1.27.2": {
+    "TotalVulnerabilities": 37,
+    "High": 6,
+    "Medium": 12,
+    "Low": 1,
+    "Critical": 0,
+    "Negligible": 17,
+    "Unknown": 1
+  },
+  "v1.27.3": {
+    "TotalVulnerabilities": 35,
+    "High": 6,
+    "Medium": 10,
+    "Low": 1,
+    "Critical": 0,
+    "Negligible": 17,
+    "Unknown": 1
+  },
+  "v1.27.4": {
+    "TotalVulnerabilities": 35,
+    "High": 6,
+    "Medium": 10,
+    "Low": 1,
+    "Critical": 0,
+    "Negligible": 17,
+    "Unknown": 1
+  },
+  "v1.27.5": {
+    "TotalVulnerabilities": 34,
+    "High": 5,
+    "Medium": 10,
+    "Low": 1,
+    "Critical": 0,
+    "Negligible": 17,
+    "Unknown": 1
+  },
+  "v1.27.6": {
+    "TotalVulnerabilities": 34,
+    "High": 5,
+    "Medium": 10,
+    "Low": 1,
+    "Critical": 0,
+    "Negligible": 17,
+    "Unknown": 1
+  },
+  "v1.28.0": {
+    "TotalVulnerabilities": 51,
+    "High": 6,
+    "Medium": 7,
+    "Low": 2,
+    "Critical": 1,
+    "Negligible": 33,
+    "Unknown": 2
+  },
+  "v1.28.0-alpha.1": {
+    "TotalVulnerabilities": 33,
+    "High": 5,
+    "Medium": 9,
+    "Low": 1,
+    "Critical": 0,
+    "Negligible": 17,
+    "Unknown": 1
+  },
+  "v1.28.0-alpha.2": {
+    "TotalVulnerabilities": 29,
+    "High": 4,
+    "Medium": 6,
+    "Low": 1,
+    "Critical": 0,
+    "Negligible": 17,
+    "Unknown": 1
+  },
+  "v1.28.0-alpha.3": {
+    "TotalVulnerabilities": 29,
+    "High": 4,
+    "Medium": 6,
+    "Low": 1,
+    "Critical": 0,
+    "Negligible": 17,
+    "Unknown": 1
+  },
+  "v1.28.0-alpha.4": {
+    "TotalVulnerabilities": 29,
+    "High": 4,
+    "Medium": 6,
+    "Low": 1,
+    "Critical": 0,
+    "Negligible": 17,
+    "Unknown": 1
+  },
+  "v1.28.0-beta.0": {
+    "TotalVulnerabilities": 51,
+    "High": 5,
+    "Medium": 8,
+    "Low": 2,
+    "Critical": 1,
+    "Negligible": 33,
+    "Unknown": 2
+  },
+  "v1.28.0-rc.0": {
+    "TotalVulnerabilities": 51,
+    "High": 5,
+    "Medium": 8,
+    "Low": 2,
+    "Critical": 1,
+    "Negligible": 33,
+    "Unknown": 2
+  },
+  "v1.28.0-rc.1": {
+    "TotalVulnerabilities": 50,
+    "High": 5,
+    "Medium": 7,
+    "Low": 2,
+    "Critical": 1,
+    "Negligible": 33,
+    "Unknown": 2
+  },
+  "v1.28.1": {
+    "TotalVulnerabilities": 50,
+    "High": 5,
+    "Medium": 7,
+    "Low": 2,
+    "Critical": 1,
+    "Negligible": 33,
+    "Unknown": 2
+  },
+  "v1.28.2": {
+    "TotalVulnerabilities": 50,
+    "High": 5,
+    "Medium": 7,
+    "Low": 2,
+    "Critical": 1,
+    "Negligible": 33,
+    "Unknown": 2
+  },
+  "v1.29.0-alpha.1": {
+    "TotalVulnerabilities": 46,
+    "High": 5,
+    "Medium": 7,
+    "Low": 2,
+    "Critical": 1,
+    "Negligible": 28,
+    "Unknown": 3
+  }
+}
