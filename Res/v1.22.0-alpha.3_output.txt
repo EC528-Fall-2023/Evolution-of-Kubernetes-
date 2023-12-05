@@ -1,0 +1,50 @@
+File: SPDXRef-Package-k8sgcriokube-controller-manager-ppc64lev1220-alpha3_grype_output.txt
+
+File: SPDXRef-Package-k8sgcrioconformance-armv1220-alpha3_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-proxy-arm64v1220-alpha3_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-proxy-amd64v1220-alpha3_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-apiserver-arm64v1220-alpha3_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-apiserver-amd64v1220-alpha3_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-proxy-s390xv1220-alpha3_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-proxy-ppc64lev1220-alpha3_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-controller-manager-armv1220-alpha3_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-apiserver-s390xv1220-alpha3_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-apiserver-armv1220-alpha3_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-scheduler-amd64v1220-alpha3_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-scheduler-arm64v1220-alpha3_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-scheduler-armv1220-alpha3_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-proxy-armv1220-alpha3_grype_output.txt
+
+File: SPDXRef-Package-k8sgcrioconformance-s390xv1220-alpha3_grype_output.txt
+
+File: SPDXRef-Package-k8sgcrioconformance-ppc64lev1220-alpha3_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-controller-manager-s390xv1220-alpha3_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-apiserver-ppc64lev1220-alpha3_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-scheduler-s390xv1220-alpha3_grype_output.txt
+
+File: SPDXRef-Package-k8sgcrioconformance-amd64v1220-alpha3_grype_output.txt
+
+File: SPDXRef-Package-k8sgcrioconformance-arm64v1220-alpha3_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-scheduler-ppc64lev1220-alpha3_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-controller-manager-arm64v1220-alpha3_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-controller-manager-amd64v1220-alpha3_grype_output.txt
+

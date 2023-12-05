@@ -1,0 +1,56 @@
+File: SPDXRef-Package-registry.k8s.io-kubectl-amd64-v1.29.0-alpha.1_grype_output.txt
+
+File: SPDXRef-Package-registry.k8s.io-kube-proxy-ppc64le-v1.29.0-alpha.1_grype_output.txt
+CVE: CVE-2023-4527
+{'CVE_ID': 'CVE-2023-4527', 'Published_Date': '2023-09-18T17:15:55.067', 'Descriptions': ['A flaw was found in glibc. When the getaddrinfo function is called with the AF_UNSPEC address family and the system is configured with no-aaaa mode via /etc/resolv.conf, a DNS response via TCP larger than 2048 bytes can potentially disclose stack contents through the function returned address data, and may cause a crash.'], 'Base_Score': [6.5, 6.5]}
+CVE: CVE-2023-2975
+{'CVE_ID': 'CVE-2023-2975', 'Published_Date': '2023-07-14T12:15:09.023', 'Descriptions': ['Issue summary: The AES-SIV cipher implementation contains a bug that causes\nit to ignore empty associated data entries which are unauthenticated as\na consequence.\n\nImpact summary: Applications that use the AES-SIV algorithm and want to\nauthenticate empty data entries as associated data can be mislead by removing\nadding or reordering such empty entries as these are ignored by the OpenSSL\nimplementation. We are currently unaware of any such applications.\n\nThe AES-SIV algorithm allows for authentication of multiple associated\ndata entries along with the encryption. To authenticate empty data the\napplication has to call EVP_EncryptUpdate() (or EVP_CipherUpdate()) with\nNULL pointer as the output buffer and 0 as the input buffer length.\nThe AES-SIV implementation in OpenSSL just returns success for such a call\ninstead of performing the associated data authentication operation.\nThe empty data thus will not be authenticated.\n\nAs this issue does not affect non-empty associated data authentication and\nwe expect it to be rare for an application to use empty associated data\nentries this is qualified as Low severity issue.'], 'Base_Score': [5.3]}
+CVE: CVE-2023-5363
+{'CVE_ID': 'CVE-2023-5363', 'Published_Date': '2023-10-25T18:17:43.613', 'Descriptions': ['Issue summary: A bug has been identified in the processing of key and\ninitialisation vector (IV) lengths.  This can lead to potential truncation\nor overruns during the initialisation of some symmetric ciphers.\n\nImpact summary: A truncation in the IV can result in non-uniqueness,\nwhich could result in loss of confidentiality for some cipher modes.\n\nWhen calling EVP_EncryptInit_ex2(), EVP_DecryptInit_ex2() or\nEVP_CipherInit_ex2() the provided OSSL_PARAM array is processed after\nthe key and IV have been established.  Any alterations to the key length,\nvia the "keylen" parameter or the IV length, via the "ivlen" parameter,\nwithin the OSSL_PARAM array will not take effect as intended, potentially\ncausing truncation or overreading of these values.  The following ciphers\nand cipher modes are impacted: RC2, RC4, RC5, CCM, GCM and OCB.\n\nFor the CCM, GCM and OCB cipher modes, truncation of the IV can result in\nloss of confidentiality.  For example, when following NIST\'s SP 800-38D\nsection 8.2.1 guidance for constructing a deterministic IV for AES in\nGCM mode, truncation of the counter portion could lead to IV reuse.\n\nBoth truncations and overruns of the key and overruns of the IV will\nproduce incorrect results and could, in some cases, trigger a memory\nexception.  However, these issues are not currently assessed as security\ncritical.\n\nChanging the key and/or IV lengths is not considered to be a common operation\nand the vulnerable API was recently introduced. Furthermore it is likely that\napplication developers will have spotted this problem during testing since\ndecryption would fail unless both peers in the communication were similarly\nvulnerable. For these reasons we expect the probability of an application being\nvulnerable to this to be quite low. However if an application is vulnerable then\nthis issue is considered very serious. For these reasons we have assessed this\nissue as Moderate severity overall.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this because\nthe issue lies outside of the FIPS provider boundary.\n\nOpenSSL 3.1 and 3.0 are vulnerable to this issue.'], 'Base_Score': [7.5]}
+
+File: SPDXRef-Package-registry.k8s.io-conformance-ppc64le-v1.29.0-alpha.1_grype_output.txt
+CVE: CVE-2022-27943
+{'CVE_ID': 'CVE-2022-27943', 'Published_Date': '2022-03-26T13:15:07.900', 'Descriptions': ['libiberty/rust-demangle.c in GNU GCC 11.2 allows stack consumption in demangle_const, as demonstrated by nm-new.'], 'Base_Score': [5.5, 4.3]}
+
+File: SPDXRef-Package-registry.k8s.io-conformance-s390x-v1.29.0-alpha.1_grype_output.txt
+
+File: SPDXRef-Package-registry.k8s.io-kube-proxy-s390x-v1.29.0-alpha.1_grype_output.txt
+
+File: SPDXRef-Package-registry.k8s.io-kubectl-ppc64le-v1.29.0-alpha.1_grype_output.txt
+
+File: SPDXRef-Package-registry.k8s.io-kubectl-arm64-v1.29.0-alpha.1_grype_output.txt
+
+File: SPDXRef-Package-registry.k8s.io-kube-apiserver-amd64-v1.29.0-alpha.1_grype_output.txt
+
+File: SPDXRef-Package-registry.k8s.io-kube-scheduler-s390x-v1.29.0-alpha.1_grype_output.txt
+
+File: SPDXRef-Package-registry.k8s.io-kube-controller-manager-s390x-v1.29.0-alpha.1_grype_output.txt
+
+File: SPDXRef-Package-registry.k8s.io-kube-apiserver-arm64-v1.29.0-alpha.1_grype_output.txt
+
+File: SPDXRef-Package-registry.k8s.io-kube-apiserver-s390x-v1.29.0-alpha.1_grype_output.txt
+
+File: SPDXRef-Package-registry.k8s.io-kube-scheduler-amd64-v1.29.0-alpha.1_grype_output.txt
+
+File: SPDXRef-Package-registry.k8s.io-kube-controller-manager-amd64-v1.29.0-alpha.1_grype_output.txt
+
+File: SPDXRef-Package-registry.k8s.io-kube-controller-manager-arm64-v1.29.0-alpha.1_grype_output.txt
+
+File: SPDXRef-Package-registry.k8s.io-kube-apiserver-ppc64le-v1.29.0-alpha.1_grype_output.txt
+
+File: SPDXRef-Package-registry.k8s.io-kube-scheduler-arm64-v1.29.0-alpha.1_grype_output.txt
+
+File: SPDXRef-Package-registry.k8s.io-kubectl-s390x-v1.29.0-alpha.1_grype_output.txt
+
+File: SPDXRef-Package-registry.k8s.io-kube-controller-manager-ppc64le-v1.29.0-alpha.1_grype_output.txt
+
+File: SPDXRef-Package-registry.k8s.io-kube-proxy-amd64-v1.29.0-alpha.1_grype_output.txt
+
+File: SPDXRef-Package-registry.k8s.io-conformance-amd64-v1.29.0-alpha.1_grype_output.txt
+
+File: SPDXRef-Package-registry.k8s.io-kube-proxy-arm64-v1.29.0-alpha.1_grype_output.txt
+
+File: SPDXRef-Package-registry.k8s.io-conformance-arm64-v1.29.0-alpha.1_grype_output.txt
+
+File: SPDXRef-Package-registry.k8s.io-kube-scheduler-ppc64le-v1.29.0-alpha.1_grype_output.txt
+

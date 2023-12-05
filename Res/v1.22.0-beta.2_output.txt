@@ -1,0 +1,109 @@
+File: SPDXRef-Package-k8s.gcr.io-kube-proxy-s390x-v1.22.0-beta.2_grype_output.txt
+CVE: CVE-2021-37600
+{'CVE_ID': 'CVE-2021-37600', 'Published_Date': '2021-07-30T14:15:18.737', 'Descriptions': ['An integer overflow in util-linux through 2.37.1 can potentially cause a buffer overflow if an attacker were able to use system resources in a way that leads to a large number in the /proc/sysvipc/sem file. NOTE: this is unexploitable in GNU C Library environments, and possibly in all realistic environments'], 'Base_Score': [5.5, 1.2]}
+CVE: CVE-2019-15847
+{'CVE_ID': 'CVE-2019-15847', 'Published_Date': '2019-09-02T23:15:10.837', 'Descriptions': ['The POWER9 backend in GNU Compiler Collection (GCC) before version 10 could optimize multiple calls of the __builtin_darn intrinsic into a single call, thus reducing the entropy of the random number generator. This occurred because a volatile operation was not specified. For example, within a single execution of a program, the output of every __builtin_darn() call may be the same.'], 'Base_Score': [7.5, 5.0]}
+CVE: CVE-2018-12886
+{'CVE_ID': 'CVE-2018-12886', 'Published_Date': '2019-05-22T19:29:00.297', 'Descriptions': ['stack_protect_prologue in cfgexpand.c and stack_protect_epilogue in function.c in GNU Compiler Collection (GCC) 4.1 through 8 (under certain circumstances) generate instruction sequences when targeting ARM targets that spill the address of the stack protector guard, which allows an attacker to bypass the protection of -fstack-protector, -fstack-protector-all, -fstack-protector-strong, and -fstack-protector-explicit against stack overflow by controlling what the stack canary is compared against.'], 'Base_Score': [8.1, 6.8]}
+CVE: CVE-2019-14855
+{'CVE_ID': 'CVE-2019-14855', 'Published_Date': '2020-03-20T16:15:14.680', 'Descriptions': ['A flaw was found in the way certificate signatures could be forged using collisions found in the SHA-1 algorithm. An attacker could use this weakness to create forged certificate signatures. This issue affects GnuPG versions before 2.2.18.'], 'Base_Score': [7.5, 5.3, 5.0]}
+CVE: CVE-2019-11360
+{'CVE_ID': 'CVE-2019-11360', 'Published_Date': '2019-07-12T14:15:11.733', 'Descriptions': ['A buffer overflow in iptables-restore in netfilter iptables 1.8.2 allows an attacker to (at least) crash the program or potentially gain code execution via a specially crafted iptables-save file. This is related to add_param_to_argv in xshared.c.'], 'Base_Score': [4.2, 3.5]}
+CVE: CVE-2021-35942
+{'CVE_ID': 'CVE-2021-35942', 'Published_Date': '2021-07-22T18:15:23.287', 'Descriptions': ['The wordexp function in the GNU C Library (aka glibc) through 2.33 may crash or read arbitrary memory in parse_param (in posix/wordexp.c) when called with an untrusted, crafted pattern, potentially resulting in a denial of service or disclosure of information. This occurs because atoi was used but strtoul should have been used to ensure correct calculations.'], 'Base_Score': [9.1, 6.4]}
+CVE: CVE-2021-3326
+{'CVE_ID': 'CVE-2021-3326', 'Published_Date': '2021-01-27T20:15:14.020', 'Descriptions': ['The iconv function in the GNU C Library (aka glibc or libc6) 2.32 and earlier, when processing invalid input sequences in the ISO-2022-JP-3 encoding, fails an assertion in the code path and aborts the program, potentially resulting in a denial of service.'], 'Base_Score': [7.5, 5.0]}
+CVE: CVE-2020-6096
+{'CVE_ID': 'CVE-2020-6096', 'Published_Date': '2020-04-01T22:15:18.503', 'Descriptions': ["An exploitable signed comparison vulnerability exists in the ARMv7 memcpy() implementation of GNU glibc 2.30.9000. Calling memcpy() (on ARMv7 targets that utilize the GNU glibc implementation) with a negative value for the 'num' parameter results in a signed comparison vulnerability. If an attacker underflows the 'num' parameter to memcpy(), this vulnerability could lead to undefined behavior such as writing to out-of-bounds memory and potentially remote code execution. Furthermore, this memcpy() implementation allows for program execution to continue in scenarios where a segmentation fault or crash should have occurred. The dangers occur in that subsequent execution and iterations of this code will be executed with this corrupted data."], 'Base_Score': [8.1, 8.1, 6.8]}
+CVE: CVE-2020-1752
+{'CVE_ID': 'CVE-2020-1752', 'Published_Date': '2020-04-30T17:15:13.067', 'Descriptions': ['A use-after-free vulnerability introduced in glibc upstream version 2.14 was found in the way the tilde expansion was carried out. Directory paths containing an initial tilde followed by a valid username were affected by this issue. A local attacker could exploit this flaw by creating a specially crafted path that, when processed by the glob function, would potentially lead to arbitrary code execution. This was fixed in version 2.32.'], 'Base_Score': [7.0, 7.0, 3.7]}
+CVE: CVE-2020-1751
+{'CVE_ID': 'CVE-2020-1751', 'Published_Date': '2020-04-17T19:15:14.437', 'Descriptions': ['An out-of-bounds write vulnerability was found in glibc before 2.31 when handling signal trampolines on PowerPC. Specifically, the backtrace function did not properly check the array bounds when storing the frame address, resulting in a denial of service or potential code execution. The highest threat from this vulnerability is to system availability.'], 'Base_Score': [7.0, 5.1, 5.9]}
+CVE: CVE-2020-27618
+{'CVE_ID': 'CVE-2020-27618', 'Published_Date': '2021-02-26T23:15:11.123', 'Descriptions': ['The iconv function in the GNU C Library (aka glibc or libc6) 2.32 and earlier, when processing invalid multi-byte input sequences in IBM1364, IBM1371, IBM1388, IBM1390, and IBM1399 encodings, fails to advance the input state, which could lead to an infinite loop in applications, resulting in a denial of service, a different vulnerability from CVE-2016-10228.'], 'Base_Score': [5.5, 2.1]}
+CVE: CVE-2020-10029
+{'CVE_ID': 'CVE-2020-10029', 'Published_Date': '2020-03-04T15:15:13.083', 'Descriptions': ['The GNU C Library (aka glibc or libc6) before 2.32 could overflow an on-stack buffer during range reduction if an input to an 80-bit long double function contains a non-canonical bit pattern, a seen when passing a 0x5d414141414141410000 value to sinl on x86 targets. This is related to sysdeps/ieee754/ldbl-96/e_rem_pio2l.c.'], 'Base_Score': [5.5, 2.1]}
+CVE: CVE-2019-25013
+{'CVE_ID': 'CVE-2019-25013', 'Published_Date': '2021-01-04T18:15:13.027', 'Descriptions': ['The iconv feature in the GNU C Library (aka glibc or libc6) through 2.32, when processing invalid multi-byte input sequences in the EUC-KR encoding, may have a buffer over-read.'], 'Base_Score': [5.9, 7.1]}
+Error for CVE: CVE-2016-10228
+CVE: CVE-2021-27645
+{'CVE_ID': 'CVE-2021-27645', 'Published_Date': '2021-02-24T15:15:13.837', 'Descriptions': ['The nameserver caching daemon (nscd) in the GNU C Library (aka glibc or libc6) 2.29 through 2.33, when processing a request for netgroup lookup, may crash due to a double-free, potentially resulting in degraded service or Denial of Service on the local system. This is related to netgroupcache.c.'], 'Base_Score': [2.5, 1.9]}
+CVE: CVE-2019-19126
+{'CVE_ID': 'CVE-2019-19126', 'Published_Date': '2019-11-19T22:15:11.427', 'Descriptions': ['On the x86-64 architecture, the GNU C Library (aka glibc) before 2.31 fails to ignore the LD_PREFER_MAP_32BIT_EXEC environment variable during program execution after a security transition, allowing local attackers to restrict the possible mapping addresses for loaded libraries and thus bypass ASLR for a setuid program.'], 'Base_Score': [3.3, 2.1]}
+CVE: CVE-2019-13627
+{'CVE_ID': 'CVE-2019-13627', 'Published_Date': '2019-09-25T15:15:11.877', 'Descriptions': ['It was discovered that there was a ECDSA timing attack in the libgcrypt20 cryptographic library. Version affected: 1.8.4-5, 1.7.6-2+deb9u3, and 1.6.3-2+deb8u4. Versions fixed: 1.8.5-2 and 1.6.3-2+deb8u7.'], 'Base_Score': [6.3, 2.6]}
+CVE: CVE-2019-12290
+{'CVE_ID': 'CVE-2019-12290', 'Published_Date': '2019-10-22T16:15:10.877', 'Descriptions': ['GNU libidn2 before 2.2.0 fails to perform the roundtrip checks specified in RFC3490 Section 4.2 when converting A-labels to U-labels. This makes it possible in some circumstances for one domain to impersonate another. By creating a malicious domain that matches a target domain except for the inclusion of certain punycoded Unicode characters (that would be discarded when converted first to a Unicode label and then back to an ASCII label), arbitrary domains can be impersonated.'], 'Base_Score': [7.5, 5.0]}
+CVE: CVE-2019-17543
+{'CVE_ID': 'CVE-2019-17543', 'Published_Date': '2019-10-14T02:15:10.873', 'Descriptions': ['LZ4 before 1.9.2 has a heap-based buffer overflow in LZ4_write32 (related to LZ4_compress_destSize), affecting applications that call LZ4_compress_fast with a large input. (This issue can also lead to data corruption.) NOTE: the vendor states "only a few specific / uncommon usages of the API are at risk."'], 'Base_Score': [8.1, 6.8]}
+CVE: CVE-2020-14155
+{'CVE_ID': 'CVE-2020-14155', 'Published_Date': '2020-06-15T17:15:10.777', 'Descriptions': ['libpcre in PCRE before 8.44 allows an integer overflow via a large number after a (?C substring.'], 'Base_Score': [5.3, 5.0]}
+CVE: CVE-2019-9893
+{'CVE_ID': 'CVE-2019-9893', 'Published_Date': '2019-03-21T16:01:17.687', 'Descriptions': ['libseccomp before 2.4.0 did not correctly generate 64-bit syscall argument comparisons using the arithmetic operators (LT, GT, LE, GE), which might able to lead to bypassing seccomp filters and potential privilege escalations.'], 'Base_Score': [9.8, 7.5]}
+CVE: CVE-2023-26604
+{'CVE_ID': 'CVE-2023-26604', 'Published_Date': '2023-03-03T16:15:10.607', 'Descriptions': ['systemd before 247 does not adequately block local privilege escalation for some Sudo configurations, e.g., plausible sudoers files in which the "systemctl status" command may be executed. Specifically, systemd does not set LESSSECURE to 1, and thus other programs may be launched from the less program. This presents a substantial security risk when running systemctl from Sudo, because less executes as root when the terminal size is too small to show the complete systemctl output.'], 'Base_Score': [7.8]}
+CVE: CVE-2019-3844
+{'CVE_ID': 'CVE-2019-3844', 'Published_Date': '2019-04-26T21:29:00.423', 'Descriptions': ['It was discovered that a systemd service that uses DynamicUser property can get new privileges through the execution of SUID binaries, which would allow to create binaries owned by the service transient group with the setgid bit set. A local attacker may use this flaw to access resources that will be owned by a potentially different service in the future, when the GID will be recycled.'], 'Base_Score': [7.8, 4.5, 4.6]}
+CVE: CVE-2019-3843
+{'CVE_ID': 'CVE-2019-3843', 'Published_Date': '2019-04-26T21:29:00.360', 'Descriptions': ['It was discovered that a systemd service that uses DynamicUser property can create a SUID/SGID binary that would be allowed to run as the transient service UID/GID even after the service is terminated. A local attacker may use this flaw to access resources that will be owned by a potentially different service in the future, when the UID/GID will be recycled.'], 'Base_Score': [7.8, 4.5, 4.6]}
+CVE: CVE-2021-33910
+{'CVE_ID': 'CVE-2021-33910', 'Published_Date': '2021-07-20T19:15:09.783', 'Descriptions': ['basic/unit-name.c in systemd prior to 246.15, 247.8, 248.5, and 249.1 has a Memory Allocation with an Excessive Size Value (involving strdupa and alloca for a pathname controlled by a local attacker) that results in an operating system crash.'], 'Base_Score': [5.5, 4.9]}
+CVE: CVE-2019-20386
+{'CVE_ID': 'CVE-2019-20386', 'Published_Date': '2020-01-21T06:15:11.827', 'Descriptions': ['An issue was discovered in button_open in login/logind-button.c in systemd before 243. When executing the udevadm trigger command, a memory leak may occur.'], 'Base_Score': [2.4, 2.1]}
+CVE: CVE-2018-1000654
+{'CVE_ID': 'CVE-2018-1000654', 'Published_Date': '2018-08-20T19:31:44.870', 'Descriptions': ['GNU Libtasn1-4.13 libtasn1-4.13 version libtasn1-4.13, libtasn1-4.12 contains a DoS, specifically CPU usage will reach 100% when running asn1Paser against the POC due to an issue in _asn1_expand_object_id(p_tree), after a long time, the program will be killed. This attack appears to be exploitable via parsing a crafted file.'], 'Base_Score': [5.5, 7.1]}
+CVE: CVE-2018-7169
+{'CVE_ID': 'CVE-2018-7169', 'Published_Date': '2018-02-15T20:29:00.867', 'Descriptions': ['An issue was discovered in shadow 4.5. newgidmap (in shadow-utils) is setuid and allows an unprivileged user to be placed in a user namespace where setgroups(2) is permitted. This allows an attacker to remove themselves from a supplementary group, which may allow access to certain filesystem paths if the administrator has used "group blacklisting" (e.g., chmod g-rwx) to restrict access to paths. This flaw effectively reverts a security feature in the kernel (in particular, the /proc/self/setgroups knob) to prevent this sort of privilege escalation.'], 'Base_Score': [5.3, 5.0]}
+CVE: CVE-2021-20193
+{'CVE_ID': 'CVE-2021-20193', 'Published_Date': '2021-03-26T17:15:12.843', 'Descriptions': ['A flaw was found in the src/list.c of tar 1.33 and earlier. This flaw allows an attacker who can submit a crafted input file to tar to cause uncontrolled consumption of memory. The highest threat from this vulnerability is to system availability.'], 'Base_Score': [5.5, 4.3]}
+CVE: CVE-2019-9923
+{'CVE_ID': 'CVE-2019-9923', 'Published_Date': '2019-03-22T08:29:00.247', 'Descriptions': ['pax_decode_header in sparse.c in GNU Tar before 1.32 had a NULL pointer dereference when parsing certain archives that have malformed extended headers.'], 'Base_Score': [7.5, 5.0]}
+
+File: SPDXRef-Package-k8s.gcr.io-kube-controller-manager-arm64-v1.22.0-beta.2_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-conformance-arm-v1.22.0-beta.2_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-conformance-ppc64le-v1.22.0-beta.2_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-scheduler-arm64-v1.22.0-beta.2_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-proxy-amd64-v1.22.0-beta.2_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-controller-manager-amd64-v1.22.0-beta.2_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-scheduler-ppc64le-v1.22.0-beta.2_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-scheduler-s390x-v1.22.0-beta.2_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-controller-manager-s390x-v1.22.0-beta.2_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-scheduler-amd64-v1.22.0-beta.2_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-proxy-arm64-v1.22.0-beta.2_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-apiserver-s390x-v1.22.0-beta.2_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-controller-manager-ppc64le-v1.22.0-beta.2_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-conformance-amd64-v1.22.0-beta.2_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-apiserver-amd64-v1.22.0-beta.2_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-conformance-s390x-v1.22.0-beta.2_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-apiserver-ppc64le-v1.22.0-beta.2_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-proxy-arm-v1.22.0-beta.2_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-proxy-ppc64le-v1.22.0-beta.2_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-conformance-arm64-v1.22.0-beta.2_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-apiserver-arm-v1.22.0-beta.2_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-controller-manager-arm-v1.22.0-beta.2_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-scheduler-arm-v1.22.0-beta.2_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-apiserver-arm64-v1.22.0-beta.2_grype_output.txt
+

@@ -1,0 +1,50 @@
+File: SPDXRef-Package-k8sgcriokube-proxy-ppc64lev11912_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-controller-manager-s390xv11912_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-apiserver-ppc64lev11912_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-scheduler-armv11912_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-proxy-amd64v11912_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-apiserver-s390xv11912_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-scheduler-ppc64lev11912_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-controller-manager-ppc64lev11912_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-apiserver-armv11912_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-apiserver-arm64v11912_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-controller-manager-armv11912_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-proxy-armv11912_grype_output.txt
+
+File: SPDXRef-Package-k8sgcrioconformance-amd64v11912_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-scheduler-amd64v11912_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-controller-manager-arm64v11912_grype_output.txt
+
+File: SPDXRef-Package-k8sgcrioconformance-arm64v11912_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-controller-manager-amd64v11912_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-scheduler-arm64v11912_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-proxy-s390xv11912_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-apiserver-amd64v11912_grype_output.txt
+
+File: SPDXRef-Package-k8sgcrioconformance-ppc64lev11912_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-proxy-arm64v11912_grype_output.txt
+
+File: SPDXRef-Package-k8sgcrioconformance-s390xv11912_grype_output.txt
+
+File: SPDXRef-Package-k8sgcrioconformance-armv11912_grype_output.txt
+
+File: SPDXRef-Package-k8sgcriokube-scheduler-s390xv11912_grype_output.txt
+
