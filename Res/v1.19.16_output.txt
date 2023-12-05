@@ -1,0 +1,97 @@
+File: SPDXRef-Package-k8s.gcr.io-kube-proxy-arm-v1.19.16_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-scheduler-arm64-v1.19.16_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-controller-manager-ppc64le-v1.19.16_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-scheduler-s390x-v1.19.16_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-controller-manager-amd64-v1.19.16_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-proxy-ppc64le-v1.19.16_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-scheduler-ppc64le-v1.19.16_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-proxy-arm64-v1.19.16_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-conformance-arm-v1.19.16_grype_output.txt
+CVE: CVE-2016-2779
+{'CVE_ID': 'CVE-2016-2779', 'Published_Date': '2017-02-07T15:59:00.287', 'Descriptions': ["runuser in util-linux allows local users to escape to the parent session via a crafted TIOCSTI ioctl call, which pushes characters to the terminal's input buffer."], 'Base_Score': [7.8, 7.2]}
+CVE: CVE-2018-1000858
+{'CVE_ID': 'CVE-2018-1000858', 'Published_Date': '2018-12-20T17:29:00.457', 'Descriptions': ['GnuPG version 2.1.12 - 2.2.11 contains a Cross ite Request Forgery (CSRF) vulnerability in dirmngr that can result in Attacker controlled CSRF, Information Disclosure, DoS. This attack appear to be exploitable via Victim must perform a WKD request, e.g. enter an email address in the composer window of Thunderbird/Enigmail. This vulnerability appears to have been fixed in after commit 4a4bb874f63741026bd26264c43bb32b1099f060.'], 'Base_Score': [8.8, 6.8]}
+CVE: CVE-2018-9234
+{'CVE_ID': 'CVE-2018-9234', 'Published_Date': '2018-04-04T00:29:00.227', 'Descriptions': ['GnuPG 2.2.4 and 2.2.5 does not enforce a configuration in which key certification requires an offline master Certify key, which results in apparently valid certifications that occurred only with access to a signing subkey.'], 'Base_Score': [7.5, 5.0]}
+CVE: CVE-2019-12900
+{'CVE_ID': 'CVE-2019-12900', 'Published_Date': '2019-06-19T23:15:09.910', 'Descriptions': ['BZ2_decompress in decompress.c in bzip2 through 1.0.6 has an out-of-bounds write when there are many selectors.'], 'Base_Score': [9.8, 7.5]}
+CVE: CVE-2019-9169
+{'CVE_ID': 'CVE-2019-9169', 'Published_Date': '2019-02-26T02:29:00.497', 'Descriptions': ['In the GNU C Library (aka glibc or libc6) through 2.29, proceed_next_node in posix/regexec.c has a heap-based buffer over-read via an attempted case-insensitive regular-expression match.'], 'Base_Score': [9.8, 7.5]}
+CVE: CVE-2018-6551
+{'CVE_ID': 'CVE-2018-6551', 'Published_Date': '2018-02-02T14:29:01.590', 'Descriptions': ['The malloc implementation in the GNU C Library (aka glibc or libc6), from version 2.24 to 2.26 on powerpc, and only in version 2.26 on i386, did not properly handle malloc calls with arguments close to SIZE_MAX and could return a pointer to a heap region that is smaller than requested, eventually leading to heap corruption.'], 'Base_Score': [9.8, 7.5]}
+CVE: CVE-2018-6485
+{'CVE_ID': 'CVE-2018-6485', 'Published_Date': '2018-02-01T14:29:00.623', 'Descriptions': ['An integer overflow in the implementation of the posix_memalign in memalign functions in the GNU C Library (aka glibc or libc6) 2.26 and earlier could cause these functions to return a pointer to a heap area that is too small, potentially leading to heap corruption.'], 'Base_Score': [9.8, 7.5]}
+CVE: CVE-2018-1000001
+{'CVE_ID': 'CVE-2018-1000001', 'Published_Date': '2018-01-31T14:29:00.607', 'Descriptions': ['In glibc 2.26 and earlier there is confusion in the usage of getcwd() by realpath() which can be used to write before the destination buffer leading to a buffer underflow and potential code execution.'], 'Base_Score': [7.8, 7.2]}
+CVE: CVE-2009-5155
+{'CVE_ID': 'CVE-2009-5155', 'Published_Date': '2019-02-26T02:29:00.277', 'Descriptions': ['In the GNU C Library (aka glibc or libc6) before 2.28, parse_reg_exp in posix/regcomp.c misparses alternatives, which allows attackers to cause a denial of service (assertion failure and application exit) or trigger an incorrect result by attempting a regular-expression match.'], 'Base_Score': [7.5, 5.0]}
+CVE: CVE-2017-12132
+{'CVE_ID': 'CVE-2017-12132', 'Published_Date': '2017-08-01T16:29:00.180', 'Descriptions': ['The DNS stub resolver in the GNU C Library (aka glibc or libc6) before version 2.26, when EDNS support is enabled, will solicit large UDP responses from name servers, potentially simplifying off-path DNS spoofing attacks due to IP fragmentation.'], 'Base_Score': [5.9, 4.3]}
+CVE: CVE-2016-10739
+{'CVE_ID': 'CVE-2016-10739', 'Published_Date': '2019-01-21T19:29:00.247', 'Descriptions': ['In the GNU C Library (aka glibc or libc6) through 2.28, the getaddrinfo function would successfully parse a string that contained an IPv4 address followed by whitespace and arbitrary characters, which could lead applications to incorrectly assume that it had parsed a valid string, without the possibility of embedded HTTP headers or other potentially dangerous substrings.'], 'Base_Score': [5.3, 4.6]}
+CVE: CVE-2019-7309
+{'CVE_ID': 'CVE-2019-7309', 'Published_Date': '2019-02-03T02:29:00.237', 'Descriptions': ['In the GNU C Library (aka glibc or libc6) through 2.29, the memcmp function for the x32 architecture can incorrectly return zero (indicating that the inputs are equal) because the RDX most significant bit is mishandled.'], 'Base_Score': [5.5, 2.1]}
+CVE: CVE-2019-6488
+{'CVE_ID': 'CVE-2019-6488', 'Published_Date': '2019-01-18T19:29:00.200', 'Descriptions': ['The string component in the GNU C Library (aka glibc or libc6) through 2.28, when running on the x32 architecture, incorrectly attempts to use a 64-bit register for size_t in assembly codes, which can lead to a segmentation fault or possibly unspecified other impact, as demonstrated by a crash in __memmove_avx_unaligned_erms in sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S during a memcpy.'], 'Base_Score': [7.8, 4.6]}
+CVE: CVE-2015-8985
+{'CVE_ID': 'CVE-2015-8985', 'Published_Date': '2017-03-20T16:59:01.563', 'Descriptions': ['The pop_fail_stack function in the GNU C Library (aka glibc or libc6) allows context-dependent attackers to cause a denial of service (assertion failure and application crash) via vectors related to extended regular expression processing.'], 'Base_Score': [5.9, 4.3]}
+CVE: CVE-2019-17595
+{'CVE_ID': 'CVE-2019-17595', 'Published_Date': '2019-10-14T21:15:11.427', 'Descriptions': ['There is a heap-based buffer over-read in the fmt_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.'], 'Base_Score': [5.4, 5.8]}
+CVE: CVE-2019-17594
+{'CVE_ID': 'CVE-2019-17594', 'Published_Date': '2019-10-14T21:15:11.347', 'Descriptions': ['There is a heap-based buffer over-read in the _nc_find_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.'], 'Base_Score': [5.3, 4.6]}
+CVE: CVE-2018-19211
+{'CVE_ID': 'CVE-2018-19211', 'Published_Date': '2018-11-12T19:29:00.347', 'Descriptions': ['In ncurses 6.1, there is a NULL pointer dereference at function _nc_parse_entry in parse_entry.c that will lead to a denial of service attack. The product proceeds to the dereference code path even after a "dubious character `*\' in name or alias field" detection.'], 'Base_Score': [5.5, 4.3]}
+CVE: CVE-2020-1712
+{'CVE_ID': 'CVE-2020-1712', 'Published_Date': '2020-03-31T17:15:26.577', 'Descriptions': ['A heap use-after-free vulnerability was found in systemd before version v245-rc1, where asynchronous Polkit queries are performed while handling dbus messages. A local unprivileged attacker can abuse this flaw to crash systemd services or potentially execute code and elevate their privileges, by sending specially crafted dbus messages.'], 'Base_Score': [7.8, 7.8, 4.6]}
+CVE: CVE-2018-6954
+{'CVE_ID': 'CVE-2018-6954', 'Published_Date': '2018-02-13T20:29:00.547', 'Descriptions': ['systemd-tmpfiles in systemd through 237 mishandles symlinks present in non-terminal path components, which allows local users to obtain ownership of arbitrary files via vectors involving creation of a directory and a file under that directory, and later replacing that directory with a symlink. This occurs even if the fs.protected_symlinks sysctl is turned on.'], 'Base_Score': [7.8, 7.2]}
+CVE: CVE-2018-16888
+{'CVE_ID': 'CVE-2018-16888', 'Published_Date': '2019-01-14T22:29:00.233', 'Descriptions': ['It was discovered systemd does not correctly check the content of PIDFile files before using it to kill processes. When a service is run from an unprivileged user (e.g. User field set in the service file), a local attacker who is able to write to the PIDFile of the mentioned service may use this flaw to trick systemd into killing other services and/or privileged processes. Versions before v237 are vulnerable.'], 'Base_Score': [4.7, 4.4, 1.9]}
+CVE: CVE-2020-13776
+{'CVE_ID': 'CVE-2020-13776', 'Published_Date': '2020-06-03T03:15:10.677', 'Descriptions': ['systemd through v245 mishandles numerical usernames such as ones composed of decimal digits or 0x followed by hex digits, as demonstrated by use of root privileges when privileges of the 0x0 user account were intended. NOTE: this issue exists because of an incomplete fix for CVE-2017-1000082.'], 'Base_Score': [6.7, 6.2]}
+Error for CVE: CVE-2017-18078
+CVE: CVE-2017-1000082
+{'CVE_ID': 'CVE-2017-1000082', 'Published_Date': '2017-07-07T17:29:00.277', 'Descriptions': ['systemd v233 and earlier fails to safely parse usernames starting with a numeric digit (e.g. "0day"), running the service in question with root privileges rather than the user intended.'], 'Base_Score': [9.8, 10.0]}
+CVE: CVE-2018-20482
+{'CVE_ID': 'CVE-2018-20482', 'Published_Date': '2018-12-26T18:29:00.373', 'Descriptions': ["GNU Tar through 1.30, when --sparse is used, mishandles file shrinkage during read access, which allows local users to cause a denial of service (infinite read loop in sparse_dump_region in sparse.c) by modifying a file that is supposed to be archived by a different user's process (e.g., a system backup running as root)."], 'Base_Score': [4.7, 1.9]}
+
+File: SPDXRef-Package-k8s.gcr.io-kube-apiserver-amd64-v1.19.16_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-proxy-s390x-v1.19.16_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-conformance-amd64-v1.19.16_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-scheduler-arm-v1.19.16_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-controller-manager-arm-v1.19.16_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-apiserver-arm-v1.19.16_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-apiserver-ppc64le-v1.19.16_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-conformance-ppc64le-v1.19.16_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-apiserver-s390x-v1.19.16_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-conformance-arm64-v1.19.16_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-proxy-amd64-v1.19.16_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-apiserver-arm64-v1.19.16_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-conformance-s390x-v1.19.16_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-controller-manager-arm64-v1.19.16_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-scheduler-amd64-v1.19.16_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-controller-manager-s390x-v1.19.16_grype_output.txt
+

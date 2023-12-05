@@ -1,0 +1,56 @@
+File: SPDXRef-Package-k8s.gcr.io-kube-scheduler-s390x-v1.21.5_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-conformance-arm-v1.21.5_grype_output.txt
+CVE: CVE-2022-3715
+{'CVE_ID': 'CVE-2022-3715', 'Published_Date': '2023-01-05T15:15:10.410', 'Descriptions': ['A flaw was found in the bash package, where a heap-buffer overflow can occur in valid parameter_transform. This issue may lead to memory problems.'], 'Base_Score': [7.8]}
+CVE: CVE-2023-29491
+{'CVE_ID': 'CVE-2023-29491', 'Published_Date': '2023-04-14T01:15:08.570', 'Descriptions': ['ncurses before 6.4 20230408, when used by a setuid application, allows local users to trigger security-relevant memory corruption via malformed data in a terminfo database file that is found in $HOME/.terminfo or reached via the TERMINFO or TERM environment variable.'], 'Base_Score': [7.8]}
+CVE: CVE-2022-29458
+{'CVE_ID': 'CVE-2022-29458', 'Published_Date': '2022-04-18T21:15:07.600', 'Descriptions': ['ncurses 6.3 before patch 20220416 has an out-of-bounds read and segmentation violation in convert_strings in tinfo/read_entry.c in the terminfo library.'], 'Base_Score': [7.1, 5.8]}
+
+File: SPDXRef-Package-k8s.gcr.io-kube-scheduler-arm-v1.21.5_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-proxy-arm-v1.21.5_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-apiserver-ppc64le-v1.21.5_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-proxy-arm64-v1.21.5_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-apiserver-s390x-v1.21.5_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-conformance-ppc64le-v1.21.5_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-conformance-s390x-v1.21.5_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-proxy-ppc64le-v1.21.5_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-controller-manager-s390x-v1.21.5_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-proxy-amd64-v1.21.5_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-scheduler-amd64-v1.21.5_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-apiserver-amd64-v1.21.5_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-controller-manager-arm64-v1.21.5_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-conformance-amd64-v1.21.5_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-controller-manager-ppc64le-v1.21.5_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-apiserver-arm-v1.21.5_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-controller-manager-amd64-v1.21.5_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-conformance-arm64-v1.21.5_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-scheduler-ppc64le-v1.21.5_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-scheduler-arm64-v1.21.5_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-controller-manager-arm-v1.21.5_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-proxy-s390x-v1.21.5_grype_output.txt
+
+File: SPDXRef-Package-k8s.gcr.io-kube-apiserver-arm64-v1.21.5_grype_output.txt
+
