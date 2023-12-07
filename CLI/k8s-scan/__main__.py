@@ -41,9 +41,15 @@ def vul(code,list):
 
 @click.command()
 @click.argument('version',type=str)
-def rec(version):
+@click.argument('critical_mapping',required=False,default=5)
+@click.argument('high_mapping',required=False,default=4)
+@click.argument('medium_mapping',required=False,default=3)
+@click.argument('low_mapping',required=False,default=2)
+@click.argument('negligible_mapping',required=False,default=1)
+@click.argument('unknown_mapping',required=False,default=0)
+def rec(version,critical_mapping,high_mapping,medium_mapping,low_mapping,negligible_mapping,unknown_mapping):
     '''recommend a less vulnerable version of Kubernetes based on input'''
-    recommend(version)
+    recommend(version,critical_mapping,high_mapping,medium_mapping,low_mapping,negligible_mapping,unknown_mapping)
 
 # Add commands to the CLI group
 cli.add_command(dep)

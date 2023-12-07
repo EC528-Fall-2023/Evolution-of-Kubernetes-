@@ -4,7 +4,8 @@ import requests
 
 def evaluate(version, list):
     #run cypher query
-    url = f"http://127.0.0.1:8000/eval/{version}"
+    url = f"https://k8svul.asleague.org/eval/{version}"
+    #url = f"http://127.0.0.1:8000/eval/{version}"
     records = requests.get(url).json()
 
     df = pd.DataFrame(records,columns=['NAME','INSTALLED','FIXED-IN','TYPE','VULNERABILITY','SEVERITY'])
@@ -31,7 +32,8 @@ def evaluate(version, list):
 
 def vulnerability(code,list):
     #run cypher query
-    url = f"http://127.0.0.1:8000/vul/{code}"
+    url = f"https://k8svul.asleague.org/vul/{code}"
+    #url = f"http://127.0.0.1:8000/vul/{code}"
     records = requests.get(url).json()
 
     if(list):
@@ -40,13 +42,12 @@ def vulnerability(code,list):
     else:
         print("total versions of Kubernetes this vulnerability was found in is", len(records))
 
-def recommend(version):
+def recommend(version,cm,hm,mm,lm,nm,um):
     #arbitrary mapping, will likely change later
     mapping = {
-            'Critical':5, 'High':4, 'Medium':3, 'Low':2, 'Negligible':1, 'Unknown':0
+            'Critical':cm, 'High':hm, 'Medium':mm, 'Low':lm, 'Negligible':nm, 'Unknown':um
         }
     #init dataframe for storing data
-    #df = pd.DataFrame(columns=['VERSION','AVERAGE VULNERABILITY SCORE'])
     with open('k8s-scan/versions_chrono.txt','r') as chrono:
         current_best_version = ''
         current_best_num = float("inf")
@@ -61,7 +62,8 @@ def recommend(version):
         for version in reversed(versions_to_scan):
             print(".",end="",flush=True)
             runsum = 0
-            url = f"http://127.0.0.1:8000/rec/{version}"
+            #url = f"http://127.0.0.1:8000/rec/{version}"
+            url = f"https://k8svul.asleague.org/rec/{version}"
             records = requests.get(url).json()
             #if there are vulnerabilities found, gives average of arbitrary measurement given by mapping earlier
             if(len(records) != 0):
@@ -72,8 +74,6 @@ def recommend(version):
                 if (runsum < current_best_num):
                     current_best_num = runsum
                     current_best_version = version
-                #df_temp = pd.DataFrame([[version,runsum/len(records)]],columns=['VERSION','AVERAGE VULNERABILITY SCORE'])
-                #df = pd.concat([df,df_temp],ignore_index = True)
             #add a penalty for newer versions, as they have a more unknown element, more likely to have undiscovered vulnerabilities
     print("")
     print("recommended version to update to is", current_best_version, "with a total vulnerability score of", current_best_num)
