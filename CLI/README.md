@@ -72,6 +72,40 @@ python -m k8s-scan vul CVE-2010-0928
 # list the versions of Kubernetes that vulnerability with CVE code CVE-2010-0928 was found in
 python -m k8s-scan vul --list CVE-2010-0928
 
-# recommends a less vulnerable version after v1.20.15 (please allow up to 3 minutes to calculate thanks!)
-python -m k8s-scan vul --list v1.20.15
+# recommends a less vulnerable version after v1.20.15 with default mapping
+python -m k8s-scan rec v1.20.15
+
+# recommends a less vulnerable version after v1.20.15 with custom mapping
+python -m k8s-scan rec v1.20.15 10 10 10 10 10 10
+```
+
+## Custom recommendation mapping in depth
+If you want a version with less of a certain vulnerability, give that vulnerability a much higher weight in the mapping. The help for the command can be seen below. The mapping is in the order of critical, high, medium, low, negligible, unknown. 
+
+```bash
+Usage: python -m k8s-scan rec [OPTIONS] VERSION [CRITICAL_MAPPING]
+                              [HIGH_MAPPING] [MEDIUM_MAPPING] [LOW_MAPPING]
+                              [NEGLIGIBLE_MAPPING] [UNKNOWN_MAPPING]
+
+  recommend a less vulnerable version of Kubernetes based on input
+
+Options:
+  --help  Show this message and exit.
+```
+
+Some examples can be seen below. You do not have to use powers of 10.
+
+```bash
+# Looking for a version that has fewer critical vulnerabilities and you do not care about the rest
+python -m k8s-scan rec VERSION 100 0 0 0 0 0
+
+# Looking for a version where you do want critical, high, or medium and do not care about the rest
+python -m k8s-scan rec VERSION 100 100 100 0 0 0
+
+# Same scenario as above but you would prefer mediums then highs then criticals (in that order)
+python -m k8s-scan rec VERSION 10000 1000 100 0 0 0
+
+# Looking for a version but you care about each vulnerability, but would prefer lower vulnerabilities
+python -m k8s-scan rec VERSION 100000 10000 1000 100 10 1
+
 ```
