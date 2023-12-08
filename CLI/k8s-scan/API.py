@@ -1,11 +1,15 @@
 from fastapi import FastAPI
 from neo4j import GraphDatabase, RoutingControl
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 def init():
     #initialize neo4j
-    uri = "neo4j+s://e434d27c.databases.neo4j.io"
-    username = "neo4j"
-    password = "X7ADNYHwX-VsBYl_E2d7uKbGcRjvLoVOGSytze9OpHA"
+    uri = os.getenv('uri')
+    username = os.getenv('username')
+    password = os.getenv('password')
     driver= GraphDatabase.driver(uri, auth=(username, password))
     return driver
 
