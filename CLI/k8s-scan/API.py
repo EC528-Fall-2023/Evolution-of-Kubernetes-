@@ -49,7 +49,7 @@ def rec(version:str):
 def vul(code:str):
     driver = init()
     records, summary, keys = driver.execute_query(
-        "MATCH (Vulnerability{VULNERABILITY:$CVE})<-[:Contains]-(p) return p.kubernetesVersion, p.Date",
+        "MATCH (Vulnerability{VULNERABILITY:$CVE})<-[:Contains]-(p) return p.kubernetesVersion, p.`Date-Time`",
         {"CVE":code},routing = RoutingControl.READ, database = "neo4j"
     )
     driver.close()

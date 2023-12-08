@@ -9,7 +9,8 @@ def dependencies(version,list):
     #    "MATCH (:KubeVersion{kubernetesVersion:$version})-[:Depends_On]->(p) return p.dependencyName,p.dependencyVersion",
     #    {"version":version}, routing = RoutingControl.READ, database = "neo4j"
     #)
-    url = f"http://127.0.0.1:8000/dep/{version}"
+    url = f"https://k8svul.asleague.org/dep/{version}"
+    #url = f"http://127.0.0.1:8000/dep/{version}"
     records = requests.get(url).json()
 
     if(len(records) == 0):
@@ -27,10 +28,12 @@ def dependencies(version,list):
 
 def compare(version_1,version_2,list):
     #separate based on if both version + name is same, name is same different version, both are different
-    url = f"http://127.0.0.1:8000/dep/{version_1}"
+    url = f"https://k8svul.asleague.org/dep/{version_1}"
+    #url = f"http://127.0.0.1:8000/dep/{version_1}"
     records_1 = requests.get(url).json()
 
-    url = f"http://127.0.0.1:8000/dep/{version_2}"
+    url = f"https://k8svul.asleague.org/dep/{version_2}"
+    #url = f"http://127.0.0.1:8000/dep/{version_2}"
     records_2 = requests.get(url).json()
 
     
