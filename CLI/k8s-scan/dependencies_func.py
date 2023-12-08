@@ -1,15 +1,22 @@
-from neo4j import GraphDatabase, RoutingControl
 from tabulate import tabulate
 import pandas as pd
-import os
+import requests
 
-def dependencies(driver_dep,version,list):
+
+def dependencies(version,list):
     #run cypher query 
-    records,summary,keys = driver_dep.execute_query(
-        "MATCH (:KubeVersion{kubernetesVersion:$version})-[:Depends_On]->(p) return p.dependencyName,p.dependencyVersion",
-        {"version":version}, routing = RoutingControl.READ, database = "neo4j"
-    )
+    #records,summary,keys = driver_dep.execute_query(
+    #    "MATCH (:KubeVersion{kubernetesVersion:$version})-[:Depends_On]->(p) return p.dependencyName,p.dependencyVersion",
+    #    {"version":version}, routing = RoutingControl.READ, database = "neo4j"
+    #)
+    url = f"https://k8svul.asleague.org/dep/{version}"
+    #url = f"http://127.0.0.1:8000/dep/{version}"
+    records = requests.get(url).json()
 
+    if(len(records) == 0):
+        #if no dependencies, we are likely missing the data
+        print("data missing from our database, try a different version")
+        return
     #print list of dependencies if user requests it
     if(list):
         df = pd.DataFrame(records,columns=['dependency name','dependency version'])
@@ -19,16 +26,15 @@ def dependencies(driver_dep,version,list):
         print("total dependencies in version",version,"is",len(records))
     
 
-def compare(driver_dep,version_1,version_2,list):
+def compare(version_1,version_2,list):
     #separate based on if both version + name is same, name is same different version, both are different
-    records_1,summary,keys = driver_dep.execute_query(
-        "MATCH (:KubeVersion{kubernetesVersion:$version})-[:Depends_On]->(p) return p.dependencyName, p.dependencyVersion",
-        {"version":version_1}, routing = RoutingControl.READ, database = "neo4j"
-    )
-    records_2,summary,keys = driver_dep.execute_query(
-        "MATCH (:KubeVersion{kubernetesVersion:$version})-[:Depends_On]->(p) return p.dependencyName, p.dependencyVersion",
-        {"version":version_2}, routing = RoutingControl.READ, database = "neo4j"
-    )
+    url = f"https://k8svul.asleague.org/dep/{version_1}"
+    #url = f"http://127.0.0.1:8000/dep/{version_1}"
+    records_1 = requests.get(url).json()
+
+    url = f"https://k8svul.asleague.org/dep/{version_2}"
+    #url = f"http://127.0.0.1:8000/dep/{version_2}"
+    records_2 = requests.get(url).json()
 
     
     #find which of the two is more recent, will be used later

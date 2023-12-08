@@ -1,14 +1,18 @@
-from neo4j import GraphDatabase, RoutingControl
 from tabulate import tabulate
 import pandas as pd
+import requests
 
-def evaluate(driver_vul, version, list):
+def evaluate(version, list):
     #run cypher query
-    records, summary, keys = driver_vul.execute_query(
-        "MATCH (:KubeVersion{kubernetesVersion:$version})-[:Contains]->(p) return p.NAME, p.INSTALLED, p.`FIXED-IN`, p.TYPE, p.VULNERABILITY, p.SEVERITY",
-        {"version":version},routing = RoutingControl.READ, database = "neo4j"
-    )
+    url = f"https://k8svul.asleague.org/eval/{version}"
+    #url = f"http://127.0.0.1:8000/eval/{version}"
+    records = requests.get(url).json()
+
     df = pd.DataFrame(records,columns=['NAME','INSTALLED','FIXED-IN','TYPE','VULNERABILITY','SEVERITY'])
+    if(len(records) == 0):
+        #if no vulnerabilities found, we likely do not have the data
+        print("data missing from our database")
+        return
     #print if list is true
     if(list):
         #create mapping to custom sort pandas dataframe
@@ -19,9 +23,6 @@ def evaluate(driver_vul, version, list):
         df.sort_values(by=['sorting'],inplace=True,ignore_index=True)
         df.drop('sorting',axis=1,inplace=True)
         print(tabulate(df,headers='keys',tablefmt='psql'))
-    elif(len(records) == 0):
-        #if no vulnerabilities found, we likely do not have the data
-        print("data missing from our database")
     else:
         #print data such as total vulnerabilities, and their distribution
         print("total vulnerabilities in version",version, "is",len(records), "with distribution as followed: ")
@@ -29,15 +30,51 @@ def evaluate(driver_vul, version, list):
         print("or in terms of percentages:")
         print(df['SEVERITY'].value_counts(normalize=True).to_string())
 
-def vulnerability(driver_vul,code,list):
+def vulnerability(code,list):
     #run cypher query
-    records, summary, keys = driver_vul.execute_query(
-        "MATCH (Vulnerability{VULNERABILITY:$CVE})<-[:Contains]-(p) return p.kubernetesVersion, p.Date",
-        {"CVE":code},routing = RoutingControl.READ, database = "neo4j"
-    )
+    url = f"https://k8svul.asleague.org/vul/{code}"
+    #url = f"http://127.0.0.1:8000/vul/{code}"
+    records = requests.get(url).json()
 
     if(list):
         df = pd.DataFrame(records,columns=['VERSION','DATE'])
         print(tabulate(df,headers='keys',tablefmt='psql'))
     else:
         print("total versions of Kubernetes this vulnerability was found in is", len(records))
+
+def recommend(version,cm,hm,mm,lm,nm,um):
+    #arbitrary mapping, will likely change later
+    mapping = {
+            'Critical':cm, 'High':hm, 'Medium':mm, 'Low':lm, 'Negligible':nm, 'Unknown':um
+        }
+    #init dataframe for storing data
+    with open('k8s-scan/versions_chrono.txt','r') as chrono:
+        current_best_version = ''
+        current_best_num = float("inf")
+        versions_to_scan = []
+        for line in chrono:
+        #find occurance of our version in the choronological list
+            line = line.strip()
+            versions_to_scan.append(line)
+            if(line == version):
+                break
+        print("processing",end="",flush=True)
+        for version in reversed(versions_to_scan):
+            print(".",end="",flush=True)
+            runsum = 0
+            #url = f"http://127.0.0.1:8000/rec/{version}"
+            url = f"https://k8svul.asleague.org/rec/{version}"
+            records = requests.get(url).json()
+            #if there are vulnerabilities found, gives average of arbitrary measurement given by mapping earlier
+            if(len(records) != 0):
+                for vul in records:
+                    runsum += mapping[vul[0]]
+                #average out the runsum
+                runsum = runsum
+                if (runsum < current_best_num):
+                    current_best_num = runsum
+                    current_best_version = version
+            #add a penalty for newer versions, as they have a more unknown element, more likely to have undiscovered vulnerabilities
+    print("")
+    print("recommended version to update to is", current_best_version, "with a total vulnerability score of", current_best_num)
+        
