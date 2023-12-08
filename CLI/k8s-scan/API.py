@@ -7,6 +7,9 @@ load_dotenv()
 
 def init():
     #initialize neo4j
+    uri = os.getenv('uri')
+    username = os.getenv('username')
+    password = os.getenv('password')
     driver= GraphDatabase.driver(uri, auth=(username, password))
     return driver
 
