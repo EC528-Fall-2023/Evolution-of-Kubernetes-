@@ -35,7 +35,17 @@ def compare(version_1,version_2,list):
     url = f"https://k8svul.asleague.org/dep/{version_2}"
     #url = f"http://127.0.0.1:8000/dep/{version_2}"
     records_2 = requests.get(url).json()
-
+    
+    if(len(records_1) == 0) and (len(records_2) == 0):
+        print("data for both versions missing from our database, try different versions")
+        return
+    elif (len(records_1) == 0):
+        print("data for " + version_1 + " missing from our database, try a different version")
+        return
+    elif (len(records_2) == 0):
+        print("data for "+ version_2 + " missing from our database, try a different version")
+        return
+    
     
     #find which of the two is more recent, will be used later
     with open('k8s-scan/versions_chrono.txt','r') as chrono:

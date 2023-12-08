@@ -47,6 +47,8 @@ def recommend(version,cm,hm,mm,lm,nm,um):
     mapping = {
             'Critical':cm, 'High':hm, 'Medium':mm, 'Low':lm, 'Negligible':nm, 'Unknown':um
         }
+    print("your mapping for this scan is:")
+    print(mapping)
     #init dataframe for storing data
     with open('k8s-scan/versions_chrono.txt','r') as chrono:
         current_best_version = ''

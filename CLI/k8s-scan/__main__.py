@@ -6,7 +6,10 @@ from .vulnerabilities_func import *
 #initialize CLI
 @click.group()
 def cli():
-    """A tool for evaluating security posture of your Kubernetes version, analyzing its dependencies, and recommending you a better version"""
+    """A tool for evaluating security posture of your Kubernetes version, 
+    analyzing its dependencies, and recommending you a better version.
+    Refer to valid_versions_dep.txt for dep and comp commands. Refer to 
+    valid_versions_vul.txt for eval, vul and rec commands."""
 
 #create command of dependencies
 @click.command()
