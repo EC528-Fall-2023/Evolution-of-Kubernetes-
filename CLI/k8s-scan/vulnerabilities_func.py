@@ -50,7 +50,6 @@ def recommend(version,cm,hm,mm,lm,nm,um):
     mapping = {
             'Critical':cm, 'High':hm, 'Medium':mm, 'Low':lm, 'Negligible':nm, 'Unknown':um
         }
-
     with open('k8s-scan/versions_chrono.txt','r') as chrono:
         current_best_version = ''
         current_best_num = float("inf")
