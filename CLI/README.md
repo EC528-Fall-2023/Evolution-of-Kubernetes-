@@ -20,24 +20,27 @@ pip install -r requirements.txt
 ## Usage
 
 Refer to valid_versions_dep.txt or valid_versions_vul.txt for versions of Kubernetes that this software supports.
-valid_versions_dep.txt is for dependency functions (dep, comp)
-valid_versions_vul.txt is for vulnerability functions (eval, vul, rec)
+valid_versions_dep.txt is for dependency functions (dep, compd)
+valid_versions_vul.txt is for vulnerability functions (compv, eval, vul, rec)
 
 ```bash
 Usage: python -m k8s-scan [OPTIONS] COMMAND [ARGS]...
 
-  A tool for evaluating security posture of your Kubernetes version, analyzing
-  its dependencies, and recommending you a better version
+  A tool for evaluating security posture of your Kubernetes version,
+  analyzing its dependencies, and recommending you a better version. Refer to
+  valid_versions_dep.txt for dep and compd commands. Refer to
+  valid_versions_vul.txt for compv, eval, vul and rec commands.
 
 Options:
   --help  Show this message and exit.
 
 Commands:
-  comp  compare dependencies of two chosen versions
-  dep   list all dependencies of select version
-  eval  evaluate security posture of chosen version
-  rec   recommend a less vulnerable version of Kubernetes based on input
-  vul   find all versions of Kubernetes with a given vulnerability code
+  compd  compare dependencies of two chosen versions
+  compv  compare vulnerabilities of two chosen versions
+  dep    list all dependencies of select version
+  eval   evaluate security posture of chosen version
+  rec    recommend a less vulnerable version of Kubernetes based on input
+  vul    find all versions of Kubernetes with a given vulnerability code
 ```
 
 ## Example
@@ -55,10 +58,16 @@ python -m k8s-scan dep v1.26.8
 python -m k8s-scan dep --list v1.26.8
 
 # return number of same, updated, new, and outdated dependencies between kubernetes version 1.26.8 and 1.15.3
-python -m k8s-scan comp v1.26.8 v1.15.3
+python -m k8s-scan compd v1.26.8 v1.15.3
 
 # list the same, updated, new, and outdated dependencies between kubernetes version 1.26.8 and 1.15.3
-python -m k8s-scan comp --list v1.26.8 v1.15.3
+python -m k8s-scan compd --list v1.26.8 v1.15.3
+
+# return number of same, updated, new, and resolved vulnerabilities between kubernetes version 1.21.5 and 1.27.3
+python -m k8s-scan compv v1.21.5 v1.27.3
+
+# list the same, updated, new, and resolved vulnerabilities between kubernetes version 1.21.5 and 1.27.3
+python -m k8s-scan compv v1.21.5 v1.27.3 --list
 
 # return amount of vulnerabilities, and their spread found in kubernetes version 1.21.12
 python -m k8s-scan eval v1.21.12
