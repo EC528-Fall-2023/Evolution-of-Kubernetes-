@@ -15,7 +15,7 @@ def dependencies(version,list):
 
     if(len(records) == 0):
         #if no dependencies, we are likely missing the data
-        print("data missing from our database, try a different version")
+        print("data missing from our database")
         return
     #print list of dependencies if user requests it
     if(list):
@@ -36,7 +36,17 @@ def compare(version_1,version_2,list):
     #url = f"http://127.0.0.1:8000/dep/{version_2}"
     records_2 = requests.get(url).json()
 
-    
+    if(len(records_1) == 0) and (len(records_2) == 0):
+        #if no dependencies, we are likely missing the data
+        print("data of both versions from our database")
+        return
+    elif(len(records_1) == 0):
+        print("data of " + version_1 + " missing from our database")
+        return
+    elif(len(records_2) == 0):
+        print("data of " + version_2 + " missing from our database")
+        return
+
     #find which of the two is more recent, will be used later
     with open('k8s-scan/versions_chrono.txt','r') as chrono:
         for line_num, line in enumerate(chrono):

@@ -35,7 +35,10 @@ def vulnerability(code,list):
     url = f"https://k8svul.asleague.org/vul/{code}"
     #url = f"http://127.0.0.1:8000/vul/{code}"
     records = requests.get(url).json()
-
+    if(len(records) == 0):
+        #if no version found, vulnerability is not found in our db
+        print("data missing from our database")
+        return
     if(list):
         df = pd.DataFrame(records,columns=['VERSION','DATE'])
         print(tabulate(df,headers='keys',tablefmt='psql'))
@@ -47,7 +50,7 @@ def recommend(version,cm,hm,mm,lm,nm,um):
     mapping = {
             'Critical':cm, 'High':hm, 'Medium':mm, 'Low':lm, 'Negligible':nm, 'Unknown':um
         }
-    #init dataframe for storing data
+
     with open('k8s-scan/versions_chrono.txt','r') as chrono:
         current_best_version = ''
         current_best_num = float("inf")
@@ -58,6 +61,9 @@ def recommend(version,cm,hm,mm,lm,nm,um):
             versions_to_scan.append(line)
             if(line == version):
                 break
+        if (len(versions_to_scan) == 628):
+            print("version does not exist, try again")
+            return
         print("processing",end="",flush=True)
         for version in reversed(versions_to_scan):
             print(".",end="",flush=True)
