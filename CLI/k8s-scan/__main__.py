@@ -6,7 +6,10 @@ from .vulnerabilities_func import *
 #initialize CLI
 @click.group()
 def cli():
-    """A tool for evaluating security posture of your Kubernetes version, analyzing its dependencies, and recommending you a better version"""
+    """A tool for evaluating security posture of your Kubernetes version, 
+    analyzing its dependencies, and recommending you a better version.
+    Refer to valid_versions_dep.txt for dep and comp commands. Refer to 
+    valid_versions_vul.txt for eval, vul and rec commands."""
 
 #create command of dependencies
 @click.command()
@@ -21,9 +24,9 @@ def dep(version,list):
 @click.argument('version1', type=str)
 @click.argument('version2', type=str)
 @click.option('--list/--no-list', default=False, help='[default = false] toggle list all data')
-def comp(version1,version2,list):
+def compd(version1,version2,list):
     """compare dependencies of two chosen versions"""
-    compare(version1,version2,list)
+    compareD(version1,version2,list)
 
 @click.command()
 @click.argument('version', type=str)
@@ -51,12 +54,21 @@ def rec(version,critical_mapping,high_mapping,medium_mapping,low_mapping,negligi
     '''recommend a less vulnerable version of Kubernetes based on input'''
     recommend(version,critical_mapping,high_mapping,medium_mapping,low_mapping,negligible_mapping,unknown_mapping)
 
+@click.command()
+@click.argument('version1', type=str)
+@click.argument('version2', type=str)
+@click.option('--list/--no-list', default=False, help='[default = false] toggle list all data')
+def compv(version1,version2,list):
+    """compare dependencies of two chosen versions"""
+    compareV(version1,version2,list)
+
 # Add commands to the CLI group
 cli.add_command(dep)
-cli.add_command(comp)
+cli.add_command(compd)
 cli.add_command(eval)
 cli.add_command(vul)
 cli.add_command(rec)
+cli.add_command(compv)
 
 if __name__ == "__main__":
     cli()
