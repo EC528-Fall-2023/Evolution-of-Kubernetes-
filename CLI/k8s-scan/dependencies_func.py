@@ -26,7 +26,7 @@ def dependencies(version,list):
         print("total dependencies in version",version,"is",len(records))
     
 
-def compare(version_1,version_2,list):
+def compareD(version_1,version_2,list):
     #separate based on if both version + name is same, name is same different version, both are different
     url = f"https://k8svul.asleague.org/dep/{version_1}"
     #url = f"http://127.0.0.1:8000/dep/{version_1}"
