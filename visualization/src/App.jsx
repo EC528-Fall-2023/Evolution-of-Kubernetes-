@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
 import { BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import vulnerabilities from './data/vulnerabilities.json';
 
 function App() {
-  const testdata = vulnerabilities
   const [versions, setVersions] = useState([])
   const [selected, setSelected] = useState(["v1.19.13", "v1.20.9", "v1.21.3", "v1.22.0", "v1.23.0", "v1.24.0", "v1.25.4", "v1.26.0", "v1.27.0", "v1.28.0"])
   const [chartData, setChartData] = useState([])
+  const [vulnSL, setVulnSL] = useState()
+  const [vulnBA, setVulnBA] = useState()
+  const [viewSeverities, setViewSeverities] = useState(true)
 
   const compareSemVer = (a, b) => {
- 
     // 1. Split the strings into their parts.
     const a1 = a.split('.');
     const b1 = b.split('.');    // 2. Contingency in case there's a 4th or 5th version
@@ -23,22 +23,36 @@ function App() {
         }    }
     
     // 4. We hit this if the all checked versions so far are equal
-    //
-    return b1.length - a1.length;};
-  // NOTE: We're gonna need to either fetch a list of all versions or hard-code it
+    return b1.length - a1.length;
+  };
+
   useEffect(() => {
-    // setVersions(['Version A', 'Version B', 'Version C', 'Version D', 'Version E', 'Version F', 'Version G', 'Version H', 'Version I', 'Version J', 'Version K', 'Version L', 'Version M', 'Version N'])
-    setVersions((Object.keys(testdata)).sort(compareSemVer))
+    const fetchData = async () => {
+      const response1 = await fetch('https://raw.githubusercontent.com/EC528-Fall-2023/Evolution-of-Kubernetes-/master/SBOM/severitylevel.json')
+      const data1 = await (response1.json())
+      const object1 = data1.reduce((obj, item) => Object.assign(obj, { [item['KubeVersion']]: item }), {})
+      setVulnSL(object1);
+
+      const response2 = await fetch('https://raw.githubusercontent.com/EC528-Fall-2023/Evolution-of-Kubernetes-/master/SBOM/beforeafter.json')
+      const data2 = await (response2.json())
+      const object2 = data2.reduce((obj, item) => Object.assign(obj, { [item['KubeVersion']]: item }), {})
+      setVulnBA(object2);
+      
+      setVersions((Object.keys(object1)).sort(compareSemVer))
+    }
+    fetchData()
     console.log("fetched versions")
   }, [])
 
   useEffect(() => {
-    // NOTE:  if we fetch from neo4j, make sure to handle this with async
-    setChartData(
-      selected.map(i => ({ name: i, ...testdata[i] }))
-    )
-    console.log(chartData)
-  }, [selected])
+    if (vulnSL) {
+      if (viewSeverities) {
+        setChartData(selected.map(i => ({ name: i, ...vulnSL[i] })))
+      } else {
+        setChartData(selected.map(i => ({ name: i, ...vulnBA[i] })))
+      }
+    }
+  }, [selected, vulnSL, viewSeverities])
 
   return (
     <div className="h-screen flex flex-row p-10">
@@ -55,19 +69,30 @@ function App() {
             <YAxis label={{ value: 'Vulnerabilities', angle: -90, position: 'insideLeft' }} />
             <Tooltip />
             <Legend />
-            <Bar dataKey="Negligible" fill="olivedrab" stackId="a" activeBar={<Rectangle fill="lightskyblue" />} />
-            <Bar dataKey="Low" fill="gold" stackId="a" activeBar={<Rectangle fill="lightskyblue" />} />
-            <Bar dataKey="Medium" fill="orange" stackId="a" activeBar={<Rectangle fill="lightskyblue" />} />
-            <Bar dataKey="High" fill="orangered" stackId="a" activeBar={<Rectangle fill="lightskyblue" />} />
-            <Bar dataKey="Critical" fill="red" stackId="a" activeBar={<Rectangle fill="lightskyblue" />} />
-            <Bar dataKey="Unknown" fill="gray" stackId="a" activeBar={<Rectangle fill="lightskyblue" />} />
+            {viewSeverities ? 
+              <>
+                <Bar dataKey="Negligible" fill="olivedrab" stackId="a" activeBar={<Rectangle fill="lightskyblue" />} />
+                <Bar dataKey="Low" fill="gold" stackId="a" activeBar={<Rectangle fill="lightskyblue" />} />
+                <Bar dataKey="Medium" fill="orange" stackId="a" activeBar={<Rectangle fill="lightskyblue" />} />
+                <Bar dataKey="High" fill="orangered" stackId="a" activeBar={<Rectangle fill="lightskyblue" />} />
+                <Bar dataKey="Critical" fill="red" stackId="a" activeBar={<Rectangle fill="lightskyblue" />} />
+                <Bar dataKey="Unknown" fill="gray" stackId="a" activeBar={<Rectangle fill="lightskyblue" />} />
+              </>
+              :
+              <>
+                <Bar dataKey="Before" fill="peachpuff" stackId="a" activeBar={<Rectangle fill="lightskyblue" />} />
+                <Bar dataKey="After" fill="pink" stackId="a" activeBar={<Rectangle fill="lightskyblue" />} />
+              </>
+            }
+
           </BarChart>
         </ResponsiveContainer>
       </div>
-      <div className="flex flex-col w-32">
-        <button onClick={() => setSelected([])} className="bg-neutral-200 p-1 border border-neutral-300 hover:bg-sky-200 w-full">Clear</button>
-        <button onClick={() => setSelected(versions)} className="bg-neutral-200 p-1 border border-neutral-300 hover:bg-sky-200 w-full">Select All</button>
-        <ul className="flex flex-shrink flex-col h-full overflow-y-scroll ">
+      <div className="flex flex-col w-32 space-y-1">
+        <button onClick={() => setSelected([])} className="text-left shadow-md bg-neutral-200 p-1 border border-neutral-300 hover:bg-sky-200 w-full">Clear</button>
+        <button onClick={() => setSelected(versions)} className="text-left shadow-md bg-neutral-200 p-1 border border-neutral-300 hover:bg-sky-200 w-full">Select All</button>
+        <button onClick={() => setViewSeverities(!viewSeverities)} className="text-left shadow-md bg-neutral-200 p-1 border border-neutral-300 hover:bg-sky-200 w-full">{viewSeverities ? "Severity" : "Before/After"}</button>
+        <ul className="flex flex-shrink flex-col h-full overflow-y-scroll pr-1">
         
           {versions.map((i) => <button
             key={i}
@@ -78,7 +103,7 @@ function App() {
                 setSelected((selected.concat(i)).sort())
               }
             }}
-            className={`border text-left p-1 border-neutral-300 ${selected.includes(i) ? "bg-sky-300 hover:bg-sky-200" : "bg-neutral-200 hover:bg-sky-100"}`}
+            className={`border text-left py-px px-2 border-neutral-300 ${selected.includes(i) ? "bg-sky-300 hover:bg-sky-200" : "bg-neutral-200 hover:bg-sky-100"}`}
           >
             {i}
           </button>)}

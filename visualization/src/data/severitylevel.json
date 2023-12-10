@@ -1,0 +1,1482 @@
+[
+  {
+    "KubeVersion": "v1.19.12",
+    "Critical": 42,
+    "High": 92,
+    "Medium": 58,
+    "Low": 59,
+    "Negligible": 133,
+    "Unknown": 1,
+    "Total": 385
+  },
+  {
+    "KubeVersion": "v1.19.13",
+    "Critical": 39,
+    "High": 87,
+    "Medium": 57,
+    "Low": 59,
+    "Negligible": 133,
+    "Unknown": 1,
+    "Total": 376
+  },
+  {
+    "KubeVersion": "v1.19.14",
+    "Critical": 39,
+    "High": 87,
+    "Medium": 54,
+    "Low": 59,
+    "Negligible": 133,
+    "Unknown": 1,
+    "Total": 373
+  },
+  {
+    "KubeVersion": "v1.19.15",
+    "Critical": 39,
+    "High": 87,
+    "Medium": 54,
+    "Low": 59,
+    "Negligible": 133,
+    "Unknown": 1,
+    "Total": 373
+  },
+  {
+    "KubeVersion": "v1.19.16",
+    "Critical": 39,
+    "High": 87,
+    "Medium": 54,
+    "Low": 59,
+    "Negligible": 133,
+    "Unknown": 1,
+    "Total": 373
+  },
+  {
+    "KubeVersion": "v1.20.10",
+    "Critical": 39,
+    "High": 87,
+    "Medium": 54,
+    "Low": 59,
+    "Negligible": 133,
+    "Unknown": 1,
+    "Total": 373
+  },
+  {
+    "KubeVersion": "v1.20.11",
+    "Critical": 39,
+    "High": 87,
+    "Medium": 54,
+    "Low": 59,
+    "Negligible": 133,
+    "Unknown": 1,
+    "Total": 373
+  },
+  {
+    "KubeVersion": "v1.20.12",
+    "Critical": 39,
+    "High": 87,
+    "Medium": 54,
+    "Low": 59,
+    "Negligible": 133,
+    "Unknown": 1,
+    "Total": 373
+  },
+  {
+    "KubeVersion": "v1.20.13",
+    "Critical": 38,
+    "High": 86,
+    "Medium": 52,
+    "Low": 59,
+    "Negligible": 133,
+    "Unknown": 1,
+    "Total": 369
+  },
+  {
+    "KubeVersion": "v1.20.14",
+    "Critical": 38,
+    "High": 86,
+    "Medium": 51,
+    "Low": 59,
+    "Negligible": 133,
+    "Unknown": 1,
+    "Total": 368
+  },
+  {
+    "KubeVersion": "v1.20.15",
+    "Critical": 38,
+    "High": 86,
+    "Medium": 51,
+    "Low": 59,
+    "Negligible": 133,
+    "Unknown": 1,
+    "Total": 368
+  },
+  {
+    "KubeVersion": "v1.20.8",
+    "Critical": 42,
+    "High": 92,
+    "Medium": 58,
+    "Low": 59,
+    "Negligible": 133,
+    "Unknown": 1,
+    "Total": 385
+  },
+  {
+    "KubeVersion": "v1.20.9",
+    "Critical": 39,
+    "High": 87,
+    "Medium": 57,
+    "Low": 59,
+    "Negligible": 133,
+    "Unknown": 1,
+    "Total": 376
+  },
+  {
+    "KubeVersion": "v1.21.10",
+    "Critical": 29,
+    "High": 75,
+    "Medium": 59,
+    "Low": 24,
+    "Negligible": 121,
+    "Unknown": 2,
+    "Total": 310
+  },
+  {
+    "KubeVersion": "v1.21.11",
+    "Critical": 29,
+    "High": 75,
+    "Medium": 59,
+    "Low": 24,
+    "Negligible": 121,
+    "Unknown": 2,
+    "Total": 310
+  },
+  {
+    "KubeVersion": "v1.21.12",
+    "Critical": 23,
+    "High": 72,
+    "Medium": 56,
+    "Low": 24,
+    "Negligible": 121,
+    "Unknown": 2,
+    "Total": 298
+  },
+  {
+    "KubeVersion": "v1.21.13",
+    "Critical": 23,
+    "High": 69,
+    "Medium": 56,
+    "Low": 24,
+    "Negligible": 121,
+    "Unknown": 2,
+    "Total": 295
+  },
+  {
+    "KubeVersion": "v1.21.14",
+    "Critical": 21,
+    "High": 69,
+    "Medium": 56,
+    "Low": 24,
+    "Negligible": 121,
+    "Unknown": 2,
+    "Total": 293
+  },
+  {
+    "KubeVersion": "v1.21.2",
+    "Critical": 18,
+    "High": 55,
+    "Medium": 38,
+    "Low": 25,
+    "Negligible": 75,
+    "Unknown": 1,
+    "Total": 212
+  },
+  {
+    "KubeVersion": "v1.21.3",
+    "Critical": 15,
+    "High": 50,
+    "Medium": 37,
+    "Low": 24,
+    "Negligible": 75,
+    "Unknown": 1,
+    "Total": 202
+  },
+  {
+    "KubeVersion": "v1.21.4",
+    "Critical": 15,
+    "High": 56,
+    "Medium": 43,
+    "Low": 24,
+    "Negligible": 87,
+    "Unknown": 1,
+    "Total": 226
+  },
+  {
+    "KubeVersion": "v1.21.5",
+    "Critical": 30,
+    "High": 77,
+    "Medium": 79,
+    "Low": 24,
+    "Negligible": 121,
+    "Unknown": 2,
+    "Total": 333
+  },
+  {
+    "KubeVersion": "v1.21.6",
+    "Critical": 30,
+    "High": 77,
+    "Medium": 75,
+    "Low": 24,
+    "Negligible": 121,
+    "Unknown": 2,
+    "Total": 329
+  },
+  {
+    "KubeVersion": "v1.21.7",
+    "Critical": 29,
+    "High": 76,
+    "Medium": 73,
+    "Low": 24,
+    "Negligible": 121,
+    "Unknown": 2,
+    "Total": 325
+  },
+  {
+    "KubeVersion": "v1.21.8",
+    "Critical": 29,
+    "High": 76,
+    "Medium": 73,
+    "Low": 24,
+    "Negligible": 121,
+    "Unknown": 2,
+    "Total": 325
+  },
+  {
+    "KubeVersion": "v1.21.9",
+    "Critical": 29,
+    "High": 75,
+    "Medium": 73,
+    "Low": 24,
+    "Negligible": 121,
+    "Unknown": 2,
+    "Total": 324
+  },
+  {
+    "KubeVersion": "v1.22.0",
+    "Critical": 18,
+    "High": 44,
+    "Medium": 41,
+    "Low": 16,
+    "Negligible": 64,
+    "Unknown": 2,
+    "Total": 185
+  },
+  {
+    "KubeVersion": "v1.22.0-alpha.3",
+    "Critical": 20,
+    "High": 49,
+    "Medium": 42,
+    "Low": 16,
+    "Negligible": 64,
+    "Unknown": 2,
+    "Total": 193
+  },
+  {
+    "KubeVersion": "v1.22.0-beta.0",
+    "Critical": 20,
+    "High": 49,
+    "Medium": 42,
+    "Low": 16,
+    "Negligible": 64,
+    "Unknown": 2,
+    "Total": 193
+  },
+  {
+    "KubeVersion": "v1.22.0-beta.1",
+    "Critical": 18,
+    "High": 44,
+    "Medium": 41,
+    "Low": 16,
+    "Negligible": 64,
+    "Unknown": 2,
+    "Total": 185
+  },
+  {
+    "KubeVersion": "v1.22.0-beta.2",
+    "Critical": 18,
+    "High": 44,
+    "Medium": 41,
+    "Low": 16,
+    "Negligible": 64,
+    "Unknown": 2,
+    "Total": 185
+  },
+  {
+    "KubeVersion": "v1.22.0-rc.0",
+    "Critical": 18,
+    "High": 44,
+    "Medium": 41,
+    "Low": 16,
+    "Negligible": 64,
+    "Unknown": 2,
+    "Total": 185
+  },
+  {
+    "KubeVersion": "v1.22.1",
+    "Critical": 18,
+    "High": 44,
+    "Medium": 41,
+    "Low": 16,
+    "Negligible": 64,
+    "Unknown": 2,
+    "Total": 185
+  },
+  {
+    "KubeVersion": "v1.22.10",
+    "Critical": 16,
+    "High": 47,
+    "Medium": 47,
+    "Low": 16,
+    "Negligible": 73,
+    "Unknown": 3,
+    "Total": 202
+  },
+  {
+    "KubeVersion": "v1.22.11",
+    "Critical": 16,
+    "High": 47,
+    "Medium": 47,
+    "Low": 16,
+    "Negligible": 73,
+    "Unknown": 3,
+    "Total": 202
+  },
+  {
+    "KubeVersion": "v1.22.12",
+    "Critical": 14,
+    "High": 47,
+    "Medium": 47,
+    "Low": 16,
+    "Negligible": 73,
+    "Unknown": 3,
+    "Total": 200
+  },
+  {
+    "KubeVersion": "v1.22.13",
+    "Critical": 14,
+    "High": 47,
+    "Medium": 47,
+    "Low": 16,
+    "Negligible": 73,
+    "Unknown": 3,
+    "Total": 200
+  },
+  {
+    "KubeVersion": "v1.22.14",
+    "Critical": 14,
+    "High": 46,
+    "Medium": 47,
+    "Low": 16,
+    "Negligible": 73,
+    "Unknown": 3,
+    "Total": 199
+  },
+  {
+    "KubeVersion": "v1.22.15",
+    "Critical": 14,
+    "High": 46,
+    "Medium": 47,
+    "Low": 16,
+    "Negligible": 73,
+    "Unknown": 3,
+    "Total": 199
+  },
+  {
+    "KubeVersion": "v1.22.16",
+    "Critical": 14,
+    "High": 46,
+    "Medium": 47,
+    "Low": 16,
+    "Negligible": 73,
+    "Unknown": 3,
+    "Total": 199
+  },
+  {
+    "KubeVersion": "v1.22.17",
+    "Critical": 14,
+    "High": 46,
+    "Medium": 47,
+    "Low": 16,
+    "Negligible": 73,
+    "Unknown": 3,
+    "Total": 199
+  },
+  {
+    "KubeVersion": "v1.22.2",
+    "Critical": 19,
+    "High": 48,
+    "Medium": 49,
+    "Low": 16,
+    "Negligible": 66,
+    "Unknown": 3,
+    "Total": 201
+  },
+  {
+    "KubeVersion": "v1.22.3",
+    "Critical": 22,
+    "High": 51,
+    "Medium": 51,
+    "Low": 16,
+    "Negligible": 73,
+    "Unknown": 3,
+    "Total": 216
+  },
+  {
+    "KubeVersion": "v1.22.4",
+    "Critical": 21,
+    "High": 50,
+    "Medium": 49,
+    "Low": 16,
+    "Negligible": 73,
+    "Unknown": 3,
+    "Total": 212
+  },
+  {
+    "KubeVersion": "v1.22.5",
+    "Critical": 21,
+    "High": 50,
+    "Medium": 49,
+    "Low": 16,
+    "Negligible": 73,
+    "Unknown": 3,
+    "Total": 212
+  },
+  {
+    "KubeVersion": "v1.22.6",
+    "Critical": 21,
+    "High": 50,
+    "Medium": 49,
+    "Low": 16,
+    "Negligible": 73,
+    "Unknown": 3,
+    "Total": 212
+  },
+  {
+    "KubeVersion": "v1.22.7",
+    "Critical": 21,
+    "High": 50,
+    "Medium": 49,
+    "Low": 16,
+    "Negligible": 73,
+    "Unknown": 3,
+    "Total": 212
+  },
+  {
+    "KubeVersion": "v1.22.8",
+    "Critical": 21,
+    "High": 50,
+    "Medium": 49,
+    "Low": 16,
+    "Negligible": 73,
+    "Unknown": 3,
+    "Total": 212
+  },
+  {
+    "KubeVersion": "v1.22.9",
+    "Critical": 18,
+    "High": 47,
+    "Medium": 47,
+    "Low": 16,
+    "Negligible": 73,
+    "Unknown": 3,
+    "Total": 204
+  },
+  {
+    "KubeVersion": "v1.23.0",
+    "Critical": 23,
+    "High": 42,
+    "Medium": 52,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 196
+  },
+  {
+    "KubeVersion": "v1.23.0-alpha.1",
+    "Critical": 18,
+    "High": 44,
+    "Medium": 39,
+    "Low": 16,
+    "Negligible": 64,
+    "Unknown": 2,
+    "Total": 183
+  },
+  {
+    "KubeVersion": "v1.23.0-alpha.2",
+    "Critical": 16,
+    "High": 42,
+    "Medium": 39,
+    "Low": 16,
+    "Negligible": 64,
+    "Unknown": 2,
+    "Total": 179
+  },
+  {
+    "KubeVersion": "v1.23.0-alpha.3",
+    "Critical": 20,
+    "High": 39,
+    "Medium": 50,
+    "Low": 8,
+    "Negligible": 61,
+    "Unknown": 3,
+    "Total": 181
+  },
+  {
+    "KubeVersion": "v1.23.0-alpha.4",
+    "Critical": 23,
+    "High": 42,
+    "Medium": 52,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 196
+  },
+  {
+    "KubeVersion": "v1.23.0-beta.0",
+    "Critical": 23,
+    "High": 42,
+    "Medium": 52,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 196
+  },
+  {
+    "KubeVersion": "v1.23.0-rc.0",
+    "Critical": 23,
+    "High": 42,
+    "Medium": 52,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 196
+  },
+  {
+    "KubeVersion": "v1.23.0-rc.1",
+    "Critical": 23,
+    "High": 42,
+    "Medium": 52,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 196
+  },
+  {
+    "KubeVersion": "v1.23.1",
+    "Critical": 23,
+    "High": 42,
+    "Medium": 52,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 196
+  },
+  {
+    "KubeVersion": "v1.23.10",
+    "Critical": 16,
+    "High": 39,
+    "Medium": 50,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 184
+  },
+  {
+    "KubeVersion": "v1.23.11",
+    "Critical": 16,
+    "High": 38,
+    "Medium": 50,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 183
+  },
+  {
+    "KubeVersion": "v1.23.12",
+    "Critical": 16,
+    "High": 38,
+    "Medium": 50,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 183
+  },
+  {
+    "KubeVersion": "v1.23.13",
+    "Critical": 16,
+    "High": 38,
+    "Medium": 50,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 183
+  },
+  {
+    "KubeVersion": "v1.23.14",
+    "Critical": 16,
+    "High": 38,
+    "Medium": 50,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 183
+  },
+  {
+    "KubeVersion": "v1.23.15",
+    "Critical": 16,
+    "High": 38,
+    "Medium": 50,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 183
+  },
+  {
+    "KubeVersion": "v1.23.16",
+    "Critical": 16,
+    "High": 38,
+    "Medium": 50,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 183
+  },
+  {
+    "KubeVersion": "v1.23.17",
+    "Critical": 16,
+    "High": 32,
+    "Medium": 46,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 173
+  },
+  {
+    "KubeVersion": "v1.23.2",
+    "Critical": 23,
+    "High": 42,
+    "Medium": 52,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 196
+  },
+  {
+    "KubeVersion": "v1.23.3",
+    "Critical": 23,
+    "High": 42,
+    "Medium": 52,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 196
+  },
+  {
+    "KubeVersion": "v1.23.4",
+    "Critical": 23,
+    "High": 42,
+    "Medium": 52,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 196
+  },
+  {
+    "KubeVersion": "v1.23.5",
+    "Critical": 23,
+    "High": 40,
+    "Medium": 50,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 192
+  },
+  {
+    "KubeVersion": "v1.23.6",
+    "Critical": 20,
+    "High": 39,
+    "Medium": 50,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 188
+  },
+  {
+    "KubeVersion": "v1.23.7",
+    "Critical": 18,
+    "High": 39,
+    "Medium": 50,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 186
+  },
+  {
+    "KubeVersion": "v1.23.8",
+    "Critical": 18,
+    "High": 39,
+    "Medium": 50,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 186
+  },
+  {
+    "KubeVersion": "v1.23.9",
+    "Critical": 16,
+    "High": 39,
+    "Medium": 50,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 184
+  },
+  {
+    "KubeVersion": "v1.24.0",
+    "Critical": 11,
+    "High": 28,
+    "Medium": 32,
+    "Low": 8,
+    "Negligible": 59,
+    "Unknown": 2,
+    "Total": 140
+  },
+  {
+    "KubeVersion": "v1.24.0-alpha.1",
+    "Critical": 23,
+    "High": 42,
+    "Medium": 52,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 196
+  },
+  {
+    "KubeVersion": "v1.24.0-alpha.2",
+    "Critical": 23,
+    "High": 42,
+    "Medium": 52,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 196
+  },
+  {
+    "KubeVersion": "v1.24.0-alpha.3",
+    "Critical": 23,
+    "High": 42,
+    "Medium": 52,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 196
+  },
+  {
+    "KubeVersion": "v1.24.0-alpha.4",
+    "Critical": 23,
+    "High": 40,
+    "Medium": 50,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 192
+  },
+  {
+    "KubeVersion": "v1.24.0-beta.0",
+    "Critical": 20,
+    "High": 39,
+    "Medium": 50,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 188
+  },
+  {
+    "KubeVersion": "v1.24.0-rc.0",
+    "Critical": 11,
+    "High": 28,
+    "Medium": 32,
+    "Low": 8,
+    "Negligible": 59,
+    "Unknown": 2,
+    "Total": 140
+  },
+  {
+    "KubeVersion": "v1.24.0-rc.1",
+    "Critical": 11,
+    "High": 28,
+    "Medium": 32,
+    "Low": 8,
+    "Negligible": 59,
+    "Unknown": 2,
+    "Total": 140
+  },
+  {
+    "KubeVersion": "v1.24.1",
+    "Critical": 11,
+    "High": 32,
+    "Medium": 39,
+    "Low": 8,
+    "Negligible": 61,
+    "Unknown": 3,
+    "Total": 154
+  },
+  {
+    "KubeVersion": "v1.24.10",
+    "Critical": 9,
+    "High": 33,
+    "Medium": 41,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 162
+  },
+  {
+    "KubeVersion": "v1.24.11",
+    "Critical": 9,
+    "High": 27,
+    "Medium": 37,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 152
+  },
+  {
+    "KubeVersion": "v1.24.12",
+    "Critical": 9,
+    "High": 27,
+    "Medium": 37,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 152
+  },
+  {
+    "KubeVersion": "v1.24.13",
+    "Critical": 9,
+    "High": 27,
+    "Medium": 37,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 152
+  },
+  {
+    "KubeVersion": "v1.24.14",
+    "Critical": 9,
+    "High": 27,
+    "Medium": 37,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 152
+  },
+  {
+    "KubeVersion": "v1.24.15",
+    "Critical": 9,
+    "High": 25,
+    "Medium": 31,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 144
+  },
+  {
+    "KubeVersion": "v1.24.16",
+    "Critical": 9,
+    "High": 25,
+    "Medium": 31,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 144
+  },
+  {
+    "KubeVersion": "v1.24.17",
+    "Critical": 9,
+    "High": 25,
+    "Medium": 31,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 144
+  },
+  {
+    "KubeVersion": "v1.24.2",
+    "Critical": 11,
+    "High": 32,
+    "Medium": 39,
+    "Low": 8,
+    "Negligible": 61,
+    "Unknown": 3,
+    "Total": 154
+  },
+  {
+    "KubeVersion": "v1.24.3",
+    "Critical": 9,
+    "High": 32,
+    "Medium": 39,
+    "Low": 8,
+    "Negligible": 61,
+    "Unknown": 3,
+    "Total": 152
+  },
+  {
+    "KubeVersion": "v1.24.4",
+    "Critical": 9,
+    "High": 32,
+    "Medium": 39,
+    "Low": 8,
+    "Negligible": 61,
+    "Unknown": 3,
+    "Total": 152
+  },
+  {
+    "KubeVersion": "v1.24.5",
+    "Critical": 9,
+    "High": 33,
+    "Medium": 41,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 162
+  },
+  {
+    "KubeVersion": "v1.24.6",
+    "Critical": 9,
+    "High": 33,
+    "Medium": 41,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 162
+  },
+  {
+    "KubeVersion": "v1.24.7",
+    "Critical": 9,
+    "High": 33,
+    "Medium": 41,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 162
+  },
+  {
+    "KubeVersion": "v1.24.8",
+    "Critical": 9,
+    "High": 33,
+    "Medium": 41,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 162
+  },
+  {
+    "KubeVersion": "v1.24.9",
+    "Critical": 9,
+    "High": 33,
+    "Medium": 41,
+    "Low": 8,
+    "Negligible": 68,
+    "Unknown": 3,
+    "Total": 162
+  },
+  {
+    "KubeVersion": "v1.25.10",
+    "Critical": 0,
+    "High": 16,
+    "Medium": 30,
+    "Low": 1,
+    "Negligible": 15,
+    "Unknown": 4,
+    "Total": 66
+  },
+  {
+    "KubeVersion": "v1.25.11",
+    "Critical": 0,
+    "High": 14,
+    "Medium": 22,
+    "Low": 1,
+    "Negligible": 15,
+    "Unknown": 4,
+    "Total": 56
+  },
+  {
+    "KubeVersion": "v1.25.12",
+    "Critical": 0,
+    "High": 14,
+    "Medium": 22,
+    "Low": 1,
+    "Negligible": 15,
+    "Unknown": 4,
+    "Total": 56
+  },
+  {
+    "KubeVersion": "v1.25.13",
+    "Critical": 0,
+    "High": 13,
+    "Medium": 22,
+    "Low": 1,
+    "Negligible": 15,
+    "Unknown": 4,
+    "Total": 55
+  },
+  {
+    "KubeVersion": "v1.25.14",
+    "Critical": 0,
+    "High": 13,
+    "Medium": 22,
+    "Low": 1,
+    "Negligible": 15,
+    "Unknown": 4,
+    "Total": 55
+  },
+  {
+    "KubeVersion": "v1.25.4",
+    "Critical": 0,
+    "High": 20,
+    "Medium": 22,
+    "Low": 1,
+    "Negligible": 11,
+    "Unknown": 2,
+    "Total": 56
+  },
+  {
+    "KubeVersion": "v1.25.5",
+    "Critical": 0,
+    "High": 17,
+    "Medium": 22,
+    "Low": 1,
+    "Negligible": 11,
+    "Unknown": 2,
+    "Total": 53
+  },
+  {
+    "KubeVersion": "v1.25.6",
+    "Critical": 0,
+    "High": 17,
+    "Medium": 22,
+    "Low": 1,
+    "Negligible": 11,
+    "Unknown": 2,
+    "Total": 53
+  },
+  {
+    "KubeVersion": "v1.25.7",
+    "Critical": 0,
+    "High": 18,
+    "Medium": 32,
+    "Low": 1,
+    "Negligible": 15,
+    "Unknown": 4,
+    "Total": 70
+  },
+  {
+    "KubeVersion": "v1.25.8",
+    "Critical": 0,
+    "High": 18,
+    "Medium": 32,
+    "Low": 1,
+    "Negligible": 15,
+    "Unknown": 4,
+    "Total": 70
+  },
+  {
+    "KubeVersion": "v1.25.9",
+    "Critical": 0,
+    "High": 18,
+    "Medium": 32,
+    "Low": 1,
+    "Negligible": 15,
+    "Unknown": 4,
+    "Total": 70
+  },
+  {
+    "KubeVersion": "v1.26.0",
+    "Critical": 0,
+    "High": 17,
+    "Medium": 22,
+    "Low": 1,
+    "Negligible": 11,
+    "Unknown": 2,
+    "Total": 53
+  },
+  {
+    "KubeVersion": "v1.26.0-alpha.3",
+    "Critical": 0,
+    "High": 18,
+    "Medium": 22,
+    "Low": 1,
+    "Negligible": 11,
+    "Unknown": 2,
+    "Total": 54
+  },
+  {
+    "KubeVersion": "v1.26.0-beta.0",
+    "Critical": 0,
+    "High": 18,
+    "Medium": 22,
+    "Low": 0,
+    "Negligible": 11,
+    "Unknown": 2,
+    "Total": 53
+  },
+  {
+    "KubeVersion": "v1.26.0-rc.0",
+    "Critical": 0,
+    "High": 18,
+    "Medium": 22,
+    "Low": 0,
+    "Negligible": 11,
+    "Unknown": 2,
+    "Total": 53
+  },
+  {
+    "KubeVersion": "v1.26.0-rc.1",
+    "Critical": 0,
+    "High": 18,
+    "Medium": 22,
+    "Low": 0,
+    "Negligible": 11,
+    "Unknown": 2,
+    "Total": 53
+  },
+  {
+    "KubeVersion": "v1.26.1",
+    "Critical": 0,
+    "High": 17,
+    "Medium": 22,
+    "Low": 0,
+    "Negligible": 11,
+    "Unknown": 2,
+    "Total": 52
+  },
+  {
+    "KubeVersion": "v1.26.2",
+    "Critical": 0,
+    "High": 18,
+    "Medium": 32,
+    "Low": 0,
+    "Negligible": 15,
+    "Unknown": 4,
+    "Total": 69
+  },
+  {
+    "KubeVersion": "v1.26.3",
+    "Critical": 0,
+    "High": 18,
+    "Medium": 32,
+    "Low": 0,
+    "Negligible": 15,
+    "Unknown": 4,
+    "Total": 69
+  },
+  {
+    "KubeVersion": "v1.26.4",
+    "Critical": 0,
+    "High": 18,
+    "Medium": 32,
+    "Low": 0,
+    "Negligible": 15,
+    "Unknown": 4,
+    "Total": 69
+  },
+  {
+    "KubeVersion": "v1.26.5",
+    "Critical": 0,
+    "High": 16,
+    "Medium": 30,
+    "Low": 0,
+    "Negligible": 15,
+    "Unknown": 4,
+    "Total": 65
+  },
+  {
+    "KubeVersion": "v1.26.6",
+    "Critical": 0,
+    "High": 14,
+    "Medium": 22,
+    "Low": 0,
+    "Negligible": 15,
+    "Unknown": 4,
+    "Total": 55
+  },
+  {
+    "KubeVersion": "v1.26.7",
+    "Critical": 0,
+    "High": 14,
+    "Medium": 22,
+    "Low": 0,
+    "Negligible": 15,
+    "Unknown": 4,
+    "Total": 55
+  },
+  {
+    "KubeVersion": "v1.26.8",
+    "Critical": 0,
+    "High": 13,
+    "Medium": 22,
+    "Low": 0,
+    "Negligible": 15,
+    "Unknown": 4,
+    "Total": 54
+  },
+  {
+    "KubeVersion": "v1.26.9",
+    "Critical": 0,
+    "High": 13,
+    "Medium": 22,
+    "Low": 0,
+    "Negligible": 15,
+    "Unknown": 4,
+    "Total": 54
+  },
+  {
+    "KubeVersion": "v1.27.0",
+    "Critical": 0,
+    "High": 10,
+    "Medium": 18,
+    "Low": 2,
+    "Negligible": 22,
+    "Unknown": 2,
+    "Total": 54
+  },
+  {
+    "KubeVersion": "v1.27.0-alpha.1",
+    "Critical": 0,
+    "High": 17,
+    "Medium": 22,
+    "Low": 0,
+    "Negligible": 11,
+    "Unknown": 2,
+    "Total": 52
+  },
+  {
+    "KubeVersion": "v1.27.0-alpha.2",
+    "Critical": 0,
+    "High": 19,
+    "Medium": 32,
+    "Low": 0,
+    "Negligible": 15,
+    "Unknown": 4,
+    "Total": 70
+  },
+  {
+    "KubeVersion": "v1.27.0-alpha.3",
+    "Critical": 0,
+    "High": 10,
+    "Medium": 18,
+    "Low": 2,
+    "Negligible": 22,
+    "Unknown": 2,
+    "Total": 54
+  },
+  {
+    "KubeVersion": "v1.27.0-beta.0",
+    "Critical": 0,
+    "High": 10,
+    "Medium": 18,
+    "Low": 2,
+    "Negligible": 22,
+    "Unknown": 2,
+    "Total": 54
+  },
+  {
+    "KubeVersion": "v1.27.0-rc.0",
+    "Critical": 0,
+    "High": 10,
+    "Medium": 18,
+    "Low": 2,
+    "Negligible": 22,
+    "Unknown": 2,
+    "Total": 54
+  },
+  {
+    "KubeVersion": "v1.27.0-rc.1",
+    "Critical": 0,
+    "High": 10,
+    "Medium": 18,
+    "Low": 2,
+    "Negligible": 22,
+    "Unknown": 2,
+    "Total": 54
+  },
+  {
+    "KubeVersion": "v1.27.1",
+    "Critical": 0,
+    "High": 10,
+    "Medium": 18,
+    "Low": 2,
+    "Negligible": 22,
+    "Unknown": 2,
+    "Total": 54
+  },
+  {
+    "KubeVersion": "v1.27.2",
+    "Critical": 0,
+    "High": 9,
+    "Medium": 18,
+    "Low": 2,
+    "Negligible": 29,
+    "Unknown": 2,
+    "Total": 60
+  },
+  {
+    "KubeVersion": "v1.27.3",
+    "Critical": 0,
+    "High": 9,
+    "Medium": 20,
+    "Low": 2,
+    "Negligible": 33,
+    "Unknown": 4,
+    "Total": 68
+  },
+  {
+    "KubeVersion": "v1.27.4",
+    "Critical": 0,
+    "High": 9,
+    "Medium": 20,
+    "Low": 2,
+    "Negligible": 33,
+    "Unknown": 4,
+    "Total": 68
+  },
+  {
+    "KubeVersion": "v1.27.5",
+    "Critical": 0,
+    "High": 8,
+    "Medium": 20,
+    "Low": 2,
+    "Negligible": 33,
+    "Unknown": 4,
+    "Total": 67
+  },
+  {
+    "KubeVersion": "v1.27.6",
+    "Critical": 0,
+    "High": 8,
+    "Medium": 20,
+    "Low": 2,
+    "Negligible": 33,
+    "Unknown": 4,
+    "Total": 67
+  },
+  {
+    "KubeVersion": "v1.28.0",
+    "Critical": 1,
+    "High": 9,
+    "Medium": 13,
+    "Low": 5,
+    "Negligible": 68,
+    "Unknown": 2,
+    "Total": 98
+  },
+  {
+    "KubeVersion": "v1.28.0-alpha.1",
+    "Critical": 0,
+    "High": 7,
+    "Medium": 13,
+    "Low": 2,
+    "Negligible": 22,
+    "Unknown": 2,
+    "Total": 46
+  },
+  {
+    "KubeVersion": "v1.28.0-alpha.2",
+    "Critical": 0,
+    "High": 5,
+    "Medium": 7,
+    "Low": 2,
+    "Negligible": 22,
+    "Unknown": 2,
+    "Total": 38
+  },
+  {
+    "KubeVersion": "v1.28.0-alpha.3",
+    "Critical": 0,
+    "High": 5,
+    "Medium": 7,
+    "Low": 2,
+    "Negligible": 22,
+    "Unknown": 2,
+    "Total": 38
+  },
+  {
+    "KubeVersion": "v1.28.0-alpha.4",
+    "Critical": 0,
+    "High": 5,
+    "Medium": 7,
+    "Low": 2,
+    "Negligible": 22,
+    "Unknown": 2,
+    "Total": 38
+  },
+  {
+    "KubeVersion": "v1.28.0-beta.0",
+    "Critical": 1,
+    "High": 8,
+    "Medium": 14,
+    "Low": 5,
+    "Negligible": 68,
+    "Unknown": 2,
+    "Total": 98
+  },
+  {
+    "KubeVersion": "v1.28.0-rc.0",
+    "Critical": 1,
+    "High": 8,
+    "Medium": 14,
+    "Low": 5,
+    "Negligible": 68,
+    "Unknown": 2,
+    "Total": 98
+  },
+  {
+    "KubeVersion": "v1.28.0-rc.1",
+    "Critical": 1,
+    "High": 8,
+    "Medium": 13,
+    "Low": 5,
+    "Negligible": 68,
+    "Unknown": 2,
+    "Total": 97
+  },
+  {
+    "KubeVersion": "v1.28.1",
+    "Critical": 1,
+    "High": 8,
+    "Medium": 13,
+    "Low": 5,
+    "Negligible": 68,
+    "Unknown": 2,
+    "Total": 97
+  },
+  {
+    "KubeVersion": "v1.28.2",
+    "Critical": 1,
+    "High": 8,
+    "Medium": 13,
+    "Low": 5,
+    "Negligible": 68,
+    "Unknown": 2,
+    "Total": 97
+  },
+  {
+    "KubeVersion": "v1.29.0-alpha.1",
+    "Critical": 1,
+    "High": 8,
+    "Medium": 12,
+    "Low": 3,
+    "Negligible": 59,
+    "Unknown": 2,
+    "Total": 85
+  }
+]

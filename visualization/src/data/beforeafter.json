@@ -1,0 +1,742 @@
+[
+  {
+    "KubeVersion": "v1.19.12",
+    "Before": 132,
+    "After": 253
+  },
+  {
+    "KubeVersion": "v1.19.13",
+    "Before": 121,
+    "After": 255
+  },
+  {
+    "KubeVersion": "v1.19.14",
+    "Before": 102,
+    "After": 271
+  },
+  {
+    "KubeVersion": "v1.19.15",
+    "Before": 100,
+    "After": 273
+  },
+  {
+    "KubeVersion": "v1.19.16",
+    "Before": 96,
+    "After": 277
+  },
+  {
+    "KubeVersion": "v1.20.10",
+    "Before": 102,
+    "After": 271
+  },
+  {
+    "KubeVersion": "v1.20.11",
+    "Before": 100,
+    "After": 273
+  },
+  {
+    "KubeVersion": "v1.20.12",
+    "Before": 96,
+    "After": 277
+  },
+  {
+    "KubeVersion": "v1.20.13",
+    "Before": 95,
+    "After": 274
+  },
+  {
+    "KubeVersion": "v1.20.14",
+    "Before": 93,
+    "After": 275
+  },
+  {
+    "KubeVersion": "v1.20.15",
+    "Before": 83,
+    "After": 285
+  },
+  {
+    "KubeVersion": "v1.20.8",
+    "Before": 132,
+    "After": 253
+  },
+  {
+    "KubeVersion": "v1.20.9",
+    "Before": 121,
+    "After": 255
+  },
+  {
+    "KubeVersion": "v1.21.10",
+    "Before": 145,
+    "After": 165
+  },
+  {
+    "KubeVersion": "v1.21.11",
+    "Before": 135,
+    "After": 175
+  },
+  {
+    "KubeVersion": "v1.21.12",
+    "Before": 131,
+    "After": 167
+  },
+  {
+    "KubeVersion": "v1.21.13",
+    "Before": 117,
+    "After": 178
+  },
+  {
+    "KubeVersion": "v1.21.14",
+    "Before": 115,
+    "After": 178
+  },
+  {
+    "KubeVersion": "v1.21.2",
+    "Before": 113,
+    "After": 99
+  },
+  {
+    "KubeVersion": "v1.21.3",
+    "Before": 106,
+    "After": 96
+  },
+  {
+    "KubeVersion": "v1.21.4",
+    "Before": 107,
+    "After": 119
+  },
+  {
+    "KubeVersion": "v1.21.5",
+    "Before": 175,
+    "After": 158
+  },
+  {
+    "KubeVersion": "v1.21.6",
+    "Before": 175,
+    "After": 154
+  },
+  {
+    "KubeVersion": "v1.21.7",
+    "Before": 171,
+    "After": 154
+  },
+  {
+    "KubeVersion": "v1.21.8",
+    "Before": 169,
+    "After": 156
+  },
+  {
+    "KubeVersion": "v1.21.9",
+    "Before": 161,
+    "After": 163
+  },
+  {
+    "KubeVersion": "v1.22.0",
+    "Before": 83,
+    "After": 102
+  },
+  {
+    "KubeVersion": "v1.22.0-alpha.3",
+    "Before": 84,
+    "After": 109
+  },
+  {
+    "KubeVersion": "v1.22.0-beta.0",
+    "Before": 95,
+    "After": 98
+  },
+  {
+    "KubeVersion": "v1.22.0-beta.1",
+    "Before": 88,
+    "After": 97
+  },
+  {
+    "KubeVersion": "v1.22.0-beta.2",
+    "Before": 88,
+    "After": 97
+  },
+  {
+    "KubeVersion": "v1.22.0-rc.0",
+    "Before": 86,
+    "After": 99
+  },
+  {
+    "KubeVersion": "v1.22.1",
+    "Before": 83,
+    "After": 102
+  },
+  {
+    "KubeVersion": "v1.22.10",
+    "Before": 82,
+    "After": 120
+  },
+  {
+    "KubeVersion": "v1.22.11",
+    "Before": 81,
+    "After": 121
+  },
+  {
+    "KubeVersion": "v1.22.12",
+    "Before": 74,
+    "After": 126
+  },
+  {
+    "KubeVersion": "v1.22.13",
+    "Before": 72,
+    "After": 128
+  },
+  {
+    "KubeVersion": "v1.22.14",
+    "Before": 64,
+    "After": 135
+  },
+  {
+    "KubeVersion": "v1.22.15",
+    "Before": 64,
+    "After": 135
+  },
+  {
+    "KubeVersion": "v1.22.16",
+    "Before": 61,
+    "After": 138
+  },
+  {
+    "KubeVersion": "v1.22.17",
+    "Before": 61,
+    "After": 138
+  },
+  {
+    "KubeVersion": "v1.22.2",
+    "Before": 95,
+    "After": 106
+  },
+  {
+    "KubeVersion": "v1.22.3",
+    "Before": 102,
+    "After": 114
+  },
+  {
+    "KubeVersion": "v1.22.4",
+    "Before": 100,
+    "After": 112
+  },
+  {
+    "KubeVersion": "v1.22.5",
+    "Before": 99,
+    "After": 113
+  },
+  {
+    "KubeVersion": "v1.22.6",
+    "Before": 93,
+    "After": 119
+  },
+  {
+    "KubeVersion": "v1.22.7",
+    "Before": 90,
+    "After": 122
+  },
+  {
+    "KubeVersion": "v1.22.8",
+    "Before": 86,
+    "After": 126
+  },
+  {
+    "KubeVersion": "v1.22.9",
+    "Before": 85,
+    "After": 119
+  },
+  {
+    "KubeVersion": "v1.23.0",
+    "Before": 118,
+    "After": 78
+  },
+  {
+    "KubeVersion": "v1.23.0-alpha.1",
+    "Before": 83,
+    "After": 100
+  },
+  {
+    "KubeVersion": "v1.23.0-alpha.2",
+    "Before": 79,
+    "After": 100
+  },
+  {
+    "KubeVersion": "v1.23.0-alpha.3",
+    "Before": 115,
+    "After": 66
+  },
+  {
+    "KubeVersion": "v1.23.0-alpha.4",
+    "Before": 122,
+    "After": 74
+  },
+  {
+    "KubeVersion": "v1.23.0-beta.0",
+    "Before": 118,
+    "After": 78
+  },
+  {
+    "KubeVersion": "v1.23.0-rc.0",
+    "Before": 118,
+    "After": 78
+  },
+  {
+    "KubeVersion": "v1.23.0-rc.1",
+    "Before": 118,
+    "After": 78
+  },
+  {
+    "KubeVersion": "v1.23.1",
+    "Before": 117,
+    "After": 79
+  },
+  {
+    "KubeVersion": "v1.23.10",
+    "Before": 85,
+    "After": 99
+  },
+  {
+    "KubeVersion": "v1.23.11",
+    "Before": 75,
+    "After": 108
+  },
+  {
+    "KubeVersion": "v1.23.12",
+    "Before": 75,
+    "After": 108
+  },
+  {
+    "KubeVersion": "v1.23.13",
+    "Before": 75,
+    "After": 108
+  },
+  {
+    "KubeVersion": "v1.23.14",
+    "Before": 72,
+    "After": 111
+  },
+  {
+    "KubeVersion": "v1.23.15",
+    "Before": 72,
+    "After": 111
+  },
+  {
+    "KubeVersion": "v1.23.16",
+    "Before": 66,
+    "After": 117
+  },
+  {
+    "KubeVersion": "v1.23.17",
+    "Before": 52,
+    "After": 121
+  },
+  {
+    "KubeVersion": "v1.23.2",
+    "Before": 111,
+    "After": 85
+  },
+  {
+    "KubeVersion": "v1.23.3",
+    "Before": 111,
+    "After": 85
+  },
+  {
+    "KubeVersion": "v1.23.4",
+    "Before": 108,
+    "After": 88
+  },
+  {
+    "KubeVersion": "v1.23.5",
+    "Before": 104,
+    "After": 88
+  },
+  {
+    "KubeVersion": "v1.23.6",
+    "Before": 103,
+    "After": 85
+  },
+  {
+    "KubeVersion": "v1.23.7",
+    "Before": 97,
+    "After": 89
+  },
+  {
+    "KubeVersion": "v1.23.8",
+    "Before": 96,
+    "After": 90
+  },
+  {
+    "KubeVersion": "v1.23.9",
+    "Before": 89,
+    "After": 95
+  },
+  {
+    "KubeVersion": "v1.24.0",
+    "Before": 80,
+    "After": 60
+  },
+  {
+    "KubeVersion": "v1.24.0-alpha.1",
+    "Before": 118,
+    "After": 78
+  },
+  {
+    "KubeVersion": "v1.24.0-alpha.2",
+    "Before": 108,
+    "After": 88
+  },
+  {
+    "KubeVersion": "v1.24.0-alpha.3",
+    "Before": 108,
+    "After": 88
+  },
+  {
+    "KubeVersion": "v1.24.0-alpha.4",
+    "Before": 104,
+    "After": 88
+  },
+  {
+    "KubeVersion": "v1.24.0-beta.0",
+    "Before": 103,
+    "After": 85
+  },
+  {
+    "KubeVersion": "v1.24.0-rc.0",
+    "Before": 80,
+    "After": 60
+  },
+  {
+    "KubeVersion": "v1.24.0-rc.1",
+    "Before": 80,
+    "After": 60
+  },
+  {
+    "KubeVersion": "v1.24.1",
+    "Before": 89,
+    "After": 65
+  },
+  {
+    "KubeVersion": "v1.24.10",
+    "Before": 66,
+    "After": 96
+  },
+  {
+    "KubeVersion": "v1.24.11",
+    "Before": 52,
+    "After": 100
+  },
+  {
+    "KubeVersion": "v1.24.12",
+    "Before": 51,
+    "After": 101
+  },
+  {
+    "KubeVersion": "v1.24.13",
+    "Before": 41,
+    "After": 111
+  },
+  {
+    "KubeVersion": "v1.24.14",
+    "Before": 37,
+    "After": 115
+  },
+  {
+    "KubeVersion": "v1.24.15",
+    "Before": 28,
+    "After": 116
+  },
+  {
+    "KubeVersion": "v1.24.16",
+    "Before": 24,
+    "After": 120
+  },
+  {
+    "KubeVersion": "v1.24.17",
+    "Before": 17,
+    "After": 127
+  },
+  {
+    "KubeVersion": "v1.24.2",
+    "Before": 88,
+    "After": 66
+  },
+  {
+    "KubeVersion": "v1.24.3",
+    "Before": 81,
+    "After": 71
+  },
+  {
+    "KubeVersion": "v1.24.4",
+    "Before": 77,
+    "After": 75
+  },
+  {
+    "KubeVersion": "v1.24.5",
+    "Before": 75,
+    "After": 87
+  },
+  {
+    "KubeVersion": "v1.24.6",
+    "Before": 75,
+    "After": 87
+  },
+  {
+    "KubeVersion": "v1.24.7",
+    "Before": 75,
+    "After": 87
+  },
+  {
+    "KubeVersion": "v1.24.8",
+    "Before": 72,
+    "After": 90
+  },
+  {
+    "KubeVersion": "v1.24.9",
+    "Before": 72,
+    "After": 90
+  },
+  {
+    "KubeVersion": "v1.25.10",
+    "Before": 28,
+    "After": 38
+  },
+  {
+    "KubeVersion": "v1.25.11",
+    "Before": 21,
+    "After": 35
+  },
+  {
+    "KubeVersion": "v1.25.12",
+    "Before": 17,
+    "After": 39
+  },
+  {
+    "KubeVersion": "v1.25.13",
+    "Before": 11,
+    "After": 44
+  },
+  {
+    "KubeVersion": "v1.25.14",
+    "Before": 10,
+    "After": 45
+  },
+  {
+    "KubeVersion": "v1.25.4",
+    "Before": 40,
+    "After": 16
+  },
+  {
+    "KubeVersion": "v1.25.5",
+    "Before": 39,
+    "After": 14
+  },
+  {
+    "KubeVersion": "v1.25.6",
+    "Before": 39,
+    "After": 14
+  },
+  {
+    "KubeVersion": "v1.25.7",
+    "Before": 44,
+    "After": 26
+  },
+  {
+    "KubeVersion": "v1.25.8",
+    "Before": 43,
+    "After": 27
+  },
+  {
+    "KubeVersion": "v1.25.9",
+    "Before": 29,
+    "After": 41
+  },
+  {
+    "KubeVersion": "v1.26.0",
+    "Before": 39,
+    "After": 14
+  },
+  {
+    "KubeVersion": "v1.26.0-alpha.3",
+    "Before": 40,
+    "After": 14
+  },
+  {
+    "KubeVersion": "v1.26.0-beta.0",
+    "Before": 40,
+    "After": 13
+  },
+  {
+    "KubeVersion": "v1.26.0-rc.0",
+    "Before": 40,
+    "After": 13
+  },
+  {
+    "KubeVersion": "v1.26.0-rc.1",
+    "Before": 40,
+    "After": 13
+  },
+  {
+    "KubeVersion": "v1.26.1",
+    "Before": 39,
+    "After": 13
+  },
+  {
+    "KubeVersion": "v1.26.2",
+    "Before": 44,
+    "After": 25
+  },
+  {
+    "KubeVersion": "v1.26.3",
+    "Before": 43,
+    "After": 26
+  },
+  {
+    "KubeVersion": "v1.26.4",
+    "Before": 29,
+    "After": 40
+  },
+  {
+    "KubeVersion": "v1.26.5",
+    "Before": 28,
+    "After": 37
+  },
+  {
+    "KubeVersion": "v1.26.6",
+    "Before": 21,
+    "After": 34
+  },
+  {
+    "KubeVersion": "v1.26.7",
+    "Before": 17,
+    "After": 38
+  },
+  {
+    "KubeVersion": "v1.26.8",
+    "Before": 11,
+    "After": 43
+  },
+  {
+    "KubeVersion": "v1.26.9",
+    "Before": 10,
+    "After": 44
+  },
+  {
+    "KubeVersion": "v1.27.0",
+    "Before": 21,
+    "After": 33
+  },
+  {
+    "KubeVersion": "v1.27.0-alpha.1",
+    "Before": 39,
+    "After": 13
+  },
+  {
+    "KubeVersion": "v1.27.0-alpha.2",
+    "Before": 45,
+    "After": 25
+  },
+  {
+    "KubeVersion": "v1.27.0-alpha.3",
+    "Before": 30,
+    "After": 24
+  },
+  {
+    "KubeVersion": "v1.27.0-beta.0",
+    "Before": 29,
+    "After": 25
+  },
+  {
+    "KubeVersion": "v1.27.0-rc.0",
+    "Before": 27,
+    "After": 27
+  },
+  {
+    "KubeVersion": "v1.27.0-rc.1",
+    "Before": 21,
+    "After": 33
+  },
+  {
+    "KubeVersion": "v1.27.1",
+    "Before": 21,
+    "After": 33
+  },
+  {
+    "KubeVersion": "v1.27.2",
+    "Before": 23,
+    "After": 37
+  },
+  {
+    "KubeVersion": "v1.27.3",
+    "Before": 24,
+    "After": 44
+  },
+  {
+    "KubeVersion": "v1.27.4",
+    "Before": 20,
+    "After": 48
+  },
+  {
+    "KubeVersion": "v1.27.5",
+    "Before": 14,
+    "After": 53
+  },
+  {
+    "KubeVersion": "v1.27.6",
+    "Before": 12,
+    "After": 55
+  },
+  {
+    "KubeVersion": "v1.28.0",
+    "Before": 20,
+    "After": 78
+  },
+  {
+    "KubeVersion": "v1.28.0-alpha.1",
+    "Before": 14,
+    "After": 32
+  },
+  {
+    "KubeVersion": "v1.28.0-alpha.2",
+    "Before": 14,
+    "After": 24
+  },
+  {
+    "KubeVersion": "v1.28.0-alpha.3",
+    "Before": 14,
+    "After": 24
+  },
+  {
+    "KubeVersion": "v1.28.0-alpha.4",
+    "Before": 14,
+    "After": 24
+  },
+  {
+    "KubeVersion": "v1.28.0-beta.0",
+    "Before": 22,
+    "After": 76
+  },
+  {
+    "KubeVersion": "v1.28.0-rc.0",
+    "Before": 22,
+    "After": 76
+  },
+  {
+    "KubeVersion": "v1.28.0-rc.1",
+    "Before": 19,
+    "After": 78
+  },
+  {
+    "KubeVersion": "v1.28.1",
+    "Before": 19,
+    "After": 78
+  },
+  {
+    "KubeVersion": "v1.28.2",
+    "Before": 15,
+    "After": 82
+  },
+  {
+    "KubeVersion": "v1.29.0-alpha.1",
+    "Before": 10,
+    "After": 75
+  }
+]
