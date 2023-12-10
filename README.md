@@ -34,10 +34,11 @@ Kubernetes is incredibly important in the modern cloud as it makes it easier for
 ### Goals
 Our primary objective is to develop a method that provides Kubernetes developers with insights into possible vulnerabilities on both old and new releases of stack components. Key goals for this project include:
 
-- Collecting data about Kubernetes software components 
-- Analyzing the chronological evolution of their dependencies
-- Building an analytical framework to bring useful insights from this data
+- Collecting data about Kubernetes software components
+- Analyzing the chronological evolution of their vulnerabilities
 - Create a tool for users to view and interact with our analyzed data
+- Implement a timeline UI to depict analysis results
+
 
 ## 2. Users/Personas Of The Project:
 This project focuses on identifying vulnerabilities and gaps in Kubernetes components, making it relevant to mostly those who plan on developing and maintaining Kubernetes. By knowing which version of each stack component is less vulnerable, developers and maintainers can use those versions to make Kubernetes more secure. By extension, cloud providers generally have APIs that connect to Kubernetes, so a safer Kubernetes would also benefit cloud providers. 
