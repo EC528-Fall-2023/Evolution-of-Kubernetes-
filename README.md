@@ -102,15 +102,17 @@ Cloud providers
 
 Minimum Viable Product:
 
-- Have SBOM of every version of Kubernetes
-- A large dataset that's publicly accessible covering the software compositional evolution of Kubernetes with one level of dependency (meaning just the dependencies of Kubernetes)
-- An analytical framework that can query each dependency and return the number of vulnerabilities and severity of vulnerability from the NIST and OSV databases
-- Development of a CLI tool for users to visualize the data, and interact with our data
-- Validate our end product with a Kubernetes development community, and see if our product resonates with them
+- SBOMs of every version of Kubernetes
+- Collection of vulnerabilities of images found in SBOMs
+- Publicly available dataset of collected data
+- Developed API to query each dependency for number and severity of vulnerabilities
+- CLI tool to allow users to interact with collected data
+
 
 Stretch Goals: 
-- Implement a timeline UI (separate from graph database UI) to depict analysis results
-- Also analyze the security posture of 5-6 tools within the Kubernetes Ecosystem (such as network plugins, container runtime tools(docker, runc), stack monitoring tools(Prometheus))
+- Visual UI to depict analysis results
+- Investigate other tools within the K8s ecosystem (Docker, runc, Prometheus, etc.)
+- Validate our end results with the Kubernetes development community
 
 ## 7. Release Planning:
 
