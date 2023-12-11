@@ -59,7 +59,7 @@ Cloud providers
 - A parser to parse SBOMs for dependencies
 - Storing the dataset of dependencies into a Neo4j graph database
 - Designing and developing an analytical framework to extract useful insights from the data
-- Users can use a CLI to pull useful information such as a list of dependencies of the current version, how many vulnerabilities each dependency has, and the severity of vulnerability of the dependency if the dependency is found in NIST (National Institute of Standards and Technology) NVD (National Vulnerability Database) and the OSV (Open Source Vulnerabilities) database
+- Users can use a CLI to retrieve useful information such as a list of dependencies of the current version, how many vulnerabilities each dependency has, and the severity of vulnerability of the dependency if the dependency is found in NIST (National Institute of Standards and Technology) NVD (National Vulnerability Database) and the OSV (Open Source Vulnerabilities) database
 - Users would also be given a recommended version of a specified component depending on the data gathered regarding that component
 - The end result should include data as an analysis over time. This includes information such as how many dependencies have changed on average. Why are they changing (Vulnerabilities being patched or just an update?), and the scope of change in dependencies (For example when comparing 1.20 vs 1.19, is it a big release or only a few dependencies changes?)
   
