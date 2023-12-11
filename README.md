@@ -74,27 +74,31 @@ Cloud providers
 - The SBOM is a list of components and dependencies that Kubernetes relies on.
 - We define dependencies as all the packages that Kubernetes relies on, but are not made or maintained by Kubernetes themselves
 
-2. Dependency Finder
-- Parse the SBOMs into three CSV files 
-- The first will be a list of all Kubernetes versions
-- The second will be a list of dependencies of all Kubernetes versions
-- The third will be a mapping of the Kubernetes version to the dependencies 
-- We can pipeline the information from the CSV files into Neo4j and it should create a graph mapping our list of Kubernetes versions to their respective dependencies 
+2. Grype & Syft
 
 3. Neo4j
 - Gathering historical data on these dependencies and components and modeling it in Neo4j.
 - We chose to use a graph-type DB as it can help us track the version upgrades efficiently. For example, if versions 1.16 and 1.17 share the same dependencies as each other, they will share common nodes so if a common dependency is upgraded, we do not need to upgrade the dependencies for each of the versions, rather just upgrading one dependency node will upgrade it for all versions. 
-- This lets us have a more efficient analytic query, as we only need one instance of each dependency and component. 
+- This lets us have a more efficient analytic query, as we only need one instance of each dependency and component.
+- Hosted on the cloud to circumvent problems with free Neo4j instances (such as automatic pausing of database after a few days, limited nodes and storage)
 
-4. CLI Tool
-- Build a system to extract valuable insights
+4. API Server
+- Query data from Neo4j
+- Limited querying options
+- Used to hide our Neo4j instance
+- Documentation can be found here: https://k8svul.asleague.org/docs
+
+5. CLI Tool
+- Queries data from Neo4j DB through API calls to our API server
 - Analyzing historical data and bringing insights about dependencies, vulnerabilities, etc.
 - The user will interact with our data through the use of a CLI by specifying a version to analyze, and what they would like to analyze
 - Some basis for whether the next version is better than the current one includes the frequency of severity level (how many criticals, how many highs, etc)
 - Results can also be shown as tables
 - Refer to the CLI folder for more specific instructions
 
-6. Extra
+6. Visual UI
+
+7. Extra
 - Map the analysis over time onto a timeline UI
 - Exploring the inclusion of third-party network and storage plugins if time allows, given Kubernetes' extensive ecosystem.
 
