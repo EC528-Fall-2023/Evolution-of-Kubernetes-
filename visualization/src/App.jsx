@@ -55,11 +55,10 @@ function App() {
   }, [selected, vulnSL, viewSeverities])
 
   return (
-    <div className="h-screen flex flex-row p-10">
-      <div className="flex-grow overflow-x-auto">
-        <h1 className="absolute text-center font-semibold top-4 right-1/2">Kubernetes Vulnerabilities by Version</h1>
+    <div className="h-screen flex flex-col sm:flex-row p-10">
+      <div className="flex-grow">
+        <h1 className="absolute text-center font-semibold top-4 w-full right-0 overflow-y-auto">Kubernetes Vulnerabilities by Version</h1>
         <ResponsiveContainer >
-          
           <BarChart
             className="p-5"
             data={chartData}
@@ -88,11 +87,11 @@ function App() {
           </BarChart>
         </ResponsiveContainer>
       </div>
-      <div className="flex flex-col w-32 space-y-1">
+      <div className="flex flex-col sm:w-32 space-y-1 overflow-y-auto">
         <button onClick={() => setSelected([])} className="text-left shadow-md bg-neutral-200 p-1 border border-neutral-300 hover:bg-sky-200 w-full">Clear</button>
         <button onClick={() => setSelected(versions)} className="text-left shadow-md bg-neutral-200 p-1 border border-neutral-300 hover:bg-sky-200 w-full">Select All</button>
         <button onClick={() => setViewSeverities(!viewSeverities)} className="text-left shadow-md bg-neutral-200 p-1 border border-neutral-300 hover:bg-sky-200 w-full">{viewSeverities ? "Severity" : "Before/After"}</button>
-        <ul className="flex flex-shrink flex-col h-full overflow-y-scroll pr-1">
+        <ul className="flex flex-col h-full pr-1">
         
           {versions.map((i) => <button
             key={i}
