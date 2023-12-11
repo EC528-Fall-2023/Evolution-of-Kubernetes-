@@ -87,15 +87,11 @@ Cloud providers
 - We chose to use a graph-type DB as it can help us track the version upgrades efficiently. For example, if versions 1.16 and 1.17 share the same dependencies as each other, they will share common nodes so if a common dependency is upgraded, we do not need to upgrade the dependencies for each of the versions, rather just upgrading one dependency node will upgrade it for all versions. 
 - This lets us have a more efficient analytic query, as we only need one instance of each dependency and component. 
 
-4. Analytic Framework
+4. CLI Tool
 - Build a system to extract valuable insights
-- Analyzing historical data and bringing insights about dependencies, vulnerabilities, release frequency, etc.
-- Vulnerabilities can be analyzed using the NIST and OSV APIs, these APIs can be used to retrieve the list of vulnerabilities from known components.
-
-5. CLI
+- Analyzing historical data and bringing insights about dependencies, vulnerabilities, etc.
 - The user will interact with our data through the use of a CLI by specifying a version to analyze, and what they would like to analyze
-- Some basis for whether the next version is better than the current one includes security, and we can determine this through the use of CVSS (Common Vulnerability Scoring System), and only allowing low or no severity to pass through our recommendation
-- Users can navigate the data visually through the Neo4j UI
+- Some basis for whether the next version is better than the current one includes the frequency of severity level (how many criticals, how many highs, etc)
 - Results can also be shown as tables
 - Refer to the CLI folder for more specific instructions
 
