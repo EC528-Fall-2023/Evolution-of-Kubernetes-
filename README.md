@@ -62,8 +62,11 @@ Cloud providers
 - Users can use a CLI to retrieve useful information such as a list of dependencies of the current version, how many vulnerabilities each dependency has, and the severity of vulnerability of the dependency if the dependency is found in NIST (National Institute of Standards and Technology) NVD (National Vulnerability Database) and the OSV (Open Source Vulnerabilities) database
 - Users would also be given a recommended version of a specified component depending on the data gathered regarding that component
 - The end result should include data as an analysis over time. This includes information such as how many dependencies have changed on average. Why are they changing (Vulnerabilities being patched or just an update?), and the scope of change in dependencies (For example when comparing 1.20 vs 1.19, is it a big release or only a few dependencies changes?)
-  
-## 4. Solution Concept
+
+## 4. Kubernetes SBOM Structure
+![Screenshot 2023-12-10 at 8 59 05 PM](https://github.com/EC528-Fall-2023/Evolution-of-Kubernetes-/assets/74789609/ce797122-c26c-45c2-93f8-3849268b1775)
+
+## 5. Solution Concept
 
 ![image](https://github.com/EC528-Fall-2023/Evolution-of-Kubernetes-/assets/34695547/6c1d214a-6d66-49a8-997c-e636e01b9274)
 
@@ -100,7 +103,7 @@ Cloud providers
 - Map the analysis over time onto a timeline UI
 - Exploring the inclusion of third-party network and storage plugins if time allows, given Kubernetes' extensive ecosystem.
 
-## 5. Acceptance criteria
+## 6. Acceptance criteria
 
 Minimum Viable Product:
 
@@ -114,7 +117,7 @@ Stretch Goals:
 - Implement a timeline UI (separate from graph database UI) to depict analysis results
 - Also analyze the security posture of 5-6 tools within the Kubernetes Ecosystem (such as network plugins, container runtime tools(docker, runc), stack monitoring tools(Prometheus))
 
-## 6. Release Planning:
+## 7. Release Planning:
 
 ### Sprint #1 (Sep 20 - Oct 3)
 - Learn about the Kubernetes ecosystem, survey, and review the ecosystem.
