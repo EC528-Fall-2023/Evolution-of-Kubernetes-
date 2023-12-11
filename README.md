@@ -75,8 +75,12 @@ Cloud providers
 - We define dependencies as all the packages that Kubernetes relies on, but are not made or maintained by Kubernetes themselves
 
 2. Grype & Syft
+- Python script to iterate through SBOMs and fetch images
+- Grype tool to scan images for vulnerabilities
+- Syft tool to scan images for additonal dependencies
+- Remove fetched images after scanning
 
-3. Neo4j
+4. Neo4j
 - Gathering historical data on these dependencies and components and modeling it in Neo4j.
 - We chose to use a graph-type DB as it can help us track the version upgrades efficiently. For example, if versions 1.16 and 1.17 share the same dependencies as each other, they will share common nodes so if a common dependency is upgraded, we do not need to upgrade the dependencies for each of the versions, rather just upgrading one dependency node will upgrade it for all versions. 
 - This lets us have a more efficient analytic query, as we only need one instance of each dependency and component.
