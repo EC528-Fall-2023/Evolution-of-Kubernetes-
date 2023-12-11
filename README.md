@@ -65,11 +65,6 @@ Cloud providers
 
 ## 4. Kubernetes SBOM Structure
 ![Screenshot 2023-12-10 at 8 59 05 PM](https://github.com/EC528-Fall-2023/Evolution-of-Kubernetes-/assets/74789609/ce797122-c26c-45c2-93f8-3849268b1775)
-
-The kubernetes SBOMS are structured so that it returns images, binaries, and tar.gz files. 
-For this project we focused on the container images to find the vulnerabilites which was accomplished by utilzing Syft and Grype. 
-- Syft: A CLI tool for generating a Software Bill of Materials (SBOM) from container images and filesystems
-- Grype: A vulnerability scanning tool for container images and filesystems
 ## 5. Solution Concept
 
 ![image](https://github.com/EC528-Fall-2023/Evolution-of-Kubernetes-/assets/34695547/6c1d214a-6d66-49a8-997c-e636e01b9274)
