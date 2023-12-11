@@ -28,20 +28,37 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response1 = await fetch('https://raw.githubusercontent.com/EC528-Fall-2023/Evolution-of-Kubernetes-/master/SBOM/severitylevel.json')
-      const data1 = await (response1.json())
-      const object1 = data1.reduce((obj, item) => Object.assign(obj, { [item['KubeVersion']]: item }), {})
-      setVulnSL(object1);
+      try {
+        const response1 = await fetch('https://k8s.static.asleague.org/severitylevel.json')
+        const data1 = await (response1.json())
+        const object1 = data1.reduce((obj, item) => Object.assign(obj, { [item['KubeVersion']]: item }), {})
+        setVulnSL(object1);
 
-      const response2 = await fetch('https://raw.githubusercontent.com/EC528-Fall-2023/Evolution-of-Kubernetes-/master/SBOM/beforeafter.json')
-      const data2 = await (response2.json())
-      const object2 = data2.reduce((obj, item) => Object.assign(obj, { [item['KubeVersion']]: item }), {})
-      setVulnBA(object2);
-      
+        const response2 = await fetch('https://k8s.static.asleague.org/beforeafter.json')
+        const data2 = await (response2.json())
+        const object2 = data2.reduce((obj, item) => Object.assign(obj, { [item['KubeVersion']]: item }), {})
+        setVulnBA(object2); 
+
+      } catch (error) {
+
+        // use Github as backup CDN
+        console.log(error)
+
+        const response1 = await fetch('https://raw.githubusercontent.com/EC528-Fall-2023/Evolution-of-Kubernetes-/master/SBOM/severitylevel.json')
+        const data1 = await (response1.json())
+        const object1 = data1.reduce((obj, item) => Object.assign(obj, { [item['KubeVersion']]: item }), {})
+        setVulnSL(object1);
+
+        const response2 = await fetch('https://raw.githubusercontent.com/EC528-Fall-2023/Evolution-of-Kubernetes-/master/SBOM/beforeafter.json')
+        const data2 = await (response2.json())
+        const object2 = data2.reduce((obj, item) => Object.assign(obj, { [item['KubeVersion']]: item }), {})
+        setVulnBA(object2);
+      } 
+
       setVersions((Object.keys(object1)).sort(compareSemVer))
     }
+
     fetchData()
-    console.log("fetched versions")
   }, [])
 
   useEffect(() => {
