@@ -66,8 +66,8 @@ Cloud providers
 ## 4. Kubernetes SBOM Structure
 ![Screenshot 2023-12-10 at 9 18 18 PM](https://github.com/EC528-Fall-2023/Evolution-of-Kubernetes-/assets/74789609/157e1289-afbe-43b9-8ac1-92fde8ff48e3)
 ## 5. Solution Concept
+![Screenshot 2023-12-10 at 9 28 36 PM](https://github.com/EC528-Fall-2023/Evolution-of-Kubernetes-/assets/74789609/4e8e3b6d-be53-4038-ae2d-851c263de7f7)
 
-![image](https://github.com/EC528-Fall-2023/Evolution-of-Kubernetes-/assets/34695547/6c1d214a-6d66-49a8-997c-e636e01b9274)
 
 1. Kubernetes SBOM
 - There exists an open-source program that generates a software bill of materials (SBOM) in SPDX or JSON format. Using this, we can create and collect the SBOMs of each Kubernetes version. Because the JSON format is more readable and easier to work with, we will be using that. 
