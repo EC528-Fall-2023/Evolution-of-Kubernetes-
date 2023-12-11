@@ -39,6 +39,7 @@ function App() {
         const object2 = data2.reduce((obj, item) => Object.assign(obj, { [item['KubeVersion']]: item }), {})
         setVulnBA(object2); 
 
+        setVersions((Object.keys(object1)).sort(compareSemVer))
       } catch (error) {
 
         // use Github as backup CDN
@@ -53,9 +54,9 @@ function App() {
         const data2 = await (response2.json())
         const object2 = data2.reduce((obj, item) => Object.assign(obj, { [item['KubeVersion']]: item }), {})
         setVulnBA(object2);
+        
+        setVersions((Object.keys(object1)).sort(compareSemVer))
       } 
-
-      setVersions((Object.keys(object1)).sort(compareSemVer))
     }
 
     fetchData()
