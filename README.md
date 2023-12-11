@@ -64,7 +64,7 @@ Cloud providers
 - The end result should include data as an analysis over time. This includes information such as how many dependencies have changed on average. Why are they changing (Vulnerabilities being patched or just an update?), and the scope of change in dependencies (For example when comparing 1.20 vs 1.19, is it a big release or only a few dependencies changes?)
 
 ## 4. Kubernetes SBOM Structure
-![Screenshot 2023-12-10 at 8 59 05 PM](https://github.com/EC528-Fall-2023/Evolution-of-Kubernetes-/assets/74789609/ce797122-c26c-45c2-93f8-3849268b1775)
+![Screenshot 2023-12-10 at 9 18 18 PM](https://github.com/EC528-Fall-2023/Evolution-of-Kubernetes-/assets/74789609/157e1289-afbe-43b9-8ac1-92fde8ff48e3)
 ## 5. Solution Concept
 
 ![image](https://github.com/EC528-Fall-2023/Evolution-of-Kubernetes-/assets/34695547/6c1d214a-6d66-49a8-997c-e636e01b9274)
