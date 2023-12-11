@@ -101,6 +101,9 @@ Cloud providers
 - Refer to the CLI folder for more specific instructions
 
 6. Visual UI
+- Stacked bar graph depecting vulnerabilities of each Kubernetes version
+- React.js frontend, fetches data from API and hosted on [GitHub Pages](https://ec528-fall-2023.github.io/Evolution-of-Kubernetes-/)
+- Separate vulnerabilties by a.) severity, or b.) discovered before vs after respective Kubernetes version
 
 7. Extra
 - Map the analysis over time onto a timeline UI
