@@ -26,9 +26,8 @@
 5. https://docs.google.com/presentation/d/1N0XLtZRzZZPRJ7e_dLIAeLBIfQEIo5b2en3o4dZNekw/edit?usp=sharing
 
 ## Final Presentation
-Slides: https://docs.google.com/presentation/d/111rjcjIpRUrm66KTL0s7DLwvaXM5tL32xusVaPkmevY/edit?usp=sharing
-Video:
-https://drive.google.com/file/d/1hH2lV2tA4Uf3NrLAzUNJ_YGq4g82V3Hz/view?usp=drive_link
+- Slides: https://docs.google.com/presentation/d/111rjcjIpRUrm66KTL0s7DLwvaXM5tL32xusVaPkmevY/edit?usp=sharing
+- Video: https://drive.google.com/file/d/1hH2lV2tA4Uf3NrLAzUNJ_YGq4g82V3Hz/view?usp=drive_link
 
 ## 1. Vision and Goals Of The Project: 
 
